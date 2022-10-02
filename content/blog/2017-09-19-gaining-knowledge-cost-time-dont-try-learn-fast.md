@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-09-19T07:19:39Z"
 title: "Gaining knowledge cost time, don't try to learn fast!"
 categories: ["Encouragements"]
-tags: []
+tags: ['Developer', 'WebDev']
 excerpt: "In this video, I share why you take the time to learn something new and not try to learn things fas..."
 ---
 

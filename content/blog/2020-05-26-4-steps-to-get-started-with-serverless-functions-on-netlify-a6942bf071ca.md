@@ -4,7 +4,7 @@ description: The most powerful tool for front-end developers
 date: '2020-05-26T15:50:59.895Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*h-Oc-BQ3UWnRKq_z
 ---
 

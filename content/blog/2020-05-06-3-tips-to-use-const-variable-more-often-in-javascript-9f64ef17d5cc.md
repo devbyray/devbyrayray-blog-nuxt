@@ -4,7 +4,7 @@ description: 'Use Const by default, unless it needs to change.'
 date: '2020-05-06T10:01:01.264Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/1200/0*wj4v6dHYxFayhCkh
 ---
 

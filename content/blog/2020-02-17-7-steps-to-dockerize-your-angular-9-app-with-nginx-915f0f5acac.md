@@ -4,7 +4,7 @@ description: Set up your Angular 9 app in a Docker environment and deploy it in 
 date: '2020-02-17T01:01:51.855Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*ybCApnyoJFfRYkBEkGniUA.jpeg
 ---
 

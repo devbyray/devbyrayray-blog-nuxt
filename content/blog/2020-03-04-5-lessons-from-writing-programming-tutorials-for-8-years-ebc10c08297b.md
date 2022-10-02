@@ -4,7 +4,7 @@ description: 'Push through all boundaries, even though it’s hard'
 date: '2020-03-04T22:51:10.872Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/1200/0*inP9m8UhMeSnf_jc
 ---
 

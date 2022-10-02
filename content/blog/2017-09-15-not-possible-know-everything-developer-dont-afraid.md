@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-09-15T07:30:20Z"
 title: "It's not possible to know EVERYTHING as a Developer, so don't be afraid of that!"
 categories: ["Encouragements"]
-tags: []
+tags: ['Developer', 'WebDev']
 excerpt: "In this video, I share why you shouldn't be afraid of not knowing EVERYTHING as a Developer.If you ..."
 ---
 

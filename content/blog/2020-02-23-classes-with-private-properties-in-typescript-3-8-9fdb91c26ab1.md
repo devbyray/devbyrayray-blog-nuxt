@@ -4,7 +4,7 @@ description: 'Finally, privacy in TypeScript/JavaScript classes'
 date: '2020-02-23T23:42:56.432Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*bmoWRyvZ_5bMlJpIWEA1VQ.jpeg
 ---
 

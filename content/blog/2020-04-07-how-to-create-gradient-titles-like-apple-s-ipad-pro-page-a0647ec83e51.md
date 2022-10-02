@@ -4,7 +4,7 @@ description: Use CSS to build them yourself
 date: '2020-04-07T13:29:29.613Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*j9T7Rv8BF0yq8HttfcCltg.png
 ---
 

@@ -25,8 +25,6 @@ Compare [Tailwind CSS](https://tailwindcss.com/) to a CSS framework like Bootstr
 
 I can sniff a bootstrap website or application from miles away. You won't notice a website or application that is using Tailwind CSS is. (Only if you check to class names in the source code).
 
-<NameCheapContentAd />
-
 Tailwind CSS is a utility framework like no other. There is no set of pre-built components. It's a framework where you find classes like "text-white," "grid," "object-fit," and a lot more.
 
 So it doesn't matter how your design looks; Tailwind CSS is the ideal partner in building every stunning design.

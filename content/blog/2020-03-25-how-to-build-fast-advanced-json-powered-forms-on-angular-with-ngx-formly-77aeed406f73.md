@@ -6,7 +6,7 @@ description: >-
 date: '2020-03-25T17:15:17.082Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*ObTlBymPfhHxX6en
 ---
 

@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-09-13T07:31:16Z"
 title: "Take the Agile way of working as a Developer"
 categories: ["Encouragements"]
-tags: []
+tags: ['Developer', 'WebDev']
 excerpt: "In this video I share a few tips why you should take the Agile way of working as a Developer!Enjoy!..."
 ---
 

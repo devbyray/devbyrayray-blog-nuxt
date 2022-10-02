@@ -6,7 +6,7 @@ description: >-
 date: '2020-01-15T13:46:18.885Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 slug: /@devbyrayray/graphql-microservices-architecture-by-apollo-8b6eb557c5e2
 image: https://cdn-images-1.medium.com/max/1200/1*toEWBcbiUAFslVsZUNyACA.jpeg
 ---

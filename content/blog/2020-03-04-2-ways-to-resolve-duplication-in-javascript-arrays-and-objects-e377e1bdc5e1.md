@@ -4,7 +4,7 @@ description: Do you know how to deal with duplication?
 date: '2020-03-04T03:13:38.913Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/1200/0*DZg0829DQKwA3fxP
 ---
 

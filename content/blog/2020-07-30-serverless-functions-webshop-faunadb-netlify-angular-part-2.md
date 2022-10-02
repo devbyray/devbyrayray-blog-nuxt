@@ -2,7 +2,7 @@
 title: How To Build A Serverless Webshop — part 2
 description: Product list and detail view with Angular
 date: '2020-07-30'
-categories: \[]
+categories: ['Serverless']
 published: true
 tags: ['TypeScript', 'JavaScript', 'Angular', 'FaunaDB', 'Serverless functions']
 image: https://miro.medium.com/max/1280/0*cAnIYaAnz3zzWt5t

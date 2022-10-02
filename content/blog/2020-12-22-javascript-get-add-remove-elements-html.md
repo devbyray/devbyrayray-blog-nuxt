@@ -31,7 +31,7 @@ First, let’s add an HTML element to our page via JavaScript.
 
 Creating an HTML element can be done via `createElement`. This method creates the element in memory. 
 
-```javascript
+```js
 const divElement = document.createElement('div')
 const ulElement = document.createElement('ul')
 const liElement = document.createElement('li')

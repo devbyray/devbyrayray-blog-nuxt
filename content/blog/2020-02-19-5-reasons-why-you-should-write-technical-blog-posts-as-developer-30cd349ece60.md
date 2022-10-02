@@ -4,7 +4,7 @@ description: How writing technical blog posts can help you early in your develop
 date: '2020-02-19T16:17:06.662Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*f8lWlmSRM5ximHik5gkwVA.jpeg
 ---
 

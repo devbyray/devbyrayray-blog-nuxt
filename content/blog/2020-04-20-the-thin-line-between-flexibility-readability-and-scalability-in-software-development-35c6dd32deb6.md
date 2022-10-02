@@ -6,7 +6,7 @@ description: What would be your strategy?
 date: '2020-04-20T17:33:37.040Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*bq38y_UFJPkJAKsq
 ---
 

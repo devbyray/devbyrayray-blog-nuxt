@@ -4,7 +4,7 @@ description: A practical way to learn TypeScript from scratch
 date: '2020-04-07T03:19:03.683Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*BP2ZZa91y7-S7yZz
 ---
 

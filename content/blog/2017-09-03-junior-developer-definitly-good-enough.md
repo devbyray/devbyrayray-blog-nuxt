@@ -4,7 +4,7 @@ author: 'Ray Ray'
 date: '2017-09-03T03:30:28Z'
 title: 'Junior Developer! You are definitly good enough! 🙏'
 categories: ['Encouragements']
-tags: []
+tags: ['Developer', 'WebDev']
 excerpt: "Don't think you are not good enough! Because you are definitly good enough! 😁😎As Developers we so..."
 ---
 

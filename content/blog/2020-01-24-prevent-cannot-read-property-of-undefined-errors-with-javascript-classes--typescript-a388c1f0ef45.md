@@ -8,7 +8,7 @@ description: >-
 date: '2020-01-24T14:37:56.387Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/1200/1*MUg0PD9atBi8lF9IIvDQnA.png
 ---
 
@@ -56,14 +56,3 @@ I hope this short guide will help you prevent those annoying errors and gonna pu
 Before you make any object in your code, think twice and consider making a class for it 😉.
 
 > If you want to become better in JavaScript, I highly recommend the [JavaScript Beginner](https://BeginnerJavaScript.com/friend/MRFRONTEND) course by [Wes Bos](https://medium.com/u/86a55cd7983b)
-
-## **Read more of my Medium Article’s:**
-
-[**Dive into GraphQL w/ Apollo Client by building a SpaceX 🚀 app in Angular 8**  
-_I know that this sounds odder than it is, but using GraphQL in an Angular 8 application with Apollo Client feels like…_itnext.io](https://itnext.io/dive-into-graphql-w-apollo-client-by-building-a-spacex-app-in-angular-8-20e703c93f0a "https://itnext.io/dive-into-graphql-w-apollo-client-by-building-a-spacex-app-in-angular-8-20e703c93f0a")[](https://itnext.io/dive-into-graphql-w-apollo-client-by-building-a-spacex-app-in-angular-8-20e703c93f0a)
-
-[**GraphQL (microservices) architecture by Apollo**  
-_GraphQL is fantastic! Apollo build tooling around it to make our life easier, to use it at scale_itnext.io](https://itnext.io/graphql-microservices-architecture-by-apollo-8b6eb557c5e2 "https://itnext.io/graphql-microservices-architecture-by-apollo-8b6eb557c5e2")[](https://itnext.io/graphql-microservices-architecture-by-apollo-8b6eb557c5e2)
-
-[**Thoughts about Micro Frontends in 2020**  
-_Last years I see the term “Micro Frontends” become more common than before._medium.com](https://medium.com/@devbyrayray/thoughts-about-micro-frontends-in-2020-dd95eb7216f "https://medium.com/@devbyrayray/thoughts-about-micro-frontends-in-2020-dd95eb7216f")[](https://medium.com/@devbyrayray/thoughts-about-micro-frontends-in-2020-dd95eb7216f)

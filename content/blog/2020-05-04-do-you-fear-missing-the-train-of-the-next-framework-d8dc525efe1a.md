@@ -4,7 +4,7 @@ description: FOMO is a real thing in the developer community
 date: '2020-05-04T06:25:43.151Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*WOHLS6Ce5ymvM5O_
 ---
 

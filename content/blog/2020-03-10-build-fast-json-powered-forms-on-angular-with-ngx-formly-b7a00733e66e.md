@@ -4,7 +4,7 @@ description: Forms can be a nightmare — let’s make them better
 date: '2020-03-10T13:32:14.370Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*eP7WbVOz5L0AsB_TeBJEZg.jpeg
 ---
 

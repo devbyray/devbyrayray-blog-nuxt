@@ -4,7 +4,7 @@ description: Why it could be good to break up your monolithic front-end codebase
 date: '2020-01-04T09:57:56.888Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*Ma0IL7DbvC2dJAN5WRXxRg.jpeg
 ---
 

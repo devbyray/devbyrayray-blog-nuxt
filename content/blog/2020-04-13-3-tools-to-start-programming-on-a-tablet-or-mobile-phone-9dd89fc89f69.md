@@ -4,7 +4,7 @@ description: Coding doesn’t only have to take place when you’re at your desk
 date: '2020-04-13T20:33:14.391Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*ZWFAXY1zyLbPPzr4
 ---
 

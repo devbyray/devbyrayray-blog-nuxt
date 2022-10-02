@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: 2018-03-30T21:32:08+00:00
 slug: 2018/03/lazy-loading-images-intersection-observer/
 categories: ['JavaScript']
-tags: []
+tags: ['Developer', 'WebDev']
 excerpt: 'The Intersection Observer does a pretty good job in detecting if a certain element is inside the visible part of your browser. So we build lazyloading functionality with it.'
 banner: './images/intersection-observer.png'
 published: true

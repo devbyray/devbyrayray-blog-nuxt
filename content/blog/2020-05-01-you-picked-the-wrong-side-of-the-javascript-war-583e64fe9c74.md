@@ -4,7 +4,7 @@ description: And nobody is winning!
 date: '2020-05-01T20:18:09.747Z'
 categories: []
 published: true
-tags: []
+tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/0*4NVpL0p6rDbSpy-9
 ---
 
