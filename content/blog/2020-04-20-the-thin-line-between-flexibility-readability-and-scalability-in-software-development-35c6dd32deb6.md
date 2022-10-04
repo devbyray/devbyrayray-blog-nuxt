@@ -1,6 +1,5 @@
 ---
-title: >-
-  The Thin Line Between Flexibility, Readability, and Scalability in Software
+title: The Thin Line Between Flexibility, Readability, and Scalability in Software
   Development
 description: What would be your strategy?
 date: '2020-04-20T17:33:37.040Z'

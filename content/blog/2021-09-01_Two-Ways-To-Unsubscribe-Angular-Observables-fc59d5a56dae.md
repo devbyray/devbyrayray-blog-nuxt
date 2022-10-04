@@ -15,19 +15,23 @@ I’ve read a ton of different posts about cleaning your subscriptions. There ar
 
 To prevent you from reading all these posts like me, here is a practical post explaining how to unsubscribe from your Observables easily.
 
-### TLDR;
+---
+
+## TLDR;
 
 The short version, for those who don’t want to dive into it 😅. Here are the solutions.
 
-#### Async Pipe
+### Async Pipe
 
 `| async` the async pipe offers you to handle Observables in your HTML template. The async pipe automatically runs the unsubscribe process after the destruction process of a component.
 
-#### takeUntil
+### takeUntil
 
 `takeUntil` can be called in the `.pipe()` method before you subscribe. With this method, you can add your subscription to a `Subject`. If you have a few subscriptions in it, you can unsubscribe it in the `ngOnDestroy` event with the `.next()` and `.complete()` methods.
 
-### 1\. Observables In A HTML Template With Async Pipe
+---
+
+## 1\. Observables In A HTML Template With Async Pipe
 
 Angular offers a simple way to handle your Observables in the HTML template via the async pipe `| async` . The best thing is, Angular takes the unsubscribe process for you instead of doing it yourself.
 
@@ -37,9 +41,11 @@ Or you can use it for values that are Objects or Arrays.
 
 So in this component, you don’t need to trigger something with the `ngOnDestroy` , but it automatically will unsubscribe to the subscriptions during the destruction process of the component.
 
-> If you want to learn more about the Async pipe in Angular, check out this post “[Angular and RxJS: A deep dive into async pipe](https://betterprogramming.pub/angular-rxjs-async-pipe-deep-dive-2510b56f793a)” by [Erxk](https://erxk.medium.com/)
+> If you want to learn more about the Async pipe in Angular, check out this post “[Angular and RxJS: A deep dive into async pipe](/blog/when-to-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-c2e9db61b4a0)” by [Erxk](https://erxk.medium.com/)
 
-### 2\. Observables With takeUntil Method
+---
+
+## 2\. Observables With takeUntil Method
 
 Let’s say you are making multiple AJAX request via the `HttpClient`. You're not going to pass it directly to the HTML, but doing something else with the data first. So the `| async` pipe is not ideal for this situation.
 
@@ -67,9 +73,9 @@ Now we don’t have to worry about making one or a lot more requests via the `Ht
 
 > Be careful with this method that you don’t forget to add the `ngOnDestroy` method to your component. We are humans, so we forget them.
 
-[**Get My Articles Via Email Click here**](https://blog.byrayray.dev/subscribe) **|** [**Buy a $5 Medium Membership**](https://blog.byrayray.dev/membership)
 
-### Conclusion
+
+## Conclusion
 
 These two strategies will be usable in nine out of ten situations, so a great plan to implement in your Angular applications.
 

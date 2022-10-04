@@ -1,7 +1,6 @@
 ---
 title: What Is The Scope In JavaScript
-description: >-
-  Explanation about the behaviour of Var, Const, Let, Functions, Objects and
+description: Explanation about the behaviour of Var, Const, Let, Functions, Objects and
   Classes in the Global Scope.
 date: '2020-03-04T07:48:28.945Z'
 categories: []

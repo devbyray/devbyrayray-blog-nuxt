@@ -1,7 +1,6 @@
 ---
 title: "Dive into GraphQL with Apollo Client by Building a SpaceX \U0001F680 App in Angular 9"
-description: >-
-  I know that this sounds odder than it is, but using GraphQL in an Angular 9
+description: I know that this sounds odder than it is, but using GraphQL in an Angular 9
   application with Apollo Client feels like flying a SpaceX…
 date: '2020-01-22T13:26:21.402Z'
 categories: []

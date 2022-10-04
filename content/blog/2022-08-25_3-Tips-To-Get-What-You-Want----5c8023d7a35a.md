@@ -107,7 +107,7 @@ To end this, say this out loud for yourself:
 > I deserve to be loved  
 > I’m thankful to be ME! 🥰
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

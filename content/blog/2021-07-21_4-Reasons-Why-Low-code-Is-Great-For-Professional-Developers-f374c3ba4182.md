@@ -4,8 +4,7 @@ description: Low-code + Professional Developer = ❤️
 date: '2021-07-21T09:21:17.680Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/4-reasons-why-low-code-is-great-for-professional-developers-f374c3ba4182
+slug: /@byrayray/4-reasons-why-low-code-is-great-for-professional-developers-f374c3ba4182
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Q5LV7ZAw6L3MV971.jpg)

@@ -1,9 +1,7 @@
 ---
-title: >-
-  Prevent “Cannot read property ‘…’ of undefined” errors with JavaScript Classes
+title: Prevent “Cannot read property ‘…’ of undefined” errors with JavaScript Classes
   + TypeScript
-description: >-
-  Every developer who did some JavaScript has got errors like “Cannot read
+description: Every developer who did some JavaScript has got errors like “Cannot read
   property ‘…’ of undefined”. There is one simple way to prevent…
 date: '2020-01-24T14:37:56.387Z'
 categories: []

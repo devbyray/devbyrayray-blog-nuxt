@@ -63,7 +63,7 @@ If you would like to have more inspiration, here’s a link to the book that ins
 
 I hope this helps you build a more positive mindset! If you have great additions to the affirmations, please share them 🤗
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

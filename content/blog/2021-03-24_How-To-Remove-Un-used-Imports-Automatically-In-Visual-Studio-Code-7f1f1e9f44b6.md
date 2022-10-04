@@ -4,8 +4,7 @@ description: Save a lot of time and hassle with this solution
 date: '2021-03-24T08:55:41.083Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-remove-un-used-imports-automatically-in-visual-studio-code-7f1f1e9f44b6
+slug: /@byrayray/how-to-remove-un-used-imports-automatically-in-visual-studio-code-7f1f1e9f44b6
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__uAuQLR44CQ6LCZpG7cQA2g.png)

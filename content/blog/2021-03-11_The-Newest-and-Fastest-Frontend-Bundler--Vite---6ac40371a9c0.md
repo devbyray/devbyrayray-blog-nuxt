@@ -1,7 +1,6 @@
 ---
 title: "The Newest and Fastest Frontend Bundler: Vite\U0001F680"
-description: >-
-  These years the frontend development tools are popping up like mushrooms from
+description: These years the frontend development tools are popping up like mushrooms from
   the ground! One is better or suits your workflow better than…
 date: '2021-03-11T08:19:01.325Z'
 categories: []

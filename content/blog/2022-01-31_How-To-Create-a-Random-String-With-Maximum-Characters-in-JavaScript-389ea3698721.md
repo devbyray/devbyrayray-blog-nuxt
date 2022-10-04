@@ -4,8 +4,7 @@ description: Create your own random data generator in JavaScript!
 date: '2022-01-31T14:27:52.823Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-create-a-random-string-with-maximum-characters-in-javascript-389ea3698721
+slug: /@byrayray/how-to-create-a-random-string-with-maximum-characters-in-javascript-389ea3698721
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__0cXiApiYCr5yrGCM.jpg)
@@ -64,4 +63,3 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)

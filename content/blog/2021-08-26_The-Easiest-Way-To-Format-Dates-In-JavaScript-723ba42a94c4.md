@@ -144,7 +144,7 @@ With this constructor, you previously needed libraries to do this. Yes, with dat
 
 The great thing about date-fns is that it is modular. What you don’t use won’t be included in your code. Handy for keeping your codebase small.
 
-[**Get My Articles Via Email Click here**](https://blog.byrayray.dev/subscribe) **|** [**Buy a $5 Medium Membership**](https://blog.byrayray.dev/membership)
+
 
 ### Conclusion
 

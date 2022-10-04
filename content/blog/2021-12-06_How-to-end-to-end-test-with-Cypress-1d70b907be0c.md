@@ -92,7 +92,7 @@ In the case of re-useable actions that you perform over-and-over-again, you can 
 
 But one of the best examples is writing the command for the login. You need to add that code in the `cypress/support/commands.js` file.
 
-[**Get My Articles Via Email Click here**](https://blog.byrayray.dev/subscribe) **|** [**Buy a $5 Medium Membership**](https://blog.byrayray.dev/membership)
+
 
 ### Conclusion
 
@@ -108,7 +108,7 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

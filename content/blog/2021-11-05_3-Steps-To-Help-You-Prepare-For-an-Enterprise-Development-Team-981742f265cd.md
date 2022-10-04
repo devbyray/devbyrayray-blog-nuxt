@@ -4,8 +4,7 @@ description: From preparation to refinement to estimation
 date: '2021-11-05T13:03:25.427Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/3-steps-to-help-you-prepare-for-an-enterprise-development-team-981742f265cd
+slug: /@byrayray/3-steps-to-help-you-prepare-for-an-enterprise-development-team-981742f265cd
 ---
 
 Before development teams of an enterprise organization are ready to pick up their work, the whole process is prepared. This process is essential before a developer can write their code.
@@ -93,7 +92,7 @@ If developers switch between techniques, domains, or projects, it stays tough to
 
 So, for all the managers that want their team to do estimations, you need to create optimal circumstances and prepare all the work for the team. Make sure that they don’t have to dig deep for their information because this will cost a lot of time. Prepare and package all the information they need in one place. This will help with preparation and estimation.
 
-[**Get My Articles Via Email Click here**](https://blog.byrayray.dev/subscribe) **|** [**Buy a $5 Medium Membership**](https://blog.byrayray.dev/membership)
+
 
 ### Conclusion
 

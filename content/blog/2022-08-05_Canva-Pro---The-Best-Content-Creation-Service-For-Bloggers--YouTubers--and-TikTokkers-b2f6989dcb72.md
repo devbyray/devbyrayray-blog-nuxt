@@ -1,13 +1,11 @@
 ---
-title: >-
-  Canva Pro — The Best Content Creation Service For Bloggers, YouTubers, and
+title: Canva Pro — The Best Content Creation Service For Bloggers, YouTubers, and
   TikTokkers
 description: There is no easier way to create images and videos than with Canva!
 date: '2022-08-05T19:47:37.503Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/canva-pro-the-best-content-creation-service-for-bloggers-youtubers-and-tiktokkers-b2f6989dcb72
+slug: /@byrayray/canva-pro-the-best-content-creation-service-for-bloggers-youtubers-and-tiktokkers-b2f6989dcb72
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__YVn__jO0Sj434fmfpCjwpKA.png)
@@ -127,7 +125,7 @@ Thanks for reading all the way down to here 🙏I hope you enjoyed it as much as
 
 Let me know in the comments what you think of Canva 👍
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

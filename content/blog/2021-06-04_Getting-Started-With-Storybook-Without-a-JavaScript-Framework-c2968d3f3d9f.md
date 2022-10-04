@@ -4,8 +4,7 @@ description: Use it with plain HTML and CSS
 date: '2021-06-04T14:36:43.869Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/getting-started-with-storybook-without-a-javascript-framework-c2968d3f3d9f
+slug: /@byrayray/getting-started-with-storybook-without-a-javascript-framework-c2968d3f3d9f
 ---
 
 We all want to use well-documented UI components in our frontend. With [Storybook](https://storybook.js.org/), you can do that reasonably quickly with React, Angular, Vue, or any other framework.
@@ -84,7 +83,7 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

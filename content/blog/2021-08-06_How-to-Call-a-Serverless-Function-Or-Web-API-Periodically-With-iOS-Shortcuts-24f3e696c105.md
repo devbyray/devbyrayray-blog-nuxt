@@ -4,8 +4,7 @@ description: Automate your tasks using the power of shortcuts in iOS
 date: '2021-08-06T13:37:57.718Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-call-a-serverless-function-or-web-api-periodically-with-ios-shortcuts-24f3e696c105
+slug: /@byrayray/how-to-call-a-serverless-function-or-web-api-periodically-with-ios-shortcuts-24f3e696c105
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__nEoNUltgtIlkTXhY.jpg)

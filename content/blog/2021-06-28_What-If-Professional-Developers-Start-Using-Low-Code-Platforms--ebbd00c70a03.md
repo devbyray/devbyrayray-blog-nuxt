@@ -4,8 +4,7 @@ description: Can We Embrace Low Code Platforms?
 date: '2021-06-28T05:12:00.438Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/what-if-professional-developers-start-using-low-code-platforms-ebbd00c70a03
+slug: /@byrayray/what-if-professional-developers-start-using-low-code-platforms-ebbd00c70a03
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__UAPoQdukx1ttty3j.jpg)

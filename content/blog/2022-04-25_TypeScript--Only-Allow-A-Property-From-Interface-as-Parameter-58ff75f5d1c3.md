@@ -1,13 +1,11 @@
 ---
 title: 'TypeScript: Only Allow A Property From Interface as Parameter'
-description: >-
-  So lately I was working with a team member on an Angular Pipe. We had an
+description: So lately I was working with a team member on an Angular Pipe. We had an
   Address Interface and wanted to only allow an argument that was…
 date: '2022-04-25T08:46:08.039Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/typescript-only-allow-a-property-from-interface-as-parameter-58ff75f5d1c3
+slug: /@byrayray/typescript-only-allow-a-property-from-interface-as-parameter-58ff75f5d1c3
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__DDj3doC__JLqvXbKk.jpg)
@@ -46,4 +44,3 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)

@@ -1,13 +1,11 @@
 ---
 title: 'Define NodeJS, NPM, and TypeScript version in your Package.json'
-description: >-
-  I think this is a pretty unknown feature in the package.json. But you can
+description: I think this is a pretty unknown feature in the package.json. But you can
   define what version a computer needs to be able to run your…
 date: '2021-03-19T14:34:38.360Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/define-nodejs-npm-and-typescript-version-in-your-package-json-6933d3ef280e
+slug: /@byrayray/define-nodejs-npm-and-typescript-version-in-your-package-json-6933d3ef280e
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__kIGc2Km__PQZMLbzZ.jpg)

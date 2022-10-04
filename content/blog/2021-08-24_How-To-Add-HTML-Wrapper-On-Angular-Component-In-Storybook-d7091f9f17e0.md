@@ -4,8 +4,7 @@ description: Storybook Decorators are the answer for creating a bit more markup
 date: '2021-08-24T06:55:48.455Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-add-html-wrapper-on-angular-component-in-storybook-d7091f9f17e0
+slug: /@byrayray/how-to-add-html-wrapper-on-angular-component-in-storybook-d7091f9f17e0
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__yKTtL__zPD8SMnw5f.jpg)
@@ -24,6 +23,6 @@ In our case, we only needed a `<div>` with a class `mat-body` to get the font fa
 
 With these decorators, you can add extra context or styling around your components.
 
-[**Get My Articles Via Email Click here**](https://blog.byrayray.dev/subscribe) **|** [**Buy a $5 Medium Membership**](https://blog.byrayray.dev/membership)
+
 
 _Happy coding 🚀_

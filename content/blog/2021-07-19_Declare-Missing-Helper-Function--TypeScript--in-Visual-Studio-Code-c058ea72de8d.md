@@ -1,13 +1,11 @@
 ---
 title: Declare Missing Helper Function (TypeScript) in Visual Studio Code
-description: >-
-  As I was reading the “Announcing TypeScript 4.2” post on the TypeScript blog,
+description: As I was reading the “Announcing TypeScript 4.2” post on the TypeScript blog,
   I discovered a neat feature that is so simple but super…
 date: '2021-07-19T18:56:54.356Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d
+slug: /@byrayray/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__ub5GtlmpgTxRa1Jvz3fYgw.gif)

@@ -1,7 +1,6 @@
 ---
 title: 'How to Build Fast, Advanced JSON-Powered Forms on Angular With ngx-formly'
-description: >-
-  Validations, repeatable sections, conditional fields, and submitting your form
+description: Validations, repeatable sections, conditional fields, and submitting your form
   to your API
 date: '2020-03-25T17:15:17.082Z'
 categories: []

@@ -1,13 +1,11 @@
 ---
-title: >-
-  Can’t Access Camera or Microphone In WebRTC Apps? Solve Using
+title: Can’t Access Camera or Microphone In WebRTC Apps? Solve Using
   “navigator.mediaDevices” Web API
 description: How to solve this with navigator.mediaDevices Web API
 date: '2021-03-01T13:08:59.137Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c
+slug: /@byrayray/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__2A5Qbg802RyfMWx1.jpg)

@@ -1,7 +1,6 @@
 ---
 title: How To Format a Value With Angular NGX-Formly
-description: >-
-  A handy way to format postal codes, phone numbers, bank accounts, and so much
+description: A handy way to format postal codes, phone numbers, bank accounts, and so much
   more
 date: '2022-01-04T12:48:30.509Z'
 categories: []
@@ -62,7 +61,7 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

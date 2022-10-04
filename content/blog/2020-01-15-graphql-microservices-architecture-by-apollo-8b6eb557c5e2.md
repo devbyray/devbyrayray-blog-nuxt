@@ -1,7 +1,6 @@
 ---
 title: GraphQL (microservices) architecture by Apollo
-description: >-
-  GraphQL is fantastic! Apollo build tooling around it to make our life easier,
+description: GraphQL is fantastic! Apollo build tooling around it to make our life easier,
   to use it at scale
 date: '2020-01-15T13:46:18.885Z'
 categories: []

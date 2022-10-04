@@ -63,18 +63,18 @@ ol {
 	margin-bottom: 1rem;
 }
 
-.content {
-	& h1 {
-		@apply text-4xl;
-	}
-	& h2 {
-		@apply text-2xl;
-	}
-
-	& ul,
-	& ol {
-		list-style: inherit;
-		list-style-position: inside;
-	}
+.content h1 {
+	@apply text-4xl;
+}
+.content h2 {
+	@apply text-2xl;
+}
+.content h3 {
+	@apply text-1xl;
+}
+.content ul,
+.content ol {
+	list-style: inherit;
+	list-style-position: inside;
 }
 </style>

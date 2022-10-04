@@ -4,8 +4,7 @@ description: Have your picture ready in seconds!
 date: '2022-08-15T12:58:58.123Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-create-spotify-style-duotone-pictures-with-canva-a444b014341f
+slug: /@byrayray/how-to-create-spotify-style-duotone-pictures-with-canva-a444b014341f
 ---
 
 #### Canva Tutorial
@@ -58,7 +57,7 @@ Well, that was easy, right 😉! Please share in the comments if there are other
 
 Let me know in the comments what you think of Canva 👍
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 ### Read more
 

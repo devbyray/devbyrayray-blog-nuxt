@@ -4,8 +4,7 @@ description: Prevent typing color codes over and over again!
 date: '2021-07-14T10:06:37.267Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/how-to-make-re-usable-colors-in-microsoft-canvas-power-apps-e3a971f68148
+slug: /@byrayray/how-to-make-re-usable-colors-in-microsoft-canvas-power-apps-e3a971f68148
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__N6j8yyRENowFQG0Q77b3ug.png)

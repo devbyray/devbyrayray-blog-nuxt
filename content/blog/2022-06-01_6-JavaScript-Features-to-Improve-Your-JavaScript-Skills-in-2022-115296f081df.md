@@ -1,13 +1,11 @@
 ---
 title: 6 JavaScript Features to Improve Your JavaScript Skills in 2022
-description: >-
-  These features are both very new features and features that improve the
+description: These features are both very new features and features that improve the
   already existing functionality in JavaScript.
 date: '2022-06-01T05:17:57.609Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
+slug: /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
 ---
 
 ![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1____LYzK__xh7lUT__lAwjEASew.png)
@@ -142,6 +140,6 @@ After reading this story, I hope you learned something new or are inspired to cr
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
-[**Get My Articles Via Email Click here**](https://byrayray.medium.com/subscribe) **|** [**Buy a $5 Medium Membership**](https://byrayray.medium.com/membership)
+
 
 _More content at_ [**_PlainEnglish.io_**](https://plainenglish.io/)_. Sign up for our_ [**_free weekly newsletter_**](http://newsletter.plainenglish.io/)_. Follow us on_ [**_Twitter_**](https://twitter.com/inPlainEngHQ) _and_ [**_LinkedIn_**](https://www.linkedin.com/company/inplainenglish/)_. Check out our_ [**_Community Discord_**](https://discord.gg/GtDtUAvyhW) _and join our_ [**_Talent Collective_**](https://inplainenglish.pallet.com/talent/welcome)_._

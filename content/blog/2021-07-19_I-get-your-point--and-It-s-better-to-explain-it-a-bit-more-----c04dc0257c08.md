@@ -1,13 +1,11 @@
 ---
 title: "I get your point, and It's better to explain it a bit more. \U0001F609"
-description: >-
-  There are professional developers with a lot of different strengths and
+description: There are professional developers with a lot of different strengths and
   weaknesses. One is better in database management, and the other is…
 date: '2021-07-19T11:24:21.356Z'
 categories: []
 keywords: []
-slug: >-
-  /@byrayray/i-get-your-point-and-its-better-to-explain-it-a-bit-more-c04dc0257c08
+slug: /@byrayray/i-get-your-point-and-its-better-to-explain-it-a-bit-more-c04dc0257c08
 ---
 
 I get your point, and It's better to explain it a bit more. 😉
