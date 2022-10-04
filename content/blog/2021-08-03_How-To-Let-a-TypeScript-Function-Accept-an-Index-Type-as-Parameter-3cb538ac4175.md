@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-let-a-typescript-function-accept-an-index-type-as-parameter-3cb538ac4175
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__IeggnBQuHiNid7d0.jpg)
+![](/images/0__IeggnBQuHiNid7d0.jpg)
 
 If you got the error “_Element implicitly has an ‘any’ type because expression of type ‘string’ can’t be used to index type_” in TypeScript via TSLint or Visual Studio Code? Here is your solution 👍
 

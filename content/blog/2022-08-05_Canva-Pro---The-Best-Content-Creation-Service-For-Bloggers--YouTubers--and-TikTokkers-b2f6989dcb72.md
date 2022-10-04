@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/canva-pro-the-best-content-creation-service-for-bloggers-youtubers-and-tiktokkers-b2f6989dcb72
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__YVn__jO0Sj434fmfpCjwpKA.png)
+![](/images/1__YVn__jO0Sj434fmfpCjwpKA.png)
 
 Since I started writing blogs, making videos, and composing tweets, I have used all kinds of tools to make lovely creative images. Back in the day, I used Photoshop most of the time.
 
@@ -42,7 +42,7 @@ What made me change?
 
 **Feature 1: Templates**
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__qYQqiOmE4OW2la2W3qBUxw.png)
+![](/images/1__qYQqiOmE4OW2la2W3qBUxw.png)
 
 The best feature of [Canva](https://partner.canva.com/c/2339544/811170/10068) is the templates! They have loads of templates in every category you might need. Presentations, Instagram Posts or Stories, TikTok, Youtube Thumbnails, and Facebook Cover photos are examples they have.
 
@@ -50,7 +50,7 @@ Some creative people even sell their [Canva Templates via Etsy](https://www.etsy
 
 #### Feature 2: Resizing
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__qxkvcLBBjEX1Mi0jics4og.png)
+![](/images/1__qxkvcLBBjEX1Mi0jics4og.png)
 
 Resizing is a feature of the Canva Pro tier. (_You can try Canva Pro 30 days for free_) You can set any dimension you like. But you can also choose from the predefined sizes for a Facebook Post or an Instagram Story.
 
@@ -60,7 +60,7 @@ Resizing is a feature of the Canva Pro tier. (_You can try Canva Pro 30 days for
 
 Animations are great for videos and presentations. You can find this feature in the free tier as well.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__RejSvfl1qUXvPt6CZwZexw.gif)
+![](/images/1__RejSvfl1qUXvPt6CZwZexw.gif)
 
 There are page animations where you can set the animation type for the whole page or select every object in your design and apply a different animation.
 
@@ -68,17 +68,17 @@ There are page animations where you can set the animation type for the whole pag
 
 Every brand has its colors and fonts. Well, Canva makes it super easy to make a set of brand colors, brand logos, and fonts.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__iaGfYkwT9YrQ__pDw61dhbw.png)
+![](/images/1__iaGfYkwT9YrQ__pDw61dhbw.png)
 
 Whenever you select an object where you can change the color or font, it’s easily selectable. Next to that, they also give options of colors already in photos that are included in your design.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__zQVRoCVsx3__QtDd5aEdmgg.png)
+![](/images/1__zQVRoCVsx3__QtDd5aEdmgg.png)
 
 #### Feature 5: Exporting
 
 After you finish your design, you want to download it to your computer or smartphone. Click the share button and press download to see all your options. Most options are for the free tier, some are only in the Pro tier.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__ms6__Hwf__B2RNZansj__jowg.png)
+![](/images/1__ms6__Hwf__B2RNZansj__jowg.png)
 
 #### **Bonus 🎊**
 

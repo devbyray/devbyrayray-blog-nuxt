@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/build-a-custom-like-button-with-html-css-and-vanilla-javascript-b81fa4b00aad
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__OfviGMYRfxsauWEEomSq__g.png)
+![](./images/1__OfviGMYRfxsauWEEomSq__g.png)
 
 When you want to learn JavaScript, where do you start? Well I thought about some easy to build UI components. In this post I will show you to code a custom like button. I will explain how it works so you can build your own.
 

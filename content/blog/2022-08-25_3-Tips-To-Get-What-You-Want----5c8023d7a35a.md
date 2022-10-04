@@ -9,7 +9,7 @@ slug: /@byrayray/3-tips-to-get-what-you-want-5c8023d7a35a
 
 #### YOUR WORDS HAVE MUCH MORE POWER THAN YOU THINK
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__28yrsQn2QwvELwZz.jpg)
+![](/images/0__28yrsQn2QwvELwZz.jpg)
 
 Be careful of what you say, because you can attract everything you say! Both positive & negative! We, people, are complaining A LOT! (_Hopefully, you're not doing that_ 😉)
 
@@ -53,7 +53,7 @@ I guess everyone wants to have nice things in life. The nice things in life can 
 
 ### 2\. Law Of Attraction
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__5FB__0RLdVFtgbIUp.jpg)
+![](/images/0__5FB__0RLdVFtgbIUp.jpg)
 
 Now that we know our voice and mind are powerful tools, we must become aware of the law of attraction. Everyone can apply the law of attraction to every topic in life.
 
@@ -65,7 +65,7 @@ But what is clear is that the words we hear with our physical ears and hear in o
 
 ### 3\. Manifesting
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__hgwxK__7rf5Yl7lRj.jpg)
+![](/images/0__hgwxK__7rf5Yl7lRj.jpg)
 
 Since words can change so many things, we must be careful with what we say, think, and wish.
 

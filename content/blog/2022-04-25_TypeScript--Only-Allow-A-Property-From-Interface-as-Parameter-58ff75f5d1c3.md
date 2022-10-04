@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/typescript-only-allow-a-property-from-interface-as-parameter-58ff75f5d1c3
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__DDj3doC__JLqvXbKk.jpg)
+![](/images/0__DDj3doC__JLqvXbKk.jpg)
 
 So lately I was working with a team member on an Angular Pipe. We had an Address Interface and wanted to only allow an argument that was property from the Adress Interface. But how do you define that?
 
@@ -38,7 +38,7 @@ In the [example](https://codesandbox.io/embed/musing-haslett-eiyzup?expanddevtoo
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__dzPeN7i6oCb3qhFe.jpg)
+![](/images/0__dzPeN7i6oCb3qhFe.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

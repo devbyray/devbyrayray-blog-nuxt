@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/4-reasons-why-low-code-is-great-for-professional-developers-f374c3ba4182
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Q5LV7ZAw6L3MV971.jpg)
+![](/images/0__Q5LV7ZAw6L3MV971.jpg)
 
 Recently I wrote the story “[Coding Is Dead](https://medium.com/lowcode-nocode/coding-is-dead-1e08021b723a)”. One of the readers asked a [great question](https://lukasz9-3.medium.com/it-will-be-beneficial-for-professional-developer-sounds-like-empty-slogan-can-you-explain-why-do-542a38f9324d), “Why will low-code or no-code be beneficial for professional developers”. It wasn’t that clear why it would be great for professional developers to use low-code platforms.
 

@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-generate-an-alphabet-javascript-array-eae6940ea646
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__G__8ku__Yvyc4iWT8U.jpg)
+![](/images/0__G__8ku__Yvyc4iWT8U.jpg)
 
 Imagine building a word game with JavaScript, and you need to pick a random character from the alphabet, but you don’t want to type all the letters by hand. (_Please tell me you didn’t consider that_).
 
@@ -71,7 +71,7 @@ I hope you learned something new or are inspired to create something new after r
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

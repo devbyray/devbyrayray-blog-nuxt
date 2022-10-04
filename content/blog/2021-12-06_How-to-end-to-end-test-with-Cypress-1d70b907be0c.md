@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-end-to-end-test-with-cypress-1d70b907be0c
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Co1BnI8HTpTQhr0g.jpg)
+![](/images/0__Co1BnI8HTpTQhr0g.jpg)
 
 What is end-to-end testing? We have two ends in a Web application: the front-end and the back-end. With unit-testing, we test the code for the front-end or the back-end. We don’t test how the application behaves in the browser or how both ends work together.
 
@@ -102,7 +102,7 @@ Good luck, and have fun with writing valuable end-to-end tests.
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

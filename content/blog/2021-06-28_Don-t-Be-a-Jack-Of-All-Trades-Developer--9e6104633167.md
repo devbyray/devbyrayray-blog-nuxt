@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/dont-be-a-jack-of-all-trades-developer-9e6104633167
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__zgQh4zkECPW1kWp5.jpg)
+![](/images/0__zgQh4zkECPW1kWp5.jpg)
 
 As developers, we are all aware that web technologies are changing so fast that no human is ever in the power of learning everything. But how should we deal with it?
 

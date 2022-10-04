@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__2A5Qbg802RyfMWx1.jpg)
+![](/images/0__2A5Qbg802RyfMWx1.jpg)
 
 Sometimes it happens in a WebRTC application that a browser can’t access the camera or microphone. Possibly it’s being used by another piece of software, or it doesn’t have a camera at all.
 

@@ -44,37 +44,3 @@ export default {
 	}
 }
 </script>
-<style lang="postcss">
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre,
-ul,
-ol {
-	margin-bottom: 1rem;
-}
-
-.content h1 {
-	@apply text-4xl;
-}
-.content h2 {
-	@apply text-2xl;
-}
-.content h3 {
-	@apply text-1xl;
-}
-.content ul,
-.content ol {
-	list-style: inherit;
-	list-style-position: inside;
-}
-</style>

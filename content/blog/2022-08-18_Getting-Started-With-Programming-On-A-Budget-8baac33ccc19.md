@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/getting-started-with-programming-on-a-budget-8baac33ccc19
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__r2vtGoEnprpvY22y.jpg)
+![](/images/0__r2vtGoEnprpvY22y.jpg)
 
 On Twitter, I’m hanging around with people who are just getting started with web development.
 
@@ -23,7 +23,7 @@ In this post, I want to share with you some tools you can use on a mobile phone 
 
 ### 1\. CodePen
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__4mbESV__hHuDNHue2HKQ3Gw.png)
+![](/images/1__4mbESV__hHuDNHue2HKQ3Gw.png)
 
 [CodePen](https://codepen.io/) was my first platform where I did a lot of prototyping with HTML, CSS, and JavaScript.
 
@@ -35,7 +35,7 @@ CodePen works great on mobile and tablets. So if you’re working with HTML and 
 
 ### 2\. CodeSandbox
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__DdnHUw7dTj7pIoQG3lqa0w.png)
+![](/images/1__DdnHUw7dTj7pIoQG3lqa0w.png)
 
 Lately, I’ve started using [CodeSandbox](https://codesandbox.io/) because it works just like Visual Studio Code, but this works in the browser.
 
@@ -51,7 +51,7 @@ You can also connect your CodeSandbox project with Github, so your code is backe
 
 ### 3\. CodeAnyWhere
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__DWcwvXnfj7LKKygC.gif)
+![](/images/0__DWcwvXnfj7LKKygC.gif)
 
 [CodeAnyWhere](https://codeanywhere.com/?ref=raymonschouwenaar) is the only editor on my list that supports many backend programming languages like Python, PHP, Java, Ruby, C++, or NodeJS (72 in total). You find good use in CodeAnyWhere.
 
@@ -79,7 +79,7 @@ If you need help or advice to get started, let me know in the comments so I can 
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__fsZzXoHyoGLoi__WI.jpg)
+![](/images/0__fsZzXoHyoGLoi__WI.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

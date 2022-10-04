@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__ub5GtlmpgTxRa1Jvz3fYgw.gif)
+![](/images/1__ub5GtlmpgTxRa1Jvz3fYgw.gif)
 
 As I was reading the “[Announcing TypeScript 4.2](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2/)” post on the TypeScript blog, I discovered a neat feature that is so simple but super valuable to me, so I love to share it here 😁
 

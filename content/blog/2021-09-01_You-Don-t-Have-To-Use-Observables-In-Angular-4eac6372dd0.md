@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/you-dont-have-to-use-observables-in-angular-4eac6372dd0
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__6EdSCuXPdUq7TvdhYx5jRA.jpeg)
+![](/images/1__6EdSCuXPdUq7TvdhYx5jRA.jpeg)
 
 In Angular, you can perform asynchronous actions in two different ways, Observables, and Promises.
 
@@ -109,6 +109,6 @@ Okay, let’s make this easy for everyone.
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Staf1ivDUV4iFxkA.png)
+![](/images/0__Staf1ivDUV4iFxkA.png)
 
 _I hope you learned something new or are inspired to create something new after reading this story! If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a_ [_DM on Twitter @DevByRayRay_](https://twitter.com/@devbyrayray) _when you want to keep it private. My DM’s are always open 😁_

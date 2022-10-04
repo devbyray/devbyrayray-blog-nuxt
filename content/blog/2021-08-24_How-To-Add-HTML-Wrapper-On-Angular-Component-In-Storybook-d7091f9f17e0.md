@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-add-html-wrapper-on-angular-component-in-storybook-d7091f9f17e0
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__yKTtL__zPD8SMnw5f.jpg)
+![](/images/0__yKTtL__zPD8SMnw5f.jpg)
 
 Storybook offers a lot of tooling to document all your JavaScript components visually. [Getting started with Storybook and Angular](https://storybook.js.org/docs/angular/get-started/introduction) is pretty easy too. But some features are hidden or not described enough to know them.
 

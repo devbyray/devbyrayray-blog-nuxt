@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/which-docker-images-can-you-use-on-the-mac-m1-daba6bbc2dc5
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__DKfSUf4B2__vIvDWAMsmQhA.jpeg)
+![](/images/1__DKfSUf4B2__vIvDWAMsmQhA.jpeg)
 
 A few months ago, I worked with Docker on my [Macbook Pro (M1)](https://www.amazon.com/dp/B08N5N6RSS/ref=fs_a_mbt2_us2). I installed it, but sadly enough, my mac crashed immediately.
 
@@ -17,7 +17,7 @@ Now, a couple of months later, I needed Docker. I installed it; everything was f
 
 #### How To Use Docker On Mac M1?
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__ocj7HTjW6LYM4F8T__ygVAQ.png)
+![](/images/1__ocj7HTjW6LYM4F8T__ygVAQ.png)
 
 _Before you install Docker for Mac, run this command in your terminal for_ [_installing Rosetta 2_](https://support.apple.com/en-us/HT211861)_. If you already have it installed, you can skip this step_
 
@@ -69,7 +69,7 @@ _Read more on the_ [_Docker documentation about multi-architecture images_](http
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Qay6DRNLz9jUR0UQ.jpg)
+![](/images/0__Qay6DRNLz9jUR0UQ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

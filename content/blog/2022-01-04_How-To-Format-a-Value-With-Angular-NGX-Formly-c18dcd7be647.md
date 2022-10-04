@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/how-to-format-a-value-with-angular-ngx-formly-c18dcd7be647
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__O__EKcNrJVWS18ZG__bP1FtA.png)
+![](/images/1__O__EKcNrJVWS18ZG__bP1FtA.png)
 
 That’s why I love to use [NGX-Formly](https://formly.dev/) ! They make writing small, big, and even complex forms easier. But lately, I have wanted to change the format of input values after the user has filled them in. Because there is a certain way, the backend API expects them.
 
@@ -55,7 +55,7 @@ Good luck and have fun.
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

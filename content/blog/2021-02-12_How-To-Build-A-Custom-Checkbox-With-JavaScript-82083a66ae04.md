@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-build-a-custom-checkbox-with-javascript-82083a66ae04
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__D9CpjPJlQqcamwfdDFCAeg.png)
+![](/images/1__D9CpjPJlQqcamwfdDFCAeg.png)
 
 ### HTML & CSS
 

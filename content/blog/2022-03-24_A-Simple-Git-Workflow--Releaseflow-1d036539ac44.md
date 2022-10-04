@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/a-simple-git-workflow-releaseflow-1d036539ac44
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__3KRHv1owvEzpW7gMewe8Iw.png)
+![](/images/1__3KRHv1owvEzpW7gMewe8Iw.png)
 
 I’ve seen a lot of organizations use the Gitflow strategy to use Git. It’s not a bad strategy, but it could be way simpler. That’s why I was happy to find Releaseflow. In this post, I want to tell you how it works, and why it could be a benefit for your organization.
 
@@ -83,7 +83,7 @@ With feature flags, you can ensure that in a test environment, for example, turn
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

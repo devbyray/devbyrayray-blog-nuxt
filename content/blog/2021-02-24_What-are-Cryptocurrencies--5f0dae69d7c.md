@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/what-are-cryptocurrencies-5f0dae69d7c
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__35YwxbSI7rz__rrtL.jpg)
+![](/images/0__35YwxbSI7rz__rrtL.jpg)
 
 Cryptocurrencies are the currencies of our current time. They are not controlled by a bank or country like traditional currency is. It’s the money of the future!
 

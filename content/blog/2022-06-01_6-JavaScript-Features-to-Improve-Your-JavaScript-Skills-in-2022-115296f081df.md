@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1____LYzK__xh7lUT__lAwjEASew.png)
+![](/images/1____LYzK__xh7lUT__lAwjEASew.png)
 
 Recently all major browsers updated their JavaScript features. So in this post, I will dive into these six features worth mentioning to improve your JavaScript skills in 2022.
 
@@ -134,7 +134,7 @@ In my opinion, the [browser support is great](https://caniuse.com/mdn-javascript
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__RfMUVIhKY6LF__svQ.jpg)
+![](/images/0__RfMUVIhKY6LF__svQ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

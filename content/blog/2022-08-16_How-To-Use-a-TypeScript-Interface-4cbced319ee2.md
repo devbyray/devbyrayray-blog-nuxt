@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-use-a-typescript-interface-4cbced319ee2
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__GGHQySa4lhZk1Chd28EuNA.png)
+![](/images/1__GGHQySa4lhZk1Chd28EuNA.png)
 
 An interface is a blueprint for an Object. It tells you which properties there are, which are required and optional and which type of data they hold.
 
@@ -41,7 +41,7 @@ Now the `pizza` is according to the interface. The `interface` is now a form of 
 
 With this object, you will get errors! 👇 ([_Check it on CodeSandbox for yourself_](https://codesandbox.io/s/typescript-error-with-wrong-property-information-kdi529?file=/index.ts))
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__2lVYUioEXcbN31E8FZg6ww.png)
+![](/images/1__2lVYUioEXcbN31E8FZg6ww.png)
 
 ### Multiple values
 
@@ -61,7 +61,7 @@ So with the Pizza Tuna, we say we don’t want to offer cheese crust, so we give
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__VfkbsGbdeKbkzFjc.jpg)
+![](/images/0__VfkbsGbdeKbkzFjc.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

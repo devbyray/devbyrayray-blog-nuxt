@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-create-a-random-string-with-maximum-characters-in-javascript-389ea3698721
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__0cXiApiYCr5yrGCM.jpg)
+![](/images/0__0cXiApiYCr5yrGCM.jpg)
 
 You can use a library for generating random data in JavaScript, but I think it’s even cooler to do it yourself. If you want to spice up your JavaScript skills, these functions are the best to practice.
 
@@ -57,7 +57,7 @@ I recommend playing around with this function and using it for something practic
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-add-props-to-styled-components-in-react-js-with-typescript-1df49ef951bf
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__D6ITWPzc2BHX__O3S.jpg)
+![](/images/0__D6ITWPzc2BHX__O3S.jpg)
 
 Using React.js with TypeScript is not as straightforward for everyone when building a React application. I have quite some experience with TypeScript that I didn’t have significant issues (anymore 😅).
 

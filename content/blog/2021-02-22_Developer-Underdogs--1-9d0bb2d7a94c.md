@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/developer-underdogs-1-9d0bb2d7a94c
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__pHgMgUrY4kcZX3nh.jpg)
+![](/images/0__pHgMgUrY4kcZX3nh.jpg)
 
 #### Every issue is packed with links to projects, tutorials, and blogposts by the Underdog Developers.
 
@@ -27,7 +27,7 @@ Did you found a great underdog link? Please share it via Twitter with me [@devby
 
 ### Highlighted Underdog Developer 🚀
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__SkfsOetaFGtvjv7I.jpg)
+![](/images/0__SkfsOetaFGtvjv7I.jpg)
 
 Did you know you can style the underline thickness and offset using CSS?
 
@@ -35,7 +35,7 @@ Did you know you can style the underline thickness and offset using CSS?
 
 ### Underdog Developer Links
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__Uo5fKBcDzZp0o__cvqL11iw.jpeg)
+![](/images/1__Uo5fKBcDzZp0o__cvqL11iw.jpeg)
 
 [**My 12 Favorite VSCode Extensions — DEV Community**](https://dev.to/katherinecodes/my-12-favorite-vscode-extensions-cld?utm_campaign=Developer%20Underdogs&utm_medium=email&utm_source=Revue%20newsletter)
 
@@ -46,7 +46,7 @@ _One of the reasons VSCode is such an awesome code editor is the huge library of
 [**3 Todo’s Before Applying For A Junior Developer Job**  
 _I’ve seen a lot of job applications from junior developers. Most of the applications are made with the best intentions…_medium.com](https://medium.com/dev-together/3-todos-before-applying-for-a-junior-developer-job-26fc0d8ba2b9 "https://medium.com/dev-together/3-todos-before-applying-for-a-junior-developer-job-26fc0d8ba2b9")[](https://medium.com/dev-together/3-todos-before-applying-for-a-junior-developer-job-26fc0d8ba2b9)
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__YMN__8ZlLbnhoIVwIDgBv7g.png)
+![](/images/1__YMN__8ZlLbnhoIVwIDgBv7g.png)
 
 [**When Are You Ready For Your First DevJob?**](https://www.youtube.com/watch?feature=youtu.be&utm_campaign=Developer%20Underdogs&utm_medium=email&utm_source=Revue%20newsletter&v=rOZtqTzLtPo)
 
@@ -57,7 +57,7 @@ _When Are You Ready For Your First DevJob? It’s not a difficult question, but 
 [**Why Tutorials Won’t Make You a Professional Developer**  
 _Mastery comes from more than doing tutorials. Try, fail, learn, repeat!_medium.com](https://medium.com/better-programming/why-tutorials-wont-make-you-a-professional-developer-271108c74ddb "https://medium.com/better-programming/why-tutorials-wont-make-you-a-professional-developer-271108c74ddb")[](https://medium.com/better-programming/why-tutorials-wont-make-you-a-professional-developer-271108c74ddb)
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__w__a6Vj821OiexNh__.jpg)
+![](/images/0__w__a6Vj821OiexNh__.jpg)
 
 ### **Stackademic**
 

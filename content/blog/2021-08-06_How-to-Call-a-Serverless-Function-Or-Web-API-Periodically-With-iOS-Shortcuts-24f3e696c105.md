@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-call-a-serverless-function-or-web-api-periodically-with-ios-shortcuts-24f3e696c105
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__nEoNUltgtIlkTXhY.jpg)
+![](/images/0__nEoNUltgtIlkTXhY.jpg)
 
 Running a Serverless function or Web API every periodically can be done in so many ways. But today, I want to show you a free option if you have an iPhone or iPad. It is the Shortcut app.
 
@@ -44,11 +44,11 @@ I won’t dive into the creation of serverless functions in this post, but If yo
 
 First, let’s open the Shortcuts app and tap the + sign to create a new shortcut.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__z6gbXiiIKBIil6ibS7QoCQ.png)
+![](/images/1__z6gbXiiIKBIil6ibS7QoCQ.png)
 
 Click on “Add Action” and search for “URL”, click it and add the API URL you want to call.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__wkfj4EUtoiDo9YAZNCJhWg.png)
+![](/images/1__wkfj4EUtoiDo9YAZNCJhWg.png)
 
 I’ve pasted in a URL to an API. To choose what type of request we want to do, we have to tap on “Get Contents of URL” (if it’s not visible on your device, your can search for it in the input field on the bottom).
 
@@ -56,17 +56,17 @@ You can pick GET, POST, PUT, PATCH, and DELETE. If you want, you can send some h
 
 In the meantime, try creating the request by pressing the “Play” button on the bottom.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__KtWCQ0by6Cqo4kDyT__oLPg.png)
+![](/images/1__KtWCQ0by6Cqo4kDyT__oLPg.png)
 
 After making the request, we want to have a notification that tells us when it’s done. Tap the bottom input field for searching “Show Notification”, when found press it.
 
 You can type here anything you like. For this example, I’ve done “Received Posts URL”. URL is, in this case, the URL we’ve set at the top.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__77ujA6STZKiKQDsZihBgRQ.png)
+![](/images/1__77ujA6STZKiKQDsZihBgRQ.png)
 
 Let’s test our shortcut by pressing the “Play” button at the bottom:
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__4hNtv4__NhMg__fvVYi2EAtQ.gif)
+![](/images/1__4hNtv4__NhMg__fvVYi2EAtQ.gif)
 
 #### Automate shortcut
 
@@ -74,23 +74,23 @@ Now that we demonstrated that our shortcut works, we can automate it to run it d
 
 Open the automation tap, which you can find at the bottom of your home screen of the Shortcuts app, and click “Create Personal Automation”.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__Oawje5hmFb4aDM__QR4lMDw.png)
+![](/images/1__Oawje5hmFb4aDM__QR4lMDw.png)
 
 Click on the “Time of Day” and select when you want to run this automation. The choice is yours!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__0SF0tBieyzInFTG__H61p7Q.png)
+![](/images/1__0SF0tBieyzInFTG__H61p7Q.png)
 
 Press “Next” at the top and click “Add Action”. Now find the “Run Shortcut” action and press it.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__gLPVRNx5cRM8YhwHLkd2Tg.png)
+![](/images/1__gLPVRNx5cRM8YhwHLkd2Tg.png)
 
 Now we have to select our “Call Web API” shortcut we made earlier. Press “Shortcut” and search for your shortcut and press it.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__D__ZCzkhk1zuDPJxofrn__ig.png)
+![](/images/1__D__ZCzkhk1zuDPJxofrn__ig.png)
 
 In my case, this automation will be performed daily at 15:10, which is so awesome!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__Tyx7O3vR8qY7YFlz4iPRiA.png)
+![](/images/1__Tyx7O3vR8qY7YFlz4iPRiA.png)
 
 The best thing about using the Shortcuts app is everything runs locally on my device. Just call “Hi Siri, Call Web API,” and the shortcut will do it!
 

@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/polished-js-a-utility-css-in-js-library-for-styled-components-in-react-js-32c1649d3831
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0____vCuVf0JjUeJitMs.jpg)
+![](/images/0____vCuVf0JjUeJitMs.jpg)
 
 Sass functions like `lighten()`, `darken()`, `complement()`, `invert()` are pretty useful. I was wondering if there was something for styled-components. Well, I found the great library [Polished.js](https://polished.js.org/).
 

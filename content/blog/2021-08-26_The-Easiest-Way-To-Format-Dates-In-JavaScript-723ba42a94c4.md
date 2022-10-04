@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/the-easiest-way-to-format-dates-in-javascript-723ba42a94c4
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__y1wx0A3hoCNNmOZTYrHZrw.png)
+![](/images/1__y1wx0A3hoCNNmOZTYrHZrw.png)
 
 For many years developers complain about formatting their dates and times in JavaScript. Doing calculations or proper formatting required libraries like MomentJS.
 

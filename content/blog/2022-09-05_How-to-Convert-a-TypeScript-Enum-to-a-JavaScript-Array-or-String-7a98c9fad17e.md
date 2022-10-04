@@ -8,7 +8,7 @@ keywords: []
 slug: /@byrayray/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string-7a98c9fad17e
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__QqYrHkjkASsx8czS.jpg)
+![](/images/0__QqYrHkjkASsx8czS.jpg)
 
 Converting a TypeScript Enum to a JavaScript Array is pretty easy, and I often use it to fill a `<select>` with all the values from that enum.
 
@@ -68,7 +68,7 @@ And with this function, we can see that the function works with both string and 
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__VfkbsGbdeKbkzFjc.jpg)
+![](/images/0__VfkbsGbdeKbkzFjc.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

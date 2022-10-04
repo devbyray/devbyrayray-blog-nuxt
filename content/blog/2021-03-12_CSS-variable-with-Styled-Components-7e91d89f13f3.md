@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/css-variable-with-styled-components-7e91d89f13f3
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__WFA6P83M3iwE59mv.jpg)
+![](/images/0__WFA6P83M3iwE59mv.jpg)
 
 Since I’m working with [Next.js](https://nextjs.org/) and [Styled-components](https://styled-components.com/) (also [TypeScript](https://nextjs.org/docs/basic-features/typescript), React, GraphQL, [Apollo](https://www.apollographql.com/), [Storybook](https://storybook.js.org/) & [Storyblok CMS](https://www.storyblok.com/)) I was wondering, is it possible to use CSS variable’s in Styled Components.
 

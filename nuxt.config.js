@@ -8,7 +8,17 @@ export default {
 	css: ['@/assets/css/main.css'],
 	components: false,
 	content: {
-		documentDriven: true
+		documentDriven: true,
+		highlight: {
+			theme: {
+			  // Default theme (same as single string)
+			  default: 'github-light',
+			  // Theme used if `html.dark`
+			  dark: 'github-dark',
+			  // Theme used if `html.sepia`
+			  sepia: 'monokai'
+			}
+		  }
 	},
 	postcss: {
 		plugins: {
@@ -18,28 +28,4 @@ export default {
 			tailwindcss: {}
 		}
 	},
-	hooks: {
-		'content:file:beforeInsert': document => {
-			if (document.extension === '.md') {
-				Object.entries(document).forEach(([key, value]) => {
-					const _key = `case_insensitive__${key}`
-
-					// Strings
-					if (!document[_key] && typeof value === 'string') {
-						document[_key] = value.toLocaleLowerCase()
-					}
-
-					// Arrays
-					if (!document[_key] && Array.isArray(value)) {
-						document[_key] = value.map(val => {
-							if (typeof val === 'string') {
-								return val.toLocaleLowerCase()
-							}
-							return val
-						})
-					}
-				})
-			}
-		}
-	}
 }

@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-make-re-usable-colors-in-microsoft-canvas-power-apps-e3a971f68148
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__N6j8yyRENowFQG0Q77b3ug.png)
+![](/images/1__N6j8yyRENowFQG0Q77b3ug.png)
 
 Microsoft made it easy to build apps via their Power Apps Platform. As a professional developer, I love to make things re-usable, so I don’t have to type them every time.
 
@@ -15,7 +15,7 @@ The Power Apps Canvas application lets you do that very quickly. But it requires
 
 ### Add Formula onStart
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__ZKXikNZrMHv9CBfx9hM0RA.png)
+![](/images/1__ZKXikNZrMHv9CBfx9hM0RA.png)
 
 If you open Power App studio, click on the left sidebar App (_1_). Then select on the top “OnStart” (_2_) and paste the code below in the formula bar (_3_).
 
@@ -29,21 +29,21 @@ With this code, we set a variable with the `Set` function. We define a variable 
 
 This should look like the example below.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__IAPE6hcMVkzr__l93Mgr5Wg.png)
+![](/images/1__IAPE6hcMVkzr__l93Mgr5Wg.png)
 
 ### Use Defined Colors
 
 Before we can use those colors, we have to run the `OnStart` event. We do this by clicking on the three dots after the App structure.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__1MFvBz36q__BQTXythNnSdg.png)
+![](/images/1__1MFvBz36q__BQTXythNnSdg.png)
 
 Now you can use the colors for backgrounds or text colors. You can do that by selecting a screen part. In my example, I selected some text components.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__tiYjvxWHRKAK8uqDJCMOjQ.png)
+![](/images/1__tiYjvxWHRKAK8uqDJCMOjQ.png)
 
 After the selection, I opened the “Advanced” panel on the right and searched for “Color”. In that input field, you can type `Colors` which refers to the variable. After that, type `.PrimaryYellow` or your color of choice to use one of the colors you have defined.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__tTMlLD5YWTaL8nU6mxMWeg.png)
+![](/images/1__tTMlLD5YWTaL8nU6mxMWeg.png)
 
 You can use this also for backgrounds or other colors you want to add.
 

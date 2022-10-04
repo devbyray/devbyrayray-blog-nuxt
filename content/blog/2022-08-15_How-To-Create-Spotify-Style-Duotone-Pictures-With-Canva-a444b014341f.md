@@ -9,7 +9,7 @@ slug: /@byrayray/how-to-create-spotify-style-duotone-pictures-with-canva-a444b01
 
 #### Canva Tutorial
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__1tgWdbUFpFibY6AzTTGztA.png)
+![](/images/1__1tgWdbUFpFibY6AzTTGztA.png)
 
 Do you like those Spotify pictures with two colors? In this tutorial, I will show you how to easy it is to create Spotify-style (duotone) pictures with [Canva](https://partner.canva.com/c/2339544/811170/10068)!
 
@@ -17,35 +17,35 @@ Do you like those Spotify pictures with two colors? In this tutorial, I will sho
 
 ### 1\. Find the Duotone app
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__B8TU0bZ__yjoXarmno75ymw.png)
+![](/images/1__B8TU0bZ__yjoXarmno75ymw.png)
 
 First, you need to go to the “Discover apps” tab on the left. You find the “Duotone” app on the first row of icons.
 
 ### 2\. Use it in a new or existing design
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__HMnOLmc__ViO__btP0fSbEmw.png)
+![](/images/1__HMnOLmc__ViO__btP0fSbEmw.png)
 
 When you click the “Duotone” icon, you can choose between a new and existing design.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__upLv__qDOacvpEwhiyRB5wA.png)
+![](/images/1__upLv__qDOacvpEwhiyRB5wA.png)
 
 You can search for preset or set dimensions when creating a new design.
 
 ### 3\. Select the photo
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__Nqn2bekAPDWb1MrAbyya6Q.png)
+![](/images/1__Nqn2bekAPDWb1MrAbyya6Q.png)
 
 When your new Canva design is opened, select the photo on which you want to apply the filter. Of course, you can upload your photo if you like. But for this tutorial, I’ve used the preloaded photo.
 
 ### 4\. Apply the filter
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__r6pYu2AdH3Uh5gGmrOSicA.png)
+![](/images/1__r6pYu2AdH3Uh5gGmrOSicA.png)
 
 Select the colors you want and click the “Apply” button; otherwise, it won’t be saved.
 
 ### 5\. Export your file
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__oJ7jlQvaJFUAm8fvt8HLIg.png)
+![](/images/1__oJ7jlQvaJFUAm8fvt8HLIg.png)
 
 Now export the new Spotify photo and download them to your computer or smartphone.
 

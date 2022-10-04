@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/what-if-professional-developers-start-using-low-code-platforms-ebbd00c70a03
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__UAPoQdukx1ttty3j.jpg)
+![](/images/0__UAPoQdukx1ttty3j.jpg)
 
 What if you, as a (_super professional_) developer, don’t have to write any code? You’ll log in to your computer, open your browser and start clicking, dragging & dropping features in an application.
 

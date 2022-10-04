@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/how-to-remove-un-used-imports-automatically-in-visual-studio-code-7f1f1e9f44b6
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__uAuQLR44CQ6LCZpG7cQA2g.png)
+![](/images/1__uAuQLR44CQ6LCZpG7cQA2g.png)
 
 If you’re working on a project that forces you to run all the linting before you can commit, you can sometimes feel frustrated. But most of the time, I forget to clean un-used imports in my TypoScript/JavaScript files.
 
@@ -15,11 +15,11 @@ Until just yet! I was so done with it 🥺. I knew that there was an option or p
 
 Well, this can be fixed without any plugin 😁.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__kRYI4gYpWf21657brfzD3Q.png)
+![](/images/1__kRYI4gYpWf21657brfzD3Q.png)
 
 Open your settings in JSON.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__oiCt1GzpKgPxswltX527Eg.png)
+![](/images/1__oiCt1GzpKgPxswltX527Eg.png)
 
 And paste the following in it.
 

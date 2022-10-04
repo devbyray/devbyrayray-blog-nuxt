@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/create-your-own-ipsum-generator-with-javascript-3241077570e2
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__xbnw8Z__GlC1RU____r.jpg)
+![](/images/0__xbnw8Z__GlC1RU____r.jpg)
 
 Generating content with random words can be convenient for testing purposes. That’s why today, we will create a function that does that.
 
@@ -138,7 +138,7 @@ Thanks for reading.
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

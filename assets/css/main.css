@@ -2,28 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	h1 {
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-xl;
+	}
+
+	h1,
+	h2 {
+		@apply mt-8;
+	}
+	hr {
+		@apply mt-4;
+	}
+	h1 a,
+	h2 a,
+	h3 a,
+	h4 a,
+	h5 a,
+	h6 a {
+		@apply no-underline;
+	}
+	blockquote,
+	dl,
+	dd,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	hr,
+	figure,
+	p,
+	pre,
+	ul,
+	ol {
+		@apply mb-2;
+	}
+	a {
+		@apply underline;
+	}
+
+	.content ul,
+	.content ol {
+		list-style: inherit;
+		list-style-position: inside;
+	}
+}
+
 /* page transition */
 .page-enter-active {
-  transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
 }
 .page-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+	transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .page-enter-from,
 .page-leave-to {
-  transform: translateY(20px);
-  opacity: 0;
+	transform: translateY(20px);
+	opacity: 0;
 }
 
- /* layout transition */
+/* layout transition */
 .layout-enter-active {
-  transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
 }
 .layout-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+	transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .layout-enter-from,
 .layout-leave-to {
-  transform: translateY(-20px);
-  opacity: 0;
+	transform: translateY(-20px);
+	opacity: 0;
 }

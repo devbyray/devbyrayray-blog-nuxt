@@ -9,7 +9,7 @@ slug: /@byrayray/how-i-earned-4k-blogging-on-medium-as-a-developer-b6925aa78358
 
 #### BLOGGING CAN BE A GOOD INCOME STREAM FOR DEVELOPERS
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__9CaNg____vADrVtlzg.jpg)
+![](/images/0__9CaNg____vADrVtlzg.jpg)
 
 As a developer blogging on Medium can be a great income stream next to building software for an employer or yourself as a freelancer. There are multiple ways to expand your income streams as a developer, but blogging is my favorite.
 
@@ -32,7 +32,7 @@ And I can tell you I don’t regret any of that! But enough about my history, le
 
 #### Data Of Earning $4K In 2,5 Years
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__P5KkkDi921pUdaoDTikE2g.png)
+![](/images/1__P5KkkDi921pUdaoDTikE2g.png)
 
 #### Analyzing the data
 
@@ -85,7 +85,7 @@ In the last years, I’ve received many followers 🙏 (_Thanks for that!_), but
 
 ### Thanks!
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__YmFzKa__HSM0Fshuj.jpg)
+![](/images/0__YmFzKa__HSM0Fshuj.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

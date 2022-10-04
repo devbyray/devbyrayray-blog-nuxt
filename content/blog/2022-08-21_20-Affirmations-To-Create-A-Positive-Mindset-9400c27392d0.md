@@ -11,7 +11,7 @@ slug: /@byrayray/20-affirmations-that-help-me-build-a-positive-mindset-9400c2739
 
 Affirmations for Self-love and Self-believe + FREEBIES
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__ZH0RQJMJmEBXQNmV.jpg)
+![](/images/0__ZH0RQJMJmEBXQNmV.jpg)
 
 Affirmations are used to change our thoughts and behaviors. When we repeat positive statements repeatedly, they become engrained in our subconscious minds. These statements then influence how we think, act, and feel. In this story, I go over some affirmations that have helped me change my mindset.
 

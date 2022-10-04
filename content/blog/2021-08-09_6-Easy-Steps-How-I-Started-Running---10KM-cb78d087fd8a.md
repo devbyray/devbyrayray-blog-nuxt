@@ -7,7 +7,7 @@ keywords: []
 slug: /@byrayray/6-steps-to-get-started-with-running-cb78d087fd8a
 ---
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__IJxKZ2797QT1dgVf.jpg)
+![](/images/0__IJxKZ2797QT1dgVf.jpg)
 
 #### HEALTH
 
@@ -21,7 +21,7 @@ At the end of this guide, you will know how to start running, what you need to g
 
 ### 1\. Start slow
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__cu3PkstBFER1U89k.jpg)
+![](/images/0__cu3PkstBFER1U89k.jpg)
 
 When you want to start running, it’s essential to have one or multiple goals in mind. Those can differ per person, so your dreams can be different from mine.
 
@@ -58,7 +58,7 @@ Interval training can be as easy as 3 minutes running, 1-minute walking, or 5 mi
 
 ### 2\. Learn to love it
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__Bi0xkGIYFOOaD__DW.jpg)
+![](/images/0__Bi0xkGIYFOOaD__DW.jpg)
 
 At first, you won’t love it. I had that same experience. It did take me a few weeks to love it. Those first few weeks, it took me quite some effort to run.
 
@@ -92,7 +92,7 @@ Now that we talked about how to start, it’s time to get practical and get your
 
 #### 3\. Get Comfortable Gear
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__8ks3kwwfFyB8fWRv.jpg)
+![](/images/0__8ks3kwwfFyB8fWRv.jpg)
 
 No matter how expensive or cheap your gear is, make sure it’s comfortable. Some shoes that will fit my feet entirely maybe won’t match yours.
 
@@ -134,7 +134,7 @@ When you track your run, it will tell you how fast you run and progress in dista
 
 **Apple Watch**
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__9pT1qJgmSg4o66vJ.jpg)
+![](/images/0__9pT1qJgmSg4o66vJ.jpg)
 
 As I said above, I track my runs with an Apple Watch (series 4). I wear them every day, not primarily for running. I want to make sure that I move enough, so my Apple Watch helps me with that.
 
@@ -146,7 +146,7 @@ You can order the Apple Watch (series 5, 6, or SE) from Amazon if you like. But 
 
 **Android Watch**
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__EN4NLJf__8OEbWXTl.jpg)
+![](/images/0__EN4NLJf__8OEbWXTl.jpg)
 
 If you don’t own an iPhone, an Apple Watch will be a waste of your money.
 
@@ -156,7 +156,7 @@ Amazon has a big amount of Wear OS watches from brands like: [Samsung](https://a
 
 **Activity Trackers**
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__AwWe1BNuFvCiKEjX.jpg)
+![](/images/0__AwWe1BNuFvCiKEjX.jpg)
 
 In the early days of the activity trackers like the first Fitbit, they were more straightforward than they are right now. Currently, you can use them as a smartwatch because they all have an app for your phone. These are a bit cheaper most of the time, but you can spend more money on them since they get more advanced.
 
@@ -170,7 +170,7 @@ When I started my run, I started the app and followed everything: my speed, GPS,
 
 ### 4\. Plan your first run
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__6PFJDE__SNvY9uxPZ.jpg)
+![](/images/0__6PFJDE__SNvY9uxPZ.jpg)
 
 No, it is time to plan your first run. You can be spontaneous and go for a run right away. Some people need a little bit more planning ahead. Both are fine. Do what feels right for you!
 
@@ -202,7 +202,7 @@ When I first started, I was more focused on the length of time. So I was not foc
 
 My running pace was around 8.52 a kilometer. The intervals running schema looked like this. So I started with 1 minute walking (not too slow, but normal), after that 1 minute running (like jogging, not running full speed), and so on and on.
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/1__EGqzjrGQl5SHACYSW75jgQ.png)
+![](/images/1__EGqzjrGQl5SHACYSW75jgQ.png)
 
 As you can see, when you get started, start at a comfortable pace. And if you find out that it’s too much for you. Then just do all the intervals with 1-minute walking and 1 minute running and see when you build up from there.
 
@@ -218,7 +218,7 @@ Make sure you have great earphones for running because those have to stay in you
 
 ### 5\. Why running is great
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__PgnOFmEJVkc9YQ0l.jpg)
+![](/images/0__PgnOFmEJVkc9YQ0l.jpg)
 
 Okay, we have covered a lot of how you can get started to run, but one of the most important things to start running is why?
 
@@ -252,7 +252,7 @@ So if you have to lose weight, make running a habit, and you will lose weight. E
 
 ### 6\. Run
 
-![](/Users/devbyrayray/Downloads/medium-export-a7b31d8cfbafc479a349e86525a0598d57555fb548cdfad5aa20f48d7b4db09d/posts/md_1664876347726/img/0__CyUtM1UWMO5PhuTN.jpg)
+![](/images/0__CyUtM1UWMO5PhuTN.jpg)
 
 Yes, no, it’s time to strap your shoes around your feet and get running!
 
