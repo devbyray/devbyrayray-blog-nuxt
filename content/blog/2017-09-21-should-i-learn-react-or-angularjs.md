@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-09-21T08:00:41Z"
 title: "Should I learn React Or AngularJS?"
 categories: ["Advices"]
-tags: ['Developer', 'WebDev']
+tags: ['Developer', 'WebDev', 'JavaScript']
 excerpt: "I think this is a bit generic question! But this question was asked on Quora!I felt the need to res..."
 ---
 

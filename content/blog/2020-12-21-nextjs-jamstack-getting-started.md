@@ -4,7 +4,7 @@ description: NextJS is one of the best tools for building JAM-stack websites wit
 date: '2020-12-21'
 categories: ['NextJS']
 published: true
-tags: ['TypeScript', 'JavaScript', 'Programming', Software Development']
+tags: ['TypeScript', 'JavaScript', 'Programming', 'Software Development']
 image: devbyrayray/blog/how-to-build-and-deploy-a-jamstack-website-fast-with-next-js
 ---
 

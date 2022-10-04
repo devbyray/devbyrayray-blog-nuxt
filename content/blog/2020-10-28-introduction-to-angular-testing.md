@@ -4,7 +4,7 @@ description: Isolated, Shallow, Integrated, and End to end testing
 date: '2020-10-30'
 categories: ['Testing']
 published: true
-tags: ['Angular', 'Testing', 'Programming', Software Development']
+tags: ['Angular', 'Testing', 'Programming', 'Software Development']
 image: devbyrayray/blog/introduction-to-angular-testing
 ---
 

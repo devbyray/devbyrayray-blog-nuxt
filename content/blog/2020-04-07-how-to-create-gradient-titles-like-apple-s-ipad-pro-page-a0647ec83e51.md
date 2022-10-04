@@ -1,8 +1,8 @@
 ---
-title: How to Create Gradient Titles Like Apple’s iPad Pro Page
+title: How to Create CSS Gradient Titles Like Apple’s iPad Pro Page
 description: Use CSS to build them yourself
 date: '2020-04-07T13:29:29.613Z'
-categories: []
+categories: ['CSS']
 published: true
 tags: ['Developer', 'WebDev']
 image: https://cdn-images-1.medium.com/max/800/1*j9T7Rv8BF0yq8HttfcCltg.png

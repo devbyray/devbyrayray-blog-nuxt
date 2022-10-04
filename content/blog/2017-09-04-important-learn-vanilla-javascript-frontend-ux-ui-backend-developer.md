@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-09-04T00:46:03Z"
 title: "Why is it important to learn Vanilla JavaScript as a Frontend, UX, UI & Backend Developer!"
 categories: ["Encouragements"]
-tags: ['Developer', 'WebDev']
+tags: ['Developer', 'WebDev', 'JavaScript']
 excerpt: "In this video I would like to explain why it is so important to learn Vanilla JavaScript and to be ..."
 ---
 

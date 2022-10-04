@@ -4,7 +4,7 @@ description: Want to create development tutorials but you aren’t sure where to
 date: '2020-11-24'
 categories: ['Developer']
 published: true
-tags: ['Tutorials', 'Programming', Software Development']
+tags: ['Tutorials', 'Programming', 'Software Development']
 image: devbyrayray/blog/tips-to-create-developer-tutorials
 ---
 

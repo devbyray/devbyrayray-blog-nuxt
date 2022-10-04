@@ -4,7 +4,7 @@ description: A Tiny Step At The Time Is More Than Enough To Become A Pro
 date: '2020-12-05'
 categories: ['JavaScript']
 published: true
-tags: ['JavaScript', 'Learn JavaScript', 'Programming', Software Development']
+tags: ['JavaScript', 'Learn JavaScript', 'Programming', 'Software Development']
 image: devbyrayray/blog/blog-code-fallback-2
 ---
 
