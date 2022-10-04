@@ -4,7 +4,7 @@ description: Not all discussions are great. Let’s improve them
 date: '2020-12-09'
 categories: ['Agile']
 published: true
-tags: ['Retro', 'Scrum', 'Programming', Software Development']
+tags: ['Retro', 'Scrum', 'Programming', 'Software Development']
 image: devbyrayray/blog/5-development-retrospective-questions-to-have-great-discussions
 ---
 

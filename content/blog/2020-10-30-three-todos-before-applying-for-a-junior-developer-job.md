@@ -4,7 +4,7 @@ description: ''
 date: '2020-10-30'
 categories: ['Workflow']
 published: true
-tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', Software Development']
+tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', 'Software Development']
 image: devbyrayray/blog/3-todos-before-applying-for-a-junior-developer-job
 ---
 
