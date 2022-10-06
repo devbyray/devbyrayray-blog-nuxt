@@ -56,7 +56,7 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 
 <style scoped>
 .code-container {
-	background: #1e1e1e;
+	background: var(--code-bg);
 	position: relative;
 	margin-top: 1rem;
 	margin-bottom: 1rem;

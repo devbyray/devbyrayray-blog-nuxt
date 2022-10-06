@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--code-bg: #1e1e1e;
+	--white: #fff;
+    --primary-color: #fecd1a;
+}
+
 @layer base {
 	h1 {
 		@apply text-5xl;
@@ -72,6 +78,9 @@
 	.content img {
 		@apply mb-3;
 	}
+	.content img {
+		margin: 0 auto;
+	}
 	a {
 		@apply underline;
 	}
@@ -84,15 +93,17 @@
 	}
 
 	.content p code {
-		background: #1e1e1e;
-		@apply text-white p-1;
+		background: var(--code-bg);
+		white-space: nowrap;
+		font-family: monospace;
+		@apply text-white px-2 py-1 text-sm;
 	}
 
 	.content blockquote {
 		@apply my-8;
 		position: relative;
 		background: #f9f9f9;
-		border-left: 10px solid var(--green);
+		border-left: 10px solid var(--primary-color);
 		padding: 2rem 2rem 1.5rem;
 		quotes: '\201C''\201D''\2018''\2019';
 	}
@@ -100,7 +111,7 @@
 		position: absolute;
 		top: 10px;
 		left: 10px;
-		color: var(--green);
+		color:var(--primary-color);
 		content: open-quote;
 		font-size: 4em;
 		line-height: 0.1em;
