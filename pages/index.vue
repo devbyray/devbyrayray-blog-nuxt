@@ -29,12 +29,21 @@
 					>
 						<Transition>
 							<div class="p-5 flex flex-col self-end inner-card h-full blog-post">
-								<div v-if="article?.image">
+								<div v-if="article?.image && !article?.image.startsWith('images/')">
 									<img
 										:src="getImageUrl(article?.image, 'overview')"
 										loading="lazy"
 										width="400"
 										height="250"
+										class="rounded-lg"
+									/>
+								</div>
+								<div v-if="article?.image && article?.image.startsWith('images/')">
+									<nuxt-img
+										:src="`${article?.image}`"
+										width="400"
+										height="250"
+										class="rounded-lg"
 									/>
 								</div>
 								<div class="tags justify-start flex flex-wrap flex-row uppercase">
@@ -53,6 +62,7 @@
 									<time>{{ article?.date }}</time>
 								</div>
 								<p class="font-normal text-gray-700 mb-3">{{ article?.description }}</p>
+								<p><nuxt-link target="_blank" :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
 							</div>
 						</Transition>
 					</div>
@@ -126,5 +136,6 @@ console.log({
 	width: 100%;
 	height: 250px;
 	object-fit: cover;
+	margin-bottom: 1rem;
 }
 </style>

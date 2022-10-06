@@ -1,6 +1,6 @@
 <template lang="">
 	<div>
-		<div class="bg-gray-100 dark:bg-gray-900 py-10 px-6">
+		<div class="bg-default dark:bg-gray-900 py-10 px-6">
 			<header class="text-center">
 				<h1 class="text-white text-3xl font-bold mb-8">Dev By RayRay</h1>
 				<img
@@ -35,6 +35,7 @@
 								<time>{{ article?.date }}</time>
 							</div>
 							<p class="font-normal text-gray-700 mb-3">{{ article.description }}</p>
+							<p><nuxt-link :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
 						</div>
 					</Transition>
 				</div>

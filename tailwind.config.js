@@ -8,7 +8,11 @@ module.exports = {
 		'./tailwind.config.js'
 	],
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				default: 'rgb(17 24 39)',
+			}
+		}
 	},
 	plugins: [],
 	mode: 'jit'
