@@ -6,7 +6,7 @@ export default {
 	plugins: [],
 	// css
 	css: ['@/assets/css/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
-	components: false,
+	components: true,
 	content: {
 		documentDriven: true,
 		highlight: {

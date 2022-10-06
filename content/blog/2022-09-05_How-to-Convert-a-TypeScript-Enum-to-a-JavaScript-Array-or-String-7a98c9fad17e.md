@@ -1,7 +1,7 @@
 ---
 title: How to Convert a TypeScript Enum to a JavaScript Array or String
 description: Subtract the data from the enum and remodel it into a JavaScript Array of
-  Strings so you can use it for whatever you like.
+    Strings so you can use it for whatever you like.
 date: '2022-09-05T08:18:20.547Z'
 categories: []
 keywords: []
@@ -25,10 +25,10 @@ The numeric enum is the most commonly used in TypeScript. You can create a numer
 
 ```ts [pizza-toppings.enum.ts]
 enum PizzaToppings {
-  TOMATO,
-  BBQ,
-  NONE,
-  CREAM
+	TOMATO,
+	BBQ,
+	NONE,
+	CREAM
 }
 ```
 
@@ -36,10 +36,10 @@ The first key in the enum gets the value 0, the second value 1, and so on. You d
 
 ```ts [pizza-toppings.enum.ts]
 enum PizzaToppings {
-  TOMATO = 1,
-  BBQ = 2,
-  NONE = 3,
-  CREAM = 4
+	TOMATO = 1,
+	BBQ = 2,
+	NONE = 3,
+	CREAM = 4
 }
 ```
 
@@ -51,11 +51,11 @@ As it said, a string enum is an enum with values as a string.
 
 ```ts [pizza-sizes.enum.ts]
 enum PizzaSizes {
-  Small = "s",
-  Medium = "m",
-  Large = "l",
-  XL = "xl",
-  XXL = "XXL"
+	Small = 's',
+	Medium = 'm',
+	Large = 'l',
+	XL = 'xl',
+	XXL = 'XXL'
 }
 ```
 
@@ -82,14 +82,15 @@ A what you might ask? That’s what I thought, haha! But it means an enum can ha
 
 ```ts [pizza-types.enum.ts]
 enum PizzaTypes {
-  Vegan = 0,
-  NonVegan = "No meat"
+	Vegan = 0,
+	NonVegan = 'No meat'
 }
 ```
 
 Now we have a PizzaTypes enum with both numeric and string values.
 
 ---
+
 ## How To Get Single Value From A TypeScript Enum?
 
 Sometimes you need a single value from your enum in your application.
@@ -98,28 +99,28 @@ Let’s create a part of the customer's receipt when ordering the pizzas.
 
 ```ts [pizza.enums.ts]
 enum PizzaFlavours {
-  Peperoni = "peperoni",
-  Texas= "texas",
-  Tuna = "tuna",
-  Hawai = "hawai", 
+	Peperoni = 'peperoni',
+	Texas = 'texas',
+	Tuna = 'tuna',
+	Hawai = 'hawai'
 }
 
 enum PizzaToppings {
-  TOMATO = 1,
-  BBQ = 2,
-  NONE = 3,
-  CREAM = 4
+	TOMATO = 1,
+	BBQ = 2,
+	NONE = 3,
+	CREAM = 4
 }
 
 enum PizzaSizes {
-  Small = "s",
-  Medium = "m",
-  Large = "l",
-  XL = "xl",
-  XXL = "xxl"
+	Small = 's',
+	Medium = 'm',
+	Large = 'l',
+	XL = 'xl',
+	XXL = 'xxl'
 }
 
-const receiptTitle = `Pizza ${PizzaFlavours[Peperoni]} ${PizzaSizes[XXl]} with topping ${PizzaToppings[TOMATO] }` 
+const receiptTitle = `Pizza ${PizzaFlavours[Peperoni]} ${PizzaSizes[XXl]} with topping ${PizzaToppings[TOMATO]}`
 // value = "Pizza peperoni XXL with topping 1"
 ```
 
@@ -133,19 +134,56 @@ Now that we know how to get a value from our TypeScript enum, we can dive into o
 
 It’s pretty simple with the `Object.keys()` .
 
+::code-sandbox
+<iframe src="https://codesandbox.io/embed/how-to-convert-a-typescript-to-javascript-array-with-object-keys-e0j153?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark&view=editor"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="How To Convert A TypeScript To JavaScript Array With Object.keys()"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+::
+
 In the example, you can see that the console will output an Array. With both the keys and values of the enum, we can prevent that with the `.filter()`.
+
+::code-sandbox
+<iframe src="https://codesandbox.io/embed/how-to-convert-a-typescript-to-javascript-array-with-object-keys-and-filter-82nyfs?expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="How To Convert A TypeScript To JavaScript Array With Object.keys() and .filter()"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+::
 
 Now we can see that in the console, it will only show the strings of the values.
 
-
 ---
+
 ## How To Create A Generic Utility Function For Re-usability
 
 Now that we know our code works, we can create a super handy utility function that can turn all our enums (both string and numeric enums) into JavaScript Arrays.
 
+```ts [enum-to-array.lib.ts]
+function enumToArrayNames<Type>(data: Type): string[] {
+  return Object.keys(data).filter(
+    (topping: string) => !new RegExp(/[0-9]/g).test(topping)
+  );
+}
+```
+
+::code-sandbox
+<iframe src="https://codesandbox.io/embed/how-to-convert-a-typescript-enums-to-javascript-array-generic-util-function-mzqvhi?expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="How To Convert A TypeScript Enums To JavaScript Array Generic Util Function"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+::
+
 And with this function, we can see that the function works with both string and numeric enums. 👍
 
 ---
+
 ## Thanks!
 
 ![](/images/0__VfkbsGbdeKbkzFjc.jpg)

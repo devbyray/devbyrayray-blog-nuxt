@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--code-bg: #1e1e1e;
-	--white: #fff;
-    --primary-color: #fecd1a;
-}
-
 @layer base {
+	:root {
+		--code-bg: #1e1e1e;
+		--white: #fff;
+		--primary-color: #fecd1a;
+	}
 	h1 {
 		@apply text-5xl;
 	}
