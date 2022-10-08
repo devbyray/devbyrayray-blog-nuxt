@@ -3,11 +3,10 @@ title: Getting Started With Programming On A Budget
 description: Don’t Let Your Budget Decide If You Start Programming
 date: '2022-08-18T07:25:50.152Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/getting-started-with-programming-on-a-budget-8baac33ccc19
+image: images/0__r2vtGoEnprpvY22y.jpg
 ---
-
-![](/images/0__r2vtGoEnprpvY22y.jpg)
 
 On Twitter, I’m hanging around with people who are just getting started with web development.
 
@@ -21,7 +20,7 @@ I know it doesn’t sound ideal for some of you, and maybe it isn’t, but if yo
 
 In this post, I want to share with you some tools you can use on a mobile phone or cheap tablet to get started with web development.
 
-### 1\. CodePen
+### \. CodePen
 
 ![](/images/1__4mbESV__hHuDNHue2HKQ3Gw.png)
 
@@ -33,7 +32,7 @@ CodePen works great on mobile and tablets. So if you’re working with HTML and 
 
 > CodePen is free!
 
-### 2\. CodeSandbox
+### 2. CodeSandbox
 
 ![](/images/1__DdnHUw7dTj7pIoQG3lqa0w.png)
 

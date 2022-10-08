@@ -3,7 +3,7 @@ title: 7 Web Development Guidelines To Speed up Page Loading
 description: Improve the user experience for the love of your visitors
 date: '2021-06-14T14:18:52.790Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/7-web-development-guidelines-to-speed-up-page-loading-e8f0e13a53b
 ---
 

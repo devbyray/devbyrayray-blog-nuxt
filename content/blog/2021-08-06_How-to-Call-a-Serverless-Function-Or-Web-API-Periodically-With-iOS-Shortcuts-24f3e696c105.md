@@ -3,7 +3,7 @@ title: How to Call a Serverless Function Or Web API Periodically With iOS Shortc
 description: Automate your tasks using the power of shortcuts in iOS
 date: '2021-08-06T13:37:57.718Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-call-a-serverless-function-or-web-api-periodically-with-ios-shortcuts-24f3e696c105
 ---
 

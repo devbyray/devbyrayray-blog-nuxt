@@ -15,9 +15,8 @@ export default {
 				default: 'github-dark',
 				// Theme used if `html.dark`
 				dark: 'github-dark',
-				// Theme used if `html.sepia`
-				sepia: 'monokai'
-			}
+			},
+			preload: ['vue']
 		}
 	},
 	postcss: {

@@ -3,7 +3,7 @@ title: 'A Simple Git Workflow: Releaseflow'
 description: Let’s make our Git workflow simpler!
 date: '2022-03-24T17:18:37.352Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/a-simple-git-workflow-releaseflow-1d036539ac44
 ---
 

@@ -4,7 +4,7 @@ description: So lately I was working with a team member on an Angular Pipe. We h
   Address Interface and wanted to only allow an argument that was…
 date: '2022-04-25T08:46:08.039Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/typescript-only-allow-a-property-from-interface-as-parameter-58ff75f5d1c3
 ---
 

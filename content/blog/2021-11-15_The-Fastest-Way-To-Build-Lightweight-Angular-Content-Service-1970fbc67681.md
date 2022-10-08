@@ -3,7 +3,7 @@ title: The Fastest Way To Build Lightweight Angular Content Service
 description: The best solutions are simple!
 date: '2021-11-15T13:13:37.836Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/the-fastest-way-to-build-lightweight-angular-content-service-1970fbc67681
 ---
 

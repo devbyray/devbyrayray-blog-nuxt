@@ -3,7 +3,7 @@ title: How to use CSS Media Queries with Styled Components in React.js
 description: Use Media Queries Smarter In Styled Components
 date: '2021-03-15T15:07:50.417Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-use-css-media-queries-with-styled-components-in-react-js-f5db5ffcc5f0
 ---
 

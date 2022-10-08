@@ -3,7 +3,7 @@ title: Create Your Own Ipsum Generator With JavaScript
 description: Free fake content for as much as you like
 date: '2022-02-02T15:56:32.672Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/create-your-own-ipsum-generator-with-javascript-3241077570e2
 ---
 

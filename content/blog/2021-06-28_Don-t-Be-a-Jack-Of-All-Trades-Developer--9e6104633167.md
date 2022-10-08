@@ -3,7 +3,7 @@ title: Don’t Be a Jack Of All Trades Developer!
 description: How To Deal With The Ever-Changing Web Technologies as Developer
 date: '2021-06-28T05:12:40.617Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/dont-be-a-jack-of-all-trades-developer-9e6104633167
 ---
 

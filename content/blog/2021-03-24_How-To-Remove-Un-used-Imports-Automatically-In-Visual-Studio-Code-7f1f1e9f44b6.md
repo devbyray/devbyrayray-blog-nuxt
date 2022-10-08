@@ -3,7 +3,7 @@ title: How To Remove Un-used Imports Automatically In Visual Studio Code
 description: Save a lot of time and hassle with this solution
 date: '2021-03-24T08:55:41.083Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-remove-un-used-imports-automatically-in-visual-studio-code-7f1f1e9f44b6
 ---
 

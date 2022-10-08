@@ -1,6 +1,6 @@
 <template>
-	<div class="code-container">
-		<span v-if="filename" class="filename-text">
+	<div class="code-container rounded-lg bg-gray-900 text-black">
+		<span v-if="filename" class="filename-text text-gray-200 dark:text-gray-100">
 			{{ filename }}
 		</span>
 		<span
@@ -56,7 +56,6 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 
 <style scoped>
 .code-container {
-	background: var(--code-bg);
 	position: relative;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -85,9 +84,8 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 .filename-text {
 	position: absolute;
 	top: 0;
-	left: 1em;
+	right: 3.2em;
 	padding: 0.25em 0.5em;
-	color: rgb(212, 212, 212);
 	font-size: 14px;
     font-style: italic;
 }

@@ -4,7 +4,7 @@ description: There are professional developers with a lot of different strengths
   weaknesses. One is better in database management, and the other is…
 date: '2021-07-19T11:24:21.356Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/i-get-your-point-and-its-better-to-explain-it-a-bit-more-c04dc0257c08
 ---
 

@@ -3,7 +3,7 @@ title: How To Add HTML Wrapper On Angular Component In Storybook
 description: Storybook Decorators are the answer for creating a bit more markup
 date: '2021-08-24T06:55:48.455Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-add-html-wrapper-on-angular-component-in-storybook-d7091f9f17e0
 ---
 

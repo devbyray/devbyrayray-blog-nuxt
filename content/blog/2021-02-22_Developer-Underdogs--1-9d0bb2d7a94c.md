@@ -3,7 +3,7 @@ title: 'Developer Underdogs #1'
 description: 'A newsletter for developers about HTML, CSS, JavaScript, and much more'
 date: '2021-02-22T15:56:04.027Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/developer-underdogs-1-9d0bb2d7a94c
 ---
 

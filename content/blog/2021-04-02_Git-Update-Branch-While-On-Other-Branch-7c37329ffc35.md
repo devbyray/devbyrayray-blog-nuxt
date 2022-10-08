@@ -3,7 +3,7 @@ title: Git Update Branch While On Other Branch
 description: No need to stash your changes anymore!
 date: '2021-04-02T19:54:46.001Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/git-update-branch-while-on-other-branch-7c37329ffc35
 ---
 

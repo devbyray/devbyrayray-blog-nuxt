@@ -3,7 +3,7 @@ title: The Easiest Way To Format Dates In JavaScript
 description: It’s Easier Then You Think
 date: '2021-08-26T16:06:43.822Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/the-easiest-way-to-format-dates-in-javascript-723ba42a94c4
 ---
 

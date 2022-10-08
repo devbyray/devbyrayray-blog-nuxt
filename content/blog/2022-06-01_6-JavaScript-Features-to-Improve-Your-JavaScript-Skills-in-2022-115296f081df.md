@@ -4,7 +4,7 @@ description: These features are both very new features and features that improve
   already existing functionality in JavaScript.
 date: '2022-06-01T05:17:57.609Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
 ---
 

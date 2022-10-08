@@ -4,7 +4,7 @@ description: Subtract the data from the enum and remodel it into a JavaScript Ar
     Strings so you can use it for whatever you like.
 date: '2022-09-05T08:18:20.547Z'
 categories: []
-keywords: []
+tags: ['TypeScript', 'JavaScript']
 slug: /@byrayray/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string-7a98c9fad17e
 image: images/0__QqYrHkjkASsx8czS.jpg
 ---
@@ -181,13 +181,3 @@ function enumToArrayNames<Type>(data: Type): string[] {
 ::
 
 And with this function, we can see that the function works with both string and numeric enums. 👍
-
----
-
-## Thanks!
-
-![](/images/0__VfkbsGbdeKbkzFjc.jpg)
-
-After reading this story, I hope you learned something new or are inspired to create something new! 🤗
-
-If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

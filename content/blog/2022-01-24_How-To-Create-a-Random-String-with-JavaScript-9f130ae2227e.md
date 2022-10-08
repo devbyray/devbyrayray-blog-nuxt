@@ -3,7 +3,7 @@ title: How To Create a Random String with JavaScript
 description: Handy for testing and generating test data
 date: '2022-01-24T15:26:13.459Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-create-a-random-string-with-javascript-9f130ae2227e
 ---
 

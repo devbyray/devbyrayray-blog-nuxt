@@ -1,6 +1,6 @@
 <template lang="">
 	<div>
-		<div class="bg-gray-100 dark:bg-gray-900 py-10 px-6">
+		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
 			<header class="text-center page-header">
 				<h1 class="text-white text-4xl font-bold mb-8">Dev By RayRay</h1>
 				<img
@@ -28,7 +28,7 @@
 						class="bg-white shadow-md border border-gray-200 rounded-lg mb-5"
 					>
 						<Transition>
-							<div class="p-5 flex flex-col self-end inner-card h-full blog-post">
+							<div class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white">
 								<div v-if="article?.image && !article?.image.startsWith('images/')">
 									<img
 										:src="getImageUrl(article?.image, 'overview')"
@@ -53,16 +53,16 @@
 										>{{ tag.replaceAll("'", '') }}</span
 									>
 								</div>
-								<nuxt-link :to="article?._path"
-									><h3 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">
+								<nuxt-link :to="article?._path" class="dark:text-white"
+									><h3 class="font-bold dark:text-white text-2xl tracking-tight mb-2">
 										{{ article?.title }}
 									</h3></nuxt-link
 								>
 								<div class="date">
 									<time>{{ article?.date }}</time>
 								</div>
-								<p class="font-normal text-gray-700 mb-3">{{ article?.description }}</p>
-								<p><nuxt-link target="_blank" :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
+								<p class="font-normal mb-3">{{ article?.description }}</p>
+								<p><nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
 							</div>
 						</Transition>
 					</div>
@@ -75,7 +75,7 @@
 import { getImageUrl } from '@/lib/image'
 import { getTopicPosts } from '@/lib/posts-requests'
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', async () => await queryContent(contentDir).sort({date: -1}).find())
+const { data: posts } = await useAsyncData('posts', async () => await queryContent('blog').sort({date: -1}).find())
 // const { data: javascript } = await useAsyncData(
 // 	'javascript',
 // 	async () => await getTopicPosts('JavaScript', 3, contentDir)

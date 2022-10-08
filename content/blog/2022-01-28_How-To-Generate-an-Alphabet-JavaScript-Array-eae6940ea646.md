@@ -3,7 +3,7 @@ title: How To Generate an Alphabet JavaScript Array
 description: 'No hard coding, just generate it automatically!'
 date: '2022-01-28T14:31:34.165Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-generate-an-alphabet-javascript-array-eae6940ea646
 ---
 

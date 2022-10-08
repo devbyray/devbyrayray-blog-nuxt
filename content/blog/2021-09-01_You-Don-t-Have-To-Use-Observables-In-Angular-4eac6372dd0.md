@@ -3,7 +3,7 @@ title: You Don’t Have To Use Observables In Angular
 description: What Nobody Tells You About Observables and Promises in Angular
 date: '2021-09-01T23:36:04.934Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/you-dont-have-to-use-observables-in-angular-4eac6372dd0
 ---
 

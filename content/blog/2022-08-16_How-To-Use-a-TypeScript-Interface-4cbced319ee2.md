@@ -3,7 +3,7 @@ title: How To Use a TypeScript Interface
 description: By making pizzas for breakfast
 date: '2022-08-16T19:19:45.796Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-use-a-typescript-interface-4cbced319ee2
 ---
 

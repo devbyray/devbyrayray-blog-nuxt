@@ -3,7 +3,7 @@ title: 'Build A Custom Like Button with HTML, CSS and Vanilla JavaScript'
 description: Learn JavaScript The Easy Way
 date: '2021-01-07T14:24:05.275Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/build-a-custom-like-button-with-html-css-and-vanilla-javascript-b81fa4b00aad
 ---
 

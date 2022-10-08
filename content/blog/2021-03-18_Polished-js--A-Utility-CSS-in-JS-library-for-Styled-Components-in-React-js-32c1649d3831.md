@@ -3,7 +3,7 @@ title: 'Polished.js: A Utility CSS-in-JS library for Styled-Components in React.
 description: Styling Utilities Inspired By Sass for CSS-inJS
 date: '2021-03-18T14:01:46.695Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/polished-js-a-utility-css-in-js-library-for-styled-components-in-react-js-32c1649d3831
 ---
 

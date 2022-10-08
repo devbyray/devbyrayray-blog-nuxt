@@ -4,7 +4,7 @@ description: As I was reading the “Announcing TypeScript 4.2” post on the Ty
   I discovered a neat feature that is so simple but super…
 date: '2021-07-19T18:56:54.356Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d
 ---
 

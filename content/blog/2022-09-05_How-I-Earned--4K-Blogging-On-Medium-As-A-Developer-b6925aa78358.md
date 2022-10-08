@@ -3,7 +3,7 @@ title: How I Earned $4K Blogging On Medium As A Developer
 description: Let’s analyze that data and pull lessons from it. But consistency stays the most important rule!
 date: '2022-09-05T08:46:02.444Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-i-earned-4k-blogging-on-medium-as-a-developer-b6925aa78358
 image: images/0_9CaNg--vADrVtlzg.jpg
 ---

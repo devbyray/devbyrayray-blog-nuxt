@@ -3,7 +3,7 @@ title: 6 Easy Steps How I Started Running — 10KM
 description: It’s all about getting started slowly
 date: '2021-08-09T11:59:58.066Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/6-steps-to-get-started-with-running-cb78d087fd8a
 ---
 

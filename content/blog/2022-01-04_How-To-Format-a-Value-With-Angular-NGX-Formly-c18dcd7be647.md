@@ -4,7 +4,7 @@ description: A handy way to format postal codes, phone numbers, bank accounts, a
   more
 date: '2022-01-04T12:48:30.509Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-format-a-value-with-angular-ngx-formly-c18dcd7be647
 ---
 

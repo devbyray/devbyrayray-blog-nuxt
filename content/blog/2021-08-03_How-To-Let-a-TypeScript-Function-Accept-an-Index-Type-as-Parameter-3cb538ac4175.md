@@ -3,7 +3,7 @@ title: How To Let a TypeScript Function Accept an Index Type as Parameter
 description: A perfect solution for the KeyOf type in TypeScript
 date: '2021-08-03T15:36:51.938Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-let-a-typescript-function-accept-an-index-type-as-parameter-3cb538ac4175
 ---
 

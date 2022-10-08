@@ -3,7 +3,7 @@ title: "1 Mindset So You Will Be A Successful Developer? \U0001F9D1‍\U0001F4BB
 description: It’s Simpler Than You Think!
 date: '2021-08-11T12:58:11.734Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/1-mindset-so-you-will-be-a-successful-developer-8cf09ab88ab5
 ---
 

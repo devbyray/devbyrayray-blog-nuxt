@@ -3,7 +3,7 @@ title: How to end-to-end test with Cypress
 description: Getting started with end-to-end testing
 date: '2021-12-06T13:52:25.013Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-end-to-end-test-with-cypress-1d70b907be0c
 ---
 

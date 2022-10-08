@@ -3,7 +3,7 @@ title: How To Make Re-usable Colors In Microsoft Canvas Power Apps
 description: Prevent typing color codes over and over again!
 date: '2021-07-14T10:06:37.267Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-make-re-usable-colors-in-microsoft-canvas-power-apps-e3a971f68148
 ---
 

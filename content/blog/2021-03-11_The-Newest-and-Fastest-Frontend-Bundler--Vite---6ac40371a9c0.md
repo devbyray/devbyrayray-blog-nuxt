@@ -4,7 +4,7 @@ description: These years the frontend development tools are popping up like mush
   the ground! One is better or suits your workflow better than…
 date: '2021-03-11T08:19:01.325Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/the-newest-and-fastest-frontend-bundler-vite-6ac40371a9c0
 ---
 

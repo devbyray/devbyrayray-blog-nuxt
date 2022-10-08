@@ -4,7 +4,7 @@ title: Canva Pro — The Best Content Creation Service For Bloggers, YouTube
 description: There is no easier way to create images and videos than with Canva!
 date: '2022-08-05T19:47:37.503Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/canva-pro-the-best-content-creation-service-for-bloggers-youtubers-and-tiktokkers-b2f6989dcb72
 ---
 

@@ -3,7 +3,7 @@ title: How To Improve React Components With Optional Chaining
 description: Let’s minimize errors in our web apps
 date: '2021-03-23T15:21:57.757Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-improve-react-components-with-optional-chaining-6081456cccfe
 ---
 

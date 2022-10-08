@@ -3,7 +3,7 @@ title: How To Add Props To Styled Components in React.js with TypeScript
 description: Write Predictable Code With styled-components in React.js
 date: '2021-03-16T09:03:16.794Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-add-props-to-styled-components-in-react-js-with-typescript-1df49ef951bf
 ---
 

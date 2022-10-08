@@ -7,6 +7,10 @@
 		--code-bg: #1e1e1e;
 		--white: #fff;
 		--primary-color: #fecd1a;
+		--secondary-color: #001576;
+	}
+	body {
+		font-family: monospace;
 	}
 	h1 {
 		@apply text-5xl;
@@ -57,8 +61,14 @@
 	h3 a,
 	h4 a,
 	h5 a,
-	h6 a {
-		@apply no-underline;
+	h6 a,
+	a h1,
+	a h2,
+	a h3,
+	a h4,
+	a h5,
+	a h6 {
+		@apply no-underline dark:text-white;
 	}
 	blockquote,
 	dl,
@@ -81,7 +91,11 @@
 		margin: 0 auto;
 	}
 	a {
-		@apply underline;
+		@apply underline dark:text-white;
+		color: var(--secondary-color);
+	}
+	a:hover {
+		@apply no-underline;
 	}
 
 	.content ul,

@@ -3,7 +3,7 @@ title: Getting Started With Storybook Without a JavaScript Framework
 description: Use it with plain HTML and CSS
 date: '2021-06-04T14:36:43.869Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/getting-started-with-storybook-without-a-javascript-framework-c2968d3f3d9f
 ---
 

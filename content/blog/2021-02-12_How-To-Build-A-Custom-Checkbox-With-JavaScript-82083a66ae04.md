@@ -3,7 +3,7 @@ title: How To Build A Custom Checkbox With JavaScript
 description: Learn JavaScript The Easy Way
 date: '2021-02-12T19:04:59.011Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-to-build-a-custom-checkbox-with-javascript-82083a66ae04
 ---
 

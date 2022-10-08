@@ -3,7 +3,7 @@ title: How Promises Actually Work in JavaScript
 description: Learn when and how to use them
 date: '2021-03-11T15:37:51.975Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/how-promises-actually-work-in-javascript-1c80b1af7193
 ---
 

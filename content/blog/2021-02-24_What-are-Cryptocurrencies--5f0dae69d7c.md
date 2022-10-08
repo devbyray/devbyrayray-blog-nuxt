@@ -3,7 +3,7 @@ title: What are Cryptocurrencies?
 description: The beginner’s guide to navigating the world of crypto
 date: '2021-02-24T10:14:52.436Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/what-are-cryptocurrencies-5f0dae69d7c
 ---
 

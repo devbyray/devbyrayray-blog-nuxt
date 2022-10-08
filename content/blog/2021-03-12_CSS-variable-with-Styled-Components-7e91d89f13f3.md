@@ -3,7 +3,7 @@ title: CSS variable with Styled Components
 description: Use them easily in Next.js/React.js
 date: '2021-03-12T09:02:50.346Z'
 categories: []
-keywords: []
+tags: []
 slug: /@byrayray/css-variable-with-styled-components-7e91d89f13f3
 ---
 
