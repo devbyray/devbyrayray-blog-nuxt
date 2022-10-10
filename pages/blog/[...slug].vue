@@ -16,24 +16,21 @@
 						class="rounded-lg"
 					/>
 				</div>
+				<p>
+					<em>Written at <strong><time>{{ formatDate(blog?.date) }}</time></strong> by RayRay <span v-if="blog?.tags.length > 0 || blog?.categories.length > 0">in the topic(s) {{formattedTopics() }}</span>.</em>
+				</p>
 				<div v-if="blog?.image && blog?.image.startsWith('images/')">
 					<nuxt-img :src="`${blog?.image}`" width="850" height="400" class="rounded-lg" />
 				</div>
-				<p>
-					<time>{{ blog?.date }}</time>
-				</p>
-				<ul v-if="blog?.tags">
-					<li v-for="tag in blog?.tags" :key="tag" class="badge mr-2">{{ tag }}</li>
-				</ul>
 				<ContentRenderer :value="blog" />
 
 				<Profile></Profile>
 				<footer class="prev-next w-full py-8 flex spacebetween">
-					<ul>
-						<li v-if="prev">
+					<ul class="flex">
+						<li v-if="prev" class="w-3/6 border">
 							<NuxtLink class="text-sky-400 dark:text-white" :to="prev._path">{{ prev.title }}</NuxtLink>
 						</li>
-						<li v-if="next">
+						<li v-if="next" class="w-3/6 border">
 							<NuxtLink class="text-sky-400 dark:text-white" :to="next._path">{{ next.title }}</NuxtLink>
 						</li>
 					</ul>
@@ -44,12 +41,23 @@
 </template>
 <script setup>
 import { getImageUrl } from '@/lib/image'
+import { formatDate } from '@/lib/date'
 
 const { path } = useRoute()
 const { data: blog } = await useAsyncData(`content-${path}`, () => {
 	return queryContent().where({ _path: path }).findOne()
 })
+const formattedTopics = () => {
+	let topics = '';
+	if (blog?.tags?.length > 0) {
+		topics += blog?.tags.map((item) => `#${item}`).toString().replaceAll(',', ', ')
+	}
+	if (blog?.categories?.length > 0) {
+		topics += blog?.categories.map((item) => `#${item}`).toString().replaceAll(',', ', ')
+	}
 
+	return  topics
+}
 const { prev, next } = useContent()
 </script>
 <script>
