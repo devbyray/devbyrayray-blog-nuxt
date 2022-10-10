@@ -55,7 +55,7 @@
 	h4,
 	h5,
 	h6 {
-		@apply mt-4;
+		@apply mt-8;
 	}
 	h1 a,
 	h2 a,
@@ -92,11 +92,14 @@
 		margin: 0 auto 2rem;
 	}
 	a {
-		@apply underline dark:text-white;
+		@apply dark:text-white;
+		border-bottom: 1px solid #fff;
 		color: var(--secondary-color);
+		transition: ease-in-out all 0.3s;
 	}
 	a:hover {
-		@apply no-underline;
+		color: var(--primary-color);
+		border-bottom-color: transparent;
 	}
 
 	.content ul,

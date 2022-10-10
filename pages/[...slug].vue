@@ -44,16 +44,22 @@
 					<em
 						>Written at
 						<strong
-							><time>{{ pageDate }}</time></strong
+							><time>{{ formatDate(blog?.date) }}</time></strong
 						>
 						by RayRay
-						<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
-							>in the topic(s) {{ formattedTopics() }}</span
-						>.</em
+						.</em
 					>
+					<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
+							>Tags: {{ formattedTopics(blog?.tags, blog?.categories) }}</span
+						>
 				</p>
 				<div v-if="blog?.image && blog?.image.startsWith('images/')">
-					<nuxt-img :src="`${blog?.image}`" width="850" height="400" class="rounded-lg" />
+					<nuxt-img
+						provider="cloudinary"
+						:src="`${blog?.image.replace('images/', '/')}`"
+						width="850"
+						class="rounded-lg object-cover cover-image"
+					/>
 				</div>
 				<p>
 					<nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${blog?.slug}`"
@@ -67,23 +73,28 @@
 				</ContentDoc>
 
 				<Profile></Profile>
-				<footer class="prev-next w-full py-8 flex spacebetween">
-					<ul class="flex">
-						<li v-if="prev" class="w-3/6 border">
-							<nuxt-link class="text-sky-400 dark:text-white" :to="prev._path">{{ prev.title }}</nuxt-link>
-						</li>
-						<li v-if="next" class="w-3/6 border">
-							<nuxt-link class="text-sky-400 dark:text-white" :to="next._path">{{ next.title }}</nuxt-link>
-						</li>
-					</ul>
-				</footer>
 			</article>
+			<footer class="prev-next pt-8 max-w-4xl m-auto">
+				<ul class="grid grid-cols-2 w-full gap-4">
+					<li v-if="prev" class="list-none">
+						<nuxt-link class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center mb-4" :to="prev._path"
+							><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
+						>
+					</li>
+					<li v-if="next" class="list-none">
+						<nuxt-link class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center justify-end" :to="next._path"
+							>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem"
+						/></nuxt-link>
+					</li>
+				</ul>
+			</footer>
 		</div>
 	</div>
 </template>
 <script setup>
 import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
+import MazIcon from 'maz-ui/components/MazIcon';
 
 const { path } = useRoute()
 const {
@@ -97,17 +108,17 @@ const pageUrl = `${CONFIG.domain}${path}`
 const pageImage = `${CONFIG?.domain}/${blog?.image}`
 const pageDate = formatDate(blog?.date)
 
-
-const formattedTopics = () => {
+const formattedTopics = (tags, categories) => {
 	let topics = ''
-	if (blog?.tags?.length > 0) {
-		topics += blog?.tags
+	console.log({tags, categories})
+	if (tags?.length > 0) {
+		topics += tags
 			.map(item => `#${item}`)
 			.toString()
 			.replaceAll(',', ', ')
 	}
-	if (blog?.categories?.length > 0) {
-		topics += blog?.categories
+	if (categories?.length > 0) {
+		topics += categories
 			.map(item => `#${item}`)
 			.toString()
 			.replaceAll(',', ', ')
@@ -120,6 +131,7 @@ const { prev, next } = useContent()
 </script>
 <script>
 import Prism from '~/plugins/prism'
+
 export default {
 	mounted() {
 		Prism.highlightAll()
@@ -130,5 +142,15 @@ export default {
 <style scoped>
 .prev-next {
 	display: flex;
+}
+.cover-image {
+	width: 100%;
+	height: 400px;
+}
+.prev-next a {
+	background: var(--primary-color);
+}
+.prev-next a:hover {
+	background: var(--secondary-color);
 }
 </style>

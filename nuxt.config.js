@@ -156,7 +156,7 @@ export default {
 	modules: ['@nuxt/content', '@nuxt/image-edge'],
 	plugins: [],
 	// css
-	css: ['@/assets/css/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
+	css: ['@/assets/css/main.css', 'maz-ui/css/main.css'],
 	components: true,
 	content: {
 		documentDriven: true,
@@ -178,6 +178,14 @@ export default {
 			tailwindcss: {}
 		}
 	},
-	plugins: ['@/plugins/fontawesome.js'],
-	head: HEAD
+	plugins: [],
+	head: HEAD,
+	image: {
+		cloudinary: {
+			baseURL: 'https://res.cloudinary.com/raymons/image/upload/devbyrayray/blog'
+		}
+	},
+	build: {
+		transpile: ['maz-ui'] // ⚠️ important ⚠️
+	}
 }
