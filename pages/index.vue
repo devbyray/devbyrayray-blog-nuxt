@@ -1,15 +1,7 @@
 <template lang="">
 	<div>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
-			<header class="text-center page-header flex items-center flex-col">
-				<h1 class="text-white text-4xl font-bold mb-8">Dev By RayRay</h1>
-				<img
-					loading="lazy"
-					src="https://res.cloudinary.com/raymons/image/upload/c_scale,g_center,w_300,f_auto/v1610102296/devbyrayray/blog/Dev_by_RayRay_-_logo"
-					width="300"
-				/>
-				<p>{{ CONFIG?.sitedesc }}</p>
-			</header>
+			<TheHeader></TheHeader>
 
 			<div class="container page-container">
 				<header>
@@ -20,11 +12,7 @@
 					v-if="posts"
 					class="post-grid grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols- md:grid-cols-2 lg:grid-cols-3"
 				>
-					<div
-						v-for="article in posts"
-						:key="article?._path"
-						class="bg-white mb-5"
-					>
+					<div v-for="article in posts" :key="article?._path" class="bg-white mb-5">
 						<Transition>
 							<div
 								class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
@@ -69,9 +57,12 @@
 import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
 import { getTopicPosts } from '@/lib/posts-requests'
+const {
+	public: { CONFIG }
+} = useRuntimeConfig()
 
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', async () => await queryContent().sort({ date: -1 }).find())
+const { data: posts } = await useAsyncData('posts', async () => await queryContent('posts').sort({ date: -1 }).find())
 // const { data: javascript } = await useAsyncData(
 // 	'javascript',
 // 	async () => await getTopicPosts('JavaScript', 3, contentDir)

@@ -14,26 +14,26 @@ export const HEAD = {
 	htmlAttrs: {
 		lang: 'en'
 	},
-	title: CONFIG.sitename,
-	titleTemplate: '%s - ' + CONFIG.sitename,
+	title: CONFIG?.siteTitle,
+	titleTemplate: '%s - ' + CONFIG?.sitename,
 	meta: [
 		{ charset: 'utf-8' },
 		{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 		{
 			hid: 'description',
 			name: 'description',
-			content: CONFIG.sitedesc
+			content: CONFIG?.sitedesc
 		},
 		// SOCIAL
 		{
 			hid: 'og:title',
 			property: 'og:title',
-			content: CONFIG.sitename
+			content: CONFIG?.sitename
 		},
 		{
 			hid: 'og:description',
 			property: 'og:description',
-			content: CONFIG.sitedesc
+			content: CONFIG?.sitedesc
 		},
 		{
 			hid: 'og:type',
@@ -63,12 +63,12 @@ export const HEAD = {
 		{
 			hid: 'twitter:title',
 			property: 'twitter:title',
-			content: CONFIG.sitename
+			content: CONFIG?.sitename
 		},
 		{
 			hid: 'twitter:creator',
 			property: 'twitter:creator',
-			content: CONFIG.twitter
+			content: CONFIG?.twitter
 		},
 		{
 			hid: 'twitter:image',
@@ -78,24 +78,24 @@ export const HEAD = {
 		{
 			hid: 'twitter:description',
 			property: 'twitter:description',
-			content: CONFIG.sitedesc
+			content: CONFIG?.sitedesc
 		},
 		// Other
 		{
 			name: 'apple-mobile-web-app-title',
-			content: CONFIG.sitename
+			content: CONFIG?.sitename
 		},
 		{
 			name: 'application-name',
-			content: CONFIG.sitename
+			content: CONFIG?.sitename
 		},
 		{
 			name: 'msapplication-TileColor',
-			content: CONFIG.appcolor
+			content: CONFIG?.appcolor
 		},
 		{
 			name: 'theme-color',
-			content: CONFIG.appcolor
+			content: CONFIG?.appcolor
 		}
 	],
 	link: [

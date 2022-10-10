@@ -21,12 +21,14 @@
 			/>
 		</Head>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
+			<TheHeader></TheHeader>
 			<article
 				class="max-w-4xl m-auto bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative"
 			>
 				<header>
 					<nuxt-link to="/" class="underline text-sky-400 dark:text-white">Go back</nuxt-link>
 				</header>
+
 				<h1 class="dark:text-gray-200">{{ blog?.title }}</h1>
 
 				<div v-if="blog?.image && !blog?.image.startsWith('images/')">
@@ -54,7 +56,7 @@
 					<nuxt-img :src="`${blog?.image}`" width="850" height="400" class="rounded-lg" />
 				</div>
 				<p>
-					<nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${article?.slug}`"
+					<nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${blog?.slug}`"
 						>Medium</nuxt-link
 					>
 				</p>
@@ -68,10 +70,10 @@
 				<footer class="prev-next w-full py-8 flex spacebetween">
 					<ul class="flex">
 						<li v-if="prev" class="w-3/6 border">
-							<NuxtLink class="text-sky-400 dark:text-white" :to="prev._path">{{ prev.title }}</NuxtLink>
+							<nuxt-link class="text-sky-400 dark:text-white" :to="prev._path">{{ prev.title }}</nuxt-link>
 						</li>
 						<li v-if="next" class="w-3/6 border">
-							<NuxtLink class="text-sky-400 dark:text-white" :to="next._path">{{ next.title }}</NuxtLink>
+							<nuxt-link class="text-sky-400 dark:text-white" :to="next._path">{{ next.title }}</nuxt-link>
 						</li>
 					</ul>
 				</footer>
@@ -88,13 +90,13 @@ const {
 	public: { CONFIG }
 } = useRuntimeConfig()
 
+const { data: blog } = await useAsyncData(`content-${path}`, () => {
+	return queryContent().where({ _path: path }).findOne()
+})
 const pageUrl = `${CONFIG.domain}${path}`
 const pageImage = `${CONFIG?.domain}/${blog?.image}`
 const pageDate = formatDate(blog?.date)
 
-const { data: blog } = await useAsyncData(`content-${path}`, () => {
-	return queryContent().where({ _path: path }).findOne()
-})
 
 const formattedTopics = () => {
 	let topics = ''
