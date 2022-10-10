@@ -152,7 +152,6 @@ export default {
 			HEAD
 		}
 	},
-	ssr: true,
 	target: 'static',
 	modules: ['@nuxt/content', '@nuxt/image-edge'],
 	plugins: [],
