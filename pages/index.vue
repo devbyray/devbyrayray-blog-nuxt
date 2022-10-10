@@ -59,7 +59,7 @@
 									</h3></nuxt-link
 								>
 								<div class="date">
-									<time>{{ article?.date }}</time>
+									<time>{{ formatDate(article?.date) }}</time>
 								</div>
 								<p class="font-normal mb-3">{{ article?.description }}</p>
 								<p><nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
@@ -73,9 +73,10 @@
 </template>
 <script setup>
 import { getImageUrl } from '@/lib/image'
+import { formatDate } from '@/lib/date'
 import { getTopicPosts } from '@/lib/posts-requests'
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', async () => await queryContent('blog').sort({date: -1}).find())
+const { data: posts } = await useAsyncData('posts', async () => await queryContent().sort({date: -1}).find())
 // const { data: javascript } = await useAsyncData(
 // 	'javascript',
 // 	async () => await getTopicPosts('JavaScript', 3, contentDir)

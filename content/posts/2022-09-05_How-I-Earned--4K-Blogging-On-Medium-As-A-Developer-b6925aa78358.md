@@ -48,11 +48,13 @@ When analyzing the data, we see a couple of things. (_If you see more exciting t
 I’ve posted this screenshot also in the Facebook Group “[Medium Writers Lounge](https://www.facebook.com/groups/mediumwriterslounge)” (I highly _recommend this group to meet other great Medium writers!_), where [Joel Brown](https://medium.com/u/8c2d235da39c) came up with an excellent analysis. (_Thanks, Joel_ 🙏)
 
 <blockquote>
+
 You do have some interesting insights there. Looking at the image, you do appear to have better earnings around the months you more actively publish. But must have some good long tail stories which pick up regular revenue as well. 
 
 You note “consistency is important,” and I believe this is a key. This looks like it even points back to why you might have earned more in 2020 than now. Based on this data above, you published over half the stories from the past two years in 2020 (63 by my count). Where as in the past 12 months, you have published just a third of that count (18 Sep ’21 to Aug’ 22).
 
 It would be rather interesting to see how Consistency might affect your earnings. For example, if you could publish four posts a month over a longer period. Rather than these bursts of 9 or 11 some months and 1 or none other months.
+
 </blockquote>
 
 And I think Joel wrote some great lessons. Let’s sum them up so that we can all learn from them.
@@ -66,19 +68,19 @@ And I think Joel wrote some great lessons. Let’s sum them up so that we can al
 
 So now that I have the data on some key lessons, I have to define my goals. With some of them, I have already started (diversifying in topics).
 
-### 1\. Improve Consistency
+### 1. Improve Consistency
 
 In my data, you can see that I have bursts of creativity and a head-space to write. But, publishing bursts are not helping me grow my followers, viewers, and earnings. Just like receiving bursts of emails from one person 😅
 
 With this goal, I want to improve my Consistency by publishing 1 or 2 stories a week. I can achieve that by creating a buffer in my favorite writing tool, Notion.
 
-### 2\. Diversify topics
+### 2. Diversify topics
 
 When you look at my Medium profile, you can see that I write mostly web development-related stories and tutorials. I know I can diversify on that because a developer is so much more than only a technical, nerdy, or non-communicating person 🙈
 
 For my whole life, people have known me as an optimist. I love personal development and the psychology behind human behavior. Next, I love the Side hustle, Earn Money Online thing, so I will also explore those areas.
 
-### 3\. Get 2K Followers (and beyond 🏆)
+### 3. Get 2K Followers (and beyond 🏆)
 
 In the last years, I’ve received many followers 🙏 (_Thanks for that!_), but I love to inspire more people with my technical and motivational stories. I love to share good things and a positive mindset with everyone!
 

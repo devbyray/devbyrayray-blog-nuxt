@@ -26,7 +26,8 @@
 	}
 
 	p,
-	li {
+	li,
+	blockquote {
 		@apply text-lg leading-7;
 	}
 
@@ -88,7 +89,7 @@
 		@apply mb-3;
 	}
 	.content img {
-		margin: 0 auto;
+		margin: 0 auto 2rem;
 	}
 	a {
 		@apply underline dark:text-white;
@@ -132,7 +133,7 @@
 		vertical-align: -0.4em;
 	}
 	.content blockquote p {
-		display: inline;
+		@apply mt-8;
 		font-style: italic;
 		color: #fff;
 	}

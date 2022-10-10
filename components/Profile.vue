@@ -10,7 +10,7 @@
 		</header>
 		<div class="content">
 			<p>
-				I’m Ray, a Frontend Developer from the Netherlands since 2009. I write about Frontend Development,
+				I’m Ray, a Frontend Developer since 2009 living in the Netherlands. I write about Frontend Development,
 				JavaScript, TypeScript, Angular, CSS, VueJS and a lot more related topics.
 			</p>
 			<p>
