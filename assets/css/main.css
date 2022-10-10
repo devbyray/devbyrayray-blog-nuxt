@@ -10,7 +10,7 @@
 		--secondary-color: #001576;
 	}
 	body {
-		font-family: monospace;
+		font-family: 'Poppins', sans-serif;
 	}
 	h1 {
 		@apply text-5xl;

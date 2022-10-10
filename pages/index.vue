@@ -1,21 +1,19 @@
 <template lang="">
 	<div>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
-			<header class="text-center page-header">
+			<header class="text-center page-header flex items-center flex-col">
 				<h1 class="text-white text-4xl font-bold mb-8">Dev By RayRay</h1>
 				<img
 					loading="lazy"
-					src="https://res.cloudinary.com/raymons/image/upload/c_scale,g_center,w_300/v1610102296/devbyrayray/blog/Template.png"
+					src="https://res.cloudinary.com/raymons/image/upload/c_scale,g_center,w_300,f_auto/v1610102296/devbyrayray/blog/Dev_by_RayRay_-_logo"
 					width="300"
 				/>
+				<p>{{ CONFIG?.sitedesc }}</p>
 			</header>
-			<!-- <pre>{{ posts }}</pre> -->
 
 			<div class="container page-container">
 				<header>
-					<h2 class="text-white font-bold text-3xl tracking-tight">
-						Recent posts
-					</h2>
+					<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
 				</header>
 
 				<div
@@ -25,10 +23,12 @@
 					<div
 						v-for="article in posts"
 						:key="article?._path"
-						class="bg-white shadow-md border border-gray-200 rounded-lg mb-5"
+						class="bg-white mb-5"
 					>
 						<Transition>
-							<div class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white">
+							<div
+								class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
+							>
 								<div v-if="article?.image && !article?.image.startsWith('images/')">
 									<img
 										:src="getImageUrl(article?.image, 'overview')"
@@ -39,12 +39,7 @@
 									/>
 								</div>
 								<div v-if="article?.image && article?.image.startsWith('images/')">
-									<nuxt-img
-										:src="`${article?.image}`"
-										width="400"
-										height="250"
-										class="rounded-lg"
-									/>
+									<nuxt-img :src="`${article?.image}`" width="400" height="250" class="rounded-lg" />
 								</div>
 								<div class="tags justify-start flex flex-wrap flex-row uppercase">
 									<span
@@ -62,7 +57,6 @@
 									<time>{{ formatDate(article?.date) }}</time>
 								</div>
 								<p class="font-normal mb-3">{{ article?.description }}</p>
-								<p><nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${article?.slug}`">Medium</nuxt-link></p>
 							</div>
 						</Transition>
 					</div>
@@ -75,8 +69,9 @@
 import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
 import { getTopicPosts } from '@/lib/posts-requests'
+
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', async () => await queryContent().sort({date: -1}).find())
+const { data: posts } = await useAsyncData('posts', async () => await queryContent().sort({ date: -1 }).find())
 // const { data: javascript } = await useAsyncData(
 // 	'javascript',
 // 	async () => await getTopicPosts('JavaScript', 3, contentDir)
@@ -105,9 +100,12 @@ function getTagCloud(tags) {
 	return Array.from(tagCloud)
 }
 
-
 console.log({
 	posts
+})
+
+useHead({
+	title: 'Dev By RayRay'
 })
 </script>
 
@@ -120,12 +118,6 @@ console.log({
 .page-header {
 	max-width: 1200px;
 	margin: 0 auto;
-}
-
-.page-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .page-header img {

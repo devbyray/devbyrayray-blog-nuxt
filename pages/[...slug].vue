@@ -1,5 +1,25 @@
 <template>
 	<div>
+		<Head>
+			<Meta hid="canonical" property="canonical" :content="pageUrl" />
+			<Meta hid="og:title" property="og:title" :content="blog?.title" />
+			<Meta hid="og:description" property="og:description" :content="blog?.description ?? CONFIG?.sitedesc" />
+			<Meta hid="og:type" property="og:type" content="website" />
+			<Meta hid="og:image" property="og:image" :content="pageImage ?? CONFIG?.logoUrl" />
+			<Meta hid="og:url" property="og:url" :content="pageUrl" />
+			<Meta hid="og:locale" property="og:locale" content="en_EN" />
+
+			<Meta name="twitter:card" property="twitter:card" content="summary" />
+			<Meta name="twitter:site" property="twitter:site" :content="CONFIG?.twitter" />
+			<Meta name="twitter:creator" property="twitter:creator" :content="CONFIG?.twitter" />
+			<Meta name="twitter:title" property="twitter:title" :content="blog?.title" />
+			<Meta hid="twitter:image" property="twitter:image" :content="pageImage ?? CONFIG?.logoUrl" />
+			<Meta
+				hid="twitter:description"
+				property="twitter:description"
+				:content="blog?.description ?? CONFIG?.sitedesc"
+			/>
+		</Head>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
 			<article
 				class="max-w-4xl m-auto bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative"
@@ -22,7 +42,7 @@
 					<em
 						>Written at
 						<strong
-							><time>{{ formatDate(blog?.date) }}</time></strong
+							><time>{{ pageDate }}</time></strong
 						>
 						by RayRay
 						<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
@@ -33,6 +53,11 @@
 				<div v-if="blog?.image && blog?.image.startsWith('images/')">
 					<nuxt-img :src="`${blog?.image}`" width="850" height="400" class="rounded-lg" />
 				</div>
+				<p>
+					<nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${article?.slug}`"
+						>Medium</nuxt-link
+					>
+				</p>
 				<ContentDoc>
 					<template #empty>
 						<h1>Document is empty</h1>
@@ -59,11 +84,18 @@ import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
 
 const { path } = useRoute()
-console.log('path: ', path)
+const {
+	public: { CONFIG }
+} = useRuntimeConfig()
+
+const pageUrl = `${CONFIG.domain}${path}`
+const pageImage = `${CONFIG?.domain}/${blog?.image}`
+const pageDate = formatDate(blog?.date)
+
 const { data: blog } = await useAsyncData(`content-${path}`, () => {
 	return queryContent().where({ _path: path }).findOne()
 })
-console.log('content: ', blog)
+
 const formattedTopics = () => {
 	let topics = ''
 	if (blog?.tags?.length > 0) {
@@ -81,6 +113,7 @@ const formattedTopics = () => {
 
 	return topics
 }
+
 const { prev, next } = useContent()
 </script>
 <script>
