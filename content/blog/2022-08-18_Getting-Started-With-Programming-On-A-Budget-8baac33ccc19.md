@@ -3,7 +3,7 @@ title: Getting Started With Programming On A Budget
 description: Don’t Let Your Budget Decide If You Start Programming
 date: '2022-08-18T07:25:50.152Z'
 categories: []
-tags: []
+tags: ['JavaScript', 'WebDev', 'CodeNewbie']
 slug: /@byrayray/getting-started-with-programming-on-a-budget-8baac33ccc19
 image: images/0__r2vtGoEnprpvY22y.jpg
 ---
@@ -20,7 +20,7 @@ I know it doesn’t sound ideal for some of you, and maybe it isn’t, but if yo
 
 In this post, I want to share with you some tools you can use on a mobile phone or cheap tablet to get started with web development.
 
-### \. CodePen
+## 1. CodePen
 
 ![](/images/1__4mbESV__hHuDNHue2HKQ3Gw.png)
 
@@ -32,7 +32,9 @@ CodePen works great on mobile and tablets. So if you’re working with HTML and 
 
 > CodePen is free!
 
-### 2. CodeSandbox
+---
+
+## 2. CodeSandbox
 
 ![](/images/1__DdnHUw7dTj7pIoQG3lqa0w.png)
 
@@ -48,7 +50,9 @@ You can also connect your CodeSandbox project with Github, so your code is backe
 
 > CodeSandbox can be used for free!
 
-### 3\. CodeAnyWhere
+---
+
+## 3. CodeAnyWhere
 
 ![](/images/0__DWcwvXnfj7LKKygC.gif)
 
@@ -64,7 +68,9 @@ If you want to share your project with someone else to collaborate, they offer t
 
 > You can start using [CodeAnyWhere](https://codeanywhere.com/?ref=raymonschouwenaar) for free for seven days. After that, you can start at $6 per month, which is super affordable!
 
-### Conclusion
+---
+
+## Conclusion
 
 If you want to learn HTML, CSS, JavaScript, or any other language, you can get started with one of the platforms above on your tablet or mobile phone.
 
@@ -75,12 +81,3 @@ If you want a more portable solution or do not have more than 150$ to spend, you
 But remember, if you want to get started with programming, let the money never be the issue and get creative with your solution.
 
 If you need help or advice to get started, let me know in the comments so I can help you.
-
-### Thanks!
-
-![](/images/0__fsZzXoHyoGLoi__WI.jpg)
-
-After reading this story, I hope you learned something new or are inspired to create something new! 🤗
-
-If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
-
