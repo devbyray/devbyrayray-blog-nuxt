@@ -12,11 +12,14 @@
 				</ul>
 			</nav>
 			<h1 class="text-white text-4xl font-bold mb-8">Dev By RayRay</h1>
-			<img loading="lazy" :src="CONFIG?.logoUrl" width="300" />
+			<nuxt-img provider="cloudinary" loading="lazy" src="Dev_by_RayRay_-_logo" width="300" />
 			<em class="font-bold dark:text-white text-2xl mb-16">{{ CONFIG?.sitedesc }}</em>
 		</header>
 		<header v-if="!home" class="text-center page-header flex items-center flex-row mb-8">
-			<nuxt-img provider="cloudinary" loading="lazy" src="rayray.png" width="100" />
+			<nuxt-link class="text-white" to="/">
+				<nuxt-img provider="cloudinary" loading="lazy" src="rayray.png" width="100" />
+				
+			</nuxt-link>
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
 					<li>

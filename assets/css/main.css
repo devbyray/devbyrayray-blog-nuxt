@@ -92,14 +92,13 @@
 		margin: 0 auto 2rem;
 	}
 	a {
-		@apply dark:text-white;
-		border-bottom: 1px solid #fff;
+		@apply dark:text-white underline;
 		color: var(--secondary-color);
 		transition: ease-in-out all 0.3s;
 	}
 	a:hover {
+		@apply no-underline;
 		color: var(--primary-color);
-		border-bottom-color: transparent;
 	}
 
 	.content ul,

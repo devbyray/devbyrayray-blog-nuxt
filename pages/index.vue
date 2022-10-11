@@ -1,7 +1,7 @@
 <template lang="">
 	<div>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
-			<TheHeader></TheHeader>
+			<TheHeader home></TheHeader>
 
 			<div class="container page-container">
 				<header>
@@ -16,17 +16,14 @@
 						<div
 							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
 						>
-							<div v-if="article?.image && !article?.image.startsWith('images/')">
-								<img
-									:src="getImageUrl(article?.image, 'overview')"
-									loading="lazy"
+							<div v-if="article?.image">
+								<nuxt-img
+									provider="cloudinary"
+									:src="`${article?.image.replace('images/', '/')}`"
 									width="400"
 									height="250"
-									class="rounded-lg"
+									class="rounded-lg object-cover"
 								/>
-							</div>
-							<div v-if="article?.image && article?.image.startsWith('images/')">
-								<nuxt-img :src="`${article?.image}`" width="400" height="250" class="rounded-lg" />
 							</div>
 							<div class="tags justify-start flex flex-wrap flex-row uppercase">
 								<span
