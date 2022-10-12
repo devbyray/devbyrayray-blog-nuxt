@@ -35,6 +35,9 @@
 	blockquote {
 		@apply text-lg leading-7;
 	}
+	.text-primary-color {
+		color: var(--primary-color)
+	}
 
 	h1,
 	h2 {

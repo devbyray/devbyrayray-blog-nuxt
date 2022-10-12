@@ -39,6 +39,7 @@
 							>
 							<div class="date">
 								<time>{{ formatDate(article?.date) }}</time>
+								<span>{{article?.readingTime?.text}}</span>
 							</div>
 							<p class="font-normal mb-3">{{ article?.description }}</p>
 						</div>

@@ -25,11 +25,18 @@
 			<article
 				class="max-w-4xl m-auto bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative"
 			>
-				<header>
-					<nuxt-link to="/" class="underline text-sky-400 dark:text-white">Go back</nuxt-link>
-				</header>
+				<header class="text-right"></header>
 
 				<h1 class="dark:text-gray-200">{{ blog?.title }}</h1>
+
+				<p>
+					<strong class="text-lg"
+						><span class="text-primary-color">{{ blog?.readingTime?.text }}</span>
+						<span v-if="blog?.tags?.length > 0"> | {{ blog?.tags[0] }}</span></strong
+					> | Read on: <em><nuxt-link target="_blank" class="dark:text-gray-200" :to="`https://medium.com${blog?.slug}`"
+						>Medium</nuxt-link
+					></em>
+				</p>
 
 				<div v-if="blog?.image && !blog?.image.startsWith('images/')">
 					<img
@@ -40,19 +47,11 @@
 						class="rounded-lg mb-8"
 					/>
 				</div>
-				<p>
-					<em
-						>Written at
-						<strong
-							><time>{{ formatDate(blog?.date) }}</time></strong
-						>
-						by RayRay
-						.</em
-					>
+				<!-- <p>
 					<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
-							>Tags: {{ formattedTopics(blog?.tags, blog?.categories) }}</span
-						>
-				</p>
+						>Tags: {{ formattedTopics(blog?.tags, blog?.categories) }}</span
+					>
+				</p> -->
 				<div v-if="blog?.image && blog?.image.startsWith('images/')">
 					<nuxt-img
 						provider="cloudinary"
@@ -62,9 +61,7 @@
 					/>
 				</div>
 				<p>
-					<nuxt-link target="_blank" class="dark:text-white" :to="`https://medium.com${blog?.slug}`"
-						>Medium</nuxt-link
-					>
+					
 				</p>
 				<ContentDoc>
 					<template #empty>
@@ -72,17 +69,25 @@
 					</template>
 				</ContentDoc>
 
+				<div>
+					By RayRay | <time>{{ formatDate(blog?.date) }}</time> |
+					<span v-if="blog?.tags?.length > 0">| {{ blog?.tags[0] }}</span>
+				</div>
 				<Profile></Profile>
 			</article>
 			<footer class="prev-next pt-8 max-w-4xl m-auto">
 				<ul class="grid grid-cols-2 w-full gap-4">
 					<li v-if="prev" class="list-none">
-						<nuxt-link class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center mb-4" :to="prev._path"
+						<nuxt-link
+							class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center mb-4"
+							:to="prev._path"
 							><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
 						>
 					</li>
 					<li v-if="next" class="list-none">
-						<nuxt-link class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center justify-end" :to="next._path"
+						<nuxt-link
+							class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center justify-end"
+							:to="next._path"
 							>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem"
 						/></nuxt-link>
 					</li>
@@ -94,7 +99,7 @@
 <script setup>
 import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
-import MazIcon from 'maz-ui/components/MazIcon';
+import MazIcon from 'maz-ui/components/MazIcon'
 
 const { path } = useRoute()
 const {
@@ -110,7 +115,7 @@ const pageDate = formatDate(blog?.date)
 
 const formattedTopics = (tags, categories) => {
 	let topics = ''
-	console.log({tags, categories})
+	console.log({ tags, categories })
 	if (tags?.length > 0) {
 		topics += tags
 			.map(item => `#${item}`)
@@ -126,6 +131,8 @@ const formattedTopics = (tags, categories) => {
 
 	return topics
 }
+
+console.log('blog: ', blog)
 
 const { prev, next } = useContent()
 </script>

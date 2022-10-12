@@ -30,6 +30,7 @@
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "maz-ui": "^3.0.7",
     "prism-themes": "^1.9.0",
+    "remark-reading-time": "^2.0.1",
     "vue-embed-gist": "^1.2.0"
   }
 }

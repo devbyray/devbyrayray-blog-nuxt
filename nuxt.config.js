@@ -168,6 +168,9 @@ export default {
 				dark: 'github-dark'
 			},
 			preload: ['vue']
+		},
+		markdown: {
+			remarkPlugins: ['remark-reading-time']
 		}
 	},
 	postcss: {
