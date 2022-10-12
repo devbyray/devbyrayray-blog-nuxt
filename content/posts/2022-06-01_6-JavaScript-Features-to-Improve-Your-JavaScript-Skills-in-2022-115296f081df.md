@@ -13,8 +13,6 @@ Recently all major browsers updated their JavaScript features. So in this post, 
 The features Array.at(), structuredClone(), Top-level await, For-await-of-loop, private class fields and Object.hasOwn() are both very new features and features that improve the already existing functionality in JavaScript. Let's dive into it together.
 
 
-{{toc}}
-
 ## 1. Get JavaScript Array item with `Array.at()`
 
 ### Before
@@ -472,6 +470,12 @@ console.log('propC:', Object.hasOwn(obj, 'propC')); // "propA: false";
 
 ### Browser support
 
-**_Note:_** `_Object.hasOwn()_` _is intended as a replacement for_ `[_Object.hasOwnProperty_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)`_._
+**_Note:_** `Object.hasOwn()` _is intended as a replacement for _[Object.hasOwnProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)_._
 
 In my opinion, the [browser support is great](https://caniuse.com/mdn-javascript_builtins_object_hasown). Hopefully, you don’t need to support old Internet Explorer browsers because they lack support. Find more [information and examples in de MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn).
+
+---
+
+**Thanks!**
+
+After reading this story, I hope you learned something new or are inspired to create something new! 🤗

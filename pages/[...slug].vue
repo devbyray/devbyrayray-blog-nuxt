@@ -20,79 +20,76 @@
 				:content="blog?.description ?? CONFIG?.sitedesc"
 			/>
 		</Head>
-		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
+		<div class="bg-gray-900 dark:bg-gray-900 lg:py-10 lg:px-12">
 			<TheHeader></TheHeader>
-			<article
-				class="max-w-4xl m-auto bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative"
-			>
-				<header class="text-right"></header>
+			<div class="page-container 3xl:max-w-7xl m-auto">
+				<article class="bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl">
+					<h1 class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
+					<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
+						<li class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white">
+							<strong>Reading time: </strong>
+							<span>~{{ Math.round(blog?.readingTime?.minutes) }} minutes</span>
+						</li>
+						<li v-if="blog?.tags?.length > 0" class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white">
+							<span>{{ blog?.tags[0] }}</span>
+						</li>
+						<li class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white">
+							<strong>Date: </strong><time>{{ formatDate(blog?.date) }}</time>
+						</li>
+					</ul>
 
-				<h1 class="dark:text-gray-200">{{ blog?.title }}</h1>
+					<div v-if="blog?.image && !blog?.image.startsWith('images/')">
+						<img
+							:src="getImageUrl(blog?.image, 'big')"
+							loading="lazy"
+							height="400"
+							class="rounded-lg mb-8"
+						/>
+					</div>
 
-				<p>
-					<strong class="text-lg"
-						><span class="text-primary-color">{{ blog?.readingTime?.text }}</span>
-						<span v-if="blog?.tags?.length > 0"> | {{ blog?.tags[0] }}</span></strong
-					> | Read on: <em><nuxt-link target="_blank" class="dark:text-gray-200" :to="`https://medium.com${blog?.slug}`"
-						>Medium</nuxt-link
-					></em>
-				</p>
-
-				<div v-if="blog?.image && !blog?.image.startsWith('images/')">
-					<img
-						:src="getImageUrl(blog?.image, 'big')"
-						loading="lazy"
-						width="850"
-						height="400"
-						class="rounded-lg mb-8"
-					/>
-				</div>
-				<!-- <p>
+					<!-- <p>
 					<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
 						>Tags: {{ formattedTopics(blog?.tags, blog?.categories) }}</span
 					>
 				</p> -->
-				<div v-if="blog?.image && blog?.image.startsWith('images/')">
-					<nuxt-img
-						provider="cloudinary"
-						:src="`${blog?.image.replace('images/', '/')}`"
-						width="850"
-						class="rounded-lg object-cover cover-image"
-					/>
-				</div>
-				<p>
-					
-				</p>
-				<ContentDoc>
-					<template #empty>
-						<h1>Document is empty</h1>
-					</template>
-				</ContentDoc>
+					<div v-if="blog?.image && blog?.image.startsWith('images/')">
+						<nuxt-img
+							provider="cloudinary"
+							:src="`${blog?.image.replace('images/', '/')}`"
+							height="400"
+							class="rounded-lg object-cover cover-image mb-0"
+						/>
+					</div>
 
-				<div>
-					By RayRay | <time>{{ formatDate(blog?.date) }}</time> |
-					<span v-if="blog?.tags?.length > 0">| {{ blog?.tags[0] }}</span>
-				</div>
-				<Profile></Profile>
-			</article>
-			<footer class="prev-next pt-8 max-w-4xl m-auto">
-				<ul class="grid grid-cols-2 w-full gap-4">
-					<li v-if="prev" class="list-none">
-						<nuxt-link
-							class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center mb-4"
-							:to="prev._path"
-							><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
-						>
-					</li>
-					<li v-if="next" class="list-none">
-						<nuxt-link
-							class="text-sky-400 dark:text-white flex p-4 rounded-2xl items-center justify-end"
-							:to="next._path"
-							>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem"
-						/></nuxt-link>
-					</li>
-				</ul>
-			</footer>
+					<p></p>
+					<ContentDoc>
+						<template #empty>
+							<h1>Document is empty</h1>
+						</template>
+					</ContentDoc>
+				</article>
+				<aside class="right-side">
+					<Profile></Profile>
+				</aside>
+				<footer class="prev-next pt-8">
+					<ul class="grid grid-cols-2 gap-4">
+						<li v-if="prev" class="list-none">
+							<nuxt-link
+								class="text-black flex p-4 rounded-2xl items-center mb-4"
+								:to="prev._path"
+								><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
+							>
+						</li>
+						<li v-if="next" class="list-none">
+							<nuxt-link
+								class="text-black flex p-4 rounded-2xl items-center justify-end"
+								:to="next._path"
+								>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem"
+							/></nuxt-link>
+						</li>
+					</ul>
+				</footer>
+			</div>
 		</div>
 	</div>
 </template>
@@ -147,11 +144,29 @@ export default {
 </script>
 
 <style scoped>
+.page-container {
+	max-width: 800px;
+	grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1300px) {
+	.page-container {
+		max-width: 1200px;
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: minmax(0, 1fr) 400px;
+	}
+}
+
+pre {
+  max-width: 100%;
+  overflow: hidden;
+}
 .prev-next {
 	display: flex;
 }
 .cover-image {
-	width: 100%;
+	max-width: 100%;
 	height: 400px;
 }
 .prev-next a {

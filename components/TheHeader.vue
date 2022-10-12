@@ -1,5 +1,5 @@
 <template>
-	<div class="header-container max-w-4xl">
+	<div class="header-container">
 		<header v-if="home" class="text-center page-header flex items-center flex-col">
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
@@ -44,5 +44,12 @@ defineProps({
 <style>
 .header-container {
 	margin: 0 auto;
+	max-width: 800px;
+}
+
+@media screen and (min-width: 1300px) {
+	.header-container {
+		max-width: 1200px;
+	}
 }
 </style>

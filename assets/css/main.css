@@ -18,16 +18,16 @@
 		font-family: 'Poppins', sans-serif;
 	}
 	h1 {
-		@apply text-5xl;
+		@apply lg:text-5xl text-3xl;
 	}
 	h2 {
-		@apply text-3xl;
+		@apply lg:text-3xl text-2xl;
 	}
 	h3 {
-		@apply text-2xl;
+		@apply lg:text-2xl text-xl;
 	}
 	h4 {
-		@apply text-xl;
+		@apply lg:text-xl text-lg;
 	}
 
 	p,
@@ -37,6 +37,15 @@
 	}
 	.text-primary-color {
 		color: var(--primary-color)
+	}
+	.text-secondary-color {
+		color: var(--secondary-color)
+	}
+	.bg-primary-color {
+		background: var(--primary-color)
+	}
+	.bg-secondary-color {
+		background: var(--secondary-color)
 	}
 
 	h1,
@@ -100,7 +109,7 @@
 		margin: 0 auto 2rem;
 	}
 	a {
-		@apply dark:text-white underline;
+		@apply text-white dark:text-white underline;
 		color: var(--secondary-color);
 		transition: ease-in-out all 0.3s;
 	}
@@ -117,7 +126,6 @@
 	}
 
 	.content p code {
-		background: var(--code-bg);
 		white-space: nowrap;
 		font-family: monospace;
 		@apply text-white px-2 py-1 text-sm;
