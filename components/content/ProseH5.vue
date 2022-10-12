@@ -1,3 +1,11 @@
 <template>
-  <h5 class="text-black dark:text-white"><slot /></h5>
+  <h5 :id="id" class="text-black dark:text-white">
+    <a :href="`#${id}`">
+      <slot />
+    </a>
+  </h5>
 </template>
+
+<script setup lang="ts">
+defineProps<{ id: string }>()
+</script>

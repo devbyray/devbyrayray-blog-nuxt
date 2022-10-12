@@ -8,6 +8,11 @@
 		--white: #fff;
 		--primary-color: #fecd1a;
 		--secondary-color: #001576;
+
+		--color-javascript: #f7df1e;
+		--color-vue: #42b883;
+		--color-typescript: #3178c6;
+		--color-angular: #b52e31;
 	}
 	body {
 		font-family: 'Poppins', sans-serif;

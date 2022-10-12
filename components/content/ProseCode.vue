@@ -14,7 +14,7 @@
 		<div class="bottom-container">
 			<div class="copy-container">
 				<span class="copied-text" v-if="copied">Copied code!</span>
-				<button :style="{background: languageBackground}" class="copy-button" @click="copy(code)">Copy Code</button>
+				<button :style="{ background: languageBackground, color: languageColor }" class="copy-button" @click="copy(code)">Copy Code</button>
 			</div>
 		</div>
 	</div>
@@ -47,6 +47,16 @@ const languageMap: Record<string, { text: string; color: string; background: str
 		text: 'js',
 		background: '#f7df1e',
 		color: 'black'
+	},
+	javascript: {
+		text: 'js',
+		background: '#f7df1e',
+		color: 'black'
+	},
+	angular: {
+		text: 'ng',
+		background: '#b52e31',
+		color: 'black'
 	}
 }
 const languageText = computed(() => (props.language ? languageMap[props.language]?.text : null))
@@ -77,7 +87,6 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 	margin-right: 1em;
 }
 .copy-button {
-    color: white;
     padding: 0.5rem 0.8rem 0.5rem 1rem;
     border-top-left-radius: 5px;
 }

@@ -6,9 +6,8 @@ date: '2022-08-05T19:47:37.503Z'
 categories: []
 tags: []
 slug: /@byrayray/canva-pro-the-best-content-creation-service-for-bloggers-youtubers-and-tiktokkers-b2f6989dcb72
+image: images/1__YVn__jO0Sj434fmfpCjwpKA.png
 ---
-
-![](/images/1__YVn__jO0Sj434fmfpCjwpKA.png)
 
 Since I started writing blogs, making videos, and composing tweets, I have used all kinds of tools to make lovely creative images. Back in the day, I used Photoshop most of the time.
 
@@ -19,7 +18,8 @@ My smartphone is becoming more and more important for creativity and writing my 
 > Yes, [I’ve included my affiliate link here](https://partner.canva.com/c/2339544/811170/10068). But you can ignore it if you want!  
 > I wouldn’t write about Canva if I wouldn’t like it or didn’t use it myself on a daily basis. _😉._ If you want a [link to Canva without my affiliate link](https://www.canva.com/), here it is _👍_
 
-### Why I Switched From Photoshop to Canva?
+---
+## Why I Switched From Photoshop to Canva?
 
 The possibilities for Photoshop are endless. Well, you have to spend so much time getting comfortable with it. You can create stunning images and artwork with it. But I think it’s too complex to make simple creative images for social media, blogs, or newsletters. Yes, you can use it on different devices, but it’s not that easy.
 
@@ -36,7 +36,9 @@ What made me change?
 *   I choose on which device I start or continue
 *   Never lose files; everything is saved in the cloud! 👍
 
-### My favorite features of Canva Pro
+---
+
+## My favorite features of Canva Pro
 
 [Canva](https://partner.canva.com/c/2339544/811170/10068) has loads of features, but I love to show you my favorite 5.
 
@@ -48,7 +50,7 @@ The best feature of [Canva](https://partner.canva.com/c/2339544/811170/10068) is
 
 Some creative people even sell their [Canva Templates via Etsy](https://www.etsy.com/market/canva_templates).
 
-#### Feature 2: Resizing
+### Feature 2: Resizing
 
 ![](/images/1__qxkvcLBBjEX1Mi0jics4og.png)
 
@@ -56,7 +58,7 @@ Resizing is a feature of the Canva Pro tier. (_You can try Canva Pro 30 days for
 
 > In the free tier, you can set the size beforehand. But if you like to have a different size later on, just open a new Canva project and copy all your objects and paste them into the new project _😅_.
 
-#### Feature 3: Animations
+### Feature 3: Animations
 
 Animations are great for videos and presentations. You can find this feature in the free tier as well.
 
@@ -64,7 +66,7 @@ Animations are great for videos and presentations. You can find this feature in 
 
 There are page animations where you can set the animation type for the whole page or select every object in your design and apply a different animation.
 
-#### Feature 4: Brand kit
+### Feature 4: Brand kit
 
 Every brand has its colors and fonts. Well, Canva makes it super easy to make a set of brand colors, brand logos, and fonts.
 
@@ -74,23 +76,24 @@ Whenever you select an object where you can change the color or font, it’s eas
 
 ![](/images/1__zQVRoCVsx3__QtDd5aEdmgg.png)
 
-#### Feature 5: Exporting
+### Feature 5: Exporting
 
 After you finish your design, you want to download it to your computer or smartphone. Click the share button and press download to see all your options. Most options are for the free tier, some are only in the Pro tier.
 
 ![](/images/1__ms6__Hwf__B2RNZansj__jowg.png)
 
-#### **Bonus 🎊**
+### **Bonus 🎊**
 
 Last but not least, every feature I listed is available in every browser, smartphone, or tablet. So if you like to design on your desktop, and need an image on your phone, just export it on your phone with the [Canva](https://partner.canva.com/c/2339544/811170/10068) app.
 
-### Try Canva Pro for free
+---
+## Try Canva Pro for free
 
 You can [try Canva Pro for free](https://partner.canva.com/c/2339544/903498/10068)! 👍
 
 [![](https://cdn-images-1.medium.com/max/800/1*22KeJJt0EfEj7Negmz_aUw.png)](https://partner.canva.com/c/2339544/903498/10068)
 
-### Pricing of Canva
+## Pricing of Canva
 
 For months I’ve used the free tier of [Canva](https://partner.canva.com/c/2339544/811170/10068). In my opinion, there are not a lot of restrictions when using the free tier. You can’t use Premium photos, resizing afterward isn’t possible, some export limitations. But there are still a ton of things you can do 👍
 
@@ -102,7 +105,9 @@ But if you compare this pricing against the Creative Cloud by Adobe, [Canva](htt
 
 [![](https://cdn-images-1.medium.com/max/800/1*a6qjTsaHUDAdriB9vKF6mw.png)](https://partner.canva.com/c/2339544/811170/10068)
 
-### Canva Pro is the best solution for…
+---
+
+## Canva Pro is the best solution for…
 
 Maybe [Canva](https://partner.canva.com/c/2339544/811170/10068) is not for every content creator, but I think it’s awesome for a great variety of content creators like:
 
@@ -115,7 +120,7 @@ Maybe [Canva](https://partner.canva.com/c/2339544/811170/10068) is not for every
 *   Marketing managers
 *   And a lot more.
 
-### Thanks
+## Thanks
 
 Upgrading to Canva Pro was my best investment in 2022. It saves me time and extends my creativity in many ways.
 
@@ -124,10 +129,3 @@ Thanks for reading all the way down to here 🙏I hope you enjoyed it as much as
 > Want to give [Canva Pro](https://partner.canva.com/c/2339544/811170/10068) a shot for free? Create a free account and try Canva Pro for 30 days. I guarantee it won’t disappoint you!
 
 Let me know in the comments what you think of Canva 👍
-
-
-
-### Read more
-
-[**Design / Creative**  
- byrayray.medium.com](https://byrayray.medium.com/list/aa45a0678d17 "https://byrayray.medium.com/list/aa45a0678d17")[](https://byrayray.medium.com/list/aa45a0678d17)
