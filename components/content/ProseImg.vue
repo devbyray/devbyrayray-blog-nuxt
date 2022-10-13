@@ -1,24 +1,30 @@
 <template>
-  <img :src="src" loading="lazy" :alt="alt" :width="width" :height="height">
+	<!-- <img :src="src" loading="lazy" :alt="alt" :width="width" :height="height" /> -->
+	<nuxt-img
+		provider="cloudinary"
+		:src="`${src.replace('images/', '/')}`"
+    :alt="alt" 
+		:width="width" :height="height"
+	/>
 </template>
 
 <script setup lang="ts">
 defineProps({
-  src: {
-    type: String,
-    default: ''
-  },
-  alt: {
-    type: String,
-    default: ''
-  },
-  width: {
-    type: [String, Number],
-    default: undefined
-  },
-  height: {
-    type: [String, Number],
-    default: undefined
-  }
+	src: {
+		type: String,
+		default: ''
+	},
+	alt: {
+		type: String,
+		default: ''
+	},
+	width: {
+		type: [String, Number],
+		default: undefined
+	},
+	height: {
+		type: [String, Number],
+		default: undefined
+	}
 })
 </script>

@@ -1,9 +1,9 @@
 ---
 title: How I Earned $4K Blogging On Medium As A Developer
-description: Let’s analyze that data and pull lessons from it. But consistency stays the most important rule!
+description: I started in 2016 by writing on Medium. And since 2020, I have started earning money with that. In 2,5 years, I earned ~$4000. I recently looked at that data and learned a few things by analyzing that data.
 date: '2022-09-05T08:46:02.444Z'
 categories: []
-tags: []
+tags: ['Blogging']
 slug: /@byrayray/how-i-earned-4k-blogging-on-medium-as-a-developer-b6925aa78358
 image: images/0_9CaNg--vADrVtlzg.jpg
 ---

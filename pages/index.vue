@@ -12,9 +12,9 @@
 					v-if="posts"
 					class="post-grid grid grid-flow-row gap-8 text-neutral-600 md:grid-cols-2 lg:grid-cols-3"
 				>
-					<div v-for="article in posts" :key="article?._path" class="bg-white mb-5 rounded-lg">
+					<div v-for="article in posts" :key="article?._path" class="mb-5">
 						<div
-							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
+							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg"
 						>
 							<div class="date flex flex-wrap items-start">
 								<time
@@ -36,9 +36,10 @@
 								/>
 							</div>
 							<div>
-								<span class=""
-									><strong>Reading time: </strong>
-									<span>~{{ Math.round(article?.readingTime?.minutes) }} minutes</span></span
+								<span class="">
+									<span
+										>Reading time: ~{{ Math.round(article?.readingTime?.minutes) }} minutes</span
+									></span
 								>
 							</div>
 							<nuxt-link :to="article?._path" class="dark:text-white"
@@ -51,7 +52,7 @@
 							<div class="mt-auto">
 								<nuxt-link :to="article?._path" class="dark:text-white"
 									><span
-										class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white"
+										class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color hover:bg-secondary-color text-white"
 									>
 										Read more
 									</span></nuxt-link

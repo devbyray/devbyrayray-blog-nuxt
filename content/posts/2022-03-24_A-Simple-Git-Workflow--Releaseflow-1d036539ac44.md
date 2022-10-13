@@ -1,6 +1,6 @@
 ---
 title: 'A Simple Git Workflow: Releaseflow'
-description: Let’s make our Git workflow simpler!
+description: I’ve seen a lot of organizations use the Gitflow strategy to use Git. It’s not a bad strategy, but it could be way simpler. That’s why I was happy to find Releaseflow. In this post, I want to tell you how it works, and why it could be a benefit for your organization.
 date: '2022-03-24T17:18:37.352Z'
 categories: []
 tags: ['Git']
@@ -10,7 +10,7 @@ image: images/1__3KRHv1owvEzpW7gMewe8Iw.png
 
 I’ve seen a lot of organizations use the Gitflow strategy to use Git. It’s not a bad strategy, but it could be way simpler. That’s why I was happy to find Releaseflow. In this post, I want to tell you how it works, and why it could be a benefit for your organization.
 
-> [“Git Releaseflow](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/)” The name of this workflow is coming from a Microsoft. (Watch the talk on [Youtube](https://youtu.be/t_4lLR6F_yk?t=924)) Release flow is much simpler than [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Where gitflow has many different types of branches, release flow has only 4 of them.
+> [Git Releaseflow](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/)” The name of this workflow is coming from a Microsoft. (Watch the talk on [Youtube](https://youtu.be/t_4lLR6F_yk?t=924)) Release flow is much simpler than [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Where gitflow has many different types of branches, release flow has only 4 of them.
 
 ---
 ## Git release flow supports

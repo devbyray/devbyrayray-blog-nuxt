@@ -22,10 +22,11 @@
 		</Head>
 		<div class="bg-gray-900 dark:bg-gray-900 lg:py-10 lg:px-12">
 			<TheHeader></TheHeader>
-			<div class="page-container 3xl:max-w-7xl m-auto">
+			<div class="page-container 3xl:max-w-7xl m-auto pt-16">
 				<article
-					class="bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl"
+				class="bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl"
 				>
+				<div class="dino-header absolute"></div>
 					<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
 						<li
 							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
@@ -172,5 +173,14 @@ pre {
 }
 .prev-next a:hover {
 	background: var(--secondary-color);
+}
+.dino-header {
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	left: 85%;
+	background-image: url('/images/dino.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 </style>

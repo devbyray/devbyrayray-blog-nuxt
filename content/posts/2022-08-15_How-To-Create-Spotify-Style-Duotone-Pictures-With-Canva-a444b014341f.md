@@ -3,7 +3,7 @@ title: How To Create Spotify Style Duotone Pictures With Canva
 description: Have your picture ready in seconds!
 date: '2022-08-15T12:58:58.123Z'
 categories: []
-tags: []
+tags: ['Design', 'Canva']
 slug: /@byrayray/how-to-create-spotify-style-duotone-pictures-with-canva-a444b014341f
 image: images/1__1tgWdbUFpFibY6AzTTGztA.png
 ---
