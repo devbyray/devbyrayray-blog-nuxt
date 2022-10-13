@@ -126,17 +126,6 @@ export const HEAD = {
 			href: '/site.webmanifest'
 		},
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-		{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-		{
-			rel: 'preconnect',
-			href: 'https://fonts.gstatic.com',
-			crossOriginIsolated: true
-		},
-		{
-			rel: 'stylesheet',
-			href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap',
-			crossorigin: 'anonymous'
-		}
 	],
 	script: [],
 	link: [],
@@ -154,6 +143,22 @@ export default {
 	},
 	target: 'static',
 	modules: ['@nuxt/content', '@nuxt/image-edge'],
+	buildModules: ['@nuxtjs/google-fonts'],
+	googleFonts: {
+		download: true,
+		families: {
+			// Roboto: true,
+			// 'Josefin+Sans': true,
+			// Lato: [100, 300],
+			// Raleway: {
+			// 	wght: [100, 400],
+			// 	ital: [100]
+			// }
+			Poppins: {
+				wght: [400, 700]
+			}
+		}
+	},
 	plugins: [],
 	// css
 	css: ['@/assets/css/main.css', 'maz-ui/css/main.css'],
