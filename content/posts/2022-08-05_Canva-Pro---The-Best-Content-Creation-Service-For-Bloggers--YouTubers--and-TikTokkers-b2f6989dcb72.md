@@ -122,10 +122,10 @@ Maybe [Canva](https://partner.canva.com/c/2339544/811170/10068) is not for every
 
 ## Thanks
 
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
 Upgrading to Canva Pro was my best investment in 2022. It saves me time and extends my creativity in many ways.
 
 Thanks for reading all the way down to here 🙏I hope you enjoyed it as much as enjoyed writing this. 😊
 
 > Want to give [Canva Pro](https://partner.canva.com/c/2339544/811170/10068) a shot for free? Create a free account and try Canva Pro for 30 days. I guarantee it won’t disappoint you!
-
-Let me know in the comments what you think of Canva 👍

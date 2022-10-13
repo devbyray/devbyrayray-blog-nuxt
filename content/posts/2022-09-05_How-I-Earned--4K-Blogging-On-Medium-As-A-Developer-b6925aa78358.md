@@ -86,9 +86,9 @@ In the last years, I’ve received many followers 🙏 (_Thanks for that!_), but
 
 
 ---
-### Thanks!
+## Thanks!
 
-![](/images/0__YmFzKa__HSM0Fshuj.jpg)
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

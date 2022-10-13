@@ -49,6 +49,8 @@ Now export the new Spotify photo and download them to your computer or smartphon
 
 ## Thanks!
 
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
 Well, that was easy, right 😉! Please share in the comments if there are other Canvas features you would like to see in a future post. Or share your result. I’m looking forwards to it 😉
 
 > _Want to give_ [_Canva Pro_](https://partner.canva.com/c/2339544/811170/10068) _a shot for free? Create a free account and try Canva Pro for 30 days. I guarantee it won’t disappoint you!_

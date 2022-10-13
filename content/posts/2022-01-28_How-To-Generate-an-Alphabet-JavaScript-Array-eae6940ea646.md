@@ -71,7 +71,7 @@ I hope you learned something new or are inspired to create something new after r
 
 ### Thanks!
 
-![](/images/0__7pa1RpRxXqdkgYAJ.jpg)
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
 After reading this story, I hope you learned something new or are inspired to create something new! 🤗
 

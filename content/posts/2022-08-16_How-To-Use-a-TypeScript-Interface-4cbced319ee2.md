@@ -63,3 +63,13 @@ Sometimes, you will say that a property can be a `string` or a `null`. In those 
 For example, with the `cheescrust` it is optional but can be a boolean or null.
 
 So with the Pizza Tuna, we say we don’t want to offer cheese crust, so we give it a value of `null`.
+
+---
+
+## Thanks
+
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this story, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁.
