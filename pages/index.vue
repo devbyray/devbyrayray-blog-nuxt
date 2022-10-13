@@ -1,6 +1,6 @@
 <template lang="">
 	<div>
-		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-12">
+		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<TheHeader home></TheHeader>
 
 			<div class="container page-container">
@@ -10,9 +10,9 @@
 
 				<div
 					v-if="posts"
-					class="post-grid grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols- md:grid-cols-2 lg:grid-cols-3"
+					class="post-grid grid grid-flow-row gap-8 text-neutral-600 md:grid-cols-2 lg:grid-cols-3"
 				>
-					<div v-for="article in posts" :key="article?._path" class="bg-white mb-5">
+					<div v-for="article in posts" :key="article?._path" class="bg-white mb-5 rounded-lg">
 						<div
 							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
 						>
@@ -20,9 +20,8 @@
 								<nuxt-img
 									provider="cloudinary"
 									:src="`${article?.image.replace('images/', '/')}`"
-									width="400"
-									height="250"
-									class="rounded-lg object-cover"
+									height="350"
+									class="rounded-lg object-cover cover-image"
 								/>
 							</div>
 							<div class="tags justify-start flex flex-wrap flex-row uppercase">
@@ -112,10 +111,8 @@ useHead({
 	height: auto;
 }
 
-.blog-post img {
+.cover-image {
 	width: 100%;
-	height: 250px;
-	object-fit: cover;
 	margin-bottom: 1rem;
 }
 </style>

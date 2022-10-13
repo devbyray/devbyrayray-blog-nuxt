@@ -38,21 +38,12 @@
 						</li>
 					</ul>
 
-					<div v-if="blog?.image && !blog?.image.startsWith('images/')">
-						<img
-							:src="getImageUrl(blog?.image, 'big')"
-							loading="lazy"
-							height="400"
-							class="rounded-lg mb-8"
-						/>
-					</div>
-
 					<!-- <p>
 					<span v-if="blog?.tags.length > 0 || blog?.categories.length > 0"
 						>Tags: {{ formattedTopics(blog?.tags, blog?.categories) }}</span
 					>
 				</p> -->
-					<div v-if="blog?.image && blog?.image.startsWith('images/')">
+					<div v-if="blog?.image">
 						<nuxt-img
 							provider="cloudinary"
 							:src="`${blog?.image.replace('images/', '/')}`"
