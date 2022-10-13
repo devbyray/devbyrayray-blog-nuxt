@@ -23,18 +23,29 @@
 		<div class="bg-gray-900 dark:bg-gray-900 lg:py-10 lg:px-12">
 			<TheHeader></TheHeader>
 			<div class="page-container 3xl:max-w-7xl m-auto">
-				<article class="bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl">
-					<h1 class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
+				<article
+					class="bg-white dark:bg-gray-700 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl"
+				>
 					<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
-						<li class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white">
-							<strong>Reading time: </strong>
-							<span>~{{ Math.round(blog?.readingTime?.minutes) }} minutes</span>
+						<li
+							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
+						>
+							<strong>Date: </strong><time>{{ formatDate(blog?.date) }}</time>
 						</li>
-						<li v-if="blog?.tags?.length > 0" class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white">
+						<li
+							v-if="blog?.tags?.length > 0"
+							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white"
+						>
 							<span>{{ blog?.tags[0] }}</span>
 						</li>
-						<li class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white">
-							<strong>Date: </strong><time>{{ formatDate(blog?.date) }}</time>
+					</ul>
+					<h1 class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
+					<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
+						<li
+							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
+						>
+							<strong>Reading time: </strong>
+							<span>~{{ Math.round(blog?.readingTime?.minutes) }} minutes</span>
 						</li>
 					</ul>
 
@@ -65,16 +76,12 @@
 				<footer class="prev-next pt-8">
 					<ul class="grid grid-cols-2 gap-4">
 						<li v-if="prev" class="list-none">
-							<nuxt-link
-								class="text-black flex p-4 rounded-2xl items-center mb-4"
-								:to="prev._path"
+							<nuxt-link class="text-black flex p-4 rounded-2xl items-center mb-4" :to="prev._path"
 								><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
 							>
 						</li>
 						<li v-if="next" class="list-none">
-							<nuxt-link
-								class="text-black flex p-4 rounded-2xl items-center justify-end"
-								:to="next._path"
+							<nuxt-link class="text-black flex p-4 rounded-2xl items-center justify-end" :to="next._path"
 								>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem"
 							/></nuxt-link>
 						</li>
@@ -150,8 +157,8 @@ export default {
 }
 
 pre {
-  max-width: 100%;
-  overflow: hidden;
+	max-width: 100%;
+	overflow: hidden;
 }
 .prev-next {
 	display: flex;

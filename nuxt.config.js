@@ -125,7 +125,7 @@ export const HEAD = {
 			rel: 'manifest',
 			href: '/site.webmanifest'
 		},
-		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 	],
 	script: [],
 	link: [],
@@ -159,7 +159,10 @@ export default {
 			}
 		}
 	},
-	plugins: [],
+	plugins: ['@/plugins/vue-gtag.client.js'],
+	publicRuntimeConfig: {
+		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID
+	},
 	// css
 	css: ['@/assets/css/main.css', 'maz-ui/css/main.css'],
 	components: true,

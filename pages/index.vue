@@ -16,6 +16,17 @@
 						<div
 							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white"
 						>
+							<div class="date flex flex-wrap items-start">
+								<time
+									class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
+									>{{ formatDate(article?.date) }}</time
+								>
+								<span
+									v-if="article?.tags?.length > 0"
+									class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white"
+									>{{ article?.tags[0] }}</span
+								>
+							</div>
 							<div v-if="article?.image">
 								<nuxt-img
 									provider="cloudinary"
@@ -24,23 +35,28 @@
 									class="rounded-lg object-cover cover-image"
 								/>
 							</div>
-							<div class="tags justify-start flex flex-wrap flex-row uppercase">
-								<span
-									:class="'tag text-sm mb-2 mr-2 tag-' + tag.toLowerCase().replaceAll(' ', '-')"
-									v-for="tag in article?.categories"
-									>{{ tag.replaceAll("'", '') }}</span
+							<div>
+								<span class=""
+									><strong>Reading time: </strong>
+									<span>~{{ Math.round(article?.readingTime?.minutes) }} minutes</span></span
 								>
 							</div>
 							<nuxt-link :to="article?._path" class="dark:text-white"
-								><h3 class="font-bold dark:text-white text-2xl tracking-tight mb-2">
+								><h3 class="font-bold dark:text-white text-2xl mt-0 tracking-tight mb-2">
 									{{ article?.title }}
 								</h3></nuxt-link
 							>
-							<div class="date">
-								<time>{{ formatDate(article?.date) }}</time>
-								<span>{{article?.readingTime?.text}}</span>
-							</div>
+
 							<p class="font-normal mb-3">{{ article?.description }}</p>
+							<div class="mt-auto">
+								<nuxt-link :to="article?._path" class="dark:text-white"
+									><span
+										class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white"
+									>
+										Read more
+									</span></nuxt-link
+								>
+							</div>
 						</div>
 					</div>
 				</div>

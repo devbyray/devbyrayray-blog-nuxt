@@ -12,7 +12,7 @@ defineProps({
 	},
 	blank: {
 		type: Boolean,
-		default: false
+		default: true
 	}
 })
 </script>
