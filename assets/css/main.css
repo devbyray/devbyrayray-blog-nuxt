@@ -16,6 +16,8 @@
 	}
 	body {
 		font-family: 'Poppins', sans-serif;
+		font-size: 1.3rem;
+		@apply leading-loose;
 	}
 	h1 {
 		@apply lg:text-5xl text-3xl;
@@ -27,13 +29,15 @@
 		@apply lg:text-2xl text-xl;
 	}
 	h4 {
-		@apply lg:text-xl text-lg;
+		@apply lg:text-xl text-xl;
 	}
 
 	p,
 	li,
-	blockquote {
-		@apply text-lg leading-7;
+	blockquote,
+	p > code {
+		@apply text-lg leading-loose;
+		font-size: 1.3rem;
 	}
 	.text-primary-color {
 		color: var(--primary-color)
@@ -128,7 +132,7 @@
 	.content p code {
 		white-space: nowrap;
 		font-family: monospace;
-		@apply px-2 py-1 text-sm;
+		@apply px-2 py-1 text-base;
 	}
 
 	.content blockquote {

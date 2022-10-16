@@ -89,6 +89,7 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 .copy-button {
     padding: 0.5rem 0.8rem 0.5rem 1rem;
     border-top-left-radius: 5px;
+	font-size: 14px;
 }
 .filename-text {
 	position: absolute;

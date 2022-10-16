@@ -23,10 +23,17 @@
 		<div class="bg-gray-900 dark:bg-gray-900 lg:py-10 lg:px-12">
 			<TheHeader></TheHeader>
 			<div class="page-container 3xl:max-w-7xl m-auto pt-16">
+				<aside >
+					<ul class="rounded-2xl list-decimal">
+						<li v-for="item in filterToc(blog?.body?.toc?.links)" :key="item?.id" class="">
+							<nuxt-link :to="`#${item?.id}`" class="dark:text-gray-200 text-right text-sm leading-5">{{ item?.text }}</nuxt-link>
+						</li>
+					</ul>
+				</aside>
 				<article
-				class="bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl"
+					class="bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl p-8 content relative lg:max-w-5xl"
 				>
-				<div class="dino-header absolute"></div>
+					<div class="dino-header absolute"></div>
 					<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
 						<li
 							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
@@ -130,6 +137,11 @@ const formattedTopics = (tags, categories) => {
 
 console.log('blog: ', blog)
 
+function filterToc(links) {
+	console.log('links: ', links)
+	return links.filter((item) => item?.id !== 'thanks')
+}
+
 const { prev, next } = useContent()
 </script>
 <script>
@@ -150,10 +162,10 @@ export default {
 
 @media screen and (min-width: 1300px) {
 	.page-container {
-		max-width: 1200px;
+		max-width: 1600px;
 		display: grid;
 		gap: 2rem;
-		grid-template-columns: minmax(0, 1fr) 400px;
+		grid-template-columns: 1fr 800px 2fr;
 	}
 }
 
@@ -163,6 +175,7 @@ pre {
 }
 .prev-next {
 	display: flex;
+	grid-column: 1/4;;
 }
 .cover-image {
 	max-width: 100%;
