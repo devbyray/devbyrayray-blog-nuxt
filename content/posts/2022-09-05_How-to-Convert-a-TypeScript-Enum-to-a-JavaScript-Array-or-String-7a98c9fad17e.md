@@ -188,6 +188,6 @@ And with this function, we can see that the function works with both string and 
 
 ![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-After reading this story, I hope you learned something new or are inspired to create something new! 🤗
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁.

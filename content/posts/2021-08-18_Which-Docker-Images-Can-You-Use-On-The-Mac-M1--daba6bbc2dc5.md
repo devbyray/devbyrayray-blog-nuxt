@@ -71,7 +71,7 @@ _Read more on the_ [_Docker documentation about multi-architecture images_](http
 
 ![](/images/0__Qay6DRNLz9jUR0UQ.jpg)
 
-After reading this story, I hope you learned something new or are inspired to create something new! 🤗
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
 
