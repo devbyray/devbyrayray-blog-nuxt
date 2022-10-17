@@ -9,15 +9,22 @@
 		--primary-color: #fecd1a;
 		--secondary-color: #001576;
 
+		--primary-color-rgb: rgba(254, 205, 26, 1);
+		--secondary-color-rgb: rgba(0, 21, 118, 1);
+
+		--color-background: rgb(17, 24, 39);
+		--color-content-background: rgb(31, 41, 55);
+
 		--color-javascript: #f7df1e;
 		--color-vue: #42b883;
 		--color-typescript: #3178c6;
 		--color-angular: #b52e31;
 	}
 	body {
-		font-family: 'Poppins', sans-serif;
-		font-size: 1.3rem;
-		@apply leading-loose;
+		font-family: 'Source Code Pro', monospace;
+		font-weight: 500;
+		font-size: 1.4rem;
+		@apply leading-loose text-white;
 	}
 	h1 {
 		@apply lg:text-5xl text-3xl;
@@ -37,19 +44,19 @@
 	blockquote,
 	p > code {
 		@apply text-lg leading-loose;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 	.text-primary-color {
-		color: var(--primary-color)
+		color: var(--primary-color);
 	}
 	.text-secondary-color {
-		color: var(--secondary-color)
+		color: var(--secondary-color);
 	}
 	.bg-primary-color {
-		background: var(--primary-color)
+		background: var(--primary-color);
 	}
 	.bg-secondary-color {
-		background: var(--secondary-color)
+		background: var(--secondary-color);
 	}
 
 	h1,
@@ -69,6 +76,7 @@
 	h4,
 	h5,
 	h6 {
+		font-family: 'Poppins', sans-serif;
 		@apply font-bold;
 	}
 	h2,
@@ -147,7 +155,7 @@
 		position: absolute;
 		top: 22px;
 		left: 10px;
-		color:var(--primary-color);
+		color: var(--primary-color);
 		content: open-quote;
 		font-size: 7rem;
 		line-height: 0.1em;

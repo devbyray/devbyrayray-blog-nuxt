@@ -155,7 +155,11 @@ export default {
 			// 	ital: [100]
 			// }
 			Poppins: {
-				wght: [400, 700]
+				wght: [700]
+			},
+			'Source+Code+Pro': {
+				wght: [500, 800],
+				ital: [500, 800],
 			}
 		}
 	},

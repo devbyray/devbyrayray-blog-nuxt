@@ -33,6 +33,9 @@
 									:src="`${article?.image.replace('images/', '/')}`"
 									height="350"
 									class="rounded-lg object-cover cover-image"
+									:modifiers="{
+										c: 'crop'
+									}"
 								/>
 							</div>
 							<div>
