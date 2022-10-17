@@ -1,6 +1,6 @@
 ---
 title: Create Your Own Ipsum Generator With JavaScript
-description: Free fake content for as much as you like
+description: Generating fake content with random words can be convenient for testing purposes. That’s why today, we will create a JavaScript function that does that. It's super simple with the Math.random, round, while loop and map methods in JavaScript.
 date: '2022-02-02T15:56:32.672Z'
 categories: []
 tags: ['JavaScript']
@@ -8,7 +8,7 @@ slug: /@byrayray/create-your-own-ipsum-generator-with-javascript-3241077570e2
 image: images/0__xbnw8Z__GlC1RU____r.jpg
 ---
 
-Generating content with random words can be convenient for testing purposes. That’s why today, we will create a function that does that.
+Generating fake content with random words can be convenient for testing purposes. That’s why today, we will create a JavaScript function that does that. It's super simple with the Math.random, round, while loop and map methods in JavaScript.
 
 > Use this code to build your own Ipsum generator, so you have random generated content as much as you like 👍
 
@@ -23,7 +23,7 @@ For generating content with random words, we need three functions and a source o
 
 ---
 
-## 1. Generate Random Number
+## Generate Random Number
 
 Since we want to get a random word from our source, we need to generate a random index number. With this function, we need to keep in mind what the minimal and maximum of the Array are.
 
@@ -70,7 +70,7 @@ This is this final function to get a random number between two numbers. Let’s 
 
 ---
 
-## 2. Get a Random Word
+## Get a Random Word
 
 I found a nice collection of random words to use for this post. You can [find it on Gist](https://gist.github.com/devbyray/8dbac8a32c7c87f659d9b34137e25ba0). But in this post, I will use a shorter version.
 
@@ -119,7 +119,7 @@ We have our second function to get a random word from Array.
 
 ---
 
-## 3. Get A String With Random Words
+## Get A String With Random Words
 
 Now we want to get multiple words and make it a string, so we can use it as content for whatever we want. The best we can do that is by generating an Array with several positions.
 
@@ -165,7 +165,7 @@ function generateWords(length = 10) {
 
 ---
 
-## 4. Complete
+## Complete
 
 Now that we created all the code, it’s time to check the complete code example.
 
@@ -192,16 +192,12 @@ const word = [
 	'distant',
 	'adjective.'
 ]
-```
 
-```js
 function getRandomWord(firstLetterToUppercase = false) {
 	const word = words[randomNumber(0, words.length - 1)]
 	return firstLetterToUppercase ? word.charAt(0).toUpperCase() + word.slice(1) : word
 }
-```
 
-```js
 function generateWords(length = 10) {
 	return (
 		[...Array(length)]
@@ -210,12 +206,14 @@ function generateWords(length = 10) {
 			.trim() + '.'
 	)
 }
-```
 
-```js
 function randomNumber(min, max) {
 	return Math.round(Math.random() * (max - min) + min)
 }
+
+generateWords(20);
+
+// Result: Summer city determine interior coffee engine little pupil horn pain likely dress opinion cost perfectly crack parts daily addition copper.
 ```
 
 <runkit link="https://runkit.com/devbyrayray/how-to-generate-a-string-with-random-words"></runkit>

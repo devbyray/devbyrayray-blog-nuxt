@@ -8,47 +8,16 @@
 					<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
 				</header>
 
-				<div
-					v-if="posts"
-					class="post-grid grid grid-flow-row gap-8 text-neutral-600 md:grid-cols-2 lg:grid-cols-3"
-				>
+				<div v-if="posts" class="post-grid grid grid-flow-row gap-8 text-neutral-600 md:grid-cols-2">
 					<div v-for="article in posts" :key="article?._path" class="mb-5">
 						<div
-							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg"
+							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative"
 						>
-							<div class="date flex flex-wrap items-start">
-								<time
-									class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
-									>{{ formatDate(article?.date) }}</time
-								>
-								<span
-									v-if="article?.tags?.length > 0"
-									class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white"
-									>{{ article?.tags[0] }}</span
-								>
-							</div>
-							<div v-if="article?.image">
-								<nuxt-img
-									provider="cloudinary"
-									:src="`${article?.image.replace('images/', '/')}`"
-									height="350"
-									class="rounded-lg object-cover cover-image"
-									:modifiers="{
-										c: 'crop'
-									}"
-								/>
-							</div>
-							<div>
-								<span class="">
-									<span
-										>Reading time: ~{{ Math.round(article?.readingTime?.minutes) }} minutes</span
-									></span
-								>
-							</div>
+							<PostHeader :blog="article" :showTitle="false" :showGradient="false" />
 							<nuxt-link :to="article?._path" class="dark:text-white"
-								><h3 class="font-bold dark:text-white text-2xl mt-0 tracking-tight mb-2">
+								><h2 class="font-bold dark:text-white text-3xl mt-0 leading-10 mb-2">
 									{{ article?.title }}
-								</h3></nuxt-link
+								</h2></nuxt-link
 							>
 
 							<p class="font-normal mb-3">{{ article?.description }}</p>
@@ -125,14 +94,7 @@ useHead({
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
-.page-header img {
-	max-width: 100%;
-	height: auto;
-}
-
-.cover-image {
-	width: 100%;
-	margin-bottom: 1rem;
+.inner-card {
+	padding-top: calc(500px + 2rem);
 }
 </style>

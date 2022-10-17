@@ -1,6 +1,6 @@
 ---
 title: How To Create a Random String With Maximum Characters in JavaScript
-description: Create your own random data generator in JavaScript!
+description: You can use a library for generating random data in JavaScript, but I think it’s even cooler to do it yourself. If you want to spice up your JavaScript skills, these functions are the best to practice.
 date: '2022-01-31T14:27:52.823Z'
 categories: []
 tags: ['JavaScript']
