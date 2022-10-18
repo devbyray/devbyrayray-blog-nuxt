@@ -24,9 +24,16 @@
 		
 		--color-codenewbie: #af00a9;
 		--color-webdev: #009552;
-		--color-canva: #6a3be4;
 		--color-design: #3bdce4;
 		--color-formly: #e23137;
+		
+		--color-canva: #6a3be4;
+		--color-microsoft: #7cbb00;
+		--color-powerapps: #8e2c85;
+		--color-lowcode: #0db7bc;
+		--color-mac: #333;
+		--color-linux: #dd4814;
+		--color-serverless: #14dd50;
 	}
 	body {
 		font-family: 'Poppins', sans-serif;

@@ -11,7 +11,7 @@ defineProps({
 })
 function classes(tag: string) {
 	const obj = {}
-	const tags = ['javascript', 'typescript', 'angular', 'vue', 'css', 'html', 'formly', 'codenewbie', 'canva']
+	const tags = ['javascript', 'typescript', 'angular', 'vue', 'css', 'html', 'formly', 'codenewbie', 'canva', 'microsoft', 'powerapps', 'power apps', 'lowcode', 'mac', 'linux', 'serverless']
 	return {
 		'tag-angular': tag?.toLowerCase()?.includes('angular'),
 		'tag-vue': tag?.toLowerCase()?.includes('vue'),
@@ -22,6 +22,12 @@ function classes(tag: string) {
 		'tag-webdev': tag?.toLowerCase()?.includes('webdev'),
 		'tag-codenewbie': tag?.toLowerCase()?.includes('codenewbie'),
 		'tag-canva': tag?.toLowerCase()?.includes('canva'),
+		'tag-microsoft': tag?.toLowerCase()?.includes('microsoft'),
+		'tag-powerapps': tag?.toLowerCase()?.includes('power'),
+		'tag-lowcode': tag?.toLowerCase()?.includes('low'),
+		'tag-mac': tag?.toLowerCase()?.includes('mac'),
+		'tag-linux': tag?.toLowerCase()?.includes('linux'),
+		'tag-serverless': tag?.toLowerCase()?.includes('server'),
 		'tag-other': tags?.includes(tag?.toLowerCase())
 	}
 }
@@ -61,6 +67,24 @@ function classes(tag: string) {
 }
 .tag-design {
 	background: var(--color-design);
+}
+.tag-microsoft {
+	background: var(--color-microsoft);
+}
+.tag-powerapps {
+	background: var(--color-powerapps);
+}
+.tag-lowcode {
+	background: var(--color-lowcode);
+}
+.tag-mac {
+	background: var(--color-mac);
+}
+.tag-linux {
+	background: var(--color-linux);
+}
+.tag-serverless {
+	background: var(--color-serverless);
 }
 
 </style>

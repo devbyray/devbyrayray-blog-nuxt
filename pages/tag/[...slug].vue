@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Meta hid="canonical" property="canonical" :content="pageUrl" />
-		<Meta hid="og:title" property="og:title" :content="page?.title" />
+		<Meta hid="og:title" property="og:title" :content="page?.title ?? slug[0]" />
 		<Meta hid="og:description" property="og:description" :content="page?.description ?? CONFIG?.sitedesc" />
 		<Meta hid="og:type" property="og:type" content="website" />
 		<Meta hid="og:image" property="og:image" :content="CONFIG?.logoUrl" />
@@ -11,7 +11,7 @@
 		<Meta name="twitter:card" property="twitter:card" content="summary" />
 		<Meta name="twitter:site" property="twitter:site" :content="CONFIG?.twitter" />
 		<Meta name="twitter:creator" property="twitter:creator" :content="CONFIG?.twitter" />
-		<Meta name="twitter:title" property="twitter:title" :content="page?.title" />
+		<Meta name="twitter:title" property="twitter:title" :content="page?.title ?? slug[0]" />
 		<Meta hid="twitter:image" property="twitter:image" :content="CONFIG?.logoUrl" />
 		<Meta
 			hid="twitter:description"
@@ -24,6 +24,7 @@
 
 			<article class="page-container">
 				<section class="page-max-md pb-16">
+					<h1 class="text-white font-bold text-3xl tracking-tight" v-if="!page">{{ slug[0] }}</h1>
 					<ContentRenderer :value="page">
 						<h1 class="text-white font-bold text-3xl tracking-tight">{{ page?.title }}</h1>
 						<ContentRendererMarkdown :value="page" />
