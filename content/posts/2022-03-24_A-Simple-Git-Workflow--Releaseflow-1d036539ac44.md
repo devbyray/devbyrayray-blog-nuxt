@@ -12,6 +12,10 @@ I’ve seen a lot of organizations use the Gitflow strategy to use Git. It’s n
 
 > [Git Releaseflow](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/)” The name of this workflow is coming from a Microsoft. (Watch the talk on [Youtube](https://youtu.be/t_4lLR6F_yk?t=924)) Release flow is much simpler than [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Where gitflow has many different types of branches, release flow has only 4 of them.
 
+![Git Releaseflow](/images/1__3KRHv1owvEzpW7gMewe8Iw.png)
+
+_[> Download image here <](https://res.cloudinary.com/raymons/image/upload/f_auto,q_100,w_1280/devbyrayray/blog//1__3KRHv1owvEzpW7gMewe8Iw.png)_
+
 ---
 ## Git release flow supports
 

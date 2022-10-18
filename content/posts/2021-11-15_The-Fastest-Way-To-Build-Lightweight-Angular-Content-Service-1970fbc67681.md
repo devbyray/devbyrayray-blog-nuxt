@@ -19,8 +19,8 @@ Some applications need multiple languages, but others need one language but have
 
 The simplest and fastest way to create Angular Services is by using the Angular CLI.
 
-```sh
-ng generate service services/content
+```shell
+$ ng generate service services/content
 ```
 
 By running this command, you will generate an Angular Service, automatically added to the `app.module.ts` file. If your project has different settings for the CLI, it could appear in another Angular Module.
@@ -142,8 +142,8 @@ export class ContentService {
 
 I guess you know how to make an Angular Component. The CLI is my favorite way to do it. For example, you generate a `HomepageComponent`.
 
-```sh
-ng generate component components/homepage
+```shell
+$ ng generate component components/homepage
 ```
 
 If you have an Angular Component for yourself, it’s fine.
@@ -198,10 +198,9 @@ In the example, you can see that we add an expression to the template. In that e
 
 ## Examples
 
-I've created some example's so you can use copy-paste it to your projectn 😉.
+I've created a example so you can use copy-paste it to your projects 😉. Check the [Github repo](https://github.com/devbyray/angular-content-dictionary-service) or the StackBlitz app below.
 
-- [StackBlitz](https://stackblitz.com/edit/angular-content-dictionary-service?file=src%2Fapp%2Fapp.component.ts)
-- [Github repo](https://github.com/devbyray/angular-content-dictionary-service)
+<stackblitz id="angular-content-dictionary-service" filename="src/services/content.service.ts" height="700"></stackblitz>
 
 
 ---

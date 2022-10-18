@@ -5,7 +5,7 @@ date: '2020-12-27'
 categories: ['NextJS']
 published: true
 tags: ['React', 'JavaScript', 'NextJS', 'Programming', 'Software Development']
-image: devbyrayray/blog/TailWind-CSS-NextJS-Web-Dev.webp
+image: images/TailWind-CSS-NextJS-Web-Dev.webp
 ---
 
 For a few weeks, I'm convinced to use Tailwind CSS more in my web development projects with NextJS. In this blog post, I want to tell you why it's a great combination.

@@ -1,5 +1,5 @@
 <template>
-	<div class="code-container rounded-lg bg-gray-900 text-black">
+	<div class="code-container rounded-lg bg-gray-900 text-black" :class="`${languageText}`">
 		<span v-if="filename" class="filename-text text-gray-200 dark:text-gray-100">
 			{{ filename }}
 		</span>
@@ -14,7 +14,13 @@
 		<div class="bottom-container">
 			<div class="copy-container">
 				<span class="copied-text" v-if="copied">Copied code!</span>
-				<button :style="{ background: languageBackground, color: languageColor }" class="copy-button" @click="copy(code)">Copy Code</button>
+				<button
+					:style="{ background: languageBackground, color: languageColor }"
+					class="copy-button"
+					@click="copy(code)"
+				>
+					Copy Code
+				</button>
 			</div>
 		</div>
 	</div>
@@ -53,6 +59,21 @@ const languageMap: Record<string, { text: string; color: string; background: str
 		background: '#f7df1e',
 		color: 'black'
 	},
+	sh: {
+		text: 'shell',
+		background: '#af00a9',
+		color: '#fff'
+	},
+	shell: {
+		text: 'shell',
+		background: '#af00a9',
+		color: '#fff'
+	},
+	bash: {
+		text: 'shell',
+		background: '#af00a9',
+		color: '#fff'
+	},
 	angular: {
 		text: 'ng',
 		background: '#b52e31',
@@ -71,9 +92,9 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 	margin-bottom: 1rem;
 	padding-top: 1em;
 	overflow: hidden;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    width: calc(100% + 2rem);
+	margin-left: -1rem;
+	margin-right: -1rem;
+	width: calc(100% + 2rem);
 }
 .bottom-container {
 	display: flex;
@@ -83,12 +104,13 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 	display: flex;
 }
 .copied-text {
-    padding-top: 0.5rem;
+	padding-top: 0.5rem;
 	margin-right: 1em;
 }
 .copy-button {
-    padding: 0.5rem 0.8rem 0.5rem 1rem;
-    border-top-left-radius: 5px;
+	background: var(--color-javascript);
+	padding: 0.5rem 0.8rem 0.5rem 1rem;
+	border-top-left-radius: 5px;
 	font-size: 14px;
 }
 .filename-text {
@@ -97,8 +119,9 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 	right: 3.2em;
 	padding: 0.25em 0.5em;
 	font-size: 14px;
-    font-style: italic;
+	font-style: italic;
 }
+
 .language-text {
 	position: absolute;
 	top: 0;

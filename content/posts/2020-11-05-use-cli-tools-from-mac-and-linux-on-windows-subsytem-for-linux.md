@@ -5,7 +5,7 @@ date: '2020-11-05'
 categories: ['Workflow']
 published: true
 tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', 'Software Development']
-image: devbyrayray/blog/use-cli-tools-from-mac-linux-on-windows-subsystem-for-linux
+image: images/use-cli-tools-from-mac-linux-on-windows-subsystem-for-linux
 ---
 
 

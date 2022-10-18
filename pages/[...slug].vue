@@ -20,8 +20,8 @@
 				:content="blog?.description ?? CONFIG?.sitedesc"
 			/>
 		</Head>
+		<TheHeader></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 lg:py-10 lg:px-12">
-			<TheHeader></TheHeader>
 			<div class="page-container 3xl:max-w-7xl m-auto pt-16 relative">
 				<article
 					class="bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl p-8 content page-content relative lg:max-w-5xl"
@@ -43,14 +43,14 @@
 						<section class="widget-content">
 							<ol class="rounded-2xl list-decimal list-outside pl-8">
 								<li
-									v-for="item in filterToc(blog?.body?.toc?.links)"
-									:key="item?.id"
+									v-for="link in filterToc(blog?.body?.toc?.links)"
+									:key="link?.id"
 									class="text-black dark:text-white pl-8 text-lg leading-7"
 								>
 									<nuxt-link
-										:to="`#${item?.id}`"
+										:to="`#${link?.id}`"
 										class="text-black dark:text-white"
-										>{{ item?.text }}</nuxt-link
+										>{{ link?.text }}</nuxt-link
 									>
 								</li>
 							</ol>
@@ -78,7 +78,6 @@
 	</div>
 </template>
 <script setup>
-import { getImageUrl } from '@/lib/image'
 import { formatDate } from '@/lib/date'
 import MazIcon from 'maz-ui/components/MazIcon'
 

@@ -5,7 +5,7 @@ date: '2020-12-21'
 categories: ['NextJS']
 published: true
 tags: ['TypeScript', 'JavaScript', 'Programming', 'Software Development']
-image: devbyrayray/blog/how-to-build-and-deploy-a-jamstack-website-fast-with-next-js
+image: images/how-to-build-and-deploy-a-jamstack-website-fast-with-next-js
 ---
 
 ## Building Websites in 2010

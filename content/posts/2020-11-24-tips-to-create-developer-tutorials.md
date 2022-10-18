@@ -5,7 +5,7 @@ date: '2020-11-24'
 categories: ['Developer']
 published: true
 tags: ['Tutorials', 'Programming', 'Software Development']
-image: devbyrayray/blog/tips-to-create-developer-tutorials
+image: images/tips-to-create-developer-tutorials
 ---
 
 I have written this after writing programming tutorials for eight years online. In that time I learned so much — still do — but wanted to share it with a lot more people. I hope this will bring you more practical information so you can start to create cool programming content.

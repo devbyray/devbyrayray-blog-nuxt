@@ -5,7 +5,7 @@ date: '2020-12-05'
 categories: ['JavaScript']
 published: true
 tags: ['JavaScript', 'Learn JavaScript', 'Programming', 'Software Development']
-image: devbyrayray/blog/blog-code-fallback-2
+image: images/blog-code-fallback-2
 ---
 
 JavaScript was so popular last year. Every year there is a [poll by StackOverflow that shows this](https://insights.stackoverflow.com/survey/2019). A lot of codenewbies are also very interested in learning it. But how do you start with learning JavaScript if you know HTML & CSS?

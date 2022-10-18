@@ -135,6 +135,10 @@ export const HEAD = {
 }
 
 export default {
+	ssr: false,
+	nitro: {
+		preset: 'service-worker'
+	},
 	runtimeConfig: {
 		public: {
 			CONFIG,
@@ -159,7 +163,7 @@ export default {
 			},
 			'Source+Code+Pro': {
 				wght: [500, 800],
-				ital: [500, 800],
+				ital: [500, 800]
 			}
 		}
 	},

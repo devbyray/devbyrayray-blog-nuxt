@@ -1,6 +1,6 @@
 <template>
 	<div class="header-container">
-		<header v-if="home" class=" max-w-4xl m-auto text-center page-header flex items-center flex-col">
+		<header v-if="home" class="page-max-md m-auto text-center page-header flex items-center flex-col">
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
 					<li>
@@ -15,7 +15,7 @@
 			<nuxt-img provider="cloudinary" loading="lazy" src="Dev_by_RayRay_-_logo" width="300" />
 			<em class="font-bold text-white text-2xl mb-16">{{ CONFIG?.sitedesc }}</em>
 		</header>
-		<header v-if="!home" class="text-center page-header flex items-center flex-row mb-8">
+		<header v-if="!home" class="page-max-md text-center page-header flex items-center flex-row mb-8">
 			<nuxt-link class="text-white" to="/">
 				<nuxt-img provider="cloudinary" loading="lazy" src="rayray.png" width="100" />
 				
@@ -41,15 +41,8 @@ defineProps({
 	home: Boolean
 })
 </script>
-<style>
+<style scoped>
 .header-container {
-	margin: 0 auto;
-	max-width: 800px;
-}
-
-@media screen and (min-width: 1300px) {
-	.header-container {
-		max-width: 1200px;
-	}
+	background: var(--color-javascript)
 }
 </style>

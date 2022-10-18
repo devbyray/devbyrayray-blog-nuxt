@@ -5,12 +5,9 @@ description: Validations, repeatable sections, conditional fields, and submittin
 date: '2020-03-25T17:15:17.082Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
-image: https://cdn-images-1.medium.com/max/800/0*ObTlBymPfhHxX6en
+tags: ['Angular', 'NGX-Formly', 'TypeScript']
+image: images/0_ObTlBymPfhHxX6en.jpg
 ---
-
-![Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)]()
-Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 This article is the second installment of a two-part series called “JSON Powered Forms in Angular.” If you didn't check [the first part](https://medium.com/better-programming/build-fast-json-powered-forms-on-angular-with-ngx-formly-b7a00733e66e), I recommend doing that first.
 

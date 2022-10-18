@@ -5,7 +5,7 @@ date: '2020-10-30'
 categories: ['Workflow']
 published: true
 tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', 'Software Development']
-image: devbyrayray/blog/3-todos-before-applying-for-a-junior-developer-job
+image: images/3-todos-before-applying-for-a-junior-developer-job
 ---
 
 I’ve seen a lot of job applications from junior developers. Most of the applications are made with the best intentions but don’t include a few important things.

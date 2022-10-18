@@ -5,7 +5,7 @@ date: '2020-11-24'
 categories: ['Developer']
 published: true
 tags: ['Tutorials', 'Programming', 'Software Development']
-image: devbyrayray/blog/5-rules-to-improve-code-readability
+image: images/5-rules-to-improve-code-readability
 ---
 
 I have five rules to improve code readability. I’ve learned them in all kinds of projects, teams, and organizations. I hope that you can pick some things from this article to improve your code readability.

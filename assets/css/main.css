@@ -19,11 +19,19 @@
 		--color-vue: #42b883;
 		--color-typescript: #3178c6;
 		--color-angular: #b52e31;
+		--color-html: #e34c26;
+		--color-css: #264de4;
+		
+		--color-codenewbie: #af00a9;
+		--color-webdev: #009552;
+		--color-canva: #6a3be4;
+		--color-design: #3bdce4;
+		--color-formly: #e23137;
 	}
 	body {
-		font-family: 'Source Code Pro', monospace;
+		font-family: 'Poppins', sans-serif;
 		font-weight: 500;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		@apply leading-loose text-white;
 	}
 	h1 {
@@ -44,7 +52,7 @@
 	blockquote,
 	p > code {
 		@apply text-lg leading-loose;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	.text-primary-color {
 		color: var(--primary-color);
@@ -76,7 +84,6 @@
 	h4,
 	h5,
 	h6 {
-		font-family: 'Poppins', sans-serif;
 		@apply font-bold;
 	}
 	h2,
@@ -196,4 +203,13 @@
 .layout-leave-to {
 	transform: translateY(-20px);
 	opacity: 0;
+}
+
+.page-max-lg {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.page-max-md {
+	max-width: 800px;
+	margin: 0 auto;
 }

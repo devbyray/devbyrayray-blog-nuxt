@@ -1,36 +1,51 @@
 <template lang="">
 	<div>
-		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
-			<TheHeader home></TheHeader>
+		<Meta hid="canonical" property="canonical" :content="pageUrl" />
+		<Meta hid="og:title" property="og:title" :content="blog?.title" />
+		<Meta hid="og:description" property="og:description" :content="blog?.description ?? CONFIG?.sitedesc" />
+		<Meta hid="og:type" property="og:type" content="website" />
+		<Meta hid="og:image" property="og:image" :content="pageImage ?? CONFIG?.logoUrl" />
+		<Meta hid="og:url" property="og:url" :content="pageUrl" />
+		<Meta hid="og:locale" property="og:locale" content="en_EN" />
 
-			<div class="container page-container">
+		<Meta name="twitter:card" property="twitter:card" content="summary" />
+		<Meta name="twitter:site" property="twitter:site" :content="CONFIG?.twitter" />
+		<Meta name="twitter:creator" property="twitter:creator" :content="CONFIG?.twitter" />
+		<Meta name="twitter:title" property="twitter:title" :content="blog?.title" />
+		<Meta hid="twitter:image" property="twitter:image" :content="pageImage ?? CONFIG?.logoUrl" />
+		<Meta
+			hid="twitter:description"
+			property="twitter:description"
+			:content="blog?.description ?? CONFIG?.sitedesc"
+		/>
+
+		<TheHeader home></TheHeader>
+		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
+
+			<div class="page-container">
+				<div class="tagcloud">
+					<h2>Tags</h2>
+					<ul class="flex flex-wrap">
+						<Tag v-for="tag in tags" :tag="tag"></Tag>
+					</ul>
+				</div>
+
+				<div v-for="topic in homepageTopics" class="category-posts mb-8">
+					<CategoryPosts :topic="topic" :limit="4"></CategoryPosts>
+					<hr>
+				</div>
+
 				<header>
 					<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
 				</header>
-
-				<div v-if="posts" class="post-grid grid grid-flow-row gap-8 text-neutral-600 md:grid-cols-2">
-					<div v-for="article in posts" :key="article?._path" class="mb-5">
-						<div
-							class="p-5 flex flex-col self-end inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative"
-						>
-							<PostHeader :blog="article" :showTitle="false" :showGradient="false" />
-							<nuxt-link :to="article?._path" class="dark:text-white"
-								><h2 class="font-bold dark:text-white text-3xl mt-0 leading-10 mb-2">
-									{{ article?.title }}
-								</h2></nuxt-link
-							>
-
-							<p class="font-normal mb-3">{{ article?.description }}</p>
-							<div class="mt-auto">
-								<nuxt-link :to="article?._path" class="dark:text-white"
-									><span
-										class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color hover:bg-secondary-color text-white"
-									>
-										Read more
-									</span></nuxt-link
-								>
-							</div>
-						</div>
+				
+				<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
+					<div
+						v-for="article in posts"
+						:key="article?._path"
+						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative"
+					>
+						<BlogPost :article="article"></BlogPost>
 					</div>
 				</div>
 			</div>
@@ -38,62 +53,50 @@
 	</div>
 </template>
 <script setup>
-import { getImageUrl } from '@/lib/image'
-import { formatDate } from '@/lib/date'
-import { getTopicPosts } from '@/lib/posts-requests'
 const {
 	public: { CONFIG }
 } = useRuntimeConfig()
 
+const homepageTopics = ['JavaScript', 'Angular', 'TypeScript']
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', async () => await queryContent('posts').sort({ date: -1 }).find())
-// const { data: javascript } = await useAsyncData(
-// 	'javascript',
-// 	async () => await getTopicPosts('JavaScript', 3, contentDir)
-// )
-// const { data: typescript } = await useAsyncData(
-// 	'typescript',
-// 	async () => await getTopicPosts('TypeScript', 3, contentDir)
-// )
-// const { data: angular } = await useAsyncData('angular', async () => await getTopicPosts('Angular', 3, contentDir))
-// const { data: css } = await useAsyncData('css', async () => await getTopicPosts('CSS', 3, contentDir))
+const { data: posts } = await useAsyncData('posts', () =>
+	queryContent('posts').sort({ date: -1 }).find()
+)
+const tags = ref()
 
-function getTagCloud(tags) {
-	const tagCloud = new Set()
-	if (tags) {
-		tags.forEach(item => {
-			if (item?.tags) {
-				item?.tags.forEach(tagItem => {
-					console.log('tagItem: ', tagItem)
-					tagCloud.add(tagItem)
-				})
-			}
-		})
-	} else {
-		return null
-	}
-	return Array.from(tagCloud)
-}
-
-console.log({
-	posts
+onMounted(() => {
+	const tagggs = []
+	posts?.value.forEach(post => tagggs.push(post?.tags))
+	tags.value = [...new Set(tagggs?.flat())].sort()
 })
 
-useHead({
-	title: 'Dev By RayRay'
-})
+
 </script>
 
 <style scoped>
-.tag:before {
-	content: '#';
-}
-
-.page-container,
-.page-header {
-	max-width: 1200px;
+.page-container {
+	max-width: 1600px;
 	margin: 0 auto;
 }
+.post-grid {
+	display: grid;
+}
+@media screen and (min-width: 500px) {
+	.post-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media screen and (min-width: 960px) {
+	.post-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 1300px) {
+	.post-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 .inner-card {
 	padding-top: calc(500px + 2rem);
 }

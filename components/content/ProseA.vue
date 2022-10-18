@@ -1,5 +1,5 @@
 <template>
-	<NuxtLink class="text-sky-400 dark:text-white" :href="href">
+	<NuxtLink class="text-sky-400 dark:text-white" :href="href" target="_blank">
 		<slot />
 	</NuxtLink>
 </template>
