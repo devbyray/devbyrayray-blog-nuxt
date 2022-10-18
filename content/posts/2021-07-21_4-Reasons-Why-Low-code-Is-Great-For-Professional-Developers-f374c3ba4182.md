@@ -3,17 +3,18 @@ title: 4 Reasons Why Low-code Is Great For Professional Developers
 description: Low-code + Professional Developer = ❤️
 date: '2021-07-21T09:21:17.680Z'
 categories: []
-tags: []
+tags: ['LowCode']
 slug: /@byrayray/4-reasons-why-low-code-is-great-for-professional-developers-f374c3ba4182
+image: images/0_Q5LV7ZAw6L3MV971.jpg
 ---
-
-![](/images/0__Q5LV7ZAw6L3MV971.jpg)
 
 Recently I wrote the story “[Coding Is Dead](https://medium.com/lowcode-nocode/coding-is-dead-1e08021b723a)”. One of the readers asked a [great question](https://lukasz9-3.medium.com/it-will-be-beneficial-for-professional-developer-sounds-like-empty-slogan-can-you-explain-why-do-542a38f9324d), “Why will low-code or no-code be beneficial for professional developers”. It wasn’t that clear why it would be great for professional developers to use low-code platforms.
 
 In this story, I want to dive a bit more into why it’s an excellent thing for professional developers to use low-code platforms.
 
-### What is low-code?
+---
+
+## What is low-code?
 
 I talked a lot about low-code lately, but let’s start with a definition of why I mean with “low-code”.
 
@@ -25,7 +26,8 @@ I think that Mendix wrote a clear definition of what low-code is and why it will
 
 With low-code, you automate what can be automated and streamlined as much as possible across multiple applications in an organization. It’s clear that a company can benefit from it, but what are the benefits for professional developers?
 
-### 1\. Automate, automated, automate
+---
+## Automate, automated, automate
 
 The nature of a professional developer is mostly lazy. And that is not in a negative way! We love to automate as much as possible! We love to make our work more manageable with more minor repudiative tasks.
 
@@ -37,7 +39,9 @@ Most low-code platforms automate many tasks for you, which you have to do yourse
 
 Others have integrations with Azure or AWS, for example. This will make the life of a backend developer a lot easier. Even some platforms offer functionality for scaling up and down traffic.
 
-### 2\. Don’t worry about a frontend build system!
+---
+
+## Don’t worry about a frontend build system!
 
 In the early days of my frontend development experience (around 2008–2010), frontend development was about building excellent designs for websites and web apps. We focussed much more on creating incredible experiences for our users.
 
@@ -49,7 +53,8 @@ Less worry about cross-browser issues, fewer worries about performance issues. M
 
 I know many frontend developers don’t mind setting up an excellent build system! But for professional frontend developers who hate these things, this is a great way to deal with it.
 
-### 3\. Azure, AWS, Google Cloud, or Own cloud benefits
+---
+## Azure, AWS, Google Cloud, or Own cloud benefits
 
 In the early days of web development, you had to upload your files to a web hosting provider via an FTP client like FileZilla. Every change to a file needed to be upload manually to the Webhosting.
 
@@ -63,7 +68,9 @@ It is very beneficial to use the platform’s cloud. Most of the time, there are
 
 So it will require a professional backend developer or system engineer less time to set up the hosting of applications or the staging area.
 
-### 4\. Faster Visual Progress
+
+---
+## Faster Visual Progress
 
 When professional developers get so many tools to automate their work, there is less room for manual errors. When experienced developers can work together with citizen developers (people who are experts in the business field of a company), we are working much more efficiently.
 
@@ -73,17 +80,19 @@ Yes, we love to write code, but we equally love to see happy users using our app
 
 > If you want to learn what can be done with AI and Low-code on Mendix, check “[Building a low-code app powered by AI (with Mendix and UbiOps)](https://medium.com/mendix/building-a-low-code-app-powered-by-ai-with-mendix-and-ubiops-4229df20790c)” from [Wouter Hollander](https://medium.com/u/82d3a5216d88), I highly recommend it.
 
-### Conclusion
+---
+## Conclusion
 
 I know that I didn’t write all the benefits there are for using a low-code platform for software development, but the key benefit of them all is automation!
 
 In this era, It’s all about the speed to build a scalable application in less time. Providing users with a solution for their problems is essential to attract more users.
 
-### Read more from me
+---
 
-*   [Declare Missing Helper Function (TypeScript) in Visual Studio Code](/dev-together/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d)
-*   [Getting Started With Storybook Without a JavaScript Framework](https://betterprogramming.pub/getting-started-with-storybook-without-a-javascript-framework-c2968d3f3d9f)
-*   [7 Web Development Guidelines To Speed up Page Loading](https://betterprogramming.pub/7-web-development-guidelines-to-speed-up-page-loading-e8f0e13a53b)
-*   [Don’t Be a Jack Of All Trades Developer!](https://medium.com/dev-together/dont-be-a-jack-of-all-trades-developer-9e6104633167)
+## Thanks!
 
-_More content at_ [**_plainenglish.io_**](http://plainenglish.io)
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

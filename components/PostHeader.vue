@@ -17,8 +17,10 @@
 					</li>
 				</ul>
 			</div>
-			<div class="bottom flex">
-				<Tag v-for="tag in blog?.tags" :key="tag" :tag="tag"></Tag>
+			<div class="bottom flex flex-col">
+				<div class="tags flex flex-wrap">
+					<Tag v-for="tag in blog?.tags" :key="tag" :tag="tag"></Tag>
+				</div>
 				<h1 v-if="showTitle" class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
 			</div>
 		</div>

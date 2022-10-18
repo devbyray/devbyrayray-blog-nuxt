@@ -38,18 +38,18 @@
 					<Profile></Profile>
 				</article>
 				<aside class="right-side">
-					<div class="widget text-black dark:text-white sticky top-5">
+					<div class="widget text-white sticky top-5">
 						<header class="widget-header"><h2>Table of Content</h2></header>
 						<section class="widget-content">
 							<ol class="rounded-2xl list-decimal list-outside pl-8">
 								<li
 									v-for="link in filterToc(blog?.body?.toc?.links)"
 									:key="link?.id"
-									class="text-black dark:text-white pl-8 text-lg leading-7"
+									class="text-white pl-8 text-lg leading-7"
 								>
 									<nuxt-link
 										:to="`#${link?.id}`"
-										class="text-black dark:text-white"
+										class="text-white"
 										>{{ link?.text }}</nuxt-link
 									>
 								</li>

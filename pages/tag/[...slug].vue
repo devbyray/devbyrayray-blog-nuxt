@@ -34,7 +34,7 @@
 					<div
 						v-for="article in posts"
 						:key="article?._path"
-						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative"
+						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
 					>
 						<BlogPost :article="article" title-tag="h2"></BlogPost>
 					</div>

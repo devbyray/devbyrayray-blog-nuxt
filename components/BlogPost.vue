@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<PostHeader :blog="article" :showTitle="false" :showGradient="true" />
-		<nuxt-link :to="article?._path" class="dark:text-white"
-			><component :is="titleTag ?? 'h2'" class="font-bold dark:text-white text-3xl mt-0 leading-10 mb-2">
+		<nuxt-link :to="article?._path" class="text-black dark:text-white"
+			><component :is="titleTag ?? 'h2'" class="font-bold text-black dark:text-white text-3xl mt-0 leading-10 mb-2">
 				{{ article?.title }}
 			</component></nuxt-link
 		>
