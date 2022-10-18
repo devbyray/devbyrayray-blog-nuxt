@@ -135,10 +135,6 @@ export const HEAD = {
 }
 
 export default {
-	ssr: false,
-	nitro: {
-		preset: 'service-worker'
-	},
 	runtimeConfig: {
 		public: {
 			CONFIG,
