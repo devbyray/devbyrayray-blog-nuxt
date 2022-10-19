@@ -2,9 +2,9 @@
 title: Tips to Create Developer Tutorials — in 5 steps
 description: Want to create development tutorials but you aren’t sure where to start? Start here!
 date: '2020-11-24'
-categories: ['Developer']
+categories: ['developer']
 published: true
-tags: ['Tutorials', 'Programming', 'Software Development']
+tags: ['Tutorials', 'programming', 'Software Development']
 image: images/tips-to-create-developer-tutorials
 ---
 

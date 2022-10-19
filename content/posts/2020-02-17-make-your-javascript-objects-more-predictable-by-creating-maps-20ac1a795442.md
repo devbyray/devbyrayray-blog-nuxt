@@ -4,7 +4,7 @@ description: No more undefined properties
 date: '2020-02-17T11:53:22.929Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/1*Y04Qhnh3Jqj09tvNs95g2A.jpeg
 ---
 

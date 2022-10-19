@@ -1,6 +1,12 @@
 <template>
-	<div class="blog-post" :class="{'is-horizontal': isHorizontal}">
-		<PostHeader :blog="article" :showTitle="false" :showGradient="true" :isHomepage="true" :isHorizontal="isHorizontal" />
+	<div class="blog-post" :class="{ 'is-horizontal': isHorizontal }">
+		<PostHeader
+			:blog="article"
+			:showTitle="false"
+			:showGradient="true"
+			:isHomepage="true"
+			:isHorizontal="isHorizontal"
+		/>
 		<div class="post-content">
 			<nuxt-link :to="article?._path" class="text-black dark:text-white"
 				><component
@@ -39,10 +45,19 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style scoped>
+
 .blog-post.is-horizontal {
-	display: grid;
-	grid-template-columns: 2fr 3fr;
 	gap: 3rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 250px auto;
+}
+
+@media screen and (min-width: 960px) {
+	.blog-post.is-horizontal {
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: 1fr;
+	}
 }
 .description {
 	min-height: 200px;

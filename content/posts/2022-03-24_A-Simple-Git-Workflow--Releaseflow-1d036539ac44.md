@@ -3,7 +3,7 @@ title: 'A Simple Git Workflow: Releaseflow'
 description: I’ve seen a lot of organizations use the Gitflow strategy to use Git. It’s not a bad strategy, but it could be way simpler. That’s why I was happy to find Releaseflow. In this post, I want to tell you how it works, and why it could be a benefit for your organization.
 date: '2022-03-24T17:18:37.352Z'
 categories: []
-tags: ['Git']
+tags: ['git']
 slug: /@byrayray/a-simple-git-workflow-releaseflow-1d036539ac44
 image: images/1__3KRHv1owvEzpW7gMewe8Iw.png
 ---

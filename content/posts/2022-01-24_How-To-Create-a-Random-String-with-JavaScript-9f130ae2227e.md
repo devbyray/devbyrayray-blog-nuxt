@@ -3,7 +3,7 @@ title: How To Create a Random String with JavaScript
 description: For many purposes, you can need a random string. Sometimes a long one and sometimes a short one. A lot of time, I use these functions in a unit or end-to-end test to automate even more.
 date: '2022-01-24T15:26:13.459Z'
 categories: []
-tags: ['JavaScript']
+tags: ['javascript']
 slug: /@byrayray/how-to-create-a-random-string-with-javascript-9f130ae2227e
 image: images/0__UQtuHklwRW4uxOcO.jpg
 ---

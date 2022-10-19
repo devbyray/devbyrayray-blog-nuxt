@@ -1,32 +1,31 @@
 <template>
 	<section :id="topic">
-		<h2>{{ topic }}</h2>
+		<h2>{{ convertTitle(topic) }}</h2>
 		<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
 			<div
 				v-for="article in posts"
 				:key="article?._path"
 				class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
 			>
-				<BlogPost :article="article"></BlogPost>
+				<BlogPost :article="article" :titleTag="titleTag"></BlogPost>
 			</div>
 		</div>
 	</section>
 </template>
 
 <script setup>
+import { convertTitle } from '@/lib/string'
 const props = defineProps({
-    topic: String
+	titleTag: String,
+	topic: String
 })
-const contentDir = 'posts'
 const { data: posts } = await useAsyncData(`posts-${props?.topic}`, () =>
-	queryContent(contentDir)
+	queryContent('posts')
 		.limit(3)
 		.where({ $or: [{ tags: { $contains: props?.topic } }, { categories: { $contains: props?.topic } }] })
 		.sort({ date: -1 })
 		.find()
 )
-
-console.log({ props, posts })
 </script>
 
 <style scoped>
@@ -48,5 +47,4 @@ console.log({ props, posts })
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
-
 </style>

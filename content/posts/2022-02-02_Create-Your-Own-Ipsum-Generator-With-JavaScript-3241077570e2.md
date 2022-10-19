@@ -3,7 +3,7 @@ title: Create Your Own Ipsum Generator With JavaScript
 description: Generating fake content with random words can be convenient for testing purposes. That’s why today, we will create a JavaScript function that does that. It's super simple with the Math.random, round, while loop and map methods in JavaScript.
 date: '2022-02-02T15:56:32.672Z'
 categories: []
-tags: ['JavaScript']
+tags: ['javascript']
 slug: /@byrayray/create-your-own-ipsum-generator-with-javascript-3241077570e2
 image: images/0__xbnw8Z__GlC1RU____r.jpg
 ---

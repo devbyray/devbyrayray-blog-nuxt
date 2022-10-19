@@ -4,7 +4,7 @@ description: Subtract the data from the enum and remodel it into a JavaScript Ar
     Strings so you can use it for whatever you like.
 date: '2022-09-05T08:18:20.547Z'
 categories: []
-tags: ['TypeScript', 'JavaScript']
+tags: ['typescript', 'javascript']
 slug: /@byrayray/how-to-convert-a-typescript-enum-to-a-javascript-array-or-string-7a98c9fad17e
 image: images/0__QqYrHkjkASsx8czS.jpg
 ---

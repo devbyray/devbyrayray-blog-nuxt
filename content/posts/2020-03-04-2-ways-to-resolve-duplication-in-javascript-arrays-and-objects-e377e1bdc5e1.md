@@ -4,7 +4,7 @@ description: Do you know how to deal with duplication?
 date: '2020-03-04T03:13:38.913Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/0*DZg0829DQKwA3fxP
 ---
 
@@ -16,7 +16,7 @@ I highly suggest not simply copying and pasting my code. Of course, you can �
 
 ## 1\. Array With Duplicated Strings or Numbers
 
-const dupStrings = \['Angular', 'React', 'VueJS', 'Svelte', 'React'\]  
+const dupStrings = \['angular', 'React', 'VueJS', 'Svelte', 'React'\]  
 const dupNumbers = \[1,2,3,4,5,6,2,4,6,7,8,9,0\]
 
 The first array has some duplicated strings, and the other array has duplicated numbers in it.

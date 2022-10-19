@@ -4,7 +4,7 @@ description: Lessons I learned which will hopefully save you time and stress
 date: '2020-02-06T14:59:11.828Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/1*GJ1xh8kPU-sk6m9QTS_fjQ.jpeg
 ---
 

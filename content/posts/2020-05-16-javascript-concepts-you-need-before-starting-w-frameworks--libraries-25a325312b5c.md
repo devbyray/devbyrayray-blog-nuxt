@@ -4,7 +4,7 @@ description: Don’t start before you are comfortable with them
 date: '2020-05-16T18:50:34.805Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 # slug: >-
 #   /@devbyrayray/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c
 image: https://cdn-images-1.medium.com/max/1200/0*KJ9azc_7b1b_8tKn

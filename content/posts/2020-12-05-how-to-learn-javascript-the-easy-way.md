@@ -2,9 +2,9 @@
 title: How to Learn JavaScript The Easy Way?
 description: A Tiny Step At The Time Is More Than Enough To Become A Pro
 date: '2020-12-05'
-categories: ['JavaScript']
+categories: ['javascript']
 published: true
-tags: ['JavaScript', 'Learn JavaScript', 'Programming', 'Software Development']
+tags: ['javascript', 'Learn JavaScript', 'programming', 'Software Development']
 image: images/blog-code-fallback-2
 ---
 

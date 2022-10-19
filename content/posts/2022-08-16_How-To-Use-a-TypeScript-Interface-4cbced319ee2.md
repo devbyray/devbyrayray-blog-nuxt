@@ -3,7 +3,7 @@ title: How To Use a TypeScript Interface
 description: An interface is a blueprint for an Object. It tells you which properties there are, which are required and optional and which type of data they hold. Let's dive into interfaces by making pizzas for breakfast
 date: '2022-08-16T19:19:45.796Z'
 categories: []
-tags: ['TypeScript']
+tags: ['typescript']
 slug: /@byrayray/how-to-use-a-typescript-interface-4cbced319ee2
 image: images/1__GGHQySa4lhZk1Chd28EuNA.png
 ---

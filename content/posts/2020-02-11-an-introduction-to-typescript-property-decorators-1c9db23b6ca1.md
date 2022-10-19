@@ -4,7 +4,7 @@ description: A deeper dive into TypeScript decorators
 date: '2020-02-11T19:55:58.361Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/1*ypxYKNA2e3VeqE7UcNhXkg.jpeg
 ---
 

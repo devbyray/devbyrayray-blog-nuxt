@@ -3,7 +3,7 @@ title: Getting Started With Programming On A Budget
 description: In this post, I want to share with you some tools you can use on a mobile phone or cheap tablet to get started with programming web development.
 date: '2022-08-18T07:25:50.152Z'
 categories: []
-tags: ['JavaScript', 'WebDev', 'CodeNewbie']
+tags: ['javascript', 'webdev', 'codenewbie']
 slug: /@byrayray/getting-started-with-programming-on-a-budget-8baac33ccc19
 image: images/0__r2vtGoEnprpvY22y.jpg
 ---

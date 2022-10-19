@@ -4,7 +4,7 @@ description: How we do it now and how we did it in the early days
 date: '2020-05-20T14:24:00.210Z'
 categories: []
 published: true
-tags: ['HTML', 'Frontend', 'JavaScript']
+tags: ['html', 'frontend', 'javascript']
 image: https://cdn-images-1.medium.com/max/800/0*hA_k1Tueal3Lb7tJ
 ---
 

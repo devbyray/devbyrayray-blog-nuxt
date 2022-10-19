@@ -4,7 +4,7 @@ description: My favourite posts of Februari 2020 about JavaScript Development
 date: '2020-03-02T19:57:11.082Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*9hcY8Fv8cmzORUY7
 ---
 

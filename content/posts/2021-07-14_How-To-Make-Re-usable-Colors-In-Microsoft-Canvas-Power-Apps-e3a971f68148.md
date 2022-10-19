@@ -3,7 +3,7 @@ title: How To Make Re-usable Colors In Microsoft Canvas Power Apps
 description: Microsoft made it easy to build apps via their Power Apps Platform. As a professional developer, I love to make things re-usable, so I don’t have to type them every time. The Power Apps Canvas application lets you do that very quickly. But it requires some code in the Formula Bar.
 date: '2021-07-14T10:06:37.267Z'
 categories: []
-tags: ['LowCode', 'Microsoft', 'Power Apps']
+tags: ['lowcode', 'microsoft', 'powerapps']
 slug: /@byrayray/how-to-make-re-usable-colors-in-microsoft-canvas-power-apps-e3a971f68148
 image: images/1__N6j8yyRENowFQG0Q77b3ug.png
 ---

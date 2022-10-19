@@ -4,7 +4,7 @@ description: 'Sometimes React, Angular, or Vue.js might be too much'
 date: '2020-02-26T00:07:07.919Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*AQJHMkYfMZ6H-_7S
 ---
 

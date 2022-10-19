@@ -2,9 +2,9 @@
 title: Get, Add or Remove HTML Elements with JavaScript
 description: Manipulating the HTML DOM is easy with JavaScript methods querySelector and querySelectorAll. In this post, I will show you how easy it is!
 date: '2020-12-22'
-categories: ['JavaScript']
+categories: ['javascript']
 published: false
-tags: ['Beginner']
+tags: ['beginner']
 image: https://miro.medium.com/max/1400/0*lKcwQ2biZcSro827
 ---
 

@@ -3,7 +3,7 @@ title: How to validate BSN, PGN & OWN in the Netherlands with TypeScript/JavaScr
 description: Learn How To Use The Elfproef for dutch identification numbers
 date: '2022-01-19T12:48:30.509Z'
 categories: []
-tags: ['Angular', 'NGX-Formly', 'TypeScript']
+tags: ['angular', 'ngx-formly', 'typescript']
 slug: /@byrayray/how-to-format-a-value-with-angular-ngx-formly-c18dcd7be647
 image: images/1__O__EKcNrJVWS18ZG__bP1FtA.png
 ---

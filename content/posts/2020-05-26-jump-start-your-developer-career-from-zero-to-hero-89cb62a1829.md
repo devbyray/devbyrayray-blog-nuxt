@@ -4,7 +4,7 @@ description: A Method So Simple It Will Blow Your Mind!
 date: '2020-05-26'
 categories: []
 published: true
-tags: ['CodeNewbie', 'Developer']
+tags: ['codenewbie', 'developer']
 cover_image: https://cdn-images-1.medium.com/max/800/0*4qwiRMpfViwDjKjT
 ---
 

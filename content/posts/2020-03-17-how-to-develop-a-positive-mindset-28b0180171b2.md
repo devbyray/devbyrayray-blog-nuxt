@@ -4,7 +4,7 @@ description: 'It’s not about not being realistic, it’s about being optimisti
 date: '2020-03-17T10:30:59.022Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*XazZfeepLFfj7e4h
 ---
 

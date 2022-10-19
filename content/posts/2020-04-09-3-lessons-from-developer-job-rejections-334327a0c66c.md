@@ -4,7 +4,7 @@ description: Push through even when it’s hard!
 date: '2020-04-09T01:58:52.813Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*tVe8HqYvdr5E1RH0
 ---
 

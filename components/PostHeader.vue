@@ -38,7 +38,8 @@
 				height="400"
 				class="rounded-l-lg object-cover mb-0"
 				:modifiers="{
-					c: 'crop'
+					c: 'crop',
+					f: 'webp'
 				}"
 				:alt="blog?.title"
 				:title="blog?.title"

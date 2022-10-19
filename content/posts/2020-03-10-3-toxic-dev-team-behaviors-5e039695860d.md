@@ -4,7 +4,7 @@ description: And the solutions to solve them
 date: '2020-03-10T17:22:30.625Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*J9geq5m3rphX8kbE
 ---
 

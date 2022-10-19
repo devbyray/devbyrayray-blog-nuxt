@@ -4,7 +4,7 @@ description: Developer write log without defining about what ☺️
 date: '2020-04-18T14:33:06.652Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*9YIEZhP1ccA245Ca
 ---
 

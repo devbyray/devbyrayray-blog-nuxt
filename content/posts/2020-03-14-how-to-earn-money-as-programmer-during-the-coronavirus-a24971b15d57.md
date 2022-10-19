@@ -4,7 +4,7 @@ description: 3 Ways Programmers Can Get Paid Without The Need Of A Job
 date: '2020-03-14T14:55:19.532Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*K1c0Fyg2XQyRveSA
 ---
 

@@ -1,12 +1,14 @@
 <template>
-	<div class="toc mb-8">
-		<button class="toggle" @click="showToc = !showToc">
-			<MazIcon src="/icons/chevron-right.svg" size="2rem" />
-		</button>
-		<header class="widget-header"><h2 class="mt-0">Table of Content</h2></header>
-		<section class="widget-content">
-			<ol class="mb-0">
-				<li v-for="link in filterToc(links)" :key="link?.id" class="text-white pl-8 text-lg leading-7">
+	<div class="toc mb-8 sticky top-4">
+		<header class="widget-header flex items-center">
+			<button v-if="hasToggle" class="toggle-button bg-white dark:bg-gray-800 p-2" @click="showToc = !showToc">
+				<MazIcon src="/icons/menu.svg" size="1.5rem" />
+			</button>
+			<strong class="my-0 ml-4">Table of Content</strong>
+		</header>
+		<section class="widget-content" v-if="showToc">
+			<ol class="mb-0 list-decimal pl-8 mt-4">
+				<li v-for="link in filterToc(links)" :key="link?.id" class="text-white pl-4 text-lg leading-7">
 					<nuxt-link :to="`#${link?.id}`" class="text-white">{{ link?.text }}</nuxt-link>
 				</li>
 			</ol>
@@ -15,12 +17,18 @@
 </template>
 
 <script setup lang="ts">
-interface Props {
-	links: any[]
-}
-defineProps<Props>()
+import MazIcon from 'maz-ui/components/MazIcon'
 
-const showToc = ref(true)
+interface Props {
+	links?: any[] | null
+	hasToggle: boolean
+}
+const props = withDefaults(defineProps<Props>(), {
+	links: null,
+	hasToggle: false
+})
+
+const showToc = ref(props?.hasToggle ? false : true)
 
 function filterToc(links) {
 	console.log('links: ', links)
@@ -31,3 +39,11 @@ function filterToc(links) {
 	}
 }
 </script>
+
+<style scoped>
+.toc {
+	z-index: 9999;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+</style>

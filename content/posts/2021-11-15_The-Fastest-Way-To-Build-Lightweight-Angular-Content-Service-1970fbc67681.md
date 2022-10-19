@@ -3,7 +3,7 @@ title: The Fastest Way To Build Lightweight Angular Content Service
 description: Some applications need multiple languages, but others need one language but have loads of content to re-use. In this article, I want to show you the fastest way to create a ContentService (some call it a dictionary) for your Angular application.
 date: '2021-11-15T13:13:37.836Z'
 categories: []
-tags: ['Angular', 'TypeScript']
+tags: ['angular', 'typescript']
 slug: /@byrayray/the-fastest-way-to-build-lightweight-angular-content-service-1970fbc67681
 image: images/1__HWY53D51pJqJuCKUXFf__9g.jpeg
 ---

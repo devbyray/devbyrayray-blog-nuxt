@@ -4,7 +4,7 @@ description: Working from home isn’t as easy as it sounds. Let’s make it eas
 date: '2020-03-23T01:18:14.672Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*i8x6VUy0vsEnioSf
 ---
 

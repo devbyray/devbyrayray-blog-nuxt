@@ -3,7 +3,7 @@ title: 6 JavaScript Features to Improve Your JavaScript Skills in 2022
 description: The features Array.at(), structuredClone(), Top-level await, For-await-of-loop, private class fields and Object.hasOwn() are both very new features and features that improve the already existing functionality in JavaScript. Let's dive into it together.
 date: '2022-06-01T05:17:57.609Z'
 categories: []
-tags: ['JavaScript']
+tags: ['javascript']
 slug: /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
 image: images/1____LYzK__xh7lUT__lAwjEASew.png
 ---

@@ -4,7 +4,7 @@ description: 'Be helpfull to anyone in everything, it’s a WIN-WIN!'
 date: '2020-02-22T19:38:45.917Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/2560/0*2bij_UXAxfTkGEsn
 ---
 

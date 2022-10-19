@@ -4,7 +4,7 @@ description: We don’t need an async function wrapper anymore
 date: '2020-06-22'
 categories: []
 published: true
-tags: ['TypeScript', 'JavaScript', 'Programming', 'Software Development']
+tags: ['typescript', 'javascript', 'programming', 'Software Development']
 image: https://miro.medium.com/max/1280/0*z4OdHrTJHQO9KlEs
 ---
 

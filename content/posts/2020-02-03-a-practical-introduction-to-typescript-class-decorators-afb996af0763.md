@@ -4,7 +4,7 @@ description: Classes on fire in TypeScript with class decorators
 date: '2020-02-03T23:00:37.989Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/1*3Ayk8rYQA5aZkTrarsfwVg.jpeg
 ---
 

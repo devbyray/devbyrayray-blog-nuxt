@@ -4,7 +4,7 @@ title: When To Use RxJS Subject, BehaviourSubject, ReplaySubject, AsyncSubject, 
 description: The power is in the details
 date: '2021-09-03T14:37:45.292Z'
 categories: []
-tags: ['RxJS', 'Angular', 'TypeScript']
+tags: ['rxjs', 'angular', 'typescript']
 slug: /@byrayray/when-to-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-c2e9db61b4a0
 ---
 

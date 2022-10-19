@@ -3,7 +3,7 @@ title: How To Format a Value With Angular NGX-Formly
 description: Creating forms in Angular with NGX-Formly is super easy. But sometimes you want a little more, like formatting postal codes, phone numbers, or bank accounts. In this post, I will show you how you can do it.
 date: '2022-01-04T12:48:30.509Z'
 categories: []
-tags: ['Angular', 'NGX-Formly', 'TypeScript']
+tags: ['angular', 'ngx-formly', 'typescript']
 slug: /@byrayray/how-to-format-a-value-with-angular-ngx-formly-c18dcd7be647
 image: images/1__O__EKcNrJVWS18ZG__bP1FtA.png
 

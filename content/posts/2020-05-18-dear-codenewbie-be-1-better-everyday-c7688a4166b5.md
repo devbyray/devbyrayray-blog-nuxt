@@ -4,7 +4,7 @@ description: Please don’t think that experienced developers know everything fr
 date: '2020-05-18T08:27:42.029Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/1*mqSEID5NARtgegrJaFFUQA.png
 ---
 

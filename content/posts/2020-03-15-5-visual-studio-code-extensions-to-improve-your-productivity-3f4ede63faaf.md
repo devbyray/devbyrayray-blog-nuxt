@@ -4,7 +4,7 @@ description: Improving our development workflow in VS Code
 date: '2020-03-15T22:29:48.390Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*p660-wlqPTVL-3zK
 ---
 

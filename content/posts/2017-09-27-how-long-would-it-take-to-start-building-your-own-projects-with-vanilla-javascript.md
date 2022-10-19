@@ -3,8 +3,8 @@ slug: "2017/09/how-long-would-it-take-to-start-building-your-own-projects-with-v
 author: "Ray Ray"
 date: "2017-09-27T08:34:25Z"
 title: "How long would it take to start building your own projects with Vanilla JavaScript?"
-categories: ['JavaScript']
-tags: ['Developer', 'WebDev']
+categories: ['javascript']
+tags: ['developer', 'webdev']
 excerpt: "Well, first it is important to know what your definition of a project is because you can have super..."
 banner: "./images/mr-frontend-banner.jpg"
 ---

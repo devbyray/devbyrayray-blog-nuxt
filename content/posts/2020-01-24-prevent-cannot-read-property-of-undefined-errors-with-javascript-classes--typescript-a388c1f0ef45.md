@@ -6,7 +6,7 @@ description: Every developer who did some JavaScript has got errors like “Cann
 date: '2020-01-24T14:37:56.387Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/1*MUg0PD9atBi8lF9IIvDQnA.png
 ---
 

@@ -4,7 +4,7 @@ description: TailWind CSS + NextJS = Web Dev ♥️
 date: '2020-12-27'
 categories: ['NextJS']
 published: true
-tags: ['React', 'JavaScript', 'NextJS', 'Programming', 'Software Development']
+tags: ['React', 'javascript', 'NextJS', 'programming', 'Software Development']
 image: images/TailWind-CSS-NextJS-Web-Dev.webp
 ---
 

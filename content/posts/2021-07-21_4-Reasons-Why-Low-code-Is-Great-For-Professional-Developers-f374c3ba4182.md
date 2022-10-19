@@ -3,7 +3,7 @@ title: 4 Reasons Why Low-code Is Great For Professional Developers
 description: Low-code + Professional Developer = ❤️
 date: '2021-07-21T09:21:17.680Z'
 categories: []
-tags: ['LowCode']
+tags: ['lowcode']
 slug: /@byrayray/4-reasons-why-low-code-is-great-for-professional-developers-f374c3ba4182
 image: images/0_Q5LV7ZAw6L3MV971.jpg
 ---

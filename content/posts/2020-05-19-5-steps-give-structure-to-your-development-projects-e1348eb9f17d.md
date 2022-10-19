@@ -4,7 +4,7 @@ description: Are you not able to manage your programming projects? Try this!
 date: '2020-05-19T05:56:52.031Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/0*C17G9c7iox0ZUNx5
 ---
 

@@ -4,7 +4,7 @@ description: 'Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeS
 date: '2020-05-04T13:39:33.588Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/1200/1*iTipwoyBgMFA0yd0ctozfg.png
 ---
 

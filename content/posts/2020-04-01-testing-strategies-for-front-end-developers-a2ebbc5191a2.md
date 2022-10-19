@@ -4,7 +4,7 @@ description: Solidify your front-end code
 date: '2020-04-01T17:52:52.607Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*bqHbqZf3BfBj_S5b
 ---
 

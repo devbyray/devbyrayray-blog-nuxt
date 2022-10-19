@@ -4,7 +4,7 @@ description: Good preparation is half the work.
 date: '2020-05-11T08:04:31.352Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*IYXOTUGBlbC-Zfva
 ---
 

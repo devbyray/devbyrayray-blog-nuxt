@@ -1,22 +1,28 @@
 <template>
 	<div>
-		<Meta hid="canonical" property="canonical" :content="pageUrl" />
-		<Meta hid="og:title" property="og:title" :content="page?.title ?? slug[0]" />
-		<Meta hid="og:description" property="og:description" :content="page?.description ?? CONFIG?.sitedesc" />
+		<Title>{{ page?.title }} | {{ CONFIG?.sitename }}</Title>
+
+		<Link rel="canonical" :href="pageUrl" />
+		<Meta hid="og:title" property="og:title" :content="CONFIG?.sitename" />
+		<Meta name="description" :content="blog?.description ?? CONFIG?.sitedesc" />
+		<Meta hid="og:description" property="og:description" :content="blog?.description ?? CONFIG?.sitedesc" />
 		<Meta hid="og:type" property="og:type" content="website" />
-		<Meta hid="og:image" property="og:image" :content="CONFIG?.logoUrl" />
 		<Meta hid="og:url" property="og:url" :content="pageUrl" />
 		<Meta hid="og:locale" property="og:locale" content="en_EN" />
+
+		<Meta name="author" :content="CONFIG?.sitename" />
+		<Meta name="publisher" :content="CONFIG?.sitename" />
 
 		<Meta name="twitter:card" property="twitter:card" content="summary" />
 		<Meta name="twitter:site" property="twitter:site" :content="CONFIG?.twitter" />
 		<Meta name="twitter:creator" property="twitter:creator" :content="CONFIG?.twitter" />
-		<Meta name="twitter:title" property="twitter:title" :content="page?.title ?? slug[0]" />
+		<Meta name="twitter:title" property="twitter:title" :content="CONFIG?.sitename" />
 		<Meta hid="twitter:image" property="twitter:image" :content="CONFIG?.logoUrl" />
+		<Meta hid="og:image" property="og:image" :content="CONFIG?.logoUrl" />
 		<Meta
 			hid="twitter:description"
 			property="twitter:description"
-			:content="page?.description ?? CONFIG?.sitedesc"
+			:content="blog?.description ?? CONFIG?.sitedesc"
 		/>
 
 		<TheHeader></TheHeader>
@@ -63,6 +69,8 @@ const { data: posts } = await useAsyncData(`posts-${slug[0]}`, () =>
 const { data: page } = await useAsyncData(`content-${path.toLowerCase()}`, () => {
 	return queryContent().where({ _path: path.toLowerCase() }).findOne()
 })
+
+console.log('slug[0]: ', slug[0])
 
 const pageUrl = `${CONFIG.domain}${path}`
 const pageImage = `${CONFIG?.domain}/${page?.image}`

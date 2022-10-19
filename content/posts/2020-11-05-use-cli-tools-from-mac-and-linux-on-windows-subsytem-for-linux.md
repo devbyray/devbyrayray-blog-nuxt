@@ -2,9 +2,9 @@
 title: Use CLI tools From Mac/Linux On Windows Subsystem for Linux
 description: WSL2 is so powerful to make the switch from Mac a breeze.
 date: '2020-11-05'
-categories: ['Workflow']
+categories: []
 published: true
-tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', 'Software Development']
+tags: ['cli', 'wsl', 'linux', 'mac', 'windows']
 image: images/use-cli-tools-from-mac-linux-on-windows-subsystem-for-linux
 ---
 

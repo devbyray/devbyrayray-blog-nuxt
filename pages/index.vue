@@ -1,24 +1,30 @@
 <template lang="">
 	<div>
 		<Title>{{ CONFIG?.sitename }}</Title>
-		<Meta hid="canonical" property="canonical" :content="pageUrl" />
-		<Meta hid="og:title" property="og:title" :content="blog?.title" />
+
+		<Link rel="canonical" :href="pageUrl" />
+		<Meta hid="og:title" property="og:title" :content="CONFIG?.sitename" />
+		<Meta name="description" :content="blog?.description ?? CONFIG?.sitedesc" />
 		<Meta hid="og:description" property="og:description" :content="blog?.description ?? CONFIG?.sitedesc" />
 		<Meta hid="og:type" property="og:type" content="website" />
-		<Meta hid="og:image" property="og:image" :content="pageImage ?? CONFIG?.logoUrl" />
 		<Meta hid="og:url" property="og:url" :content="pageUrl" />
 		<Meta hid="og:locale" property="og:locale" content="en_EN" />
+
+		<Meta name="author" :content="CONFIG?.sitename" />
+		<Meta name="publisher" :content="CONFIG?.sitename" />
 
 		<Meta name="twitter:card" property="twitter:card" content="summary" />
 		<Meta name="twitter:site" property="twitter:site" :content="CONFIG?.twitter" />
 		<Meta name="twitter:creator" property="twitter:creator" :content="CONFIG?.twitter" />
-		<Meta name="twitter:title" property="twitter:title" :content="blog?.title" />
-		<Meta hid="twitter:image" property="twitter:image" :content="pageImage ?? CONFIG?.logoUrl" />
+		<Meta name="twitter:title" property="twitter:title" :content="CONFIG?.sitename" />
+		<Meta hid="twitter:image" property="twitter:image" :content="CONFIG?.logoUrl" />
+		<Meta hid="og:image" property="og:image" :content="CONFIG?.logoUrl" />
 		<Meta
 			hid="twitter:description"
 			property="twitter:description"
 			:content="blog?.description ?? CONFIG?.sitedesc"
 		/>
+
 
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
@@ -31,7 +37,7 @@
 				</div>
 
 				<div v-for="topic in homepageTopics" class="category-posts mb-8">
-					<CategoryPosts :topic="topic" :limit="4"></CategoryPosts>
+					<CategoryPosts titleTag="h3" :topic="topic" :limit="4"></CategoryPosts>
 					<hr />
 				</div>
 
@@ -44,7 +50,7 @@
 						:key="article?._path"
 						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
 					>
-						<BlogPost :article="article" :isHorizontal="true"></BlogPost>
+						<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
 					</div>
 				</div>
 			</div>
@@ -52,19 +58,34 @@
 	</div>
 </template>
 <script setup>
+import { getImageUrl } from '@/lib/image'
+
 const {
 	public: { CONFIG }
 } = useRuntimeConfig()
+const { path } = useRoute()
 
-const homepageTopics = ['JavaScript', 'Angular', 'TypeScript']
+
+const homepageTopics = ['javascript', 'angular', 'typescript']
 const contentDir = 'blog'
 const { data: posts } = await useAsyncData('posts', () => queryContent('posts').sort({ date: -1 }).find())
 const tags = ref()
+const pageUrl = ref('')
+
+pageUrl.value = `${CONFIG.domain}${path}`
 
 onMounted(() => {
 	const tagggs = []
-	posts?.value.forEach(post => tagggs.push(post?.tags))
+	posts?.value?.forEach(post => tagggs.push(post?.tags))
 	tags.value = [...new Set(tagggs?.flat())].sort()
+})
+
+
+
+useHead({
+	htmlAttrs: {
+		lang: 'en_EN'
+	}
 })
 </script>
 

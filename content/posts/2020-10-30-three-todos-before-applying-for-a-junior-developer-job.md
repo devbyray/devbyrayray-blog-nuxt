@@ -2,9 +2,9 @@
 title: 3 Todo’s Before Applying For A Junior Developer Job
 description: ''
 date: '2020-10-30'
-categories: ['Workflow']
+categories: []
 published: true
-tags: ['CLI', 'WSL', 'Linux', 'Mac', 'Windows', 'Programming', 'Software Development']
+tags: ['codenewbie', 'beginner']
 image: images/3-todos-before-applying-for-a-junior-developer-job
 ---
 

@@ -3,7 +3,7 @@ title: What If Professional Developers Start Using Low Code Platforms?
 description: Can We Embrace Low Code Platforms?
 date: '2021-06-28T05:12:00.438Z'
 categories: []
-tags: ['LowCode']
+tags: ['lowcode']
 slug: /@byrayray/what-if-professional-developers-start-using-low-code-platforms-ebbd00c70a03
 image: images/0__UAPoQdukx1ttty3j.jpg
 ---

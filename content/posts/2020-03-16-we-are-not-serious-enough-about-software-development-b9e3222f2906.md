@@ -4,7 +4,7 @@ description: Why don’t we treat software the way we treat real-world infrastru
 date: '2020-03-16T00:30:26.326Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*vLRUcadXUkNspu6M
 ---
 

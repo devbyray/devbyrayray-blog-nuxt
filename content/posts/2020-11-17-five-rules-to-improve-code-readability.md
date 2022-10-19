@@ -2,9 +2,9 @@
 title: 5 Rules to Improve Code Readability
 description: Code readability is a feature of your application (even if your users don’t see it)
 date: '2020-11-24'
-categories: ['Developer']
+categories: ['developer']
 published: true
-tags: ['Tutorials', 'Programming', 'Software Development']
+tags: ['Tutorials', 'programming', 'Software Development']
 image: images/5-rules-to-improve-code-readability
 ---
 

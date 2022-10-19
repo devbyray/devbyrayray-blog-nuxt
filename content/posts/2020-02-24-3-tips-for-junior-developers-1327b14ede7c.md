@@ -4,7 +4,7 @@ description: 'It’s not easy to be a junior developer, but stick with it, it’
 date: '2020-02-24T01:50:31.717Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 image: https://cdn-images-1.medium.com/max/800/0*7wOYRYJSusxidxK-
 ---
 

@@ -5,7 +5,7 @@ description: Validations, repeatable sections, conditional fields, and submittin
 date: '2020-03-25T17:15:17.082Z'
 categories: []
 published: true
-tags: ['Angular', 'NGX-Formly', 'TypeScript']
+tags: ['angular', 'ngx-formly', 'typescript']
 image: images/0_ObTlBymPfhHxX6en.jpg
 ---
 

@@ -4,7 +4,7 @@ description: Spend Your Time Wisely To Learn To Code
 date: '2020-05-13T07:13:00.252Z'
 categories: []
 published: true
-tags: ['Developer', 'WebDev']
+tags: ['developer', 'webdev']
 # slug: /@devbyrayray/5-tips-to-make-100daysofcode-effective-for-everyone-3695587aad64
 image: https://cdn-images-1.medium.com/max/800/0*Nu0JfFd1QiLS3stO
 ---
