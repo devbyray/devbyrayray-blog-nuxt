@@ -4,8 +4,8 @@
 
 		<Link rel="canonical" :href="pageUrl" />
 		<Meta hid="og:title" property="og:title" :content="CONFIG?.sitename" />
-		<Meta name="description" :content="blog?.description ?? CONFIG?.sitedesc" />
-		<Meta hid="og:description" property="og:description" :content="blog?.description ?? CONFIG?.sitedesc" />
+		<Meta name="description" :content="page?.description ?? CONFIG?.sitedesc" />
+		<Meta hid="og:description" property="og:description" :content="page?.description ?? CONFIG?.sitedesc" />
 		<Meta hid="og:type" property="og:type" content="website" />
 		<Meta hid="og:url" property="og:url" :content="pageUrl" />
 		<Meta hid="og:locale" property="og:locale" content="en_EN" />
@@ -22,7 +22,7 @@
 		<Meta
 			hid="twitter:description"
 			property="twitter:description"
-			:content="blog?.description ?? CONFIG?.sitedesc"
+			:content="page?.description ?? CONFIG?.sitedesc"
 		/>
 
 		<TheHeader></TheHeader>
@@ -42,7 +42,7 @@
 						:key="article?._path"
 						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
 					>
-						<BlogPost :article="article" :isHorizontal="true"></BlogPost>
+						<BlogPost :article="article" :isHorizontal="true" titleTag="h3"></BlogPost>
 					</div>
 				</div>
 			</article>
@@ -73,7 +73,7 @@ const { data: page } = await useAsyncData(`content-${path.toLowerCase()}`, () =>
 console.log('slug[0]: ', slug[0])
 
 const pageUrl = `${CONFIG.domain}${path}`
-const pageImage = `${CONFIG?.domain}/${page?.image}`
+// const pageImage = `${CONFIG?.domain}/${page?.image}`
 </script>
 
 <style scoped>

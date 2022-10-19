@@ -32,8 +32,9 @@
 		</div>
 		<div class="cover-image rounded-l-lg">
 			<nuxt-img
-				v-if="blog?.image"
-				:src="`${getImageUrl(blog?.image)}`"
+				v-if="blog?.image && blog?.image?.includes('image/')"
+				provider="cloudinary"
+				:src="blog?.image.replace('image/', '')"
 				width="960"
 				height="400"
 				class="rounded-l-lg object-cover mb-0"
@@ -41,6 +42,16 @@
 					c: 'crop',
 					f: 'webp'
 				}"
+				:alt="blog?.title"
+				:title="blog?.title"
+				loading="lazy"
+			/>
+			<nuxt-img
+				v-if="blog?.image && !blog?.image?.includes('image/')"
+				:src="getImageUrl(blog?.image)"
+				width="960"
+				height="400"
+				class="rounded-l-lg object-cover mb-0"
 				:alt="blog?.title"
 				:title="blog?.title"
 				loading="lazy"
@@ -53,10 +64,11 @@ import { formatDate } from '@/lib/date'
 import MazIcon from 'maz-ui/components/MazIcon'
 
 function getImageUrl(url: string) {
+	console.log('url: ', url)
 	if (url && !url.startsWith('http')) {
-		return `https://res.cloudinary.com/raymons/image/upload/devbyrayray/blog/${url?.replace('images/', '/')}`
+		return `https://res.cloudinary.com/raymons/image/upload/c_crop,f_auto/devbyrayray/blog/${url?.replace('images/', '/')}`
 	}
-	return `https://res.cloudinary.com/raymons/image/fetch/${url}`
+	return url
 }
 
 interface Props {
