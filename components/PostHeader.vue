@@ -1,36 +1,42 @@
 <template>
-	<header class="content-header absolute top-0 left-0 w-full" :class="{ 'is-homepage': isHomepage, 'no-homepage': !isHomepage, 'is-horizontal': isHorizontal }">
+	<header
+		class="content-header absolute top-0 left-0 w-full"
+		:class="{ 'is-homepage': isHomepage, 'no-homepage': !isHomepage, 'is-horizontal': isHorizontal }"
+	>
 		<div class="header-content absolute bottom-0 left-0 w-full p-8" :class="{ gradient: showGradient }">
 			<div class="top flex flex-wrap">
-				<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
+				<ul class="text-gray-200 flex flex-wrap items-start">
 					<li
 						class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
 					>
-						<strong>Date: </strong><time>{{ formatDate(blog?.date) }}</time>
+						<time class="flex items-center"
+							>{{ formatDate(blog?.date) }} <MazIcon src="/icons/calendar.svg" size="1rem" class="ml-1" />
+						</time>
 					</li>
-				</ul>
-				<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
 					<li
 						class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
 					>
-						<span>~{{ Math.round(blog?.readingTime?.minutes) }} minutes</span>
+						<span class="flex items-center"
+							>{{ Math.round(blog?.readingTime?.minutes) }} min
+							<MazIcon src="/icons/clock.svg" size="1rem" class="ml-1"
+						/></span>
 					</li>
 				</ul>
 			</div>
 			<div class="bottom flex flex-col">
 				<div class="tags flex flex-wrap">
-					<Tag v-for="tag in blog?.tags" :key="tag" :tag="tag"></Tag>
+					<Tag v-for="tag in tags" :key="tag" :tag="tag"></Tag>
 				</div>
 				<h1 v-if="showTitle" class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
 			</div>
 		</div>
-		<div class="cover-image rounded-t-lg">
+		<div class="cover-image rounded-l-lg">
 			<nuxt-img
 				v-if="blog?.image"
 				:src="`${getImageUrl(blog?.image)}`"
 				width="960"
 				height="400"
-				class="rounded-t-lg object-cover mb-0"
+				class="rounded-l-lg object-cover mb-0"
 				:modifiers="{
 					c: 'crop'
 				}"
@@ -43,12 +49,13 @@
 </template>
 <script setup lang="ts">
 import { formatDate } from '@/lib/date'
+import MazIcon from 'maz-ui/components/MazIcon'
 
 function getImageUrl(url: string) {
 	if (url && !url.startsWith('http')) {
 		return `https://res.cloudinary.com/raymons/image/upload/devbyrayray/blog/${url?.replace('images/', '/')}`
 	}
-	return `https://res.cloudinary.com/raymons/image/fetch/${url}`;
+	return `https://res.cloudinary.com/raymons/image/fetch/${url}`
 }
 
 interface Props {
@@ -59,13 +66,15 @@ interface Props {
 	isHorizontal: boolean
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
 	blog: {},
 	showTitle: true,
 	showGradient: true,
 	isHomepage: true,
 	isHorizontal: false
 })
+
+const tags = props?.isHomepage ? props?.blog?.tags?.slice(0, 2) : props?.blog?.tags
 
 function classes(tag: string) {
 	const obj = {}
@@ -99,22 +108,22 @@ function classes(tag: string) {
 	height: 115%;
 }
 .content-header {
-	    height: 500px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 2rem;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 2rem;
 }
 .no-homepage.content-header {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    width: calc(100% + 4rem);
-    margin-top: -2rem;
+	margin-left: -2rem;
+	margin-right: -2rem;
+	width: calc(100% + 4rem);
+	margin-top: -2rem;
 }
 .is-homepage.content-header {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    width: calc(100% + 2.5rem);
-    margin-top: -1.25rem;
+	margin-left: -1.25rem;
+	margin-right: -1.25rem;
+	width: calc(100% + 2.5rem);
+	margin-top: -1.25rem;
 }
 .is-horizontal.content-header {
 	margin-bottom: 0;

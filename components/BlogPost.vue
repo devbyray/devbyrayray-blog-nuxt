@@ -11,7 +11,7 @@
 				</component></nuxt-link
 			>
 
-			<p class="font-normal mb-3">{{ article?.description }}</p>
+			<p class="font-normal mb-3 description">{{ article?.description }}</p>
 			<div class="mt-auto">
 				<nuxt-link :to="article?._path" class="dark:text-white"
 					><span
@@ -43,5 +43,8 @@ withDefaults(defineProps<Props>(), {
 	display: grid;
 	grid-template-columns: 2fr 3fr;
 	gap: 3rem;
+}
+.description {
+	min-height: 200px;
 }
 </style>
