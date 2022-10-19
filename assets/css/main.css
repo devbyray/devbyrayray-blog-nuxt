@@ -220,3 +220,14 @@
 	max-width: 800px;
 	margin: 0 auto;
 }
+.hide-mobile {
+	display: none;
+}
+@media screen and (min-width: 1300px) {
+	.show-mobile {
+		display: none;
+	}
+	.hide-mobile {
+		display: block;
+	}
+}

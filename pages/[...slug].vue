@@ -28,34 +28,26 @@
 				>
 					<div class="dino-header absolute"></div>
 
-					<PostHeader :blog="blog" :showTitle="true" :showGradient="true" />
-
+					<PostHeader :blog="blog" :showTitle="true" :showGradient="true" :isHomepage="false" />
+					<Toc
+						class="show-mobile bg-gray-700 p-4"
+						v-if="blog?.body?.toc?.links"
+						:links="blog?.body?.toc?.links"
+					></Toc>
 					<ContentDoc>
 						<template #empty>
-							<h1>Document is empty</h1>
+							<h1>Sorry the post could not be found 🙈</h1>
+							<p>Check the homepage to find that post or a related one 😉</p>
 						</template>
 					</ContentDoc>
 					<Profile></Profile>
 				</article>
 				<aside class="right-side">
-					<div class="widget text-white sticky top-5">
-						<header class="widget-header"><h2>Table of Content</h2></header>
-						<section class="widget-content">
-							<ol class="rounded-2xl list-decimal list-outside pl-8">
-								<li
-									v-for="link in filterToc(blog?.body?.toc?.links)"
-									:key="link?.id"
-									class="text-white pl-8 text-lg leading-7"
-								>
-									<nuxt-link
-										:to="`#${link?.id}`"
-										class="text-white"
-										>{{ link?.text }}</nuxt-link
-									>
-								</li>
-							</ol>
-						</section>
-					</div>
+					<Toc
+						class="widget text-white sticky top-5 hide-mobile"
+						v-if="blog?.body?.toc?.links"
+						:links="blog?.body?.toc?.links"
+					></Toc>
 				</aside>
 				<footer class="prev-next pt-8">
 					<ul class="grid grid-cols-2 gap-4">
@@ -93,31 +85,11 @@ const pageUrl = `${CONFIG.domain}${path}`
 const pageImage = `${CONFIG?.domain}/${blog?.image}`
 const pageDate = formatDate(blog?.date)
 
-const formattedTopics = (tags, categories) => {
-	let topics = ''
-	console.log({ tags, categories })
-	if (tags?.length > 0) {
-		topics += tags
-			.map(item => `#${item}`)
-			.toString()
-			.replaceAll(',', ', ')
-	}
-	if (categories?.length > 0) {
-		topics += categories
-			.map(item => `#${item}`)
-			.toString()
-			.replaceAll(',', ', ')
-	}
-
-	return topics
-}
+onMounted(() => {
+	window.scrollTo(0, 0)
+})
 
 console.log('blog: ', blog)
-
-function filterToc(links) {
-	console.log('links: ', links)
-	return links.filter(item => item?.id !== 'thanks')
-}
 
 const { prev, next } = useContent()
 </script>
@@ -136,7 +108,6 @@ export default {
 	max-width: 800px;
 	grid-template-columns: 1fr;
 }
-
 @media screen and (min-width: 1300px) {
 	.page-container {
 		max-width: 1600px;
@@ -169,17 +140,8 @@ pre {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.page-content {
-	padding-top: calc(400px + 2rem);
-}
 .content-header h1 {
 	font-size: 3rem;
 	line-height: 3.2rem;
-}
-
-@media screen and (min-width: 1300px) {
-	.page-content {
-		padding-top: calc(500px + 2rem);
-	}
 }
 </style>

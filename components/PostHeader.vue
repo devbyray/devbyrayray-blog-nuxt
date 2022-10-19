@@ -1,5 +1,5 @@
 <template>
-	<header class="content-header absolute top-0 left-0 w-full">
+	<header class="content-header absolute top-0 left-0 w-full" :class="{ 'is-homepage': isHomepage, 'no-homepage': !isHomepage, 'is-horizontal': isHorizontal }">
 		<div class="header-content absolute bottom-0 left-0 w-full p-8" :class="{ gradient: showGradient }">
 			<div class="top flex flex-wrap">
 				<ul class="text-gray-200 mt-8 flex flex-wrap items-start">
@@ -55,12 +55,16 @@ interface Props {
 	blog: any
 	showTitle: boolean
 	showGradient: boolean
+	isHomepage: boolean
+	isHorizontal: boolean
 }
 
 withDefaults(defineProps<Props>(), {
 	blog: {},
 	showTitle: true,
-	showGradient: true
+	showGradient: true,
+	isHomepage: true,
+	isHorizontal: false
 })
 
 function classes(tag: string) {
@@ -95,8 +99,26 @@ function classes(tag: string) {
 	height: 115%;
 }
 .content-header {
-	height: 500px;
-	overflow: hidden;
+	    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.no-homepage.content-header {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    width: calc(100% + 4rem);
+    margin-top: -2rem;
+}
+.is-homepage.content-header {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    width: calc(100% + 2.5rem);
+    margin-top: -1.25rem;
+}
+.is-horizontal.content-header {
+	margin-bottom: 0;
+	height: calc(100% + 2.5rem);
 }
 .content-header h1 {
 	font-size: 2rem;
@@ -135,7 +157,7 @@ function classes(tag: string) {
 		line-height: 3.2rem;
 	}
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
 	.content-header h1 {
 		font-size: 4rem;
 		line-height: 4.2rem;

@@ -120,9 +120,8 @@ function elfProefValidation(value: string, type: ElfproefType): boolean {
 
 ## Thanks!
 
-![hashnode-footer.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629789655319/nBF6anHH4w.png)
-_I hope you learned something new or are inspired to create something new after reading this story! 🤗 If so, consider subscribing via email (scroll to the top of this page) or follow me here on Hashnode._
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-> Did you know that you can create a [Developer blog like this one, yourself](https://hashnode.com/@devbyrayray/joinme)? It's entirely for free. 👍💰🎉🥳🔥
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
 
-_If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM's are always open 😁_
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

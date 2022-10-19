@@ -49,7 +49,4 @@ console.log({ props, posts })
 	}
 }
 
-.inner-card {
-	padding-top: calc(500px + 2rem);
-}
 </style>

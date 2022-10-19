@@ -19,9 +19,8 @@
 			:content="page?.description ?? CONFIG?.sitedesc"
 		/>
 
-        <TheHeader></TheHeader>
+		<TheHeader></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
-
 			<article class="page-container">
 				<section class="page-max-md pb-16">
 					<h1 class="text-white font-bold text-3xl tracking-tight" v-if="!page">{{ slug[0] }}</h1>
@@ -31,15 +30,15 @@
 					</ContentRenderer>
 				</section>
 
-				<section v-if="posts" class="page-max-lg post-grid grid gap-8 text-neutral-600 mb-8">
+				<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
 					<div
 						v-for="article in posts"
 						:key="article?._path"
 						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
 					>
-						<BlogPost :article="article" title-tag="h2"></BlogPost>
+						<BlogPost :article="article" :isHorizontal="true"></BlogPost>
 					</div>
-				</section>
+				</div>
 			</article>
 		</div>
 	</div>
@@ -67,30 +66,11 @@ const { data: page } = await useAsyncData(`content-${path.toLowerCase()}`, () =>
 
 const pageUrl = `${CONFIG.domain}${path}`
 const pageImage = `${CONFIG?.domain}/${page?.image}`
-
 </script>
 
 <style scoped>
 .post-grid {
-	display: grid;
-}
-@media screen and (min-width: 500px) {
-	.post-grid {
-		grid-template-columns: repeat(1, 1fr);
-	}
-}
-@media screen and (min-width: 960px) {
-	.post-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media screen and (min-width: 1300px) {
-	.post-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-.inner-card {
-	padding-top: calc(500px + 2rem);
+	max-width: 800px;
+	margin: 0 auto;
 }
 </style>

@@ -91,8 +91,3 @@ The next post will be another JavaScript exercise.
 After reading this post, I hope you learned something new or are inspired to create something new! 🤗
 
 If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
-
-### Read more
-
-[**Latest JavaScript & TypeScript stories**  
-\_Check my latest JavaScript and TypeScript stories_byrayray.medium.com](https://byrayray.medium.com/list/0358ad941491 'https://byrayray.medium.com/list/0358ad941491')[](https://byrayray.medium.com/list/0358ad941491)
