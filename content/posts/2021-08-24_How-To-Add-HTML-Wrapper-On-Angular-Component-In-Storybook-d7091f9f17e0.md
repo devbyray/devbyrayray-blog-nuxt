@@ -3,11 +3,10 @@ title: How To Add HTML Wrapper On Angular Component In Storybook
 description: Storybook Decorators are the answer for creating a bit more markup
 date: '2021-08-24T06:55:48.455Z'
 categories: []
-tags: []
+tags: ['angular', 'storybook']
 slug: /@byrayray/how-to-add-html-wrapper-on-angular-component-in-storybook-d7091f9f17e0
+image: images/0__yKTtL__zPD8SMnw5f.jpg
 ---
-
-![](/images/0__yKTtL__zPD8SMnw5f.jpg)
 
 Storybook offers a lot of tooling to document all your JavaScript components visually. [Getting started with Storybook and Angular](https://storybook.js.org/docs/angular/get-started/introduction) is pretty easy too. But some features are hidden or not described enough to know them.
 
@@ -19,10 +18,18 @@ Storybook Decorators are the answer for creating a bit more markup to add contex
 
 The Storybook team made it super simple to add decorators.
 
+```ts
+// your-component.stories.ts
+import { Meta, componentWrapperDecorator } from '@storybook/angular'
+export default {
+	title: 'YourComponent',
+	component: YourComponent,
+	decorators: [componentWrapperDecorator(story => `<div class="mat-body">${story}</div>`)]
+} as Meta
+```
+
 In our case, we only needed a `<div>` with a class `mat-body` to get the font family of a form correct.
 
 With these decorators, you can add extra context or styling around your components.
-
-
 
 _Happy coding 🚀_

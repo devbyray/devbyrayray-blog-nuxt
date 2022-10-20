@@ -1,10 +1,15 @@
 <template>
-	<!-- <img :src="src" loading="lazy" :alt="alt" :width="width" :height="height" /> -->
 	<nuxt-img
 		provider="cloudinary"
 		:src="`${src.replace('images/', '/')}`"
-    :alt="alt" 
-		:width="width" :height="height"
+		:alt="alt"
+		:title="alt"
+		:width="width"
+		:height="height"
+		loading="lazy"
+		:modifiers="{
+			c: 'crop',
+		}"
 	/>
 </template>
 

@@ -1,19 +1,18 @@
 ---
-title: "1 Mindset So You Will Be A Successful Developer? \U0001F9D1‍\U0001F4BB\U0001F469‍\U0001F4BB"
-description: It’s Simpler Than You Think!
+title: "One Mindset So You Will Be A Successful Developer?"
+description: So many developers are focussing on success, but what is success? Why do they all want to become 10x developers? Is it something everyone can achieve? Or is it only for the best of the best?
 date: '2021-08-11T12:58:11.734Z'
 categories: []
-tags: []
+tags: ['developer', 'mindset']
 slug: /@byrayray/1-mindset-so-you-will-be-a-successful-developer-8cf09ab88ab5
+image: images/0__xB4PW918rg9ZNNc0.jpg
 ---
-
-![](/images/0__xB4PW918rg9ZNNc0.jpg)
-
-#### DEVELOPER MINDSET
 
 So many developers are focussing on success, but what is success? Why do they all want to become 10x developers? Is it something everyone can achieve? Or is it only for the best of the best?
 
-### What Is Success?
+---
+
+## What Is Success?
 
 Everyone has a different definition of success. Mine can be completely different than yours, and that is the beauty of it!
 
@@ -31,7 +30,8 @@ For me, success can be that other developers easily understand the code I wrote,
 
 Success is for everyone different.
 
-### How To Achieve Success as a Developer?
+---
+## How To Achieve Success as a Developer?
 
 First of all, don’t be afraid to make mistakes!
 
@@ -45,7 +45,9 @@ I believe you won’t achieve success all by yourself. I think you achieve it wi
 
 Since you can’t achieve success by doing everything perfectly, you have to learn from your own and others’ mistakes.
 
-### What Is A Successful Developer?
+---
+
+## What Is A Successful Developer?
 
 A successful developer is not defined by many years of experience, nor a junior, medior, senior, or lead developer. It’s determined by how you can turn failures into lessons and apply them in your daily work.
 
@@ -53,7 +55,10 @@ It doesn’t matter if you dream in code or searching the web every day for code
 
 > _If you are a Junior Developer or CodeNewbie, I highly recommend this post “_[A junior developers guide to success](https://medium.com/@tomas.eglinskas/a-junior-developers-guide-to-success-68e234088104)_” by Tomas Eglinskas, which gives some highly practical tips 👍_
 
-### How To Stay Succesful As Developer
+
+---
+
+## How To Stay Succesful As Developer
 
 It’s all in the mindset.
 
@@ -63,7 +68,8 @@ Those are the moments where you can look back on what you already learned last w
 
 Don’t forget the things that made you secretly proud! Write them down! They are valuable for you! They help you stay successful.
 
-### Conclusion
+---
+## Conclusion
 
 Others do not define a successful developer! Okay, sometimes it feels great that others define us as successful. But the most important person on this earth is yourself.
 
@@ -71,8 +77,11 @@ As long as you look to yourself as a successful developer, you are not afraid to
 
 That is the point where you are a successful developer!
 
-_Happy coding 🚀_
+---
+## Thanks!
 
-### Read more Developer stories
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-**Dev Together:** [https://medium.com/dev-together](https://medium.com/dev-together)
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

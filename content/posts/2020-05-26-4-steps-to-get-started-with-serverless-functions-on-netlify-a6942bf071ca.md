@@ -1,13 +1,12 @@
 ---
 title: 4 Steps to Get Started With Serverless Functions on Netlify
-description: The most powerful tool for front-end developers
+description: In this article, I want to tell you everything I know about serverless functions. I’m not going to dive into the small details. I want to talk about what they are and why you want to use them as front-end developers. What Are Serverless Functions?
 date: '2020-05-26T15:50:59.895Z'
 categories: []
 published: true
-tags: ['developer', 'webdev']
+tags: ['serverless', 'javascript', 'typescript']
 image: https://cdn-images-1.medium.com/max/800/0*h-Oc-BQ3UWnRKq_z
 ---
-
 
 You’ve heard the buzzword for a while now: serverless functions. Every cloud host is using them. They sound so simple!
 
@@ -28,7 +27,9 @@ All these providers have a free tier to try out their serverless functions. So t
 
 In this article, I will use [Netlify](https://www.netlify.com/products/functions/).
 
-# Why Should You Use Serverless Functions?
+---
+
+## Why Should You Use Serverless Functions?
 
 Are you wondering why you should use serverless functions?
 
@@ -44,51 +45,77 @@ As front-end developers, we don’t have to worry about managing a Node.js appli
 
 We deploy a `functions` folder in our project and deploy it to Netlify. Every JavaScript file now becomes an API endpoint.
 
-# How Do You Create a Serverless Function?
+---
+
+## How Do You Create a Serverless Function?
 
 Now that it’s clear why serverless functions are powerful weapons, we’re going to create a serverless function ourselves.
 
-## 1\. Set up project
+### 1. Set up project
 
 Create a simple GitHub repo for this project. Log into the Netlify website with your GitHub account. Accept the needed authorization.
 
-## 2\. Add project to Netlify
+### 2. Add project to Netlify
 
 Netlify is great for its CI/CD features. No more manual deployments or even transferring files via FTP.
 
 Add your GitHub project to Netlify and you’re ready to get started.
 
-## 3\. Set up serverless functions
+### 3. Set up serverless functions
 
 Clone your GitHub project to your computer. Create a folder named `functions` and a `netlify.toml` file in the main directory.
 
-https://gist.github.com/raymonschouwenaar/5823e267be7149accf1da3bf4f659d37#netlify.toml
+https://gist.github.com/devbyray/5823e267be7149accf1da3bf4f659d37#netlify.toml
+
+```toml
+[build]
+    functions = ".netlify/functions/"
+```
 
 In the `netlify.toml`, we put the setting we need to run the serverless function on our local computer and online.
 
 Every JavaScript file in the `functions` folder has the same base.
 
-https://gist.github.com/raymonschouwenaar/6bd55dea381dc3be1502513cafa5bbac
+```js [hello.js]
+exports.handler = async (event, context) => {
+	// return data here
+}
+```
 
 When you call the endpoint, the `event` variable has information about the request (e.g. the headers, body, and the path).
 
 Create a file in the `functions` folder called `hello.js` with the content below:
 
-https://gist.github.com/raymonschouwenaar/2d737a24430e0274da8830a7595117cb
+```js
+exports.handler = async (event, context) => {
+  return {
+   statusCode: 200,
+   body: JSON.stringify({
+    message: 'Hello world"
+   }),
+  }
+}
+```
 
 Commit and push it. Go to your project on Netlify and wait until the build finishes.
 
-## 4\. Check serverless function URL
+### 4. Check serverless function URL
 
 Click on “Functions” in the navigation. If you worked in the `master` branch, then you will find `hello.js` in the list. If you worked on a feature branch, you have to search in the input field.
 
 Click on your `hello.js` function and you will see the URL of your serverless function. Copy and paste it in your browser. The result should look like this:
 
-https://gist.github.com/raymonschouwenaar/4c638acfca5f7192db3f78f45015d47b
+```json [response.json]
+{
+	"message": "Hello world"
+}
+```
 
 Write any logic you want your serverless function to have. You are ready to use it in any application you like!
 
-# What Is the Alternative?
+---
+
+## What Is the Alternative?
 
 Of course, there are alternatives, like Node.js applications.
 
@@ -98,7 +125,9 @@ Yes, you can put your Node.js into a Docker container, but you’d still have to
 
 Serverless functions live in your project. You host it on Netlify. This is great for keeping it simple! If you ask me, that’s perfect for front-end developers!
 
-# Conclusion
+---
+
+## Conclusion
 
 I’m diving into serverless functions on Netlify myself. I will combine them with [FaunaDB](https://fauna.com), so you can expect some future articles about that.
 

@@ -1,15 +1,12 @@
 ---
-title: 6 Easy Steps How I Started Running — 10KM
-description: It’s all about getting started slowly
+title: 6 Easy Steps How I Started Running 10KM -- As Developer
+description: It’s essential to take it slow, start with a 25–20 min run, and built up as you go at your own pace. In this 6 step guide, I help you started. Every runner starts as a beginner. It matters that you create the right way. Start easy to grow faster. Make it a habit. You will learn to love it so that it can change your life.
 date: '2021-08-09T11:59:58.066Z'
 categories: []
-tags: []
+tags: ['mindset', 'health', 'developer']
 slug: /@byrayray/6-steps-to-get-started-with-running-cb78d087fd8a
+image: images/0__IJxKZ2797QT1dgVf.jpg
 ---
-
-![](/images/0__IJxKZ2797QT1dgVf.jpg)
-
-#### HEALTH
 
 It’s essential to take it slow, start with a 25–20 min run, and built up as you go at your own pace. In this 6 step guide, I help you started. Every runner starts as a beginner. It matters that you create the right way. Start easy to grow faster. Make it a habit. You will learn to love it so that it can change your life.
 
@@ -19,13 +16,14 @@ It’s essential to start at your own pace. Don’t push hard on yourself. Other
 
 At the end of this guide, you will know how to start running, what you need to get started, and the benefits of running.
 
-### 1\. Start slow
+---
+## 1. Start slow
 
 ![](/images/0__cu3PkstBFER1U89k.jpg)
 
 When you want to start running, it’s essential to have one or multiple goals in mind. Those can differ per person, so your dreams can be different from mine.
 
-#### 1.1 What is your goal?
+### 1.1 What is your goal?
 
 It is essential to define your goals with running. Examples of plans for running can be:
 
@@ -48,7 +46,7 @@ This is because they can’t meet their expectations, so they stop. Instead, the
 
 My most extensive advice is to start easy, go slow, and maintain in the long run.
 
-#### 1.2 Start with interval running
+### 1.2 Start with interval running
 
 To start easy, the best thing I have learned is to do interval sessions. Interval sessions are sessions where you run for a few minutes and break it up with walking. This is very beneficial for your body to get used to the running exercises.
 
@@ -56,7 +54,8 @@ To start easy, the best thing I have learned is to do interval sessions. Interva
 
 Interval training can be as easy as 3 minutes running, 1-minute walking, or 5 minutes running with 1 minute running. If you like, you can build your schedule with this or use the Nike Club app and pick the “_Next Speed Run_” this run, for example.
 
-### 2\. Learn to love it
+---
+## 2. Learn to love it
 
 ![](/images/0__Bi0xkGIYFOOaD__DW.jpg)
 
@@ -64,7 +63,7 @@ At first, you won’t love it. I had that same experience. It did take me a few 
 
 It’s not weird that it will take you a lot of effort when you get started with running. Don’t blame yourself for it. Just get used to the running.
 
-#### 2.1 When you start, it can be hard
+### 2.1 When you start, it can be hard
 
 When I got started, it took me a lot of effort to finish my training. I found it very hard to keep running for 2 minutes. My condition was terrible, so it was very logical that I experienced this very hard.
 
@@ -76,7 +75,7 @@ Professional runners never start with full speed and running for ours. They also
 
 Hard work and putting in a lot of effort will pay off.
 
-#### 2.2 Grow it to a habit
+### 2.2 Grow it to a habit
 
 When you want to start a new habit, you have to do it regularly. Otherwise, you never will build that habit. Making a habit costs time and energy but has the power of becoming your everyday behavior.
 
@@ -90,7 +89,8 @@ Do it regularly with breaks, and you will have a lifelong habit that is good for
 
 Now that we talked about how to start, it’s time to get practical and get your gear to start running.
 
-#### 3\. Get Comfortable Gear
+---
+## 3. Get Comfortable Gear
 
 ![](/images/0__8ks3kwwfFyB8fWRv.jpg)
 
@@ -102,7 +102,7 @@ But in my experience, you can grab every possible comfortable clothing item from
 
 > Be aware that not everything that is listed below is required to get started with running. It’s just what my wife and I do.
 
-#### **3.1 Get running shoes**
+### **3.1 Get running shoes**
 
 It could be that you already have a pair of sports shoes to take a run. If they are good enough to start with, just keep them. I have started on shoes which costs me 20 euros. But make sure they are comfortable while running.
 
@@ -110,7 +110,7 @@ When you run, your body gets a lot of shocks. Your running shoes have to minimiz
 
 I wear a pair of black Nike Revolution 5 shoes, and my wife wears the Asics Patriot 10. They are pretty comfortable for my feet, minimizing many shocks and ensuring my feet won’t feel sweaty. If you like them, order the [Nike Revolution 5](https://amzn.to/3pKyw1D) or [Asics Patriot 10](https://amzn.to/38UWErt) at Amazon. But if you want other brands of running shoes more than these, checkout [Amazon for other great running shoes](https://amzn.to/350VZDO).
 
-#### 3.2 Take comfortable clothing
+### 3.2 Take comfortable clothing
 
 I like to wear an old gray hoody with old sweatpants in the winter. In the summer I like to wear black shorts with a t-shirt, so nothing special. But my wife prefers yoga pants and a fleece hoody in the winter. During summer, she has yoga pants with a running t-shirt and sports bra.
 
@@ -120,7 +120,7 @@ Yoga pants are trendy for women, [like these on Amazon](https://amzn.to/2X7C81i)
 
 In the summer I advise you to pick the most lightweight clothes for running. They also need to take air through it because you’re going to sweat (a lot 😅). I find these [running shorts](https://amzn.to/3b1ZCNw) and [shirts for men](https://amzn.to/3hKZ1RW) from amazon very comfortable. My wife loves the yoga pants and [slim fit sports t-shirts](https://amzn.to/2MupDek) from Amazon.
 
-#### 3.3 Get a running belt
+### 3.3 Get a running belt
 
 When I started running, I wasn’t thinking about a running belt. I found that this wasn’t needed because my runs were only about 20–30 min, so I didn’t need any water to take only during hot summers.
 
@@ -128,7 +128,7 @@ I recently ordered a [running belt from Amazon](https://amzn.to/3o9AJmN) with a 
 
 The second reason was, I couldn’t take my phone with me during my runs, and for the sake of safety, I wanted to have it with me. I track my runs with an Apple Watch, but in the Netherlands, the 4G version isn’t supported. But with the running belt, I can take my phone and even my keys, so pretty valuable for me!
 
-#### 3.4 Get a smartwatch or step counter
+### 3.4 Get a smartwatch or step counter
 
 When you track your run, it will tell you how fast you run and progress in distance and speed. But you can also use it to make sure you’re not going too fast.
 
@@ -146,7 +146,7 @@ You can order the Apple Watch (series 5, 6, or SE) from Amazon if you like. But 
 
 **Android Watch**
 
-![](/images/0__EN4NLJf__8OEbWXTl.jpg)
+![](/images/0_EN4NLJf-8OEbWXTl.jpg)
 
 If you don’t own an iPhone, an Apple Watch will be a waste of your money.
 
@@ -168,17 +168,19 @@ The most inexpensive way of tracking your run is with a phone in a special runni
 
 When I started my run, I started the app and followed everything: my speed, GPS, height, and many more. [RunKeeper](https://runkeeper.com/) was the first app I used to track my runs. It’s free and has excellent tracking capabilities. So if you want to track your run before spending money on a smartwatch, I highly recommend this way.
 
-### 4\. Plan your first run
+---
 
-![](/images/0__6PFJDE__SNvY9uxPZ.jpg)
+## 4. Plan your first run
+
+![](/images/0_6PFJDE-SNvY9uxPZ.jpg)
 
 No, it is time to plan your first run. You can be spontaneous and go for a run right away. Some people need a little bit more planning ahead. Both are fine. Do what feels right for you!
 
-#### 4.1. Make a schedule
+### 4.1. Make a schedule
 
 Your schedule should have two things. When you run and how long you run.
 
-#### 4.2 When you run
+### 4.2 When you run
 
 The first is when you are going to run. When you have put this as an appointment on your schedule, it will be a lot easier to move yourself to it. The second thing is how long you’re going to run. The distance or time can be the thing you pick.
 
@@ -186,7 +188,7 @@ I would advise you to run every two days, so your body can get used to the runni
 
 From my experience, it’s essential to keep those resting days. Otherwise, you will have pain in all your body. And with that pain, people who are just getting started will decide to quit more easily.
 
-#### 4.3 How long you run
+### 4.3 How long you run
 
 Never do it too long or go too far when you plan your distance or time to run. Listen to your body carefully!
 
@@ -194,7 +196,7 @@ For me, it was enough to run for 18 minutes (with intervals) with a distance of 
 
 I loved it to run early in the morning, especially when I was working from home. The advantage of that is [you will kickstart the awakening of your body](https://www.shape.com/fitness/cardio/5-reasons-mornings-are-best-time-run) and have more energy during the day.
 
-#### 4.4. Your running pace
+### 4.4. Your running pace
 
 Your running pace is connected to how long you can run for the length in time as in the distance.
 
@@ -206,7 +208,7 @@ My running pace was around 8.52 a kilometer. The intervals running schema looked
 
 As you can see, when you get started, start at a comfortable pace. And if you find out that it’s too much for you. Then just do all the intervals with 1-minute walking and 1 minute running and see when you build up from there.
 
-#### 4.5. Get good music
+### 4.5. Get good music
 
 This is a crucial thing for me! It’s so important that if I can’t listen to music, I won’t run 😊. That is how much I enjoy music.
 
@@ -216,7 +218,10 @@ I’ve experienced listening to music helps me relax in my mind, and it motivate
 
 Make sure you have great earphones for running because those have to stay in your ears. Earphones that I would recommend for Apple fans are [Apple EarPods](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector?fnode=c96f3fd88259f829fc54a9e0573bfd1d1a88c9a3658597aec7773ab40ec97d5cb4b715c1270a2af0cc10bc95d3154d1c505c0c66013b2bd097802a7510663f8d34a41cf9bd2b4052f181fea77baf93f49f06c578e5e45614fc2a388be1cc157764162f7a661964d29050d5cb2be546c252e9933814a0bb667453a2b2af26fcfc), [Apple Airpods](https://amzn.to/38h0pII), and the [Apple Airpods Pro](https://amzn.to/3bf5Vh4). If you want something different than Apple, checkout [Beats Powerbeats Pro](https://amzn.to/2XdR6mL), [JBL Reflect Mini 2](https://amzn.to/2JP4xq5), [Jabra Elite Active 75t](https://amzn.to/35faO5K), [Samsung Galaxy Buds Live](https://amzn.to/38fcQou), or the [Bose Sport Earbuds](https://amzn.to/3bf6yaq). All of these can be ordered from Amazon.
 
-### 5\. Why running is great
+
+---
+
+## 5. Why running is great
 
 ![](/images/0__PgnOFmEJVkc9YQ0l.jpg)
 
@@ -224,7 +229,7 @@ Okay, we have covered a lot of how you can get started to run, but one of the mo
 
 Because why on earth would you want to start to run? Or why do you need to do exercises? Well, there are a few things why running is excellent.
 
-#### 5.1. Clearing your mind
+### 5.1. Clearing your mind
 
 Clearing your mind can be crucial. Imagine you have a day of hard work in the office or at home. You have thought a lot, and you had to solve problems and a lot more other stuff.
 
@@ -238,7 +243,7 @@ If you’re not taking time for yourself to think about the things you find impo
 
 Take my time often. 👍
 
-#### 5.2. Losing weight
+### 5.2. Losing weight
 
 This was one of the reasons why I started running. First I only had to order a pair of running shoes, second, it didn’t cost me more than 30 euros. A very cheap way of working outright.
 
@@ -250,12 +255,22 @@ Next to losing weight, my condition improved massively. Before I started running
 
 So if you have to lose weight, make running a habit, and you will lose weight. Even better if you start enjoying running, so it will become a hobby.
 
-### 6\. Run
+---
+## 6. Run
 
-![](/images/0__CyUtM1UWMO5PhuTN.jpg)
+![](/images/0_CyUtM1UWMO5PhuTN.jfif)
 
 Yes, no, it’s time to strap your shoes around your feet and get running!
 
 Remember, start slow and well-paced. Not too slow, not too fast, because that’s that will hurt you both.
 
 I wish you all the luck with your running journey! Hopefully, you will run for a long time. 😊 Enjoy!
+
+---
+## Thanks!
+
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

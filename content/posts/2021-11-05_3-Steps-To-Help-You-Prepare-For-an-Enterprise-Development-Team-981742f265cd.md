@@ -1,10 +1,11 @@
 ---
 title: 3 Steps To Help You Prepare For an Enterprise Development Team
-description: From preparation to refinement to estimation
+description: Before development teams of an enterprise organization are ready to pick up their work, the whole process is prepared. This process is essential before a developer can write their code.
 date: '2021-11-05T13:03:25.427Z'
 categories: []
-tags: []
+tags: ['scrum']
 slug: /@byrayray/3-steps-to-help-you-prepare-for-an-enterprise-development-team-981742f265cd
+image: images/1_m6riZDeiSQ7lMfBDp1zn0w.jpg
 ---
 
 Before development teams of an enterprise organization are ready to pick up their work, the whole process is prepared. This process is essential before a developer can write their code.
@@ -15,20 +16,26 @@ Since 2014, I’ve worked for big enterprise organizations in the Netherlands (R
 
 I learned a ton from it, so I would love to share that workflow with you.
 
-### Foreword
+---
+
+## Foreword
 
 This workflow is the baseline that I use in all of the organizations I work for. From small to big, it doesn’t matter. It’s essential to have a workflow that supports the “business” and “development” teams.
 
 *   When I say **_business_**, I mean people who know how the business works, how their clients interact with their products, and the people responsible for these products. Most organizations call these people product managers or product owners (if they adopted Scrum).
 *   When I say **development team,** I mean people who are on the development team. These are developers, testers, scrum masters, team lead, designers, and more along those lines.
 
-### 1\. Preparation
+---
+## 1. Preparation
+
+![Preparation table](/images/jexo--Gy7GjLy-Vs-unsplash.jpg)
 
 Almost every person on earth knows that excellent preparation will make your chances of success bigger than if you don’t.
 
 Working in a small organization is easier (I don’t mean that it’s easy) than working in a big organization. So if you are in a small organization and want to grow, start with preparation. Always keep in mind that it’s not only clear for you but also for others.
 
-#### Preparation for the business
+---
+### Preparation for the business
 
 The business people must do their preparation way before the development team has to do something.
 
@@ -36,7 +43,9 @@ If your organization works with [Github](https://github.com/), [Azure Devops](ht
 
 Make sure this preparation work doesn’t interfere with the work of the development team.
 
-#### What should be prepared
+---
+
+### What should be prepared
 
 It’s hard to define what a product manager or owner should prepare if you don’t know an organization. But I will try to explain the most general things.
 
@@ -52,7 +61,10 @@ It’s not that the business should know every single detail. But all the known 
 
 When people are guessing, you, as the product manager, are going to be sure your expectations aren’t met.
 
-### 2\. Refinement
+---
+## 2. Refinement
+
+![Refinement session](/images/jason-goodman-Oalh2MojUuk-unsplash.jpg)
 
 _The main priority for this refinement is that the business and the development are on the same page and create one complete package of information — so no one has to search for all kinds of documents._
 
@@ -70,7 +82,10 @@ When details are not precise, the development team should clarify the informatio
 
 Now that the development team and business agreed on the plan of the feature, they should be able to give an estimation.
 
-### 3\. Estimation
+---
+## 3. Estimation
+
+![Team scrum estimation](/images/irfan-simsar-wxWulfjN-G0-unsplash.jpg)
 
 Estimation is one of the hardest things in software development (I’m sure doing estimates is hard for every human on this planet 🌍.)
 
@@ -92,9 +107,9 @@ If developers switch between techniques, domains, or projects, it stays tough to
 
 So, for all the managers that want their team to do estimations, you need to create optimal circumstances and prepare all the work for the team. Make sure that they don’t have to dig deep for their information because this will cost a lot of time. Prepare and package all the information they need in one place. This will help with preparation and estimation.
 
+---
 
-
-### Conclusion
+## Conclusion
 
 I hope this process will help you shape the workflow your team needs as a developer or manager.
 
@@ -105,3 +120,13 @@ If you have any questions about this workflow, please let me know. Any suggestio
 The success of a software development project is in the preparation phase. If all the information is available in one place, it will prevent a team from losing valuable time on searching, which will help the team make better decisions.
 
 An Agile framework like [Scrum](https://www.scrum.org/resources/what-is-scrum) or [Kanban](https://www.atlassian.com/agile/kanban) can help organize the process around a development team. I love both of these methods!
+
+---
+
+## Thanks
+
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁.

@@ -146,15 +146,22 @@
 
 	.content ul,
 	.content ol {
-		@apply my-8;
+		@apply my-8 ml-8;
 		list-style: inherit;
-		list-style-position: inside;
+		list-style-position: outside;
+	}
+	.content li {
+		@apply pl-4 mb-2;
 	}
 
 	.content p code {
 		white-space: nowrap;
 		font-family: monospace;
 		@apply px-2 py-1 text-base;
+	}
+
+	pre code {
+		@apply text-white;
 	}
 
 	.content blockquote {

@@ -1,13 +1,13 @@
 ---
 title: Two Ways To Unsubscribe Angular Observables
-description: "Clean up Angular observables in an easy\_way"
+description: Angular is full of Observables. But is there is a mechanism that automatically unsubscribes your Observables when components get destroyed? Yes there is! You can use the async pipe or the takeUnitl method.
 date: '2021-09-01T14:24:19.678Z'
 categories: []
-tags: []
+tags: ['angular', 'typescript', 'rxjs']
 slug: /@byrayray/two-ways-to-unsubscribe-angular-observables-fc59d5a56dae
+image: images/1__vcy2k5n2BEtdZIQORHkuRQ.jpeg
+featured: true
 ---
-
-![](/images/1__vcy2k5n2BEtdZIQORHkuRQ.jpeg)
 
 Angular is full of Observables. But is there is a mechanism that automatically unsubscribes your Observables when components get destroyed?
 
@@ -31,13 +31,46 @@ The short version, for those who don’t want to dive into it 😅. Here are the
 
 ---
 
-## 1\. Observables In A HTML Template With Async Pipe
+## Observables In A HTML Template With Async Pipe
 
 Angular offers a simple way to handle your Observables in the HTML template via the async pipe `| async` . The best thing is, Angular takes the unsubscribe process for you instead of doing it yourself.
 
 You can use the async pipe for singular values.
 
+```ts [async-pipe.component.ts]
+@Component({
+	selector: 'cool-component',
+	template: ` <h1>{{ pageTitle$ | async }}</h1> `
+})
+export class CoolComponent implements OnInit {
+	private pageTitle$: Observable<string>
+	constructor(private httpService: HttpClient) {}
+	ngOninit(): void {
+		this.pageTitle$ = this.httpService.get('some-url.com')
+	}
+}
+```
+
 Or you can use it for values that are Objects or Arrays.
+
+```ts [async-pipe.component.ts]
+@Component({
+    selector: 'cool-component',
+    template: `
+        <ul>
+            <li *ngFor="let item of todoList$ | async">{{item.name}}</li>
+        </ul>
+    `
+    ...
+})
+export class CoolComponent implements OnInit {
+    private todoList$: Observable<string>;
+    constructor(private httpService: HttpClient) {}
+    ngOninit(): void {
+        this.todoList$ = this.httpService.get('other-url.com')
+    }
+}
+```
 
 So in this component, you don’t need to trigger something with the `ngOnDestroy` , but it automatically will unsubscribe to the subscriptions during the destruction process of the component.
 
@@ -45,7 +78,7 @@ So in this component, you don’t need to trigger something with the `ngOnDestro
 
 ---
 
-## 2\. Observables With takeUntil Method
+## Observables With takeUntil Method
 
 Let’s say you are making multiple AJAX request via the `HttpClient`. You're not going to pass it directly to the HTML, but doing something else with the data first. So the `| async` pipe is not ideal for this situation.
 
@@ -55,13 +88,68 @@ How can we unsubscribe them all at once instead of unsubscribing them one by one
 
 First, we have to make a `Subject` in our component.
 
+```ts [subject.component.ts]
+@Component({...})
+export class CoolComponent {
+    private unsubscribe$ = new Subject<void>;
+}
+```
+
 This `Subject` is going to be used to store our subscriptions.
 
 Now let’s make some subscriptions in our `ngOnInit` with the `HttpClient`.
 
+```ts [subject-httpclient.component.ts]
+@Component({...})
+export class CoolComponent implements OnInit {
+    private unsubscribe$ = new Subject<void>;
+
+    constructor(private httpService: HttpClient) {}
+
+    ngOninit(): void {
+        this.httpService.get('some-url.com')
+                .pipe(takeUntil(this.unsubscribe$))
+                .subscribe((values) => {
+                    // Do something with the data
+                })
+
+        this.httpService.get('other-url.com')
+                .pipe(takeUntil(this.unsubscribe$))
+                .subscribe((values) => {
+                    // Do something with the data
+                })
+    }
+}
+```
+
 As you can see, after the `get()` method there is a `pipe(takeUntil(this.unsubscribe$))`. With the `takeUntil` we add a reference from this Observable to the `unsubscribe$` Subject.
 
 The `Subject` holds references to both Observables during the subscription process.
+
+```ts [subject-httpclient.component.ts]
+@Component({...})
+export class CoolComponent implements OnInit, OnDestroy {
+    private unsubscribe$ = new Subject<void>;
+    constructor(private httpService: HttpClient) {}
+    ngOninit(): void {
+        this.httpService.get('some-url.com')
+                .pipe(takeUntil(this.unsubscribe$))
+                .subscribe((values) => {
+                    // Do something with the data
+                })
+        
+        this.httpService.get('other-url.com')
+                .pipe(takeUntil(this.unsubscribe$))
+                .subscribe((values) => {
+                    // Do something with the data
+                })
+    }
+    ngOnDestroy(): void {
+        this.unsubscribe$.next();
+        this.unsubscribe$.complete();
+    }
+}
+```
 
 The `ngOnDestroy()` method is called before a component is going to be destroyed.
 
@@ -72,8 +160,6 @@ The `next()` will pass an empty value to the subscription. With the `complete()`
 Now we don’t have to worry about making one or a lot more requests via the `HttpClient`; we can stop them all at once.
 
 > Be careful with this method that you don’t forget to add the `ngOnDestroy` method to your component. We are humans, so we forget them.
-
-
 
 ## Conclusion
 

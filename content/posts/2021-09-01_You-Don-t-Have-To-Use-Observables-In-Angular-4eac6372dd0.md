@@ -1,11 +1,12 @@
 ---
 title: You Don’t Have To Use Observables In Angular
-description: What Nobody Tells You About Observables and Promises in Angular
+description: In Angular, you can perform asynchronous actions in two different ways, Observables, and Promises. Most people pick Observables because every example on blogs and documentation tells you to do so. But why? Are Promises that bad? Or Observables that good?
 date: '2021-09-01T23:36:04.934Z'
 categories: []
 tags: ['angular', 'typescript', 'rxjs']
 slug: /@byrayray/you-dont-have-to-use-observables-in-angular-4eac6372dd0
 image: images/1__6EdSCuXPdUq7TvdhYx5jRA.jpeg
+featured: true
 ---
 
 In Angular, you can perform asynchronous actions in two different ways, Observables, and Promises.

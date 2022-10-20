@@ -31,12 +31,13 @@
 			</div>
 		</div>
 		<div class="cover-image rounded-l-lg">
+
 			<nuxt-img
 				v-if="blog?.image && blog?.image?.includes('image/')"
 				provider="cloudinary"
 				:src="blog?.image.replace('image/', '')"
-				width="960"
-				height="400"
+				:width="imageFormat?.width"
+				:height="imageFormat?.height"
 				class="rounded-l-lg object-cover mb-0"
 				:modifiers="{
 					c: 'crop',
@@ -48,9 +49,9 @@
 			/>
 			<nuxt-img
 				v-if="blog?.image && !blog?.image?.includes('image/')"
-				:src="getImageUrl(blog?.image)"
-				width="960"
-				height="400"
+				:src="getImageUrl(blog?.image, isHomepage ? 'overview' : 'big')"
+				:width="imageFormat?.width"
+				:height="imageFormat?.height"
 				class="rounded-l-lg object-cover mb-0"
 				:alt="blog?.title"
 				:title="blog?.title"
@@ -61,15 +62,17 @@
 </template>
 <script setup lang="ts">
 import { formatDate } from '@/lib/date'
+import { getImageUrl } from '@/lib/image'
 import MazIcon from 'maz-ui/components/MazIcon'
 
-function getImageUrl(url: string) {
-	console.log('url: ', url)
-	if (url && !url.startsWith('http')) {
-		return `https://res.cloudinary.com/raymons/image/upload/c_crop,f_auto/devbyrayray/blog/${url?.replace('images/', '/')}`
-	}
-	return url
-}
+// function getImageUrl(url: string, width: number) {
+// 	console.log('url: ', url)
+// 	const edits = 'c_crop,f_auto'
+// 	if (url && !url.startsWith('http')) {
+// 		return `https://res.cloudinary.com/raymons/image/upload/${edits}/devbyrayray/blog/${url?.replace('images/', '/')}`
+// 	}
+// 	return `https://res.cloudinary.com/raymons/image/fetch/${edits}/${url}`
+// }
 
 interface Props {
 	blog: any
@@ -105,6 +108,19 @@ function classes(tag: string) {
 		'tag-other': tags?.includes(tag?.toLowerCase())
 	}
 }
+
+const formats = {
+	overview: {
+		width: 500,
+		height: 500
+	},
+	big: {
+		width: 960,
+		height: 500
+	},
+}
+const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
+
 </script>
 
 <style scoped>

@@ -74,6 +74,16 @@ const languageMap: Record<string, { text: string; color: string; background: str
 		background: '#af00a9',
 		color: '#fff'
 	},
+	yaml: {
+		text: 'yaml',
+		background: '#008000',
+		color: '#fff'
+	},
+	toml: {
+		text: 'toml',
+		background: '#008000',
+		color: '#fff'
+	},
 	angular: {
 		text: 'ng',
 		background: '#b52e31',
