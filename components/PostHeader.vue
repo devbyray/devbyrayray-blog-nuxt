@@ -30,7 +30,7 @@
 				<h1 v-if="showTitle" class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
 			</div>
 		</div>
-		<div class="cover-image rounded-l-lg">
+		<div class="cover-image rounded-lg">
 
 			<nuxt-img
 				v-if="blog?.image && blog?.image?.includes('image/')"
@@ -38,7 +38,7 @@
 				:src="blog?.image.replace('image/', '')"
 				:width="imageFormat?.width"
 				:height="imageFormat?.height"
-				class="rounded-l-lg object-cover mb-0"
+				class="rounded-lg object-cover mb-0"
 				:modifiers="{
 					c: 'crop',
 					f: 'webp'
@@ -52,7 +52,7 @@
 				:src="getImageUrl(blog?.image, isHomepage ? 'overview' : 'big')"
 				:width="imageFormat?.width"
 				:height="imageFormat?.height"
-				class="rounded-l-lg object-cover mb-0"
+				class="rounded-lg object-cover mb-0"
 				:alt="blog?.title"
 				:title="blog?.title"
 				loading="lazy"

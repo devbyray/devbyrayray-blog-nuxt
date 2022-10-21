@@ -41,14 +41,14 @@
 					<hr />
 				</div>
 
-				<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
+				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
 					<header>
 						<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
 					</header>
 					<div
 						v-for="article in posts"
 						:key="article?._path"
-						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
+						class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
 					>
 						<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
 					</div>

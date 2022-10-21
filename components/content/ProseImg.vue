@@ -10,6 +10,7 @@
 		:modifiers="{
 			c: 'crop',
 		}"
+		class="rounded-lg"
 	/>
 </template>
 

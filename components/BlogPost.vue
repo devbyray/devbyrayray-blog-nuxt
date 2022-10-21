@@ -11,7 +11,7 @@
 			<nuxt-link :to="article?._path" class="text-black dark:text-white"
 				><component
 					:is="titleTag ?? 'h2'"
-					class="font-bold text-black dark:text-white text-3xl mt-0 leading-10 mb-2"
+					class="font-bold text-black dark:text-white text-3xl mt-0 leading-10 mb-2 post-title"
 				>
 					{{ article?.title }}
 				</component></nuxt-link
@@ -46,6 +46,9 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 
+.post-title {
+	word-break: break-word;
+}
 .blog-post.is-horizontal {
 	gap: 3rem;
 	display: grid;

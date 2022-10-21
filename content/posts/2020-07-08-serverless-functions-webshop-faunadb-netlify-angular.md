@@ -2,9 +2,9 @@
 title: How To Build A Serverless Webshop
 description: Connect Angular and FaunaDB with Netlify Serverless functions
 date: '2020-07-08'
-categories: ['Serverless']
+categories: []
 published: true
-tags: ['typescript', 'javascript', 'angular', 'faunadb', 'Serverless functions']
+tags: ['typescript', 'javascript', 'angular', 'faunadb', 'serverless']
 image: https://miro.medium.com/max/1280/0*cAnIYaAnz3zzWt5t
 ---
 

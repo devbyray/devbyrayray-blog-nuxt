@@ -65,8 +65,6 @@ Add your GitHub project to Netlify and you’re ready to get started.
 
 Clone your GitHub project to your computer. Create a folder named `functions` and a `netlify.toml` file in the main directory.
 
-https://gist.github.com/devbyray/5823e267be7149accf1da3bf4f659d37#netlify.toml
-
 ```toml
 [build]
     functions = ".netlify/functions/"
