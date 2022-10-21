@@ -1,21 +1,44 @@
 <template>
-	<nuxt-link :to="`/tag/${tag}`"
+	<nuxt-link
+		:to="`/tag/${tag}`"
 		class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color text-white hover:text-black"
 		:class="classes(tag)"
-	>#{{tag}}</nuxt-link>
+		>#{{ tag }}</nuxt-link
+	>
 </template>
 
 <script setup lang="ts">
 defineProps({
-    tag: String
+	tag: String
 })
 function classes(tag: string) {
 	const obj = {}
-	const tags = ['javascript', 'typescript', 'angular', 'vue', 'css', 'html', 'formly', 'codenewbie', 'canva', 'microsoft', 'powerapps', 'power apps', 'lowcode', 'mac', 'linux', 'serverless']
+	const tags = [
+		'javascript',
+		'typescript',
+		'angular',
+		'vue',
+		'css',
+		'html',
+		'formly',
+		'codenewbie',
+		'canva',
+		'microsoft',
+		'powerapps',
+		'power apps',
+		'lowcode',
+		'mac',
+		'linux',
+		'serverless',
+		'git',
+		'react',
+		'styledcomponents',
+		'es6'
+	]
 	return {
 		'tag-angular': tag?.toLowerCase()?.includes('angular'),
 		'tag-vue': tag?.toLowerCase()?.includes('vue'),
-		'tag-javascript': tag?.toLowerCase()?.includes('javascript'),
+		'tag-javascript': tag?.toLowerCase()?.includes('javascript') || tag?.toLowerCase()?.includes('es6'),
 		'tag-typescript': tag?.toLowerCase()?.includes('typescript'),
 		'tag-css': tag?.toLowerCase()?.includes('css'),
 		'tag-formly': tag?.toLowerCase()?.includes('formly'),
@@ -28,6 +51,9 @@ function classes(tag: string) {
 		'tag-mac': tag?.toLowerCase()?.includes('mac'),
 		'tag-linux': tag?.toLowerCase()?.includes('linux'),
 		'tag-serverless': tag?.toLowerCase()?.includes('server'),
+		'tag-git': tag?.toLowerCase()?.includes('git'),
+		'tag-react': tag?.toLowerCase()?.includes('react'),
+		'tag-styledcomponents': tag?.toLowerCase()?.includes('styledcomponents'),
 		'tag-other': tags?.includes(tag?.toLowerCase())
 	}
 }
@@ -44,7 +70,7 @@ function classes(tag: string) {
 	background: var(--color-vue);
 }
 .tag-javascript {
-	color: black;
+	color: rgb(45, 45, 45);
 	background: var(--color-javascript);
 }
 .tag-css {
@@ -83,8 +109,14 @@ function classes(tag: string) {
 .tag-linux {
 	background: var(--color-linux);
 }
-.tag-serverless {
-	background: var(--color-serverless);
+.tag-git {
+	background: var(--color-git);
 }
-
+.tag-react {
+	color: rgb(45, 45, 45);
+	background: var(--color-react);
+}
+.tag-styledcomponents {
+	background: var(--color-styledcomponents);
+}
 </style>

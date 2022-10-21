@@ -1,19 +1,21 @@
 ---
 title: Don’t Be a Jack Of All Trades Developer!
-description: How To Deal With The Ever-Changing Web Technologies as Developer
+description: As developers, we are all aware that web technologies are changing so fast that no human is ever in the power of learning everything. But how should we deal with it?
 date: '2021-06-28T05:12:40.617Z'
 categories: []
-tags: []
+tags: ['developer']
 slug: /@byrayray/dont-be-a-jack-of-all-trades-developer-9e6104633167
+image: images/0__zgQh4zkECPW1kWp5.jpg
 ---
-
-![](/images/0__zgQh4zkECPW1kWp5.jpg)
 
 As developers, we are all aware that web technologies are changing so fast that no human is ever in the power of learning everything. But how should we deal with it?
 
 I think this is one of those topics developers are not talking about a lot. So I thought, let’s open up the conversation and be open about it.
 
-### You don’t have to be a master of everything
+---
+## Don’t try to master everything
+
+![Boy doing karate with sunset background](/images/thao-lee-igLzPKOvZNw-unsplash.jpg)
 
 After more than ten years in this industry, I’ve seen people who know a lot, and I mean a lot! And when you are standing at the start of your career as a developer, this can feel overwhelmed.
 
@@ -25,7 +27,11 @@ I’m a frontend developer for the length of my career; I focus on HTML, CSS, an
 
 Even though I do a lot with JavaScript, I haven’t built things with WebGL, for example. So I think that it is not a bad thing that there are gaps in your knowledge.
 
-### Give yourself focus
+---
+
+## Give yourself focus
+
+![Showing a flower through a magnifying glass to give focus](/images/abyan-athif-omu9aMd9w7A-unsplash.jpg)
 
 To prevent yourself from feeling the pressure of knowing everything, it’s a good idea to focus on a few topics in your work.
 
@@ -37,7 +43,10 @@ For a backend developer, it can be wise to focus on the .Net framework or any o
 
 This will give you much more focus on your work and a bigger chance to become an expert in that particular piece of work.
 
-### You are not alone
+---
+## You are not alone
+
+![Group of people working as a team on their computers](/images/annie-spratt-QckxruozjRg-unsplash.jpg)
 
 If you have any doubts about your expertise, I will tell you “You are not alone”! I guarantee you that 100% of all the developers have periods in their career they doubt a lot about their expertise.
 
@@ -47,8 +56,12 @@ Hopefully, reading this will give you the courage to add some more focus to your
 
 Remind yourself that becoming an expert in technology takes time. So take that time, and don’t pressure yourself on that!
 
-### Read more from me
+---
 
-*   [Declare Missing Helper Function (TypeScript) in Visual Studio Code](/dev-together/declare-missing-helper-function-typescript-in-visual-studio-code-c058ea72de8d)
-*   [Getting Started With Storybook Without a JavaScript Framework](https://betterprogramming.pub/getting-started-with-storybook-without-a-javascript-framework-c2968d3f3d9f)
-*   [7 Web Development Guidelines To Speed up Page Loading](https://betterprogramming.pub/7-web-development-guidelines-to-speed-up-page-loading-e8f0e13a53b)
+## Thanks!
+
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

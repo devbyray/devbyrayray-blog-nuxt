@@ -1,17 +1,19 @@
 ---
 title: 7 Web Development Guidelines To Speed up Page Loading
-description: Improve the user experience for the love of your visitors
+description: Web development has evolved over the last couple of years. We load more and heavier files in the browser, but those things cost the user experience. Let's improve the page loading.
 date: '2021-06-14T14:18:52.790Z'
 categories: []
-tags: []
+tags: ['webdev', 'performance']
 slug: /@byrayray/7-web-development-guidelines-to-speed-up-page-loading-e8f0e13a53b
+image: images/0_QnAZY15rO37Dt2ZH.jpg
 ---
 
-Web development has evolved over the last couple of years. More of the logic that was in backend systems has moved to the frontend. We load more and heavier files in the browser, but those things cost the user experience.
+Web development has evolved over the last couple of years. We load more and heavier files in the browser, but those things cost the user experience. Let's improve the page loading.
 
 In this post, I want to share a few guidelines that help me keep the performance and user experience at a high quality.
 
-### 1\. Minimize the Number of Requests
+---
+## Minimize the Number of Requests
 
 I know this one sounds obvious, but minimizing the number of requests needs some more thought. If you don’t need an image, video, icon, pdf on your page, don’t load it even though users won’t see it.
 
@@ -21,7 +23,8 @@ When a user is not scrolling through a page, don’t load that image in your foo
 
 Only load external sources when you need them! It’s that simple.
 
-### 2\. Prefer Web-Safe Fonts
+---
+## Prefer Web-Safe Fonts
 
 I know we love those beautiful fonts from Google Fonts, TypeKit, or other services. But, do we need them? And do you need all of the family, or are we only using one style of that font?
 
@@ -37,7 +40,9 @@ I highly recommend reading the article “[Loading Fonts The FOUT Way](https://m
 
 Next to that, “[The performance cost of custom web fonts, and how to solve it](https://www.wholegraindigital.com/blog/performant-web-fonts/)” by Joshua Stopper is another great in-depth guide on how to keep your Webfont performed.
 
-### 3\. Use SVG Icon Instead of an Icon Font
+---
+
+## Use SVG Icon Instead of an Icon Font
 
 Icons, in websites and web apps, we can’t live without them.
 
@@ -47,19 +52,31 @@ A better alternative would be using inline SVG. I mean, just the code from an SV
 
 The cool thing is, you can also use some CSS animations with it. You can’t do that with an icon font, right. 😊
 
-### 4\. Use Lazy Loading for Images
+::codesandbox
+<iframe height="500" style="width: 100%;" scrolling="no" title="Style Inline SVG with CSS 🦄" src="https://codepen.io/devbyrayray/embed/preview/vYxzWWa?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/devbyrayray/pen/vYxzWWa">
+  Style Inline SVG with CSS 🦄</a> by Dev By RayRay (<a href="https://codepen.io/devbyrayray">@devbyrayray</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+::
+
+---
+## Use Lazy Loading for Images
 
 Earlier I said that you shouldn’t load things that are not used or hidden. Well, this is a critical thing for images. And nowadays it’s easier to fix than before.
 
 Just add `loading="lazy"` to your image tag like below.
 
+```html
 <img src="image.jpg" loading="lazy" alt="Landscape The Netherlands" width="480" height="640px"  />
+```
 
 It is supported in most modern browsers. Check [CanIUse](https://caniuse.com/loading-lazy-attr) if this meets your browser requirements. If you want to learn more about this, you can read about [natively lazy loading images](https://betterprogramming.pub/native-lazy-loading-in-the-browser-85dabe6653ed) in your browser.
 
 If you need to support some browsers that don’t support this feature yet, and you're interested in achieving the same functionality with a bit of JavaScript, then you can do this with the [intersection observer](https://betterprogramming.pub/lazy-loading-images-with-the-intersection-observer-e8ad57a1682c). It will help you with achieving the same functionality with a bit of JavaScript.
 
-### 5\. Minimize CSS and JavaScript Files
+---
+## Minimize CSS and JavaScript Files
 
 Since we load so many external files into our browser, we have to keep them as small as possible.
 
@@ -76,7 +93,8 @@ Check the getting started pages for both tools to see how easy it is.
 
 I’m a big fan of ViteJS because it’s a modern approach, and it’s super fast.
 
-### 6\. Load What You Need
+---
+## Load What You Need
 
 This is more of a mindset than a guideline.
 
@@ -84,7 +102,8 @@ Only load external resources when you need them. And only load it on pages, view
 
 Don’t waste precious internet bundles and processor power of the user’s device.
 
-### 7\. Format Images
+---
+## Format Images
 
 Sometimes you lead a website where they have banners at the top. But they forgot to preformat the image. Images of a few MB can cause prolonged loading times, and it is not what you want for your users ;-).
 
@@ -101,26 +120,24 @@ But to do this the easy way, create a free account at [Cloudinary](https://cloud
 
 For example, the images from my blog are formatted with Cloudinary with this link:
 
-[https://res.cloudinary.com/{accountName}/image/upload/c\_scale,g\_center,w\_300,f\_auto/{imageUrl}](https://res.cloudinary.com/%7BaccountName%7D/image/upload/c_scale,g_center,w_300,f_auto/%7BimageUrl%7D)
+```
+https://res.cloudinary.com/{accountName}/image/upload/c\_scale,g\_center,w\_300,f\_auto/{imageUrl}
+```
 
 Cloudinary offers [great documentation](https://cloudinary.com/documentation/image_transformations) on how you can format your images and videos with their service.
 
-### Conclusion
+---
+## Conclusion
 
 As you can see, there are a few guidelines to follow to create a fast-loading website. These are my personal favorites. I’m fully aware that are many more things than my seven guidelines, so if you have some tools that you use yourself, please leave them in the comments to share them with the world.
 
-**_Happy coding! 🚀_**
 
-### Read more from me
+---
 
-[**How Promises Actually Work in JavaScript**  
-_Learn when and how to use them_betterprogramming.pub](https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193 "https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193")[](https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193)
+## Thanks!
 
-[**CSS variable with Styled Components**  
-_Use them easily in Next.js/React.js_devbyrayray.medium.com](https://devbyrayray.medium.com/css-variable-with-styled-components-7e91d89f13f3 "https://devbyrayray.medium.com/css-variable-with-styled-components-7e91d89f13f3")[](https://devbyrayray.medium.com/css-variable-with-styled-components-7e91d89f13f3)
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-[**How Promises Actually Work in JavaScript**  
-_Learn when and how to use them_betterprogramming.pub](https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193 "https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193")[](https://betterprogramming.pub/how-promises-actually-work-in-javascript-1c80b1af7193)
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
 
-[**Can’t Access Camera or Microphone In WebRTC Apps? Solve Using “navigator.mediaDevices” Web API**  
-_How to solve this with navigator.mediaDevices Web API_javascript.plainenglish.io](https://javascript.plainenglish.io/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c "https://javascript.plainenglish.io/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c")[](https://javascript.plainenglish.io/cant-access-camera-or-microphone-in-webrtc-apps-solve-using-navigator-mediadevices-web-api-c0ffe5cbd32c)
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

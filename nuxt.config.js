@@ -180,7 +180,7 @@ export default {
 				// Theme used if `html.dark`
 				dark: 'github-dark'
 			},
-			preload: ['vue']
+			preload: ['vue', 'jsx', 'tsx']
 		},
 		markdown: {
 			remarkPlugins: ['remark-reading-time']

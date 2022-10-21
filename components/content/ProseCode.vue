@@ -49,6 +49,16 @@ const languageMap: Record<string, { text: string; color: string; background: str
 		background: '#42b883',
 		color: 'white'
 	},
+	tsx: {
+		text: 'tsx',
+		background: '#00d8ff',
+		color: 'black'
+	},
+	jsx: {
+		text: 'jsx',
+		background: '#00d8ff',
+		color: 'black'
+	},
 	js: {
 		text: 'js',
 		background: '#f7df1e',
@@ -126,10 +136,11 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 .filename-text {
 	position: absolute;
 	top: 0;
-	right: 3.2em;
+	right: 5.2em;
 	padding: 0.25em 0.5em;
 	font-size: 14px;
 	font-style: italic;
+	opacity: 0.7;
 }
 
 .language-text {
