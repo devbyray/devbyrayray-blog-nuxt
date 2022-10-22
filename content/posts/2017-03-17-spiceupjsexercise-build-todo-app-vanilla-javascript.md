@@ -4,7 +4,7 @@ author: "Ray Ray"
 date: "2017-03-17T12:00:56Z"
 title: "#SpiceUpJSExercise: Build a todo app with Vanilla JavaScript"
 categories: ["SpiceUpJSExercise"]
-tags: ["JavaScript"]
+tags: ["javascript"]
 excerpt: "A lot of people have asked to help them grow in their JavaScript skills. But the only way to do it ..."
 ---
 

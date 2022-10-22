@@ -1,10 +1,10 @@
 ---
 title: Why use Tailwind CSS with NextJS
-description: TailWind CSS + NextJS = Web Dev ♥️
+description: Some people hate writing CSS, but others love to write it. I'm one of those people who love to write CSS himself. But using a tool that helps me create a website a lot faster and brings stability into my work will always make me excited to give it a try
 date: '2020-12-27'
-categories: ['NextJS']
+categories: []
 published: true
-tags: ['React', 'javascript', 'NextJS', 'programming', 'Software Development']
+tags: ['nextjs', 'tailwindcss', 'css']
 image: images/TailWind-CSS-NextJS-Web-Dev.webp
 ---
 
@@ -12,20 +12,15 @@ For a few weeks, I'm convinced to use Tailwind CSS more in my web development pr
 
 Some people hate writing CSS, but others love to write it. I'm one of those people who love to write CSS himself. But using a tool that helps me create a website a lot faster and brings stability into my work will always make me excited to give it a try.
 
-**Currently, your reading this post on my blog on which I've used Tailwind CSS. I have to say, and I'm convinced to use it in more of my web development projects.**
+---
 
-1. Why use Tailwind CSS?
-2. You have to know CSS!
-3. How to add Tailwind CSS to NextJS
+## Why use Tailwind CSS?
 
+![Screenshot website Tailwind CSS](/images/screenshot-tailwindcss.png)
 
-## 1. Why use Tailwind CSS?
+Compare [Tailwind CSS](https://tailwindcss.com/) to a CSS framework like Bootstrap or Foundation, and you will find out that it's completely different. I can sniff a bootstrap website or application from miles away. You won't notice a website or application that is using Tailwind CSS is. (Only if you check to class names in the source code).
 
-Compare [Tailwind CSS](https://tailwindcss.com/) to a CSS framework like Bootstrap or Foundation, and you will find out that it's completely different.
-
-I can sniff a bootstrap website or application from miles away. You won't notice a website or application that is using Tailwind CSS is. (Only if you check to class names in the source code).
-
-Tailwind CSS is a utility framework like no other. There is no set of pre-built components. It's a framework where you find classes like "text-white," "grid," "object-fit," and a lot more.
+Tailwind CSS is a utility framework like no other. There is no set of pre-built components. It's a framework where you find classes like `text-white`, `grid`, `object-fit` and a lot more.
 
 So it doesn't matter how your design looks; Tailwind CSS is the ideal partner in building every stunning design.
 
@@ -33,31 +28,29 @@ So here is the question "Why use Tailwind CSS?". Why not 🤣, hehe I'm kidding.
 
 From the outside, you will not notice that Tailwind CSS is the driving force behind it.
 
-## 2. You have to know CSS
+---
+## You have to know CSS
 
-But there is something you need to know before you use Tailwind CSS. You have to understand CSS.
+![CSS code example](/images/0__vCuVf0JjUeJitMs.jpg)
 
-If you can't build a design with plain CSS, I won't recommend picking Tailwind CSS.
+But there is something you need to know before you use Tailwind CSS. You have to understand CSS. If you can't build a design with plain CSS, I won't recommend picking Tailwind CSS.
 
-Developers who know the most basic stuff like font-size, padding, margin, position, flex, and the grid will have no issue using Tailwind.
+Developers who know the most basic stuff like font-size, padding, margin, position, flex, and the grid will have no issue using Tailwind. Better said, if you know all these things in CSS, I highly recommend you to use Tailwind CSS.
 
-Better said, if you know all these things in CSS, I highly recommend you to use Tailwind CSS.
-
-For example, set a different font-size on a specific media query is a simple as adding this class name "md:font-size" or changing height "sm:w-16".
-
-You can change those numbers in the class names can be changed in the configuration file.
+For example, set a different font-size on a specific media query is a simple as adding this class name `md:font-size` or changing height `sm:w-16`. You can change those numbers in the class names can be changed in the configuration file.
 
 So why not give it a shot and add it to your NextJS project 😁👍
 
-> Check out how [deploy your NextJS easy, fast and for free](https://byrayray.dev/posts/2020-12-21-nextjs-jamstack-getting-started). Want to order a great custom domain for it, <a href="https://www.dpbolvw.net/click-100299090-11429042" target="_top">Register Your Domains Hassle-Free with Namecheap starting at $3.98/year</a><img src="https://www.lduhtrp.net/image-100299090-11429042" width="1" height="1" border="0"/>
+> Want to have an custom domain for your NextJS website? <a href="https://www.dpbolvw.net/click-100299090-11429042" target="_blank_">Register Your Domains Hassle-Free with Namecheap starting at $3.98/year</a><img src="https://www.lduhtrp.net/image-100299090-11429042" width="1" height="1" border="0"/>
 
-## 3. How to add Tailwind CSS to NextJS
+---
+## How to add Tailwind CSS to NextJS
 
 It's super simple to add Tailwind CSS to your NextJS, so you will be able to start in no time. In this case, I will assume you use Next.js v10, because why wouldn't you not.😄
 
 
 ### Installation
-```bash
+```sh
 # If you're on Next.js v10
 npm install tailwindcss@latest postcss@latest autoprefixer@latest
 ```
@@ -68,14 +61,13 @@ Via the command above, you install Tailwind CSS and the dependencies PostCSS (yo
 
 With this command, you generate the config file `tailwind.config.js` and `postcss.config.js`. 
 
-```bash
+```sh
 npx tailwindcss init -p
 ```
 
 These files will be at the root of your project. In the `tailwind.config.js` file, you can configure things like the sizes, fonts, and colors. In the `postcss.config.js` you can add all the PostCSS plugins you want to use.
 
-```jsx
-// tailwind.config.js
+```jsx [tailwind.config.js]
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
@@ -95,8 +87,7 @@ In the config, we want to define the place of our pages and components. By defin
 
 Open the globals.css and add the code below.
 
-```css
-/* ./styles/globals.css */
+```css [./styles/globals.css]
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,8 +95,7 @@ Open the globals.css and add the code below.
 
 You can also include everything from Tailwind in the `pages/_app.js` like below.
 
-```jsx
-// pages/_app.js
+```jsx [pages/_app.js]
 import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
@@ -114,6 +104,8 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 ```
+
+---
 
 ## How To Use Tailwind CSS
 
@@ -145,6 +137,11 @@ It's just a matter of preference which way you want to use it. In the first exam
 
 But in both ways, you should get familiar with all the class names Tailwind has. But lucky you, Tailwind has created a significant amount of documentation.
 
-## Thanks
+---
+## Thanks!
 
-Hopefully, you can use Tailwind CSS in your Next.js website. If you have any questions or want to show your Next.js website, please share it with me on [Twitter/@devbyrayray](https://twitter.com/devbyrayray).
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
+
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁

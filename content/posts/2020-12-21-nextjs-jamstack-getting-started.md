@@ -2,9 +2,9 @@
 title: How To Build and Deploy a JAM-stack Website Fast With NextJS — in 5 steps
 description: NextJS is one of the best tools for building JAM-stack websites with all kinds of content sources.
 date: '2020-12-21'
-categories: ['NextJS']
+categories: []
 published: true
-tags: ['typescript', 'javascript', 'programming', 'Software Development']
+tags: ['nextjs', 'netlify', 'jamstack']
 image: images/how-to-build-and-deploy-a-jamstack-website-fast-with-next-js
 ---
 
@@ -14,7 +14,8 @@ When I started with Front-end development, I used only HTML, CSS, and JavaScript
 
 I didn't use any framework like Angular or React. It was just HTML, CSS, and a bit of jQuery. Also, no CSS pre-processor that could help me. Well, at that time, they exist, but I didn't know that.
 
-## Building Websites in 2020
+---
+## Building Websites Today
 
 In the current time, we have a lot of tools at our disposal. Frameworks like React and VueJS gave us a fantastic toolbox to build websites a lot faster.
 
@@ -22,6 +23,7 @@ Currently, I don't use PHP anymore. Thank God! Because It made me configure my c
 
 No! Currently, we have it so much better, in my opinion, when building websites. We can pull data from all kinds of APIs and show it excellently on our website. 
 
+---
 ## Why NextJS Is A Smart Choice?
 
 I know, I know, there are so many choices to make right now. What are you going to use as a platform to build your website? Which framework or static site generator are you going to use?
@@ -45,6 +47,8 @@ That's why NextJS is a smart choice to bet in for building websites. You maybe a
 
 If you are not convinced yet, please check out some other static site generators. There is a ton available. Check the website of [Jamstack.org/generators](https://jamstack.org/generators/).
 
+---
+
 ## When You Should Pick NextJS
 
 It's good to think about what you want to build before you start coding. This can help to smooth your development process. But it's also good what you need in your knowledge toolbox to make the process easy when you build a website with NextJS.
@@ -56,6 +60,7 @@ It's good to think about what you want to build before you start coding. This ca
 
 > Want to order a great custom domain for it, <a href="https://www.dpbolvw.net/click-100299090-11429042" target="_top">Register Your Domains Hassle-Free with Namecheap starting at $3.98/year</a><img src="https://www.lduhtrp.net/image-100299090-11429042" width="1" height="1" border="0"/>
 
+---
 
 ## How To Build A Website With NextJS
 
@@ -69,7 +74,7 @@ If you want to most practical way? Use NVM.
 
 It's as simple as running this command in your terminal.
 
-```bash
+```sh
 npx create-next-app
 ```
 
@@ -124,8 +129,12 @@ Of course, I recommend spending a reasonable amount of time adding content and s
 ### Follow up
 If you like to learn how to [add Tailwind CSS to your NextJS website](https://byrayray.dev/posts/2020-12-27-why-use-tailwind-css-with-nextjs), check this post I published Lately.
 
-## Thanks
+---
+## Thanks!
 
-Hopefully, this has helped you publish your first NextJS website. If you have any questions or feedback? Please let me know in the comments. 😁
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-Happy coding 🚀
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁
+
