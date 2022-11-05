@@ -3,6 +3,7 @@ import VueGtag from 'vue-gtag-next'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const getGDPR = localStorage.getItem('GDPR:accepted');
+  console.log('getGDPR: ', getGDPR)
   nuxtApp.vueApp.use(VueGtag, {
     property: {
       id: nuxtApp?.options?.publicRuntimeConfig?.GOOGLE_ANALYTICS_ID ?? ''

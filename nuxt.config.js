@@ -148,20 +148,9 @@ export default {
 	googleFonts: {
 		download: true,
 		families: {
-			// Roboto: true,
-			// 'Josefin+Sans': true,
-			// Lato: [100, 300],
-			// Raleway: {
-			// 	wght: [100, 400],
-			// 	ital: [100]
-			// }
 			Poppins: {
-				wght: [700]
+				wght: [400, 700]
 			},
-			'Source+Code+Pro': {
-				wght: [500, 800],
-				ital: [500, 800]
-			}
 		}
 	},
 	plugins: ['@/plugins/vue-gtag.client.js'],
