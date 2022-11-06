@@ -195,6 +195,6 @@ export default {
 		transpile: ['maz-ui'] // ⚠️ important ⚠️
 	},
 	nitro: {
-		preset: 'node-server'
+		preset: 'netlify'
 	}
 }
