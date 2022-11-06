@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<NuxtLayout>
 		<Title>{{ page?.title }} | {{ CONFIG?.sitename }}</Title>
 
 		<Link rel="canonical" :href="pageUrl" />
@@ -29,7 +29,6 @@
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<article class="page-container">
 				<section class="page-max-md pb-16">
-					<h1 class="text-white font-bold text-3xl tracking-tight" v-if="!page">{{ slug[0] }}</h1>
 					<ContentRenderer :value="page">
 						<h1 class="text-white font-bold text-3xl tracking-tight">{{ page?.title }}</h1>
 						<ContentRendererMarkdown :value="page" />
@@ -47,7 +46,7 @@
 				</div>
 			</article>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
 
 <script setup>

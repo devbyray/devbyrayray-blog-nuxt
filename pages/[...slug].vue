@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<NuxtLayout>
 		<Head>
 			<Link rel="canonical" :href="pageUrl" />
 			<Meta hid="og:title" property="og:title" :content="blog?.title" />
@@ -76,7 +76,7 @@
 				</footer>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
 <script setup>
 import { formatDate } from '@/lib/date'

@@ -1,5 +1,5 @@
 <template lang="">
-	<div>
+	<NuxtLayout>
 		<Title>{{ CONFIG?.sitename }}</Title>
 
 		<Link rel="canonical" :href="pageUrl" />
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</NuxtLayout>
 </template>
 <script setup>
 import { getImageUrl } from '@/lib/image'
