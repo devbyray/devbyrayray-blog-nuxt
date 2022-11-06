@@ -139,7 +139,8 @@ export default {
 	runtimeConfig: {
 		public: {
 			CONFIG,
-			HEAD
+			HEAD,
+			LOCAL: process.env.NODE_ENV !== 'production' || process?.env?.LOCAL
 		}
 	},
 	target: 'static',
@@ -150,10 +151,10 @@ export default {
 		families: {
 			Poppins: {
 				wght: [400, 700]
-			},
+			}
 		}
 	},
-	plugins: ['@/plugins/vue-gtag.client.js'],
+	// plugins: ['@/plugins/vue-gtag.client.js'],
 	publicRuntimeConfig: {
 		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID
 	},
@@ -192,5 +193,8 @@ export default {
 	},
 	build: {
 		transpile: ['maz-ui'] // ⚠️ important ⚠️
+	},
+	nitro: {
+		preset: 'node-server'
 	}
 }
