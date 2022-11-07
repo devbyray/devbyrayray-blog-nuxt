@@ -7,3 +7,5 @@ node_modules
 .env
 dist
 sw.*
+.DS_Store
+*/.DS_Store

@@ -1,7 +1,6 @@
 ---
 title: How to Convert a TypeScript Enum to a JavaScript Array or String
-description: Subtract the data from the enum and remodel it into a JavaScript Array of
-    Strings so you can use it for whatever you like.
+description: Subtract the data from the enum and remodel it into a JavaScript Array of Strings so you can use it for whatever you like.
 date: '2022-09-05T08:18:20.547Z'
 categories: []
 tags: ['typescript', 'javascript']
