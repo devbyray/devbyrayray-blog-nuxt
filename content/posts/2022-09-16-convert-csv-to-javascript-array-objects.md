@@ -36,7 +36,7 @@ But if you want to understand everything in the code? I advise you to read furth
 
 ---
 
-## 1. Create a form for uploading a CSV file
+## Create a form for uploading a CSV file
 
 First, we need an HTML form to upload a file.
 
@@ -84,7 +84,7 @@ textarea {
 
 ---
 
-## 2. Read the content from the CSV file
+## Read the content from the CSV file
 
 Now we need to have access to 3 things in our JavaScript.
 
@@ -149,7 +149,7 @@ Console logs the content to test if everything works how it should.
 
 ---
 
-## 3. Convert CSV to Array of Objects
+## Convert CSV to Array of Objects
 
 Now we dive into the bread and butter of turning CSV content into an Array of Objects.
 
