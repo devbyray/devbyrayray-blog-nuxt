@@ -29,6 +29,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@stackblitz/sdk": "^1.8.0",
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "install": "^0.13.0",

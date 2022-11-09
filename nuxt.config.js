@@ -1,3 +1,5 @@
+import sitemapRoutes from './helpers/sitemapRoutes'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export const CONFIG = {
 	sitename: 'Dev By RayRay',
@@ -144,7 +146,7 @@ export default {
 		}
 	},
 	target: 'static',
-	modules: ['@nuxt/content', '@nuxt/image-edge'],
+	modules: ['@nuxt/content', '@nuxt/image-edge',  '@nuxtjs/sitemap'],
 	buildModules: ['@nuxtjs/google-fonts'],
 	googleFonts: {
 		download: true,
@@ -196,5 +198,14 @@ export default {
 	},
 	nitro: {
 		preset: 'netlify'
-	}
+	},
+	sitemap: {
+		hostname: 'https://byrayray.dev',
+		gzip: true,
+		// exclude: [
+		//   '/secret',
+		//   '/admin/**'
+		// ],
+		routes: [...sitemapRoutes()]
+	  }
 }
