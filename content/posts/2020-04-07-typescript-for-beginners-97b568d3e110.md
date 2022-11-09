@@ -1,16 +1,16 @@
 ---
 title: TypeScript For Beginners
-description: A practical way to learn TypeScript from scratch
+description: In this post, I want to dive into the basics of TypeScript. We’re going to learn primitives, interfaces, enums, classes and a lot more. Sit back, grab your editor and let's get started with learning TypeScript.
 date: '2020-04-07T03:19:03.683Z'
 categories: []
 published: true
-tags: ['developer', 'webdev']
+tags: ['typescript']
 image: https://cdn-images-1.medium.com/max/800/0*BP2ZZa91y7-S7yZz
 ---
 
 TypeScript is becoming more popular than ever. As beginner it was not love at first sight for me and TypeScript, but we’ve got to know each other. Currently, I don’t start a project without using TypeScript!
 
-In this post, I want to dive into the basics of TypeScript. We’re going to learn some theory, but since I believe in learning by building something, we are gonna be practical.
+In this post, I want to dive into the basics of TypeScript. We’re going to learn primitives, interfaces, enums, classes and a lot more. Sit back, grab your editor and let's get started with learning TypeScript.
 
 ## What is TypeScript?
 
@@ -50,7 +50,7 @@ Install NodeJS via the [NodeJS website](https://nodejs.org/en/) or install it vi
 
 ### TypeScript
 
-```
+```shell
 npm install -g typescript
 ```
 
@@ -66,21 +66,36 @@ The TypeScript website has a great playground to play around with TypeScript so 
 
 Now we are good to go!
 
+---
+
 ## Primitives
 
 Hopefully, you know all the [primitive data and structure types in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
 
-*   String `'string'`
-*   Number `785`
-*   Boolean `true`
-*   Undefined `undefined`
-*   Null `null`
-*   Object `{}`
-*   Function `function fake() {...}`
+-   String `'string'`
+-   Number `785`
+-   Boolean `true`
+-   Undefined `undefined`
+-   Null `null`
+-   Object `{}`
+-   Function `function fake() {...}`
 
 If you don’t know them, I highly recommend you start learning them first. They are essential for using JavaScript and TypeScript. Check the MDN web docs section about [data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
 
 In TypeScript, we use these primitive values in an `interface` to form a blueprint for an `Object` or `Class` like in the example below.
+
+```ts [pizza.interface.ts]
+// IPizza with required properties
+interface IPizza {
+	name: string
+	slices: number
+	toppigs: string
+	price: number
+	cheescrust: boolean
+}
+```
+
+---
 
 ## Interface
 
@@ -94,29 +109,98 @@ When a property is not defined in an `interface` you will get an error from the 
 
 We can all come up with properties for a pizza.
 
-*   Name
-*   Slices (the number of slices)
-*   Toppings
-*   Price
-*   Cheesecrust
-*   Vegan
-*   Vegetarian
+-   Name
+-   Slices (the number of slices)
+-   Toppings
+-   Price
+-   Cheesecrust
+-   Vegan
+-   Vegetarian
 
 Let’s put them in the interface and decide what kind of data type they are.
 
+```ts [pizza.interface.ts]
+// IPizza with required and optional properties
+interface IPizza {
+	name: string
+	slices: number
+	toppigs: string
+	price: number
+	cheescrust: boolean
+	vegan?: boolean
+	vegaterian?: boolean
+}
+```
+
 In the example above we see an `interface` for our Pizza. We gave all the properties a single data type. Now we can create our Pizza object and use the interface to make sure it has the correct properties.
+
+```ts [pizza.ts]
+    const pizza: IPizza {
+        name: 'Pizza BBQ',
+        slices: 6,
+        toppigs: 'Tomatosauce, BBQ sauce',
+        price: 15,
+        cheescrust: true
+    }
+
+```
 
 Now the `pizza` is according to the interface. The `interface` is now a form of data validation. If we would add properties that are not in the `interface` or property with wrong data types, the TypeScript will give errors.
 
+```ts [pizza.ts] {4}
+    const pizza: IPizza {
+        name: 'Pizza BBQ',
+        slices: 6,
+        toppigs: ['Tomatosauce', 'BBQ sauce'],
+        price: 15,
+        cheescrust: true,
+        meat: true
+    }
+```
+
 With this object, you will get errors!
+
+---
 
 ## Multiple values
 
 But what if we want to have an array of strings or numbers to give our toppings or sizes. We can do that pretty easy, just write `string[]` or `number[]` in the `interface`.
 
+```ts [pizza.interface.ts]
+// IPizza properties with an array of values.
+interface IPizza {
+	name: string
+	slices: number
+	toppigs: string[]
+	price: number
+	cheescrust: boolean
+	sizes: number[]
+	vegan?: boolean
+	vegaterian?: boolean
+}
+```
+
 Now our `pizza` object is valid.
 
+```ts [pizza.ts] {4, 8}
+    const pizza: IPizza {
+        name: 'Pizza BBQ',
+        slices: 6,
+        toppigs: ['Tomatosauce', 'BBQ sauce'],
+        price: 15,
+        cheescrust: true,
+        meat: true,
+        sizes: [0, 1, 2, 3, 4]
+    }
+```
+
 If we want to make a type an Array with multiple pizza objects, we can do that the same way with `IPizza[]`.
+
+```ts [pizza.ts]
+const pizzaArray: IPizza[] = []
+```
+
+---
 
 ## Enums
 
@@ -124,9 +208,54 @@ In the `IPizza` we have set that the value of toppings needs to be an Array of s
 
 Let’s say we have 4 types of toppings and 5 sizes for our pizzas. We can define an `enum` for that. The first option that is defined in the enum will have value `0` by default. But you can set other values if you like.
 
+```ts [pizza.enum.ts]
+enum PizzaToppings {
+	TOMATO, // value = 0
+	BBQ, // value = 1
+	NONE, // value = 2
+	CREAM // value = 3
+}
+
+enum PizzaSizes {
+	S = 's', // value = 's'
+	M = 'm', // value = 'm'
+	L = 'l', // value = 'l'
+	XL = 'xl', // value = 'xl'
+	XXL = 'xxl' // value = 'xxl'
+}
+```
+
 In the `interface` we add this to our properties. With the enums, we can have multiple choices for the sizes and toppings.
 
+```ts [pizza.interface.ts] {5,8}
+// IPizza properties with an enum.
+interface IPizza {
+	name: string
+	slices: number
+	toppigs: PizzaToppings[]
+	price: number
+	cheescrust: boolean
+	sizes: PizzaSizes[]
+	vegan?: boolean
+	vegaterian?: boolean
+}
+```
+
 So our object will look like this.
+
+```ts [pizza.ts] {4,8}
+   const pizza: IPizza {
+        name: 'Pizza BBQ',
+        slices: 6,
+        toppigs: [PizzaToppings.TOMATO, PizzaToppings.BBQ],
+        price: 15,
+        cheescrust: true,
+        meat: true,
+        sizes: [PizzaSizes.S, PizzaSizes.M, PizzaSizes.L, PizzaSizes.XL]
+    }
+```
+
+---
 
 ## Classes
 
@@ -138,47 +267,295 @@ An `interface` won't be compiled into your JavaScript files, a `class` will be, 
 
 Let’s create a class based on our `IPizza` interface.
 
+```ts [pizza.class.ts]
+class Pizza {
+	name: string = ''
+	slices: number = 8
+	toppigs: PizzaToppings[] = []
+	price: number = 0
+	cheescrust: boolean = false
+	sizes: PizzaSizes[] = []
+	vegan?: boolean = false
+	vegaterian?: boolean = false
+
+	constructor(data: IPizza) {
+		this.name = data.name
+		this.slices = data.slices
+		this.toppigs = data.toppigs
+		this.price = data.price
+		this.cheescrust = data.cheescrust
+		this.sizes = data.sizes
+
+		if (data.vegan) {
+			this.vegan = data.vegan
+		}
+		if (data.vegaterian) {
+			this.vegaterian = data.vegaterian
+		}
+	}
+}
+```
+
 As you probably know, a `class` is great for making new instances of a special type of `object`.
 
+```ts [pizza.ts]
+const pizza: IPizza = {
+	name: 'Pizza BBQ',
+	slices: 6,
+	toppigs: [PizzaToppings.TOMATO, PizzaToppings.BBQ],
+	price: 15,
+	cheescrust: true,
+	meat: true,
+	sizes: [PizzaSizes.S, PizzaSizes.M, PizzaSizes.L, PizzaSizes.XL]
+}
+
+const bbqPizza = new Pizza(pizza)
+```
+
 If you would check your console, you will see that this `bbqPizza` is from type `Pizza` and not directly from type `object`. Off-course this is an `object` under the hood!
+
+---
 
 ## Array
 
 But a pizza store with just one pizza is not enough right. Let’s make a big catalog of pizzas.
 
+```ts [pizza-catalog.class.ts]
+class PizzaCatalog {
+	list: Pizza[] = []
+
+	constructor(list: Pizza[]) {
+		this.list = list
+	}
+}
+```
+
 `Pizza[]` will tell TypeScript that the property `list` gonna be an Array. Everywhere you put a `[]` after, will till it's gonna be an Array. Like `string[]`, `number[]`or `Pizza[]`, pick any type and it will work.
 
 Now we can make a list of pizzas with the `PizzaCatalog` class.
 
+```ts [pizza-catalog.ts]
+const pizzaCatalog = new PizzaCatalog([bbqPizza])
+```
+
 When you put it in a console.log it will output this.
+
+```ts [pizza-catalog.ts]
+    [Pizza]
+        ▶0: Pizza
+             name: "Pizza BBQ"
+             slices: 6
+            ▶toppigs: Array[2]
+             price: 15
+             cheescrust: true
+            ▶sizes: Array[4]
+             vegan: true
+             vegaterian: false
+            ▶<constructor>: "Pizza"
+```
 
 We can add even more pizzas to it.
 
+```ts [pizza-catalog.ts]
+const hawaiPizza = new Pizza({
+	name: 'Hawai',
+	slices: 6,
+	toppigs: [PizzaToppings.TOMATO],
+	price: 12,
+	cheescrust: true,
+	sizes: [PizzaSizes.S, PizzaSizes.M, PizzaSizes.L, PizzaSizes.XL, PizzaSizes.XXL]
+})
+
+const vegiPizza = new Pizza({
+	name: 'Veggi',
+	slices: 6,
+	toppigs: [PizzaToppings.TOMATO],
+	price: 11,
+	cheescrust: false,
+	vegan: true,
+	vegaterian: true,
+	sizes: [PizzaSizes.S, PizzaSizes.M, PizzaSizes.L, PizzaSizes.XL, PizzaSizes.XXL]
+})
+
+const pizzaCatalog = new PizzaCatalog([bbqPizza, hawaiPizza, vegiPizza])
+```
+
 The result will be.
 
+```ts [pizza-catalog.ts]
+    [Pizza, Pizza, Pizza]
+            ▶0: Pizza
+                name: "Pizza BBQ"
+                slices: 6
+                ▶toppigs: Array[2]
+                price: 15
+                cheescrust: true
+                ▶sizes: Array[4]
+                vegan: true
+                vegaterian: false
+                ▶<constructor>: "Pizza"
+            ▶1: Pizza
+                name: "Hawai"
+                slices: 6
+                ▶toppigs: Array[1]
+                price: 12
+                cheescrust: true
+                ▶sizes: Array[5]
+                vegan: false
+                vegaterian: false
+                ▶<constructor>: "Pizza"
+            ▶2: Pizza
+                name: "Veggi"
+                slices: 6
+                ▶toppigs: Array[1]
+                price: 11
+                cheescrust: false
+                ▶sizes: Array[5]
+                vegan: true
+                vegaterian: true
+                ▶<constructor>: "Pizza"
+```
+
 Perfect to loop through and build a cool webshop around it.
+
+---
 
 ## Loop through enums
 
 To get our pizza toppings and sizes in a more readable way, we have to map through enums.
 
+```ts [pizza-toppings.enum.ts]
+// PizzaSizes enum
+export enum PizzaSizes {
+	S,
+	M,
+	L,
+	XL,
+	XXL
+}
+
+export const PizzaSizeNames: string[] = Object.keys(PizzaSizes)
+	.map(x => {
+		if (new RegExp(/[0-9]/g).test(x)) {
+			return PizzaSizes[x].toLowerCase()
+		}
+	})
+	.filter(x => x !== undefined)
+
+export enum PizzaToppings {
+	TOMATO, // value = 0
+	BBQ, // value = 1
+	NONE, // value = 2
+	CREAM // value = 3
+}
+
+export const PizzaToppingNames: string[] = Object.keys(PizzaToppings)
+	.map(x => {
+		if (new RegExp(/[0-9]/g).test(x)) {
+			return PizzaToppings[x].toLowerCase()
+		}
+	})
+	.filter(x => x !== undefined)
+```
+
 To explain what it does. First we `map` through all the keys of the enum, then we check if a key is a `number`, because `enum` values are numbers by default. We set the enum string to `lowercase` and then we filter out all the `undefined` values.
 
 The output from those variables is this.
+
+```js
+console.log(PizzaSizeNames)
+//["tomato", "bbq", "none", "cream"]
+
+console.log(PizzaToppingNames)
+// ["s", "m", "l", "xl", "xxl"]
+```
+
+_Want to learn how make enums even more usefull?_ **Check the post about "[How to Convert a TypeScript Enum to a JavaScript Array or String](/posts/2022-09-05_how-to-convert-a-typescript-enum-to-a-javascript-array-or-string-7a98c9fad17e)"**
+
+---
 
 ## Functions
 
 Now that we have our `Pizza` and `PizzaCatalog` classes, it's time to add a function to calculate the prices of the pizza based on the size. In the function we loop through all the sizes, calculate (in this case a random) an addition and sum it up with the `price` property value.
 
+```ts [pizza.interface.ts] {36, 46-55}
+interface IPizzaPrice {
+	size: string
+	price: number
+}
+
+interface IPizza {
+	name: string
+	slices: number
+	toppigs: PizzaToppings[]
+	price: number
+	cheescrust: boolean
+	sizes: PizzaSizes[]
+	vegan?: boolean
+	vegaterian?: boolean
+	prices?: IPizzaPrice[]
+}
+
+class Pizza {
+	name: string = ''
+	slices: number = 8
+	toppigs: PizzaToppings[] = []
+	price: number = 0
+	cheescrust: boolean = false
+	sizes: PizzaSizes[] = []
+	vegan?: boolean = false
+	vegaterian?: boolean = false
+	prices: IPizzaPrice[] = null
+
+	constructor(data: IPizza) {
+		this.name = data.name
+		this.slices = data.slices
+		this.toppigs = data.toppigs
+		this.price = data.price
+		this.cheescrust = data.cheescrust
+		this.sizes = data.sizes
+		this.prices = this.getPizzaPrices()
+		if (data.vegan) {
+			this.vegan = data.vegan
+		}
+		if (data.vegaterian) {
+			this.vegaterian = data.vegaterian
+		}
+		return this
+	}
+
+	private getPizzaPrices(): IPizzaPrice[] {
+		return this.sizes.map((item, index) => {
+			const addition = (this.price / 100) * 15 * index
+			console.log(this.price + addition)
+			return {
+				size: PizzaSizes[item],
+				price: this.price + addition
+			}
+		})
+	}
+}
+```
+
 For each pizza that is created with this `class`, you will get an array of prices because we calculate them in the `constructor` and add them to the `prices` property.
 
 In this case, we have defined the `getPizzaPrices` method to output `IPizzaPrice[]` as an array. But if this would have been a function that would not return a value, we should have typed it with `void` like this example.
 
+```ts [exampleFunction.ts]
+function exampleFunction(): void {
+	// we do a lot of things here ;-)
+}
+```
+
+---
+
 ## Any
 
-When I got started with TypeScript when the Angular team just launched Angular 2.0 I didn’t understand the benefit of TypeScript at all. So when I got errors, I just typed everything with `any` 🙈 that was bad!
+When I got started with TypeScript when the Angular team just launched Angular 2.0, I didn’t understand the benefit of TypeScript at all. So when I got errors, I just typed everything with `any` 🙈 that was bad!
 
-The type `any` could be any type you want. This can be handy if you have to deal with a lot of generic types where you don't know what the type could be or it could be of any type.
+The type `any` could be any type you want. This can be handy if you have to deal with a lot of generic types where you don't know what the type could be or it could be of any type. Otherwise try to prevent to use this type as much as possible.
+
+---
 
 ## Null and undefined
 
@@ -186,11 +563,24 @@ Hopefully, you know the difference between `null` and `undefined`. Because `null
 
 In TypeScript the behavior is the same as in normal JavaScript. But you can type property in a `class` with a type and say it has a default value that is `null` or `undefined`. Like we do in the `Pizza` class.
 
-The weird thing with `null` is that if you check with `typeof` it will appear as an `object`, which can be weird.
+```ts [pizza.class.ts]
+class Pizza {
+	name: string = ''
+	slices: number = 8
+	toppigs: PizzaToppings[] = []
+	price: number = 0
+	cheescrust: boolean = false
+	sizes: PizzaSizes[] = []
+	vegan?: boolean = false
+	vegaterian?: boolean = false
+	prices: IPizzaPrice[] = null
+	//....
+}
+```
 
 That’s a wrap. Now it is time for you to build cool stuff with TypeScript! If you want to share your projects in the comments, please do 😉.
 
-> I’ve gathered a couple of [aspiring developers around the world on a Discord server](https://mailchi.mp/fb82491d03f8/dev-by-rayray-discord-community), feel free if you like to join in.
+---
 
 ## Conclusion
 
@@ -198,16 +588,13 @@ I hope it all becomes clear to use TypeScript. How it works and why it’s a gre
 
 _If you want to know why it is a good idea to learn TypeScript, check out my other post “_[_Does Learning TypeScript Today Make Sense?_](https://www.kirupa.com/hodgepodge/learning_typescript.htm)_”_
 
-## Read more
 
-[**Dear CodeNewbie, Be 1% Better Everyday!**  
-_Please don’t think that experienced developers know everything from their head! No! I’m searching basic switches a lot…_medium.com](https://medium.com/dev-together/dear-codenewbie-be-1-better-everyday-c7688a4166b5 "https://medium.com/dev-together/dear-codenewbie-be-1-better-everyday-c7688a4166b5")[](https://medium.com/dev-together/dear-codenewbie-be-1-better-everyday-c7688a4166b5)
+---
 
-[**How To Build A Dark Mode Switcher with CSS Variables**  
-_Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeScript_levelup.gitconnected.com](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0 "https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0")[](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0)
+## Thanks
 
-[**JavaScript Concepts You Need Before Starting w/ Frameworks & Libraries**  
-_Don’t start before you are comfortable with them_medium.com](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c "https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c")[](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c)
+![](/images/0__4aTcitCaVTWHHeiO.jpg)
 
-[**5 Tips To Make 100DaysOfCode Effective For Everyone!**  
-_Spend Your Time Wisely To Learn To Code_medium.com](https://medium.com/undefined-developer/5-tips-to-make-100daysofcode-effective-for-everyone-3695587aad64 "https://medium.com/undefined-developer/5-tips-to-make-100daysofcode-effective-for-everyone-3695587aad64")[](https://medium.com/undefined-developer/5-tips-to-make-100daysofcode-effective-for-everyone-3695587aad64)
+After reading this post, I hope you learned something new or are inspired to create something new! 🤗
+
+If I left you with questions or something to say as a response, scroll down and type me a message. Please send me a [DM on Twitter @DevByRayRay](https://twitter.com/@devbyrayray) when you want to keep it private. My DM’s are always open 😁.
