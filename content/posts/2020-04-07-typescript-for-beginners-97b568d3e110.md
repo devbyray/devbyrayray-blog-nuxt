@@ -420,6 +420,10 @@ Perfect to loop through and build a cool webshop around it.
 
 ---
 
+> ![](images/414Eut39HJS._SL160_.jpg) If you want to dive deeper into TypeScript and love reading books, I highly recommend "[Mastering TypeScript by Nathan](https://amzn.to/3UqLa5G)". Nathan covers all the fundamentals but also specific implementations for JavaScript frameworks like Angular and React. 
+
+---
+
 ## Loop through enums
 
 To get our pizza toppings and sizes in a more readable way, we have to map through enums.
