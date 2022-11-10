@@ -6,6 +6,7 @@ categories: []
 published: true
 tags: ['typescript']
 image: https://cdn-images-1.medium.com/max/800/0*BP2ZZa91y7-S7yZz
+featured: true
 ---
 
 TypeScript is becoming more popular than ever. As beginner it was not love at first sight for me and TypeScript, but we’ve got to know each other. Currently, I don’t start a project without using TypeScript!

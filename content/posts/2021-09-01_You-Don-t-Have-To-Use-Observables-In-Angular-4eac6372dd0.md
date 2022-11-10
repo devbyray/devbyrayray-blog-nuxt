@@ -6,7 +6,6 @@ categories: []
 tags: ['angular', 'typescript', 'rxjs']
 slug: /@byrayray/you-dont-have-to-use-observables-in-angular-4eac6372dd0
 image: images/1__6EdSCuXPdUq7TvdhYx5jRA.jpeg
-featured: true
 ---
 
 In Angular, you can perform asynchronous actions in two different ways, Observables, and Promises.

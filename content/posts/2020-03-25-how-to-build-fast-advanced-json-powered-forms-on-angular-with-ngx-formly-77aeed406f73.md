@@ -1,12 +1,13 @@
 ---
 title: 'How to Build Fast, Advanced JSON-Powered Forms on Angular With ngx-formly'
 description: Validations, repeatable sections, conditional fields, and submitting your form
-  to your API
+    to your API
 date: '2020-03-25T17:15:17.082Z'
 categories: []
 published: true
 tags: ['angular', 'ngx-formly', 'typescript']
 image: images/0_ObTlBymPfhHxX6en.jpg
+gist: https://gist.github.com/devbyray/0e3adb689b343ceade69d73da2e368ee
 ---
 
 This article is the second installment of a two-part series called “JSON Powered Forms in Angular.” If you didn't check [the first part](https://medium.com/better-programming/build-fast-json-powered-forms-on-angular-with-ngx-formly-b7a00733e66e), I recommend doing that first.
@@ -17,40 +18,90 @@ We are going to continue with the same project in this article. We will implemen
 
 Sit back and get yourself some drinks because we are going to dive into the rabbit hole of advanced forms with ngx-formly in Angular.
 
-**Part 1  
-**1\. [What’s Ngx Formly?](https://medium.com/@devbyrayray/b7a00733e66e#3d0d)  
-2\. [Install Dependencies](https://medium.com/@devbyrayray/b7a00733e66e#8175)  
-3\. [Set Up an Angular Project](https://medium.com/@devbyrayray/b7a00733e66e#0e6c)  
-4\. [Add Ngx Formly and Your UI Framework](https://medium.com/@devbyrayray/b7a00733e66e#8521)  
-5\. [Create a Simple Form](https://medium.com/@devbyrayray/b7a00733e66e#1778)  
-6\. [Check the Data From the Form](https://medium.com/@devbyrayray/b7a00733e66e#ded9)
+**Part 1**
 
-**Part 2**  
-**1\.** [**Validation**](https://medium.com/@devbyrayray/77aeed406f73)**2\.** [**Repeating Sections**](https://medium.com/@devbyrayray/77aeed406f73)**3\.** [**Conditional Fields**](https://medium.com/@devbyrayray/77aeed406f73)**4\.** [**Reset Form**](https://medium.com/@devbyrayray/77aeed406f73)**5\.** [**Submit Form**](https://medium.com/@devbyrayray/77aeed406f73)
+1 [What’s Ngx Formly?](#3d0d)  
+2 [Install Dependencies](#8175)  
+3 [Set Up an Angular Project](#0e6c)  
+4 [Add Ngx Formly and Your UI Framework](#8521)  
+5 [Create a Simple Form](#1778)  
+6 [Check the Data From the Form](#ded9)
 
-## 1\. Validation
+---
+
+## Validation
 
 Let's start with validation. Every form should have some validation to help its users fill in the correct information.
 
 Adding basic validation is super easy by only adding some properties to the object. If you want to have custom validation, you only have to create two functions and add them to the formly module.
 
+---
+
 ### 1.1 Basic validation
 
 There are a few validations you can add by only adding properties to the input objects.
 
-*   `required`: If a field is required.
-*   `min`: This is only for the number input field to define a minimum number.
-*   `max`: This is only for the number input field to define a maximum number.
-*   `minlength`: With this property, you can define the minimum amount of characters.
-*   `maxlength`: With this property, you can define the maximum amount of characters.
+-   `required`: If a field is required.
+-   `min`: This is only for the number input field to define a minimum number.
+-   `max`: This is only for the number input field to define a maximum number.
+-   `minlength`: With this property, you can define the minimum amount of characters.
+-   `maxlength`: With this property, you can define the maximum amount of characters.
 
 In every input object, you can add those properties. If you don't add the field, it won't be validated.
 
-If you want to have a validation message for the required property, you have to add it in the `angular.module.ts`.
+```ts []
+{
+  key: 'name',
+  type: 'input',
+  templateOptions: {
+    label: 'Name',
+    placeholder: 'Enter name',
+  required: true,
+  minLength: 3,
+  maxLength: 10,
+  }
+},
+{
+  key: 'name',
+  type: 'input',
+  templateOptions: {
+  type: 'number',
+    label: 'Name',
+    placeholder: 'Enter name',
+  required: true,
+  min: 1,
+  max: 10
+  }
+}
+```
 
-With the parameter `field`, you can get access to the values that have been filled into the validation properties. This will help to make it more dynamic.
+If you want to have a validation message for the required property, you have to add it in the `angular.module.ts`. With the parameter `field`, you can get access to the values that have been filled into the validation properties. This will help to make it more dynamic.
+
+```ts [angular.module.ts]
+FormlyModule.forRoot({
+	validationMessages: [
+		required: (err, field: FormlyFieldConfig) => {
+			return `This field is required`
+		},
+		minLength: (err, field: FormlyFieldConfig) => {
+			return `Should have atleast ${field.templateOptions.minLength} characters`
+		},
+		maxLength: (err, field: FormlyFieldConfig) => {
+			return `Should have less than ${field.templateOptions.maxLength} characters`
+		},
+		min: (err, field: FormlyFieldConfig) => {
+			return 'This value should be more than ' + field.templateOptions.min
+		},
+		max: (err, field: FormlyFieldConfig) => {
+			return `This value should be less than ${field.templateOptions.max}`
+		},
+	],
+})
+```
 
 Check the [commit in the example project](https://github.com/raymonschouwenaar/angular-ngx-formly-material-example/tree/d8a1f15ffd82f3505a06fe947f643e588fc0a276) on GitHub.
+
+---
 
 ### 1.2 Custom validation
 
@@ -60,11 +111,51 @@ In the `FormModule.forRoot()`, you give a config object. For the validation func
 
 Your `app.module.ts` should look something like this:
 
+```ts
+export function IpValidator(control: FormControl): ValidationErrors {
+	return !control.value || /(\d{1,3}\.){3}\d{1,3}/.test(control.value) ? null : { ip: true }
+}
+
+export function IpValidatorMessage(err, field: FormlyFieldConfig) {
+	return `"${field.formControl.value}" is not a valid IP Address`
+}
+
+@NgModule({
+	imports: [
+		CommonModule,
+		ReactiveFormsModule,
+		FormlyBootstrapModule,
+		FormlyModule.forRoot({
+			validators: [{ name: 'ip', validation: IpValidator }],
+			validationMessages: [{ name: 'ip', message: IpValidatorMessage }]
+		})
+	],
+	declarations: [AppComponent]
+})
+export class AppModule {}
+```
+
 In the field config of the field you want to have the custom validation, you have to add the property `validators` that includes a `validation` property with a value `["ip"]`. This value is the same as you have added in the `app.module.ts`.
+
+```ts [filename.ts]
+{
+	key: 'ip',
+	type: 'input',
+	templateOptions: {
+	  label: 'IP Address (using custom validation declared in ngModule)',
+	  required: true,
+	},
+	validators: {
+	  validation: ['ip'],
+	},
+},
+```
 
 Check the [commit in the example project](https://github.com/raymonschouwenaar/angular-ngx-formly-material-example/tree/0571ff48b5e396f9622d14ab7ff8269de9b83c92) on GitHub.
 
-## 2\. Add Repeatable Sections
+---
+
+## Add Repeatable Sections
 
 Not all the applications would need this. But when you need it, this feature becomes very handy.
 
@@ -78,11 +169,15 @@ If you output your model in `<pre>{{model | json }}</pre>`, click on the + butto
 
 Check the [commit in the example project](https://github.com/raymonschouwenaar/angular-ngx-formly-material-example/tree/100723445ab5308651e9dde890f7fd02efa13039) on GitHub.
 
-## 3\. Add Conditional Fields
+---
+
+## Add Conditional Fields
 
 If you're building a big application with Angular, you probably need conditional fields. With formly, we can do that in a very easy way.
 
 You only have to add a `hideExpression` property to your field config. The value will refer to the model. If the previous input name is empty, the `email` field will be hidden. When it contains a value, it will be shown.
+
+
 
 The great thing about this is that the `email` property is also not visible in the model, so you won’t send it.
 
@@ -105,9 +200,9 @@ Submitting our forms is also very easy with formly.
 Add to your `<form>` tag a `(ngSubmit)=“submit()”`, which will call a method to submit that should be declared in that component.
 
 onSubmit() {  
-  if (this.form.valid) {  
-    console.log(JSON.stringify(this.model));  
-  }  
+ if (this.form.valid) {  
+ console.log(JSON.stringify(this.model));  
+ }  
 }
 
 Right now, this will show the model data in the console. But I guess if you are using Angular, you are familiar with how to send requests in it. If not, please use this example.
@@ -141,13 +236,13 @@ If you need help setting up your forms, check the [example repo on GitHub](https
 ## Read more
 
 [**Jump Start Your Developer Career From Zero To Hero**  
-_A Method So Simple It Will Blow Your Mind!_levelup.gitconnected.com](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829 "https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829")[](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829)
+\_A Method So Simple It Will Blow Your Mind!\_levelup.gitconnected.com](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829 'https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829')[](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829)
 
 [**5 Steps Give Structure To Your Development Projects**  
-_Are you not able to manage your programming projects? Try this!_medium.com](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d "https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d")[](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d)
+\_Are you not able to manage your programming projects? Try this!\_medium.com](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d 'https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d')[](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d)
 
 [**How To Build A Dark Mode Switcher with CSS Variables**  
-_Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeScript_levelup.gitconnected.com](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0 "https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0")[](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0)
+\_Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeScript_levelup.gitconnected.com](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0 'https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0')[](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0)
 
 [**JavaScript Concepts You Need Before Starting w/ Frameworks & Libraries**  
-_Don’t start before you are comfortable with them_medium.com](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c "https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c")[](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c)
+\_Don’t start before you are comfortable with them_medium.com](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c 'https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c')[](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c)

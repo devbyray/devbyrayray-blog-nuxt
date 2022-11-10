@@ -6,7 +6,6 @@ categories: []
 tags: ['angular', 'typescript', 'rxjs']
 slug: /@byrayray/two-ways-to-unsubscribe-angular-observables-fc59d5a56dae
 image: images/1__vcy2k5n2BEtdZIQORHkuRQ.jpeg
-featured: true
 ---
 
 Angular is full of Observables. But is there is a mechanism that automatically unsubscribes your Observables when components get destroyed?

@@ -9,6 +9,9 @@
 					<li>
 						<nuxt-link class="dark:text-white text-black hover:text-black" to="/about">About</nuxt-link>
 					</li>
+					<li>
+						<nuxt-link class="dark:text-white text-black hover:text-black" to="/archive">Archive</nuxt-link>
+					</li>
 				</ul>
 			</nav>
 			<h1 class="dark:text-white text-black text-4xl font-bold mb-8">Dev By RayRay</h1>

@@ -6,6 +6,7 @@ categories: []
 tags: ['javascript']
 slug: /@byrayray/6-javascript-features-to-improve-your-javascript-skills-in-2022-115296f081df
 image: images/1____LYzK__xh7lUT__lAwjEASew.png
+featured: true
 ---
 
 Recently all major browsers updated their JavaScript features. So in this post, I will dive into these six features worth mentioning to improve your JavaScript skills in 2022.

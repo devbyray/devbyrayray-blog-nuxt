@@ -25,27 +25,14 @@
 			:content="blog?.description ?? CONFIG?.sitedesc"
 		/>
 
+
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
-				<div class="category-posts mb-10">
-					<FeaturedPosts></FeaturedPosts>
-				</div>
 
-				<hr>
-
-				<div class="tagcloud mb-8">
-					<h2>Tags</h2>
-					<ul class="flex flex-wrap">
-						<Tag v-for="tag in tags" :tag="tag"></Tag>
-					</ul>
-				</div>
-
-				<hr>
-
-				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
+                <div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
 					<header>
-						<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
+						<h2 class="text-white font-bold text-3xl tracking-tight">Archive</h2>
 					</header>
 					<div
 						v-for="article in posts"
@@ -55,39 +42,21 @@
 						<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
 					</div>
 				</div>
-				<div class="mt-auto text-center">
-					<nuxt-link to="/archive" class="dark:text-white"
-						><span
-							class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-base font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-primary-color hover:bg-secondary-color text-white"
-						>
-							Read more in archive
-						</span></nuxt-link
-					>
-				</div>
 			</div>
 		</div>
 	</NuxtLayout>
 </template>
 <script setup>
-import { getImageUrl } from '@/lib/image'
-
 const {
 	public: { CONFIG }
 } = useRuntimeConfig()
 const { path } = useRoute()
 
-const homepageTopics = ['javascript', 'angular', 'typescript']
-const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', () => queryContent('posts').limit(10).sort({ date: -1 }).find())
-const { data: postTags } = await useAsyncData('tags', () => queryContent('posts').sort({ date: -1 }).find())
-const tags = ref()
+const { data: posts } = await useAsyncData('archive-posts', () => queryContent('posts').sort({ date: -1 }).find())
 const pageUrl = ref('')
 
 pageUrl.value = `${CONFIG.domain}${path}`
 
-const tagggs = []
-postTags?.value?.forEach(post => tagggs.push(post?.tags))
-tags.value = [...new Set(tagggs?.flat())].sort()
 
 useHead({
 	htmlAttrs: {
@@ -101,8 +70,7 @@ useHead({
 	max-width: 1600px;
 	margin: 0 auto;
 }
-.post-grid,
-.tagcloud {
+.post-grid {
 	max-width: 800px;
 	margin: 0 auto;
 }

@@ -10,7 +10,7 @@
 						class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
 					>
 						<time class="flex items-center"
-							>{{ formatDate(blog?.date) }} <MazIcon src="/icons/calendar.svg" size="1rem" class="ml-1" />
+							>{{ formatDate(blog?.date) }} <img src="/icons/calendar.svg" class="ml-1 icon" />
 						</time>
 					</li>
 					<li
@@ -18,7 +18,7 @@
 					>
 						<span class="flex items-center"
 							>{{ Math.round(blog?.readingTime?.minutes) }} min
-							<MazIcon src="/icons/clock.svg" size="1rem" class="ml-1"
+							<img src="/icons/clock.svg" class="ml-1 icon"
 						/></span>
 					</li>
 				</ul>
@@ -27,7 +27,7 @@
 				<div class="tags flex flex-wrap">
 					<Tag v-for="tag in tags" :key="tag" :tag="tag"></Tag>
 				</div>
-				<h1 v-if="showTitle" class="dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
+				<h1 v-if="showTitle" class="post-title dark:text-gray-200 uppercase">{{ blog?.title }}</h1>
 			</div>
 		</div>
 		<div class="cover-image rounded-lg">
@@ -174,13 +174,13 @@ const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
 	background: linear-gradient(
 		0deg,
 		var(--color-content-background) 0%,
-		rgba(31, 41, 55, 0.22650556804753152) 50%,
+		rgba(31, 41, 55, 0.7) 50%,
 		rgba(31, 41, 55, 0) 100%
 	);
 }
 .header-content h1 {
 	color: var(--primary-color);
-	text-shadow: 0 0 50px #000;
+	/* text-shadow: 0 0 50px #000; */
 }
 
 @media screen and (min-width: 580px) {
@@ -200,5 +200,11 @@ const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
 		font-size: 4rem;
 		line-height: 4.2rem;
 	}
+}
+
+.icon {
+	max-width: 20px;
+	margin-right: 2rem;
+	margin-right: 1rem;
 }
 </style>
