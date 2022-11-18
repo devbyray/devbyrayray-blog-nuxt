@@ -148,7 +148,6 @@ export default {
 			LOCAL: process.env.NODE_ENV !== 'production' || process?.env?.LOCAL
 		}
 	},
-	target: 'static',
 	modules: ['@nuxt/content', '@nuxt/image-edge'],
 	buildModules: ['@nuxtjs/google-fonts'],
 	googleFonts: {
@@ -213,6 +212,6 @@ export default {
 		}
 	},
 	nitro: {
-		preset: 'netlify'
+		preset: 'netlify-edge'
 	}
 }
