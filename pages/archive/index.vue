@@ -25,21 +25,25 @@
 			:content="blog?.description ?? CONFIG?.sitedesc"
 		/>
 
-
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
-
-                <div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
+				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
+					<AdsWrapper>
+						<Ad id="archive-header"></Ad>
+					</AdsWrapper>
 					<header>
 						<h2 class="text-white font-bold text-3xl tracking-tight">Archive</h2>
 					</header>
-					<div
-						v-for="article in posts"
-						:key="article?._path"
-						class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
-					>
-						<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
+					<div v-for="(article, index) in posts" :key="article?._path">
+						<AdsWrapper v-if="index % 3 === 0 && index !== 0" class="mb-4">
+							<Ad id="archive-list"></Ad>
+						</AdsWrapper>
+						<div
+							class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
+						>
+							<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -56,7 +60,6 @@ const { data: posts } = await useAsyncData('archive-posts', () => queryContent('
 const pageUrl = ref('')
 
 pageUrl.value = `${CONFIG.domain}${path}`
-
 
 useHead({
 	htmlAttrs: {

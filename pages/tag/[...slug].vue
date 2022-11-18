@@ -28,22 +28,30 @@
 		<TheHeader></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<article class="page-container">
-				<section class="page-max-md pb-16">
-					<ContentRenderer :value="page">
-						<h1 class="text-white font-bold text-3xl tracking-tight">{{ page?.title }}</h1>
-						<ContentRendererMarkdown :value="page" />
-					</ContentRenderer>
-				</section>
 
-				<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
-					<div
-						v-for="article in posts"
-						:key="article?._path"
-						class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
-					>
-						<BlogPost :article="article" :isHorizontal="true" titleTag="h3"></BlogPost>
+				
+				<section class="page-max-md pb-16">
+					<AdsWrapper>
+						<Ad id="tag-page"></Ad>
+					</AdsWrapper>
+					<h1 class="text-white font-bold text-3xl tracking-tight">{{ page?.title }}</h1>
+					<div v-if="posts" class="post-grid grid gap-8 text-neutral-600 mb-8">
+						<div
+							v-for="article in posts"
+							:key="article?._path"
+							class="p-5 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white"
+						>
+							<BlogPost :article="article" :isHorizontal="true" titleTag="h3"></BlogPost>
+						</div>
 					</div>
-				</div>
+					<div v-if="!posts">
+						<p>Sorry there are no posts found with the {{page?.title}} tag.</p>
+					</div>
+					<hr />
+					<AdsWrapper>
+						<Ad id="tag-page"></Ad>
+					</AdsWrapper>
+				</section>
 			</article>
 		</div>
 	</NuxtLayout>
