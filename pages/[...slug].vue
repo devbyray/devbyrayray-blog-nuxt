@@ -55,6 +55,9 @@
 						v-if="blog?.body?.toc?.links"
 						:links="blog?.body?.toc?.links"
 					></Toc>
+					<div class="add-wrapper">
+						<div class="bordered adaptive horizontal" data-ea-publisher="test" data-ea-type="image"></div>
+					</div>
 				</aside>
 				<footer class="prev-next pt-8">
 					<ul class="grid grid-cols-2 gap-4">

@@ -28,11 +28,15 @@
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
+				<div class="add-wrapper">
+					<div class="bordered adaptive horizontal" data-ea-publisher="test" data-ea-type="image"></div>
+				</div>
+
 				<div class="category-posts mb-10">
 					<FeaturedPosts></FeaturedPosts>
 				</div>
 
-				<hr>
+				<hr />
 
 				<div class="tagcloud mb-8">
 					<h2>Tags</h2>
@@ -41,7 +45,7 @@
 					</ul>
 				</div>
 
-				<hr>
+				<hr />
 
 				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
 					<header>

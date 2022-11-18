@@ -194,6 +194,14 @@
 	.code-container .copied-text {
 		@apply text-white;
 	}
+	.add-wrapper {
+		min-height: 1px;
+	}
+	.add-wrapper > div {
+		max-width: 800px;
+		margin: 0 auto;
+		min-height: 1px;
+	}
 }
 
 /* page transition */
