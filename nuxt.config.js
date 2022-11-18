@@ -192,7 +192,20 @@ export default {
 		}
 	},
 	build: {
-		transpile: ['maz-ui'] // ⚠️ important ⚠️
+		transpile: ['maz-ui'], // ⚠️ important ⚠️
+		html: {
+			minify: {
+				collapseBooleanAttributes: true,
+				decodeEntities: true,
+				minifyCSS: false,
+				minifyJS: false,
+				processConditionalComments: true,
+				removeEmptyAttributes: true,
+				removeRedundantAttributes: true,
+				trimCustomFragments: true,
+				useShortDoctype: true
+			}
+		}
 	},
 	nitro: {
 		preset: 'netlify'
