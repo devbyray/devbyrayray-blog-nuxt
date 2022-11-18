@@ -50,13 +50,14 @@
 					<Profile></Profile>
 				</article>
 				<aside class="right-side">
-					<Toc
-						class="widget text-white sticky top-5 hide-mobile"
-						v-if="blog?.body?.toc?.links"
-						:links="blog?.body?.toc?.links"
-					></Toc>
-					<div class="add-wrapper">
-						<div class="bordered adaptive horizontal" data-ea-publisher="test" data-ea-type="image"></div>
+					<div class="sticky top-5">
+						<Ad id="post-sidebar" sticky="true"></Ad>
+
+						<Toc
+							class="widget text-white hide-mobile"
+							v-if="blog?.body?.toc?.links"
+							:links="blog?.body?.toc?.links"
+						></Toc>
 					</div>
 				</aside>
 				<footer class="prev-next pt-8">

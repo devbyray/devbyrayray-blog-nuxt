@@ -28,15 +28,16 @@
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
-				<div class="add-wrapper">
-					<div class="bordered adaptive horizontal" data-ea-publisher="test" data-ea-type="image"></div>
-				</div>
 
 				<div class="category-posts mb-10">
 					<FeaturedPosts></FeaturedPosts>
 				</div>
 
-				<hr />
+
+				<div class="add-wrapper center">
+					<Ad id="homepage-before-tags"></Ad>
+				</div>
+
 
 				<div class="tagcloud mb-8">
 					<h2>Tags</h2>
@@ -51,12 +52,16 @@
 					<header>
 						<h2 class="text-white font-bold text-3xl tracking-tight">Recent posts</h2>
 					</header>
-					<div
-						v-for="article in posts"
-						:key="article?._path"
-						class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
-					>
-						<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
+					<div v-for="(article, index) in posts" :key="article?._path">
+						<AdsWrapper v-if="index % 3 === 0 && index !== 0" class="mb-4">
+							<Ad id="homepage-list"></Ad>
+						</AdsWrapper>
+						<div
+							class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
+						>
+
+							<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
+						</div>
 					</div>
 				</div>
 				<div class="mt-auto text-center">
@@ -82,7 +87,7 @@ const { path } = useRoute()
 
 const homepageTopics = ['javascript', 'angular', 'typescript']
 const contentDir = 'blog'
-const { data: posts } = await useAsyncData('posts', () => queryContent('posts').limit(10).sort({ date: -1 }).find())
+const { data: posts } = await useAsyncData('posts', () => queryContent('posts').limit(12).sort({ date: -1 }).find())
 const { data: postTags } = await useAsyncData('tags', () => queryContent('posts').sort({ date: -1 }).find())
 const tags = ref()
 const pageUrl = ref('')

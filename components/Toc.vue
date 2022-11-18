@@ -1,5 +1,5 @@
 <template>
-	<div class="toc mb-8 sticky top-4" v-if="filterToc(links).length > 0">
+	<div class="toc mb-8 top-4 bg-gray-900 dark:bg-gray-900 pb-8" v-if="filterToc(links).length > 0">
 		<header class="widget-header flex items-center">
 			<button v-if="hasToggle" class="toggle-button bg-white dark:bg-gray-800 p-2" @click="showToc = !showToc">
 				<MazIcon src="/icons/menu.svg" size="1.5rem" />

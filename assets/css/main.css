@@ -196,11 +196,15 @@
 	}
 	.add-wrapper {
 		min-height: 1px;
-	}
-	.add-wrapper > div {
-		max-width: 800px;
 		margin: 0 auto;
-		min-height: 1px;
+		display: flex;
+		max-width: 800px;
+	}
+	.add-wrapper.center {
+		justify-content: center;
+	}
+	.add-wrapper.center .loaded .ea-placement .ea-callout {
+		text-align: center;
 	}
 }
 

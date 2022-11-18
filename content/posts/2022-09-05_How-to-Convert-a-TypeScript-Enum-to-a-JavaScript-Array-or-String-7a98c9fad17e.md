@@ -44,6 +44,7 @@ enum PizzaToppings {
 
 Via this, we can define the values of each key in an enum.
 
+
 ### 2. String TypeScript Enum
 
 As it said, a string enum is an enum with values as a string.
