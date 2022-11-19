@@ -140,7 +140,6 @@ export const HEAD = {
 }
 
 export default {
-	target: 'static',
 	runtimeConfig: {
 		public: {
 			CONFIG,
@@ -212,6 +211,6 @@ export default {
 		}
 	},
 	nitro: {
-		preset: 'netlify-edge'
+		preset: 'netlify-builder'
 	}
 }
