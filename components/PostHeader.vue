@@ -156,7 +156,7 @@ const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
 }
 .is-horizontal.content-header {
 	margin-bottom: 0;
-	height: calc(100% + 2.5rem);
+	height: calc(100% + 4.5rem);
 }
 .content-header h1 {
 	font-size: 2rem;

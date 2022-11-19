@@ -1,35 +1,38 @@
 <template>
-	<div class="header-container bg-white dark:bg-gray-800">
+	<div class="header-container bg-gray-800">
 		<header v-if="home" class="page-max-md m-auto text-center page-header flex items-center flex-col">
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
 					<li>
-						<nuxt-link class="dark:text-white text-black hover:text-black" to="/">Home</nuxt-link>
+						<nuxt-link class="text-white" to="/">Home</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link class="dark:text-white text-black hover:text-black" to="/about">About</nuxt-link>
+						<nuxt-link class="text-white" to="/about">About</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link class="dark:text-white text-black hover:text-black" to="/archive">Archive</nuxt-link>
+						<nuxt-link class="text-white" to="/archive">Archive</nuxt-link>
 					</li>
 				</ul>
 			</nav>
-			<h1 class="dark:text-white text-black text-4xl font-bold mb-8">Dev By RayRay</h1>
+			<h1 class="text-white text-4xl font-bold mb-8">Dev By RayRay</h1>
 			<nuxt-img provider="cloudinary" loading="lazy" src="Dev_by_RayRay_-_logo" width="150" height="150" />
-			<em class="font-bold dark:text-white text-black text-2xl mb-16 mt-8">{{ CONFIG?.sitedesc }}</em>
+			<em class="font-bold text-white text-2xl mb-16 mt-8">{{ CONFIG?.sitedesc }}</em>
 		</header>
 		<header v-if="!home" class="page-max-md text-center page-header flex items-center flex-row mb-8">
-			<nuxt-link class="dark:text-white text-black" to="/">
+			<nuxt-link class="text-white" to="/">
 				<nuxt-img provider="cloudinary" loading="lazy" src="rayray.png" width="100" />
 				
 			</nuxt-link>
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
 					<li>
-						<nuxt-link class="dark:text-white text-black hover:text-black" to="/">Home</nuxt-link>
+						<nuxt-link class="text-white" to="/">Home</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link class="dark:text-white text-black hover:text-black" to="/about">About</nuxt-link>
+						<nuxt-link class="text-white" to="/about">About</nuxt-link>
+					</li>
+					<li>
+						<nuxt-link class="text-white" to="/archive">Archive</nuxt-link>
 					</li>
 				</ul>
 			</nav>

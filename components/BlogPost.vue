@@ -17,7 +17,7 @@
 				</component></nuxt-link
 			>
 
-			<p class="font-normal mb-3 description">{{ article?.description }}</p>
+			<p class="font-normal mb-3 description text-black dark:text-white">{{ article?.description }}</p>
 			<div class="mt-auto">
 				<nuxt-link :to="article?._path" class="dark:text-white"
 					><span

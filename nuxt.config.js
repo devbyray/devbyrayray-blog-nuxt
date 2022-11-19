@@ -128,10 +128,10 @@ export const HEAD = {
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 	],
 	script: [
-		// {
-		// 	src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
-		// 	async: true
-		// }
+		{
+			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
+			async: true
+		}
 	],
 	link: [],
 	// please note that this is an area that is likely to change
