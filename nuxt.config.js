@@ -211,6 +211,6 @@ export default {
 		}
 	},
 	nitro: {
-		preset: 'netlify-builder'
+		preset: 'vercel-edge'
 	}
 }
