@@ -195,12 +195,6 @@ const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
 		line-height: 3.2rem;
 	}
 }
-@media screen and (min-width: 1400px) {
-	.content-header h1 {
-		font-size: 4rem;
-		line-height: 4.2rem;
-	}
-}
 
 .icon {
 	max-width: 20px;

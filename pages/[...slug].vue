@@ -51,7 +51,7 @@
 				</article>
 				<aside class="right-side">
 					<div class="sticky top-5">
-						<Ad id="post-sidebar" sticky="true"></Ad>
+						<Ad id="post-sidebar" :topics="blog?.tags"></Ad>
 
 						<Toc
 							class="widget text-white hide-mobile"
