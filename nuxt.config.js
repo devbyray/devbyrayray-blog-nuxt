@@ -211,6 +211,9 @@ export default {
 		}
 	},
 	nitro: {
-		preset: 'netlify-builder'
+		preset: 'netlify-builder',
+		prerender: {
+			routes: ['/rss.xml', '/sitemap.xml']
+		}
 	}
 }

@@ -89,7 +89,7 @@ But, if you don’t use any particular JavaScript framework, you can do that pre
 Check the getting started pages for both tools to see how easy it is.
 
 *   [Getting started with ViteJS](https://vitejs.dev/guide/)
-*   [Getting started with ParcelJS](https://parceljs.org/getting_started.html)
+*   [Getting started with ParcelJS](https://parceljs.org/docs/)
 
 I’m a big fan of ViteJS because it’s a modern approach, and it’s super fast.
 
