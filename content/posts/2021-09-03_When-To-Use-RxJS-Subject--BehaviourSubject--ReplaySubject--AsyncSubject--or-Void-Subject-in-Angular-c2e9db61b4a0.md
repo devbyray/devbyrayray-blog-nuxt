@@ -136,6 +136,11 @@ The [RxJS documentation](https://rxjs.dev/guide/subject#subject) says the follow
 
 ---
 
+<ContentAd topics="rxjs|angular|typescript|javascript"></ContentAd>
+
+
+---
+
 ## Subject
 
 We know that a `Subject` is an `Observable`. But instead of sending information to one subscriber, they can send their data to multiple subscribers simultaneously (they multicast).

@@ -54,6 +54,10 @@ expressionProperties: {
 
 ---
 
+<ContentAd topics="angular|typescript|javascript"></ContentAd>
+
+---
+
 ## Example
 
 I’ve created an example project for this tutorial via [StackBlitz](https://stackblitz.com/edit/angular-vibhz9?file=src%2Fapp%2Fapp.component.ts), which you can use to experiment with the parsers.

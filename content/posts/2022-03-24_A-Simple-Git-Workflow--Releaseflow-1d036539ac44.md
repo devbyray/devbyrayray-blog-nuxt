@@ -76,6 +76,10 @@ In this way, we ensure that our main branch always has bug fixes.
 
 ---
 
+<ContentAd topics="git|webdevelopment|programming|javascript"></ContentAd>
+
+---
+
 ## Commits
 
 To get more track of the work that is being developed and released. It’s essential to have clear commit messages which include references to a PBI or task. For example, in this commit message below (replace 000000 for the PBI or task number).

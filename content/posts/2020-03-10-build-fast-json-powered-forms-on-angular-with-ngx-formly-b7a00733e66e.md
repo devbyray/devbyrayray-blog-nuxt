@@ -8,7 +8,6 @@ tags: ['angular', 'ngx-formly', 'typescript']
 image: images/1_eP7WbVOz5L0AsB_TeBJEZg.jpg
 ---
 
-
 In this article, I’ll show you how you can build JSON-powered forms in Angular 9 with [Ngx Formly](https://formly.dev/). Afterward, you’ll be able to create forms faster than you normally do.
 
 We’re going to dive into what types of input fields we can use and how we can integrate Formly with a UI framework like Material, Bootstrap, Ionic, PrimeNG, Kendo, and NativeScript. In this article, I’ll use the integration with Angular Material.
@@ -59,8 +58,8 @@ Run `ng new project-name`, and Angular will ask you a few questions. You can sel
 
 I’ve chosen the following answers:
 
-*   “Would you like to add Angular routing?” **Yes.**
-*   “Which stylesheet format would you like to use?” **SCSS.**
+-   “Would you like to add Angular routing?” **Yes.**
+-   “Which stylesheet format would you like to use?” **SCSS.**
 
 When the CLI is done, navigate to your project folder and open your IDE. I’m personally a big fan of [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -114,8 +113,16 @@ Next to that, we need to add the styling to the `style.scss` file.
 
 In the `index.html` file, we can load the Material font.
 
-```
-<head>        <meta charset="utf-8" />        <title>AngularNgxFormlyMaterial</title>        <base href="/" />        <meta name="viewport" content="width=device-width, initial-scale=1" />        <link rel="icon" type="image/x-icon" href="favicon.ico" />        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />    </head>
+```html
+<head>
+	<meta charset="utf-8" />
+	<title>AngularNgxFormlyMaterial</title>
+	<base href="/" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 ```
 
 To use the form components from Angular Material, we need to add them to the `import` array in `app.module.ts`. Since Angular 9, it’s recommended to only import what you need.
@@ -124,23 +131,23 @@ To use the form components from Angular Material, we need to add them to the `im
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'import { BrowserModule } from '@angular/platform-browser'import { NgModule } from '@angular/core'
 ```
 
-```
+```ts
 import { AppRoutingModule } from './app-routing.module'import { AppComponent } from './app.component'import { ReactiveFormsModule } from '@angular/forms'import { FormlyModule } from '@ngx-formly/core'import { FormlyMaterialModule } from '@ngx-formly/material'import { FormlyMatDatepickerModule } from '@ngx-formly/material/datepicker';import { FormlyMatToggleModule } from '@ngx-formly/material/toggle';
 ```
 
-```
+```ts
 import { MatDatepickerModule } from '@angular/material/datepicker'import { MatDialogModule } from '@angular/material/dialog'import { MatFormFieldModule } from '@angular/material/form-field'import { MatInputModule } from '@angular/material/input'import { MatRadioModule } from '@angular/material/radio'import { MatSelectModule } from '@angular/material/select'import { MatButtonModule } from '@angular/material/button'import { MatCheckboxModule } from '@angular/material/checkbox'import { MatNativeDateModule } from '@angular/material/core'
 ```
 
-```
+```ts
 @NgModule({    declarations: [AppComponent],    imports: [        BrowserModule,        AppRoutingModule,        BrowserAnimationsModule,
 ```
 
-```
+```ts
         ReactiveFormsModule,        MatCheckboxModule,        MatButtonModule,        MatDatepickerModule,        MatDialogModule,        MatFormFieldModule,        MatInputModule,        MatRadioModule,        MatSelectModule,                MatNativeDateModule,        FormlyMatDatepickerModule,        FormlyMatToggleModule,
 ```
 
-```
+```ts
         FormlyModule.forRoot(),        FormlyMaterialModule,    ],    providers: [],    bootstrap: [AppComponent],})export class AppModule {}
 ```
 
@@ -154,13 +161,13 @@ Run `npm install @angular/material @angular/cdk --save`. I had some issues with 
 
 Now, we’re at the point where we can make a form with all kinds of input fields.
 
-*   String
-*   Number
-*   Checkbox
-*   Radio
-*   Select and multiselect
-*   Date
-*   Text area
+-   String
+-   Number
+-   Checkbox
+-   Radio
+-   Select and multiselect
+-   Date
+-   Text area
 
 ### 5.1 Add a form to a component
 
@@ -251,17 +258,17 @@ For your UI framework, you have to make sure this type is supported. I know Angu
 We can give the select options manually to the select or via a defined `enum` . In order to get all the information from the enum, we have to store them in the `ProductTypeNames` which output an `Array` from the `enum` .
 
 ```typescript
-export enum ProductType {  
-  PRODUCT\_A,  
-  PRODUCT\_B,  
-  PRODUCT\_C,  
+export enum ProductType {
+  PRODUCT\_A,
+  PRODUCT\_B,
+  PRODUCT\_C,
 }
 
-export const ProductTypeNames: any\[\] = Object.keys(ProductType)  
-   .map((x) => {  
-      if (new RegExp(/\[0-9\]/g).test(x)) {  
-        return ProductType\[x\].toLowerCase()  
-      }  
+export const ProductTypeNames: any\[\] = Object.keys(ProductType)
+   .map((x) => {
+      if (new RegExp(/\[0-9\]/g).test(x)) {
+        return ProductType\[x\].toLowerCase()
+      }
    }).filter((x) => x !== undefined)
 
 ```
@@ -274,7 +281,7 @@ export const ProductTypeNames: any\[\] = Object.keys(ProductType)
 ```
 
 ```
-// Or data from the enum{  key: 'product_type',  type: 'select',  templateOptions: {    label: 'Product type',    placeholder: 'Product type',    description: 'Select the product type',    required: true,    
+// Or data from the enum{  key: 'product_type',  type: 'select',  templateOptions: {    label: 'Product type',    placeholder: 'Product type',    description: 'Select the product type',    required: true,
 ```
 
 ```
@@ -318,7 +325,7 @@ Now that we’ve built a cool form in less time than we normally would , we als
 Click the link to [continue with part 2](https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73) for creating advanced forms with ngx-formly.
 
 [**How to Build Fast, Advanced JSON-Powered Forms on Angular With ngx-formly**  
-_Validations, repeatable sections, conditional fields, and submitting your form to your API_medium.com](https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73 "https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73")[](https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73)
+\_Validations, repeatable sections, conditional fields, and submitting your form to your API_medium.com](https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73 'https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73')[](https://medium.com/better-programming/how-to-build-fast-advanced-json-powered-forms-on-angular-with-ngx-formly-77aeed406f73)
 
 _Thanks_
 
@@ -331,13 +338,13 @@ Happy coding!
 ## Read more
 
 [**Jump Start Your Developer Career From Zero To Hero**  
-_A Method So Simple It Will Blow Your Mind!_levelup.gitconnected.com](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829 "https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829")[](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829)
+\_A Method So Simple It Will Blow Your Mind!\_levelup.gitconnected.com](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829 'https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829')[](https://levelup.gitconnected.com/jump-start-your-developer-career-from-zero-to-hero-89cb62a1829)
 
 [**5 Steps Give Structure To Your Development Projects**  
-_Are you not able to manage your programming projects? Try this!_medium.com](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d "https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d")[](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d)
+\_Are you not able to manage your programming projects? Try this!\_medium.com](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d 'https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d')[](https://medium.com/dev-together/5-steps-give-structure-to-your-development-projects-e1348eb9f17d)
 
 [**How To Build A Dark Mode Switcher with CSS Variables**  
-_Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeScript_levelup.gitconnected.com](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0 "https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0")[](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0)
+\_Build a Dark Mode Switcher with CSS Variable, JavaScript and TypeScript_levelup.gitconnected.com](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0 'https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0')[](https://levelup.gitconnected.com/how-to-build-a-dark-mode-switcher-with-css-variables-ccb13f7441a0)
 
 [**JavaScript Concepts You Need Before Starting w/ Frameworks & Libraries**  
-_Don’t start before you are comfortable with them_medium.com](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c "https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c")[](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c)
+\_Don’t start before you are comfortable with them_medium.com](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c 'https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c')[](https://medium.com/dev-together/javascript-concepts-you-need-before-starting-w-frameworks-libraries-25a325312b5c)

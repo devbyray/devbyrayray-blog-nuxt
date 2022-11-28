@@ -64,6 +64,11 @@ And I think Joel wrote some great lessons. Let’s sum them up so that we can al
 -   **~3+ stories per month will get me in a sweet spot.** When I had ~40 stories published in a year, I earned on average as much as when I posted 67 stories in a year (~5+ stories per month). This is based on my data, but I wonder if that’s the same for others. Because I see a lot of people post four stories per day (_That’s not my pace_ 😅)
 
 ---
+
+<ContentAd topics="developer|programming|javascript"></ContentAd>
+
+---
+
 ## What Are My Next Goals?
 
 So now that I have the data on some key lessons, I have to define my goals. With some of them, I have already started (diversifying in topics).

@@ -138,6 +138,10 @@ export class ContentService {
 ```
 
 ---
+
+<ContentAd topics="angular|typescript|javascript"></ContentAd>
+
+---
 ## Use The Content Service In The Content
 
 I guess you know how to make an Angular Component. The CLI is my favorite way to do it. For example, you generate a `HomepageComponent`.

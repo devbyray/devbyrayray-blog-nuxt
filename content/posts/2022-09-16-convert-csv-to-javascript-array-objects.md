@@ -84,6 +84,10 @@ textarea {
 
 ---
 
+<ContentAd topics="javascript"></ContentAd>
+
+---
+
 ## Read the content from the CSV file
 
 Now we need to have access to 3 things in our JavaScript.

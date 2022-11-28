@@ -119,6 +119,10 @@ We have our second function to get a random word from Array.
 
 ---
 
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## Get A String With Random Words
 
 Now we want to get multiple words and make it a string, so we can use it as content for whatever we want. The best we can do that is by generating an Array with several positions.

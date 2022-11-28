@@ -77,6 +77,10 @@ So in this component, you don’t need to trigger something with the `ngOnDestro
 
 ---
 
+<ContentAd topics="rxjs|angular|typescript|javascript"></ContentAd>
+
+---
+
 ## Observables With takeUntil Method
 
 Let’s say you are making multiple AJAX request via the `HttpClient`. You're not going to pass it directly to the HTML, but doing something else with the data first. So the `| async` pipe is not ideal for this situation.

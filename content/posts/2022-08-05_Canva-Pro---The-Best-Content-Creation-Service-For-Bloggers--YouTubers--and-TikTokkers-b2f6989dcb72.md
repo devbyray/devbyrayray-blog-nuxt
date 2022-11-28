@@ -58,6 +58,13 @@ Resizing is a feature of the Canva Pro tier. (_You can try Canva Pro 30 days for
 
 > In the free tier, you can set the size beforehand. But if you like to have a different size later on, just open a new Canva project and copy all your objects and paste them into the new project _😅_.
 
+---
+
+<ContentAd topics="canva|design"></ContentAd>
+
+
+---
+
 ### Feature 3: Animations
 
 Animations are great for videos and presentations. You can find this feature in the free tier as well.

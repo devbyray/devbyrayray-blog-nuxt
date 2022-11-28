@@ -79,6 +79,12 @@ Situations to use
 
 These situations require data to update in a short amount of time, at least in the same lifetime of the subscriptions.
 
+---
+
+<ContentAd topics="angular|typescript|javascript"></ContentAd>
+
+---
+
 ### Use A Promise
 
 Since a Promise can handle a single value, there are pretty many situations to use it.

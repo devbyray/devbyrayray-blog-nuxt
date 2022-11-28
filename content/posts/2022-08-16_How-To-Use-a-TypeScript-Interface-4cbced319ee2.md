@@ -46,6 +46,10 @@ With this object, you will get errors! 👇 ([_Check it on CodeSandbox for yours
 
 ---
 
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## Multiple values
 
 But what if we want an array of strings or numbers to give our toppings or sizes? We can do that pretty quickly; write `string[]` or `number[]` in the `interface`.

@@ -7,14 +7,16 @@
 			Date()) gtag('config', 'UA-166352508-1')
 		</Script>
 		<Script async src=""></Script>
-		<div class="fixed-footer-wrapper">
+		<div class="fixed-footer-wrapper bg-gray-600">
+			<div class="page-max-md">
+
 			<div
-				class="bordered adaptive horizontal fixed-footer"
+				class="bordered adaptive horizontal"
 				data-ea-publisher="byrayraydev"
 				id="fixed-footer"
 				data-ea-type="text"
-				data-ea-style="fixedfooter"
 			></div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -41,13 +43,22 @@ definePageMeta({
 onBeforeUpdate(() => {
 	console.log('ethicalads: ', ethicalads)
 	if(ethicalads) {
-		ethicalads.load();
+		ethicalads.load_placements().then(() => console.log('ads are shown'));
 	}
 })
 </script>
 
 <style scoped>
-.fixed-footer {
+.default-layout {
+	padding-bottom: 100px;
+}
+.fixed-footer-wrapper {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%; height: 100px;
 	z-index: 99;
+	justify-content: center;
+    align-items: center;
 }
 </style>

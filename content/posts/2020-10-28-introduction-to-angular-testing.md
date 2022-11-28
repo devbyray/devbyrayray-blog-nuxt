@@ -73,6 +73,12 @@ Thanks to this method we can also test if a certain method is being called. When
 
 In isolated unit testing, we don't test the template parts for a component, only the logic behind it. In this test, we test all the methods that have the expected behavior.
 
+---
+
+<ContentAd topics="rxjs|angular|typescript|javascript"></ContentAd>
+
+---
+
 # Shallow unit testing
 
 With shallow unit testing, we test a component with a template, but we ignore the rendering of child components by passing NO_ERRORS_SCHEMA into our configuration of the test module.

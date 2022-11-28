@@ -41,6 +41,11 @@ function fakeFunc(param: keyof Address): void {
 Now we can ensure that this function is only being used with a parameter that exists in the Address interface. Otherwise, you will get a TypeScript interface.
 
 ---
+
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## Validate the function
 
 In the [example](https://codesandbox.io/embed/musing-haslett-eiyzup?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark&view=editor), you can see that the param ‘streetname’ is accepted, but the parameter ‘random’ is giving the error “_Argument of type ‘“random”’ is not assignable to parameter of type ‘keyof Address’._” because it’s not in the interface. (_To see the compile error, you need to click the check it on_ [_CodeSandbox_](https://codesandbox.io/embed/musing-haslett-eiyzup?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark&view=editor))

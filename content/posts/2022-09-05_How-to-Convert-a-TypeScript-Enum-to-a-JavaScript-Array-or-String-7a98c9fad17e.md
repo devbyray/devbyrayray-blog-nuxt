@@ -159,6 +159,10 @@ Now we can see that in the console, it will only show the strings of the values.
 
 ---
 
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## How To Create A Generic Utility Function For Re-usability
 
 Now that we know our code works, we can create a super handy utility function that can turn all our enums (both string and numeric enums) into JavaScript Arrays.

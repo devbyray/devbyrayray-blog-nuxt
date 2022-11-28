@@ -51,6 +51,10 @@ Every time you run this code, it will be different. If you want to remove the do
 
 ---
 
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## Create randomString function
 
 Now that you have generated a random string every time you run it, you can turn it into a function.

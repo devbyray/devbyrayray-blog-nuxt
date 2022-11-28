@@ -240,6 +240,10 @@ In my opinion, the [browser support is great](https://caniuse.com/mdn-javascript
 
 ---
 
+<ContentAd topics="javascript"></ContentAd>
+
+---
+
 ## 4. For await of
 
 I don’t know if this use case ever happened to you, but for me, it did.

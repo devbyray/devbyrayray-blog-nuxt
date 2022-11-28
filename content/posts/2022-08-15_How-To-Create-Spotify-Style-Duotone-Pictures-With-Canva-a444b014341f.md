@@ -40,6 +40,13 @@ When your new Canva design is opened, select the photo on which you want to appl
 
 Select the colors you want and click the “Apply” button; otherwise, it won’t be saved.
 
+---
+
+<ContentAd topics="design|webdesign|canva"></ContentAd>
+
+---
+
+
 ## 5. Export your file
 
 <!-- TODO: Upload photo to cloudinary -->

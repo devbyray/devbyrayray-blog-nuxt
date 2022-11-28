@@ -47,6 +47,11 @@ To make sure we have at least the number of characters we are given in the funct
 ```
 
 ---
+
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
 ## Fixed length
 
 But to prevent that will be longer, we are taking a substring, so we are returning the exact amount of characters by using `substring`.

@@ -97,6 +97,10 @@ With this Youtube component, you can start using it in your Markdown files.
 
 ---
 
+<ContentAd topics="vue|javascript"></ContentAd>
+
+---
+
 ## 4. Use component in Markdown file
 
 So the question is, how to use it in your Markdown files?

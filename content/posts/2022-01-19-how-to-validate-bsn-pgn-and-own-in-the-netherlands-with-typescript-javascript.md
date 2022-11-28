@@ -80,6 +80,13 @@ function elfProefValidation(value, type) {
 }
 ```
 
+---
+
+<ContentAd topics="typescript|javascript"></ContentAd>
+
+---
+
+
 ### TypeScript
 
 ```ts

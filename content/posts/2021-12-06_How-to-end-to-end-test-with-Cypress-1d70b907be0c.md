@@ -98,6 +98,10 @@ Cypress offers a complete library, and you can check the [documentation](https:/
 
 ---
 
+<ContentAd topics="cypress|testing|development|programming"></ContentAd>
+
+---
+
 ### What should you test in an end-to-end test?
 
 We will mainly test things that appear or change in the browser with end-to-end tests. Like a simple scenario: We visit page x and check if the `h1` contains the text "This is an awesome title".

@@ -33,6 +33,10 @@
 					<div class="dino-header absolute"></div>
 
 					<PostHeader :blog="blog" :showTitle="true" :showGradient="true" :isHomepage="false" />
+
+					<div class="page-max-md flex justify-center pb-8">
+						<Ad id="post-below-title" :topics="blog?.tags"></Ad>
+					</div>
 					<Toc
 						class="show-mobile bg-gray-700 p-4"
 						v-if="blog?.body?.toc?.links"
