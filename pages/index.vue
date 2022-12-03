@@ -28,16 +28,18 @@
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
-
 				<div class="category-posts mb-10">
 					<FeaturedPosts></FeaturedPosts>
 				</div>
 
-
-				<div class="add-wrapper center">
-					<Ad id="homepage-before-tags"></Ad>
+				<div class="max-content newsletter">
+					<div class="mb-16 text-center flex flex-col justify-center">
+						<h2>Subscribe to my newsletter</h2>
+						<div class="flex justify-center">
+							<div id="custom-substack-embed" class=""></div>
+						</div>
+					</div>
 				</div>
-
 
 				<div class="tagcloud mb-8">
 					<h2>Tags</h2>
@@ -46,7 +48,9 @@
 					</ul>
 				</div>
 
-				<hr />
+				<div class="add-wrapper center">
+					<Ad id="homepage-before-tags"></Ad>
+				</div>
 
 				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
 					<header>
@@ -59,7 +63,6 @@
 						<div
 							class="p-5 mb-8 flex flex-col inner-card h-full blog-post dark:bg-gray-700 dark:text-white rounded-lg relative bg-white overflow-hidden"
 						>
-
 							<BlogPost :article="article" titleTag="h3" :isHorizontal="true"></BlogPost>
 						</div>
 					</div>
@@ -72,6 +75,15 @@
 							Read more in archive
 						</span></nuxt-link
 					>
+				</div>
+
+				<div class="max-content newsletter">
+					<div class="mb-16 text-center flex flex-col justify-center">
+						<h2>Subscribe to my newsletter</h2>
+						<div class="flex justify-center">
+							<div id="custom-substack-embed" class=""></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -101,7 +113,13 @@ tags.value = [...new Set(tagggs?.flat())].sort()
 useHead({
 	htmlAttrs: {
 		lang: 'en_EN'
-	}
+	},
+	script: [
+		{
+			src: 'https://substackapi.com/widget.js',
+			async: true
+		}
+	]
 })
 </script>
 
@@ -110,6 +128,7 @@ useHead({
 	max-width: 1600px;
 	margin: 0 auto;
 }
+.max-content,
 .post-grid,
 .tagcloud {
 	max-width: 800px;

@@ -7,6 +7,8 @@
 			function gtag() { dataLayer.push(arguments) } 
 			gtag('js', new Date()) 
 			gtag('config', 'UA-166352508-1')
+
+			window.CustomSubstackWidget = { substackUrl: 'devbyrayray.substack.com', theme: 'yellow' }
 		</Script>
 		<Script async src=""></Script>
 		<div class="fixed-footer-wrapper bg-gray-600">

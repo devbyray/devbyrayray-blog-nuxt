@@ -54,14 +54,24 @@
 					<Profile></Profile>
 				</article>
 				<aside class="right-side">
-					<div class="sticky top-5">
-						<Ad id="post-sidebar" :topics="blog?.tags"></Ad>
+					<div class="sidebar">
+						<div class="top-5">
+							<Ad id="post-sidebar" :topics="blog?.tags"></Ad>
 
-						<Toc
-							class="widget text-white hide-mobile"
-							v-if="blog?.body?.toc?.links"
-							:links="blog?.body?.toc?.links"
-						></Toc>
+							<Toc
+								class="widget text-white hide-mobile"
+								v-if="blog?.body?.toc?.links"
+								:links="blog?.body?.toc?.links"
+							></Toc>
+						</div>
+						<div class="max-content newsletter">
+							<div class="mb-16">
+								<h2>Subscribe to my newsletter</h2>
+								<div class="">
+									<div id="custom-substack-embed" class=""></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</aside>
 				<footer class="prev-next pt-8">
@@ -103,6 +113,15 @@ const { data: blog } = await useAsyncData(`content-${path}`, () => {
 const pageUrl = ref('')
 const pageImage = ref('')
 const pageDate = ref('')
+
+useHead({
+	script: [
+		{
+			src: 'https://substackapi.com/widget.js',
+			async: true
+		}
+	]
+})
 
 onMounted(() => {
 	window.scrollTo(0, 0)
