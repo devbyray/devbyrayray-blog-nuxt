@@ -106,13 +106,13 @@ const {
 	public: { CONFIG }
 } = useRuntimeConfig()
 
-const { data: blog } = await useAsyncData(`content-${path}`, () => {
-	return queryContent().where({ _path: path }).findOne()
-})
-
 const pageUrl = ref('')
 const pageImage = ref('')
 const pageDate = ref('')
+
+const { data: blog } = await useAsyncData(`content-${path}`, () => {
+	return queryContent().where({ _path: path }).findOne()
+})
 
 useHead({
 	script: [
@@ -135,11 +135,64 @@ pageDate.value = formatDate(blog?.value?.date)
 console.log('blog: ', blog)
 
 const { prev, next } = useContent()
-
+const domain = 'https://byrayray.dev/'
 useHead({
 	htmlAttrs: {
 		lang: 'en_EN'
 	}
+})
+
+const tags = ref(null)
+
+console.log('tags:', blog?.tags)
+
+tags.value = blog?.tags
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	headline: blog.value?.title,
+	description: blog.value?.description,
+	image: {
+		'@type': 'ImageObject',
+		url: pageImage?.value ?? CONFIG?.logoUrl,
+		width: pageImage?.value ? '800' : '200',
+		height: pageImage?.value ? '600' : '200'
+	},
+	dateCreated: blog?.value?.date ?? '',
+	datePublished: blog?.value?.date ?? '',
+	dateModified: blog?.value?.date ?? '',
+	isFamilyFriendly: 'true',
+	copyrightYear: new Date(pageDate?.value).getFullYear(),
+	author: {
+		'@type': 'Person',
+		name: 'RayRay',
+		url: 'https://byrayray.dev'
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: 'RayRay',
+		url: 'https://byrayray.dev',
+		logo: {
+			'@type': 'ImageObject',
+			url: CONFIG?.logoUrl,
+			width: '200',
+			height: '200'
+		}
+	},
+	keywords: Object.values(blog.value?.keywords ?? blog.value?.tags),
+	genre: 'Tutorial',
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': `${domain}${pageUrl?.value}`
+	}
+	// articleBody: `${}`
+}
+
+console.log('schema: ', schema)
+
+useJsonld(() => {
+	return schema
 })
 </script>
 <script>

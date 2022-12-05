@@ -147,7 +147,7 @@ export default {
 			LOCAL: process.env.NODE_ENV !== 'production' || process?.env?.LOCAL
 		}
 	},
-	modules: ['@nuxt/content', '@nuxt/image-edge'],
+	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld'],
 	buildModules: ['@nuxtjs/google-fonts'],
 	googleFonts: {
 		download: true,
