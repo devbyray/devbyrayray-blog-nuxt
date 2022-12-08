@@ -29,13 +29,13 @@
 		<div class="bg-gray-900 py-10 px-4">
 			<div class="page-container">
 
-				<div class="tagcloud mb-8">
+				<div class="tagcloud mb-8 hide-mobile">
 					<h2>Tags</h2>
 					<ul class="flex flex-wrap">
 						<Tag v-for="tag in tags" :tag="tag"></Tag>
 					</ul>
 				</div>
-				<hr>
+				<hr class="hide-mobile">
 
 				<div class="max-content newsletter">
 					<div class="mb-16 text-center flex flex-col justify-center">

@@ -7,7 +7,7 @@
 			:isHomepage="true"
 			:isHorizontal="isHorizontal"
 		/>
-		<div class="post-content">
+		<div class="post-content pt-4">
 			<nuxt-link :to="article?._path" class="text-black dark:text-white"
 				><component
 					:is="titleTag ?? 'h2'"
