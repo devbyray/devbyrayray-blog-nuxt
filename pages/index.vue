@@ -87,8 +87,6 @@
 	</NuxtLayout>
 </template>
 <script setup>
-import { getImageUrl } from '@/lib/image'
-
 const {
 	public: { CONFIG }
 } = useRuntimeConfig()
