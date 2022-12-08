@@ -28,9 +28,6 @@
 		<TheHeader home></TheHeader>
 		<div class="bg-gray-900 dark:bg-gray-900 py-10 px-4">
 			<div class="page-container">
-				<div class="category-posts mb-10">
-					<FeaturedPosts></FeaturedPosts>
-				</div>
 
 				<div class="max-content newsletter">
 					<div class="mb-16 text-center flex flex-col justify-center">
@@ -97,8 +94,6 @@ const {
 } = useRuntimeConfig()
 const { path } = useRoute()
 
-const homepageTopics = ['javascript', 'angular', 'typescript']
-const contentDir = 'blog'
 const { data: posts } = await useAsyncData('posts', () => queryContent('posts').limit(12).sort({ date: -1 }).find())
 const { data: postTags } = await useAsyncData('tags', () => queryContent('posts').sort({ date: -1 }).find())
 const tags = ref()
