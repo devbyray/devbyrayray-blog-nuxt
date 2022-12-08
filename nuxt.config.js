@@ -147,7 +147,7 @@ export default {
 			LOCAL: process.env.NODE_ENV !== 'production' || process?.env?.LOCAL
 		}
 	},
-	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld'],
+	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld', '@kevinmarrec/nuxt-pwa'],
 	buildModules: ['@nuxtjs/google-fonts'],
 	googleFonts: {
 		download: true,
@@ -215,5 +215,25 @@ export default {
 		prerender: {
 			routes: ['/rss.xml', '/sitemap.xml']
 		}
+	},
+	pwa: {
+		workbox: {
+			enabled: true
+		}
+	},
+	routeRules: {
+		// Static page generated on-demand, revalidates in background
+		// '/blog/**': { swr: true },
+		// Static page generated on-demand once
+		'/posts/**': { static: true },
+		// Set custom headers matching paths
+		'/_nuxt/**': { headers: { 'cache-control': 's-maxage=14400' } }
+		// // Render these routes with SPA
+		// '/admin/**': { ssr: false },
+		// // Add cors headers
+		// '/api/v1/**': { cors: true },
+		// // Add redirect headers
+		// '/old-page': { redirect: '/new-page' },
+		// '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } }
 	}
 }
