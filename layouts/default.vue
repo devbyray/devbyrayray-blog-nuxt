@@ -40,7 +40,9 @@ definePageMeta({
 onBeforeUpdate(() => {
 	console.log('ethicalads: ', ethicalads)
 	if (ethicalads) {
-		ethicalads.load_placements().then(() => console.log('ads are shown'))
+		setTimeout(() => {
+			ethicalads.load_placements().then(() => console.log('ads are shown'))
+		}, 1000)
 	}
 })
 </script>

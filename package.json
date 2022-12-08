@@ -11,7 +11,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "@nuxt/content": "^2.2.2",
     "@nuxt/content-edge": "^2.2.2-27841551.2b49d13",
-    "@nuxt/image-edge": "^1.0.0-27769790.4b27db3",
+    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@nuxtjs/prismic": "^3.0.0-rc.1",
     "@vueuse/core": "^9.3.0",
