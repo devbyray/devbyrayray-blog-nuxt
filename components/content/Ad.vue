@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="ad-wrapper">
 		<div class="bordered adaptive horizontal" data-ea-publisher="byrayraydev" :data-ea-type="type" :id="id" :data-ea-style="sticky ? 'stickybox': ''" :data-ea-keywords="tags"></div>
 	</div>
 </template>
@@ -24,4 +24,7 @@ useHead({
 </script>
 
 <style scoped>
+.ad-wrapper {
+	min-height: 200px;
+}
 </style>

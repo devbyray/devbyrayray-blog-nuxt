@@ -51,6 +51,9 @@
 							</template>
 						</ContentDoc>
 					</div>
+					<div class="newsletter">
+						<iframe loading="lazy" src="https://byrayraydev.substack.com/embed" width="100%" height="320" style="background: transparant;" frameborder="0" scrolling="no"></iframe>
+					</div>
 					<Profile></Profile>
 				</article>
 				<aside class="right-side">
@@ -66,10 +69,7 @@
 						</div>
 						<div class="max-content newsletter">
 							<div class="mb-16">
-								<h2>Subscribe to my newsletter</h2>
-								<div class="">
-									<div id="custom-substack-embed" class=""></div>
-								</div>
+								<iframe loading="lazy" src="https://byrayraydev.substack.com/embed" width="100%" height="320" style="background: transparant;" frameborder="0" scrolling="no"></iframe>
 							</div>
 						</div>
 					</div>

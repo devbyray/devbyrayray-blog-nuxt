@@ -1,5 +1,5 @@
 <template>
-	<div class="header-container bg-gray-800">
+	<div class="header-container bg-gray-900">
 		<header v-if="home" class="page-max-md m-auto text-center page-header flex items-center flex-col">
 			<nav class="w-full">
 				<ul class="w-full flex justify-center items-center gap-8">
