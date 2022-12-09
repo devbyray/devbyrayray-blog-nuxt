@@ -16,6 +16,7 @@
 								:modifiers="{
 									f: 'auto'
 								}"
+								loading="lazy"
 								src="calendar.svg"
 								class="ml-1 icon"
 								width="20px"
@@ -33,6 +34,7 @@
 								:modifiers="{
 									f: 'auto'
 								}"
+								loading="lazy"
 								src="clock.svg"
 								class="ml-1 icon"
 								width="20px"

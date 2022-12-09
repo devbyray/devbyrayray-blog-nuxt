@@ -7,6 +7,7 @@
 					:modifiers="{
 						f: 'auto'
 					}"
+					loading="lazy"
 					width="24px"
 					height="24px"
 					src="menu.svg"
