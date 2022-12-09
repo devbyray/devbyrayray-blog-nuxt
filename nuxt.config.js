@@ -155,15 +155,16 @@ export default {
 		}
 	},
 	googleAnalytics: {
-		asyncID: async context => {
-			return 'UA-166352508-1'
-		},
-		dev: process.env.NODE_ENV !== 'production',
-		checkDuplicatedScript: true
+		id: 'G-GKECW9DJS8',
+		useGtag: true,
 	},
-	// plugins: ['@/plugins/vue-gtag.client.js'],
 	publicRuntimeConfig: {
-		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID
+		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+		googleAnalytics: {
+			id: 'G-GKECW9DJS8',
+			// id: 'UA-166352508-1',
+			useGtag: true,
+		},
 	},
 	// css
 	css: ['@/assets/css/main.css', 'maz-ui/css/main.css'],
