@@ -4,6 +4,12 @@
 		<Script v-if="!LOCAL" async>
 			window.dataLayer = window.dataLayer || []; 
 			function gtag() { dataLayer.push(arguments) }; 
+			gtag("consent", "default", {
+				ad_storage: "denied",
+				analytics_storage: "denied",
+				wait_for_update: 500
+			});
+			gtag("set", "ads_data_redaction", true);
 			gtag('js', new Date()); 
 			gtag('config', 'G-GKECW9DJS8');
 		</Script>
