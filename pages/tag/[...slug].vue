@@ -77,10 +77,7 @@ const { data: page } = await useAsyncData(`content-${path.toLowerCase()}`, () =>
 	return queryContent().where({ _path: path.toLowerCase() }).findOne()
 })
 
-console.log('slug[0]: ', page)
-
 const pageUrl = `${CONFIG.domain}${path}`
-// const pageImage = `${CONFIG?.domain}/${page?.image}`
 </script>
 
 <style scoped>

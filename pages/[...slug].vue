@@ -30,8 +30,6 @@
 				<article
 					class="bg-white dark:bg-gray-800 dark:text-gray-200 rounded-2xl p-8 page-content relative lg:max-w-5xl"
 				>
-					<div class="dino-header absolute"></div>
-
 					<PostHeader :blog="blog" :showTitle="true" :showGradient="true" :isHomepage="false" />
 
 					<div class="page-max-md flex justify-center pb-8">
@@ -41,7 +39,7 @@
 						class="show-mobile bg-gray-700 p-4"
 						v-if="blog?.body?.toc?.links"
 						:links="blog?.body?.toc?.links"
-						:hasToggle="true"
+						hasToggle
 					></Toc>
 					<div class="content">
 						<ContentDoc>
@@ -79,7 +77,7 @@
 						<li v-if="prev" class="list-none prev">
 							<span>Previous post</span>
 							<nuxt-link class="text-black flex p-4 rounded-2xl items-center mb-4 gap-8" :to="prev._path"
-								><MazIcon size="2rem" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
+								><nuxt-img loading="lazy" width="32px" height="32px" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
 							>
 						</li>
 						<li v-if="next" class="list-none next">
@@ -87,7 +85,7 @@
 							<nuxt-link
 								class="text-black flex p-4 rounded-2xl items-center justify-end gap-8 text-left"
 								:to="next._path"
-								>{{ next.title }}<MazIcon src="/icons/chevron-right.svg" size="2rem" class="ml-8"
+								>{{ next.title }}<nuxt-img loading="lazy" width="32px" height="32px" src="/icons/chevron-right.svg" class="ml-8"
 							/></nuxt-link>
 						</li>
 					</ul>
@@ -99,7 +97,6 @@
 <script setup>
 import { formatDate } from '@/lib/date'
 import { getImageUrl } from '@/lib/image'
-import MazIcon from 'maz-ui/components/MazIcon'
 
 const { path } = useRoute()
 const {
@@ -114,25 +111,13 @@ const { data: blog } = await useAsyncData(`content-${path}`, () => {
 	return queryContent().where({ _path: path }).findOne()
 })
 
-useHead({
-	script: [
-		{
-			src: 'https://substackapi.com/widget.js',
-			async: true
-		}
-	]
-})
-
 onMounted(() => {
 	window.scrollTo(0, 0)
 })
 
-console.log('blog: ', blog)
-console.log('imageee: ', blog?.value?.image)
 pageUrl.value = `${CONFIG.domain}${path}`
 pageImage.value = getImageUrl(blog?.value?.image)
 pageDate.value = formatDate(blog?.value?.date)
-console.log('blog: ', blog)
 
 const { prev, next } = useContent()
 const domain = 'https://byrayray.dev/'
@@ -143,8 +128,6 @@ useHead({
 })
 
 const tags = ref(null)
-
-console.log('tags:', blog?.tags)
 
 tags.value = blog?.tags
 
@@ -188,8 +171,6 @@ const schema = {
 	}
 	// articleBody: `${}`
 }
-
-console.log('schema: ', schema)
 
 useJsonld(() => {
 	return schema
@@ -235,15 +216,6 @@ pre {
 }
 .next span {
 	text-align: right;
-}
-.dino-header {
-	top: -50px;
-	width: 50px;
-	height: 50px;
-	left: 85%;
-	background-image: url('/images/dino.png');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 .content-header h1 {
 	font-size: 3rem;

@@ -1,14 +1,12 @@
 <template>
 	<div class="default-layout">
 		<slot />
-		<Script v-if="!LOCAL" async src="https://www.googletagmanager.com/gtag/js?id=UA-166352508-1"></Script>
 		<Script v-if="!LOCAL" async>
-			window.dataLayer = window.dataLayer || [] 
-			function gtag() { dataLayer.push(arguments) } 
-			gtag('js', new Date()) 
-			gtag('config', 'UA-166352508-1')
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments) };
+			gtag('js', new Date());
+			gtag('config', 'UA-166352508-1');
 		</Script>
-		<Script async src=""></Script>
 		<div class="fixed-footer-wrapper bg-gray-600">
 			<div class="page-max-md">
 				<div
@@ -27,21 +25,19 @@ const {
 	public: { LOCAL }
 } = useRuntimeConfig()
 
-definePageMeta({
-	pageTransition: {
-		mode: 'default',
-		pageTransition: false,
-		layoutTransition: false
+onBeforeUpdate(() => {
+	if (ethicalads) {
+		setTimeout(() => {
+			ethicalads.load_placements().then(() => {})
+		}, 1000)
 	}
 })
 
-onBeforeUpdate(() => {
-	console.log('ethicalads: ', ethicalads)
-	if (ethicalads) {
-		setTimeout(() => {
-			ethicalads.load_placements().then(() => console.log('ads are shown'))
-		}, 1000)
-	}
+useHead({
+	script: [{
+		async: true,
+		src: 'https://www.googletagmanager.com/gtag/js?id=UA-166352508-1'
+	}]
 })
 </script>
 

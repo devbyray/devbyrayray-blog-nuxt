@@ -29,21 +29,11 @@
 		<div class="bg-gray-900 py-10 px-4">
 			<div class="page-container">
 
-				<div class="tagcloud mb-8 hide-mobile">
-					<h2>Tags</h2>
-					<ul class="flex flex-wrap">
-						<Tag v-for="tag in tags" :tag="tag"></Tag>
-					</ul>
-				</div>
-				<hr class="hide-mobile">
-
 				<div class="max-content newsletter">
 					<div class="mb-16 text-center flex flex-col justify-center">
 						<iframe loading="lazy" src="https://byrayraydev.substack.com/embed" width="100%" height="320" style="background: transparant;" frameborder="0" scrolling="no"></iframe>
 					</div>
 				</div>
-
-				
 
 				<div v-if="posts" class="post-grid gap-8 text-neutral-600 mb-8">
 					<header>
@@ -89,15 +79,10 @@ const {
 const { path } = useRoute()
 
 const { data: posts } = await useAsyncData('posts', () => queryContent('posts').limit(12).sort({ date: -1 }).find())
-const { data: postTags } = await useAsyncData('tags', () => queryContent('posts').sort({ date: -1 }).find())
 const tags = ref()
 const pageUrl = ref('')
 
 pageUrl.value = `${CONFIG.domain}${path}`
-
-const tagggs = []
-postTags?.value?.forEach(post => tagggs.push(post?.tags))
-tags.value = [...new Set(tagggs?.flat())].sort()
 
 useHead({
 	htmlAttrs: {

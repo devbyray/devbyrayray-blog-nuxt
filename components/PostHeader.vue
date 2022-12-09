@@ -7,10 +7,10 @@
 			<div class="top flex flex-wrap">
 				<ul class="text-gray-200 flex flex-wrap items-start">
 					<li
-						class="inline-block whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
+						class="inline-block whitespace-nowrap rounded-full px-2 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
 					>
 						<time class="flex items-center"
-							>{{ formatDate(blog?.date) }} <img src="/icons/calendar.svg" class="ml-1 icon" />
+							>{{ formatDate(blog?.date) }} <nuxt-img src="/icons/calendar.svg" class="ml-1 icon" width="20px" height="20px" loading="lazy" />
 						</time>
 					</li>
 					<li
@@ -18,7 +18,7 @@
 					>
 						<span class="flex items-center"
 							>{{ Math.round(blog?.readingTime?.minutes) }} min
-							<img src="/icons/clock.svg" class="ml-1 icon"
+							<nuxt-img loading="lazy" src="/icons/clock.svg" class="ml-1 icon" width="20px" height="20px"
 						/></span>
 					</li>
 				</ul>
@@ -63,23 +63,13 @@
 <script setup lang="ts">
 import { formatDate } from '@/lib/date'
 import { getImageUrl } from '@/lib/image'
-import MazIcon from 'maz-ui/components/MazIcon'
-
-// function getImageUrl(url: string, width: number) {
-// 	console.log('url: ', url)
-// 	const edits = 'c_crop,f_auto'
-// 	if (url && !url.startsWith('http')) {
-// 		return `https://res.cloudinary.com/raymons/image/upload/${edits}/devbyrayray/blog/${url?.replace('images/', '/')}`
-// 	}
-// 	return `https://res.cloudinary.com/raymons/image/fetch/${edits}/${url}`
-// }
 
 interface Props {
 	blog: any
 	showTitle: boolean
 	showGradient: boolean
 	isHomepage: boolean
-	isHorizontal: boolean
+	isHorizontal?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -197,8 +187,6 @@ const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
 }
 
 .icon {
-	max-width: 20px;
-	margin-right: 2rem;
-	margin-right: 1rem;
+	margin-right: 0;
 }
 </style>

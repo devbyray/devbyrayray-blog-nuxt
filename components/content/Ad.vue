@@ -1,6 +1,6 @@
 <template>
 	<div class="ad-wrapper">
-		<div class="bordered adaptive horizontal" data-ea-publisher="byrayraydev" :data-ea-type="type" :id="id" :data-ea-style="sticky ? 'stickybox': ''" :data-ea-keywords="tags"></div>
+		<div class="bordered adaptive horizontal" data-ea-publisher="byrayraydev" :data-ea-type="type" :id="id"  :data-ea-keywords="tags"></div>
 	</div>
 </template>
 
@@ -8,11 +8,14 @@
 const props = withDefaults(defineProps(), {
 	type: 'image',
 	id: 'default',
-	sticky: false,
 	topics: undefined
 })
 
-const tags = props?.topics?.toString()?.replaceAll(',', '|');
+const id = props?.id ?? 'default'
+const type = props?.type ?? 'image'
+
+const tags = props?.topics ? props?.topics?.toString()?.replaceAll(',', '|') : '';
+
 
 useHead({
 	script: [{

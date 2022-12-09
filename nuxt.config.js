@@ -125,7 +125,9 @@ export const HEAD = {
 			rel: 'manifest',
 			href: '/site.webmanifest'
 		},
-		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+		{ rel: 'preconnect', href: '//media.ethicalads.io' },
+		{ rel: 'preconnect', href: '//www.googletagmanager.com' }
 	],
 	script: [
 		{
@@ -147,8 +149,8 @@ export default {
 			LOCAL: process.env.NODE_ENV !== 'production' || process?.env?.LOCAL
 		}
 	},
-	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld', '@kevinmarrec/nuxt-pwa'],
-	buildModules: ['@nuxtjs/google-fonts'],
+	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld'],
+	buildModules: ['@nuxtjs/google-fonts', '@abbo/nuxt-google-analytics'],
 	googleFonts: {
 		download: true,
 		families: {
@@ -156,6 +158,13 @@ export default {
 				wght: [400, 700]
 			}
 		}
+	},
+	googleAnalytics: {
+		asyncID: async (context) => {
+			return 'UA-166352508-1'
+		},
+		dev: process.env.NODE_ENV !== 'production',
+		checkDuplicatedScript: true
 	},
 	// plugins: ['@/plugins/vue-gtag.client.js'],
 	publicRuntimeConfig: {
@@ -216,11 +225,6 @@ export default {
 			routes: ['/rss.xml', '/sitemap.xml']
 		}
 	},
-	pwa: {
-		workbox: {
-			enabled: true
-		}
-	},
 	routeRules: {
 		// Static page generated on-demand, revalidates in background
 		// '/blog/**': { swr: true },
@@ -235,5 +239,10 @@ export default {
 		// // Add redirect headers
 		// '/old-page': { redirect: '/new-page' },
 		// '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } }
+	},
+	optimization: {
+		splitChunks: {
+			maxSize: 300000
+		}
 	}
 }

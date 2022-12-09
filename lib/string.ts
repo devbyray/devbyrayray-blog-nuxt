@@ -17,3 +17,7 @@ export function convertTitle(title: string): string {
 	}
 	return returnVal
 }
+
+export function tagsForAds(tags: string[]) {
+	return tags?.toString()?.replaceAll(',', '|')
+}

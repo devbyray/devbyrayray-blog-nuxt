@@ -35,7 +35,7 @@
 interface Props {
 	article: any
 	titleTag: string
-	isHorizontal: boolean
+	isHorizontal?: boolean
 }
 withDefaults(defineProps<Props>(), {
 	article: {},
