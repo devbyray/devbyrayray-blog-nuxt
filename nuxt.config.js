@@ -126,15 +126,10 @@ export const HEAD = {
 			href: '/site.webmanifest'
 		},
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-		{ rel: 'preconnect', href: '//media.ethicalads.io' },
-		{ rel: 'preconnect', href: '//www.googletagmanager.com' }
+		{ rel: 'preconnect', href: '//media.ethicalads.io', as: 'script' },
+		{ rel: 'preconnect', href: '//www.googletagmanager.com', as: 'script' }
 	],
-	script: [
-		{
-			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
-			async: true
-		}
-	],
+	script: [],
 	link: [],
 	// please note that this is an area that is likely to change
 	style: [],
@@ -160,7 +155,7 @@ export default {
 		}
 	},
 	googleAnalytics: {
-		asyncID: async (context) => {
+		asyncID: async context => {
 			return 'UA-166352508-1'
 		},
 		dev: process.env.NODE_ENV !== 'production',

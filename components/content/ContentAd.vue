@@ -17,15 +17,6 @@ const props = withDefaults(defineProps(), {
 })
 
 const tags = props?.topics?.toString()?.replaceAll(',', '|')
-
-useHead({
-	script: [
-		{
-			async: true,
-			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js'
-		}
-	]
-})
 </script>
 
 <style scoped></style>

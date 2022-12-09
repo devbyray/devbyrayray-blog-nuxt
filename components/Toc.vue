@@ -2,7 +2,15 @@
 	<div class="toc mb-8 top-4 bg-gray-900 pb-4" v-if="filterToc(links).length > 0">
 		<header class="widget-header flex items-center">
 			<button v-if="hasToggle" class="toggle-button bg-gray-900 p-2" @click="showToc = !showToc">
-				<nuxt-img loading="lazy" width="24px" height="24px" src="/icons/menu.svg" />
+				<nuxt-img
+					provider="cloudinary"
+					:modifiers="{
+						f: 'auto'
+					}"
+					width="24px"
+					height="24px"
+					src="menu.svg"
+				/>
 			</button>
 			<strong class="my-0 ml-4">Table of Content</strong>
 		</header>
@@ -22,9 +30,9 @@ interface Props {
 	hasToggle?: boolean
 }
 interface Link {
-	id: string;
-	depth: number;
-	text: string;
+	id: string
+	depth: number
+	text: string
 }
 const props = withDefaults(defineProps<Props>(), {
 	links: null,

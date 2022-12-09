@@ -10,7 +10,17 @@
 						class="inline-block whitespace-nowrap rounded-full px-2 py-1.5 text-sm font-medium uppercase tracking-widest transition-colors duration-200 mr-1.5 mb-2 bg-secondary-color text-white"
 					>
 						<time class="flex items-center"
-							>{{ formatDate(blog?.date) }} <nuxt-img src="/icons/calendar.svg" class="ml-1 icon" width="20px" height="20px" loading="lazy" />
+							>{{ formatDate(blog?.date) }}
+							<nuxt-img
+								provider="cloudinary"
+								:modifiers="{
+									f: 'auto'
+								}"
+								src="calendar.svg"
+								class="ml-1 icon"
+								width="20px"
+								height="20px"
+							/>
 						</time>
 					</li>
 					<li
@@ -18,7 +28,15 @@
 					>
 						<span class="flex items-center"
 							>{{ Math.round(blog?.readingTime?.minutes) }} min
-							<nuxt-img loading="lazy" src="/icons/clock.svg" class="ml-1 icon" width="20px" height="20px"
+							<nuxt-img
+								provider="cloudinary"
+								:modifiers="{
+									f: 'auto'
+								}"
+								src="clock.svg"
+								class="ml-1 icon"
+								width="20px"
+								height="20px"
 						/></span>
 					</li>
 				</ul>
@@ -31,7 +49,6 @@
 			</div>
 		</div>
 		<div class="cover-image rounded-lg">
-
 			<nuxt-img
 				v-if="blog?.image && blog?.image?.includes('image/')"
 				provider="cloudinary"
@@ -107,10 +124,9 @@ const formats = {
 	big: {
 		width: 960,
 		height: 500
-	},
+	}
 }
 const imageFormat = props?.isHomepage ? formats?.overview : formats?.big
-
 </script>
 
 <style scoped>

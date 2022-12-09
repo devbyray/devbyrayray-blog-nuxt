@@ -1,12 +1,6 @@
 <template>
 	<div class="default-layout">
 		<slot />
-		<Script v-if="!LOCAL" async>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments) };
-			gtag('js', new Date());
-			gtag('config', 'UA-166352508-1');
-		</Script>
 		<div class="fixed-footer-wrapper bg-gray-600">
 			<div class="page-max-md">
 				<div
@@ -34,10 +28,12 @@ onBeforeUpdate(() => {
 })
 
 useHead({
-	script: [{
-		async: true,
-		src: 'https://www.googletagmanager.com/gtag/js?id=UA-166352508-1'
-	}]
+	script: [
+		{
+			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
+			async: true
+		}
+	]
 })
 </script>
 

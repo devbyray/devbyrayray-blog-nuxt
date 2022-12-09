@@ -50,7 +50,15 @@
 						</ContentDoc>
 					</div>
 					<div class="newsletter">
-						<iframe loading="lazy" src="https://byrayraydev.substack.com/embed" width="100%" height="320" style="background: transparant;" frameborder="0" scrolling="no"></iframe>
+						<iframe
+							loading="lazy"
+							src="https://byrayraydev.substack.com/embed"
+							width="100%"
+							height="320"
+							style="background: transparant"
+							frameborder="0"
+							scrolling="no"
+						></iframe>
 					</div>
 					<Profile></Profile>
 				</article>
@@ -67,7 +75,15 @@
 						</div>
 						<div class="max-content newsletter">
 							<div class="mb-16">
-								<iframe loading="lazy" src="https://byrayraydev.substack.com/embed" width="100%" height="320" style="background: transparant;" frameborder="0" scrolling="no"></iframe>
+								<iframe
+									loading="lazy"
+									src="https://byrayraydev.substack.com/embed"
+									width="100%"
+									height="320"
+									style="background: transparant"
+									frameborder="0"
+									scrolling="no"
+								></iframe>
 							</div>
 						</div>
 					</div>
@@ -77,7 +93,16 @@
 						<li v-if="prev" class="list-none prev">
 							<span>Previous post</span>
 							<nuxt-link class="text-black flex p-4 rounded-2xl items-center mb-4 gap-8" :to="prev._path"
-								><nuxt-img loading="lazy" width="32px" height="32px" src="/icons/chevron-left.svg" />{{ prev.title }}</nuxt-link
+								><nuxt-img
+									provider="cloudinary"
+									:modifiers="{
+										f: 'auto'
+									}"
+									loading="lazy"
+									width="32px"
+									height="32px"
+									src="chevron-left.svg"
+								/>{{ prev.title }}</nuxt-link
 							>
 						</li>
 						<li v-if="next" class="list-none next">
@@ -85,7 +110,17 @@
 							<nuxt-link
 								class="text-black flex p-4 rounded-2xl items-center justify-end gap-8 text-left"
 								:to="next._path"
-								>{{ next.title }}<nuxt-img loading="lazy" width="32px" height="32px" src="/icons/chevron-right.svg" class="ml-8"
+								>{{ next.title
+								}}<nuxt-img
+									provider="cloudinary"
+									:modifiers="{
+										f: 'auto'
+									}"
+									loading="lazy"
+									width="32px"
+									height="32px"
+									src="chevron-right.svg"
+									class="ml-8"
 							/></nuxt-link>
 						</li>
 					</ul>

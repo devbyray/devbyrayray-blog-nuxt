@@ -16,14 +16,6 @@ const type = props?.type ?? 'image'
 
 const tags = props?.topics ? props?.topics?.toString()?.replaceAll(',', '|') : '';
 
-
-useHead({
-	script: [{
-		async: true,
-		src: 'https://media.ethicalads.io/media/client/ethicalads.min.js'
-	}]
-})
-
 </script>
 
 <style scoped>
