@@ -129,7 +129,12 @@ export const HEAD = {
 		{ rel: 'preconnect', href: '//media.ethicalads.io', as: 'script' },
 		{ rel: 'preconnect', href: '//www.googletagmanager.com', as: 'script' }
 	],
-	script: [],
+	script: [
+		{
+			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
+			async: true
+		}
+	],
 	link: [],
 	// please note that this is an area that is likely to change
 	style: [],
@@ -145,7 +150,7 @@ export default {
 		}
 	},
 	modules: ['@nuxt/content', '@nuxt/image-edge', 'nuxt-jsonld'],
-	buildModules: ['@nuxtjs/google-fonts', '@abbo/nuxt-google-analytics'],
+	buildModules: ['@nuxtjs/google-fonts'],
 	googleFonts: {
 		download: true,
 		families: {
@@ -154,20 +159,10 @@ export default {
 			}
 		}
 	},
-	googleAnalytics: {
-		id: 'G-GKECW9DJS8',
-		useGtag: true,
-	},
 	publicRuntimeConfig: {
-		GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
-		googleAnalytics: {
-			id: 'G-GKECW9DJS8',
-			// id: 'UA-166352508-1',
-			useGtag: true,
-		},
 	},
 	// css
-	css: ['@/assets/css/main.css', 'maz-ui/css/main.css'],
+	css: ['@/assets/css/main.css'],
 	components: true,
 	content: {
 		documentDriven: true,
@@ -186,8 +181,6 @@ export default {
 	},
 	postcss: {
 		plugins: {
-			'postcss-import': true,
-			'tailwindcss/nesting': 'postcss-nesting',
 			autoprefixer: {},
 			tailwindcss: {}
 		}
@@ -200,7 +193,6 @@ export default {
 		}
 	},
 	build: {
-		transpile: ['maz-ui'], // ⚠️ important ⚠️
 		html: {
 			minify: {
 				collapseBooleanAttributes: true,
