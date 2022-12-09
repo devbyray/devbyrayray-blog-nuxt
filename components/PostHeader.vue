@@ -57,7 +57,7 @@
 				:src="blog?.image.replace('image/', '')"
 				:width="imageFormat?.width"
 				:height="imageFormat?.height"
-				class="rounded-lg object-cover mb-0"
+				class=" rounded-lg object-cover mb-0"
 				:modifiers="{
 					c: 'crop',
 					f: 'webp'
@@ -67,14 +67,25 @@
 				loading="lazy"
 			/>
 			<nuxt-img
-				v-if="blog?.image && !blog?.image?.includes('image/')"
+				v-if="blog?.image && !blog?.image?.includes('image/') && isHomepage"
 				:src="getImageUrl(blog?.image, isHomepage ? 'overview' : 'big')"
 				:width="imageFormat?.width"
 				:height="imageFormat?.height"
 				class="rounded-lg object-cover mb-0"
+				:data-size="isHomepage ? 'overview' : 'big'"
 				:alt="blog?.title"
 				:title="blog?.title"
 				loading="lazy"
+			/>
+			<nuxt-img
+				v-if="blog?.image && !blog?.image?.includes('image/') && !isHomepage"
+				:src="getImageUrl(blog?.image, isHomepage ? 'overview' : 'big')"
+				:width="imageFormat?.width"
+				:height="imageFormat?.height"
+				class="rounded-lg object-cover mb-0"
+				:data-size="isHomepage ? 'overview' : 'big'"
+				:alt="blog?.title"
+				:title="blog?.title"
 			/>
 		</div>
 	</header>
