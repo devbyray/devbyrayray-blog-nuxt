@@ -5,8 +5,8 @@
 			data-ea-publisher="byrayraydev"
 			data-ea-type="image"
 			id="post-content"
-			:data-ea-keywords="tags()"
-		></div>
+			:data-ea-keywords="tags"
+			></div>
 	</div>
 </template>
 
@@ -16,7 +16,7 @@ const props = withDefaults(defineProps(), {
 	topics: undefined
 })
 
-const tags = props?.topics?.toString()?.replaceAll(',', '|')
+const tags = props?.topics ? props?.topics?.toString()?.replaceAll(',', '|') : ''
 useHead({
 	script: [
 		{
