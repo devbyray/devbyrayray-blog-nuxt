@@ -133,6 +133,10 @@ export const HEAD = {
 		{
 			src: 'https://media.ethicalads.io/media/client/ethicalads.min.js',
 			async: true
+		},
+		{
+			async: true,
+			src: 'https://www.googletagmanager.com/gtag/js?id=G-GKECW9DJS8'
 		}
 	],
 	link: [],
