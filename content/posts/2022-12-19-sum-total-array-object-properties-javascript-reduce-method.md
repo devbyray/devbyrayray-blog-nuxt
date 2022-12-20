@@ -94,7 +94,7 @@ console.log('total: ', total )
 We can also write this shorter and chain the `map()` and `reduce()` methods.
 
 ```js
-const totalPrice = shoppingCart.map((product) => product.price).reduce((acc, curr) => acc + curr)
+const totalPrice = shoppingCart.reduce((acc, curr) => acc + curr.price, 0)
 
 console.log('total: ', totalPrice )
 ```
