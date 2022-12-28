@@ -21,9 +21,9 @@ export function getImageUrl(path: string, format: 'overview' | 'big' | 'content'
 
 	let returnValue = ''
 	if (path?.includes('http')) {
-		returnValue = `https://res.cloudinary.com/raymons/image/fetch/${imageFormat}/${path}`
+		returnValue = `https://res.cloudinary.com/raymons/image/fetch/${imageFormat.replaceAll(' ', '')}/${path}`
 	} else if (path?.startsWith('images/')) {
-		returnValue = `https://res.cloudinary.com/raymons/image/upload/${imageFormat}/devbyrayray/blog/${path.replace(
+		returnValue = `https://res.cloudinary.com/raymons/image/upload/${imageFormat.replaceAll(' ', '')}/devbyrayray/blog/${path.replace(
 			'images/',
 			''
 		)}`
