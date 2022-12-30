@@ -116,6 +116,9 @@ const languageColor = computed(() => (props.language ? languageMap[props.languag
 	margin-right: -1rem;
 	width: calc(100% + 2rem);
 }
+.code-container pre code {
+	font-size: 1em;
+}
 .bottom-container {
 	display: flex;
 	justify-content: flex-end;

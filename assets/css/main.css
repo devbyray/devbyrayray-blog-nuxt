@@ -56,11 +56,12 @@
 	h4 {
 		@apply lg:text-xl text-xl;
 	}
-
+	code {
+		@apply text-base;
+	}
 	p,
 	li,
-	blockquote,
-	p > code {
+	blockquote {
 		@apply text-lg leading-loose;
 		font-size: 1.2rem;
 	}
@@ -157,7 +158,8 @@
 		@apply pl-4 mb-2;
 	}
 
-	.content p code {
+	.content p code,
+	.content li code {
 		white-space: nowrap;
 		font-family: monospace;
 		@apply px-2 py-1 text-base;
