@@ -1,6 +1,6 @@
 ---
 title: 'Mastering The JavaScript Includes() Method'
-description: To use the includes() method, you call it on the array you want to search and pass in the value you are looking for as an argument. If the value is in the array, the includes() method will return a boolean value of true. If the value is not in the array, the includes() method will return false.
+description: Learn how to use the includes() method in JavaScript to search an array and return a boolean value indicating whether a specific value is present. Quick and easy guide for beginners."
 date: '2022-12-30'
 tags: ['javascript']
 image: images/arnold-francisca-f77Bh3inUpE-unsplash.jpg
