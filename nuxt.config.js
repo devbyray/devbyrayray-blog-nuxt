@@ -218,19 +218,8 @@ export default {
 		}
 	},
 	routeRules: {
-		// Static page generated on-demand, revalidates in background
-		// '/blog/**': { swr: true },
-		// Static page generated on-demand once
 		'/posts/**': { static: true },
-		// Set custom headers matching paths
 		'/_nuxt/**': { headers: { 'cache-control': 's-maxage=14400' } }
-		// // Render these routes with SPA
-		// '/admin/**': { ssr: false },
-		// // Add cors headers
-		// '/api/v1/**': { cors: true },
-		// // Add redirect headers
-		// '/old-page': { redirect: '/new-page' },
-		// '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } }
 	},
 	optimization: {
 		splitChunks: {
