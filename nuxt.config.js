@@ -136,7 +136,7 @@ export const HEAD = {
 		},
 		{
 			src: 'https://analytics.umami.is/script.js',
-			'data-website-id': '37eb8bc1-f543-4d95-aba1-f52b88986834',
+			'data-website-id': 'd6625719-3e1e-42bf-8575-c8d114a8bf28',
 			async: true,
 			defer: true
 		}
