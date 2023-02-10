@@ -127,7 +127,7 @@ export const HEAD = {
 		},
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 		{ rel: 'preconnect', href: '//media.ethicalads.io', as: 'script' },
-		{ rel: 'preconnect', href: '//www.googletagmanager.com', as: 'script' }
+		{ rel: 'preconnect', href: '//analytics.umami.is', as: 'script' },
 	],
 	script: [
 		{
@@ -135,8 +135,10 @@ export const HEAD = {
 			async: true
 		},
 		{
+			src: 'https://analytics.umami.is/script.js',
+			'data-website-id': '37eb8bc1-f543-4d95-aba1-f52b88986834',
 			async: true,
-			src: 'https://www.googletagmanager.com/gtag/js?id=G-GKECW9DJS8'
+			defer: true
 		}
 	],
 	link: [],
@@ -163,8 +165,7 @@ export default {
 			}
 		}
 	},
-	publicRuntimeConfig: {
-	},
+	publicRuntimeConfig: {},
 	// css
 	css: ['@/assets/css/main.css'],
 	components: true,

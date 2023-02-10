@@ -1,18 +1,13 @@
 <template>
 	<div class="default-layout">
 		<slot />
-		<Script v-if="!LOCAL" async>
-			window.dataLayer = window.dataLayer || []; 
-			function gtag() { dataLayer.push(arguments) }; 
-			gtag("consent", "default", {
-				ad_storage: "denied",
-				analytics_storage: "denied",
-				wait_for_update: 500
-			});
-			gtag("set", "ads_data_redaction", true);
-			gtag('js', new Date()); 
-			gtag('config', 'G-GKECW9DJS8');
-		</Script>
+		<Script v-if="!LOCAL"
+				async
+				defer
+				src="https://analytics.umami.is/script.js"
+				data-website-id="37eb8bc1-f543-4d95-aba1-f52b88986834"
+			></Script>
+
 		<div class="fixed-footer-wrapper bg-gray-600">
 			<div class="page-max-md">
 				<div
@@ -37,15 +32,6 @@ onBeforeUpdate(() => {
 			ethicalads.load_placements().then(() => {})
 		}, 1000)
 	}
-})
-
-useHead({
-	script: [
-		{
-			async: true,
-			src: 'https://www.googletagmanager.com/gtag/js?id=G-GKECW9DJS8'
-		}
-	]
 })
 </script>
 
