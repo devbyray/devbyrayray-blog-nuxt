@@ -39,8 +39,5 @@
 		"vue-embed-gist": "^1.2.0",
 		"vue-gtag-next": "^1.14.0",
 		"vue-runkit": "^2.0.0"
-	},
-	"dependencies": {
-		"@abbo/nuxt-google-analytics": "^2.5.0"
 	}
 }

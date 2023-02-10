@@ -190,7 +190,7 @@ export default {
 			tailwindcss: {}
 		}
 	},
-	plugins: ['@/plugins/vue-gtag.client.ts'],
+	// plugins: ['@/plugins/vue-gtag.client.ts'],
 	head: HEAD,
 	image: {
 		cloudinary: {
