@@ -3,7 +3,7 @@ title: Revolutionize Your Programming with AI, ChatGPT & GitHub Copilot
 description: Discover the top five benefits of incorporating AI into your work as a
   developer, use ChatGPT and Github Copilot. Don't get left behind – start using
   AI to revolutionize your programming skills today
-date: 2022-12-30
+date: 2023-01-08
 tags:
   - developer
   - ChatGPT
