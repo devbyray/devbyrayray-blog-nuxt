@@ -94,6 +94,11 @@ const languageMap: Record<string, { text: string; color: string; background: str
 		background: '#008000',
 		color: '#fff'
 	},
+	json: {
+		text: 'json',
+		background: '#008000',
+		color: '#fff'
+	},
 	angular: {
 		text: 'ng',
 		background: '#b52e31',
