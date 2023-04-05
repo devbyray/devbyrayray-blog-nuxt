@@ -17,7 +17,7 @@ Are you a developer looking to improve your craft? Look no further than ChatGPT!
 
 ## ChatGPT helps you brainstorm why a problem is caused in your application
 
-My team and I encountered an issue in our application where data needed to be included, and models still needed to update. We work in an Angular environment for a big bank in the Netherlands.
+My team and I encountered an issue in our application where data needed to be included, and models still needed to update. We work in an Angular environment.
 
 Let me share a situation where I discovered the power of discovering solutions and problems in an application.
 
@@ -26,7 +26,6 @@ Let me share a situation where I discovered the power of discovering solutions a
 After manually searching for what could happen, we took the leap and started asking questions to ChatGPT. We started with this question. (*sorry, I can't show you a screenshot because it's lost with an error of ChatGPT lately* 🥲)
 
 > We are using RxJS; we have a BehaviourSubject, but at the start, the data is received by the subscribe method, but later it isn't. What could be the problem?
-> 
 
 After this question, ChatGPT started answering them with possible situations. Last, it suggested we check if the subscription still exists. It also provided us with a solution to check it.
 
