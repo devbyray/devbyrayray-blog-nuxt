@@ -23,13 +23,19 @@ Let me share a situation where I discovered the power of discovering solutions a
 
 ### Situation: Subscription didn't exist
 
-After manually searching for what could happen, we took the leap and started asking questions to ChatGPT. We started with this question. (*sorry, I can't show you a screenshot because it's lost with an error of ChatGPT lately* 🥲)
+After manually searching for what could happen, we took the leap and started asking questions to ChatGPT. We started with this question.
 
 > We are using RxJS; we have a BehaviourSubject, but at the start, the data is received by the subscribe method, but later it isn't. What could be the problem?
 
 After this question, ChatGPT started answering them with possible situations. Last, it suggested we check if the subscription still exists. It also provided us with a solution to check it.
 
 Well, that worked 😅🎉. Finally, we found the cause, and we could fix the issue 👍
+
+![](https://cdn-images-1.medium.com/max/1600/0*y906fP7b9qDMOnUB.png align="left")
+
+**The answer:**
+
+![](https://cdn-images-1.medium.com/max/1600/0*tk1voSgCLry9SvST.png align="left")
 
 ---
 
