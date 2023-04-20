@@ -31,11 +31,11 @@ After this question, ChatGPT started answering them with possible situations. La
 
 Well, that worked 😅🎉. Finally, we found the cause, and we could fix the issue 👍
 
-![](https://cdn-images-1.medium.com/max/1600/0*y906fP7b9qDMOnUB.png)
+![](/images/0_y906fP7b9qDMOnUB.png)
 
 **The answer:**
 
-![](https://cdn-images-1.medium.com/max/1600/0*tk1voSgCLry9SvST.png)
+![](/images/0_tk1voSgCLry9SvST.png)
 
 ---
 
