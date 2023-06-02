@@ -212,7 +212,7 @@ export default defineNuxtConfig( {
 		}
 	},
 	nitro: {
-		preset: 'netlify-builder',
+		preset: 'vercel-edge',
 		prerender: {
 			routes: ['/rss.xml', '/sitemap.xml']
 		}
