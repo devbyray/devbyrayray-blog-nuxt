@@ -146,7 +146,8 @@ export const HEAD = {
 	noscript: []
 }
 
-export default defineNuxtConfig( {
+export default defineNuxtConfig({
+	ssr: false,
 	runtimeConfig: {
 		public: {
 			CONFIG,
@@ -196,34 +197,13 @@ export default defineNuxtConfig( {
 			baseURL: 'https://res.cloudinary.com/raymons/image/upload/devbyrayray/blog'
 		}
 	},
-	build: {
-		html: {
-			minify: {
-				collapseBooleanAttributes: true,
-				decodeEntities: true,
-				minifyCSS: true,
-				minifyJS: true,
-				processConditionalComments: true,
-				removeEmptyAttributes: true,
-				removeRedundantAttributes: true,
-				trimCustomFragments: true,
-				useShortDoctype: true
-			}
-		}
-	},
 	nitro: {
-		preset: 'netlify-builder',
+		preset: 'vercel-edge',
 		prerender: {
 			routes: ['/rss.xml', '/sitemap.xml']
 		}
 	},
 	routeRules: {
 		'/posts/**': { static: true },
-		'/_nuxt/**': { headers: { 'cache-control': 's-maxage=14400' } }
-	},
-	optimization: {
-		splitChunks: {
-			maxSize: 300000
-		}
 	}
 })
