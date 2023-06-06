@@ -146,7 +146,8 @@ export const HEAD = {
 	noscript: []
 }
 
-export default defineNuxtConfig( {
+export default defineNuxtConfig({
+	ssr: false,
 	runtimeConfig: {
 		public: {
 			CONFIG,
